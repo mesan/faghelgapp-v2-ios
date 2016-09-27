@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="R9S-o8-q6T">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Program View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Faghelgapp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ProgramViewController" customModule="Faghelgapp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -18,19 +18,71 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Hello, Apple!" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="68F-SW-ENt">
-                                <frame key="frameInset" minX="115" minY="215" width="104" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hY3-x2-aEM" customClass="ProgramView" customModule="Faghelgapp" customModuleProvider="target">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hY3-x2-aEM" secondAttribute="bottom" id="TZq-5r-69D"/>
+                            <constraint firstItem="hY3-x2-aEM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="j9Y-J8-ksu"/>
+                            <constraint firstItem="hY3-x2-aEM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="nd0-QN-4Rw"/>
+                            <constraint firstAttribute="trailing" secondItem="hY3-x2-aEM" secondAttribute="trailing" id="xF1-Jb-QZW"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="oht-6F-gcj"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-295" y="813"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="G57-GV-Bed">
+            <objects>
+                <viewController id="vAa-UH-hir" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gQh-b1-dd6"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mmu-fZ-e5m"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="z3v-Ki-dvn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MQy-9O-vzM" customClass="PeopleView" customModule="Faghelgapp" customModuleProvider="target">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Mmu-fZ-e5m" firstAttribute="top" secondItem="MQy-9O-vzM" secondAttribute="bottom" id="NBF-eS-xGr"/>
+                            <constraint firstItem="MQy-9O-vzM" firstAttribute="top" secondItem="gQh-b1-dd6" secondAttribute="bottom" id="UdF-k9-mhb"/>
+                            <constraint firstItem="MQy-9O-vzM" firstAttribute="leading" secondItem="z3v-Ki-dvn" secondAttribute="leading" id="p56-Og-dui"/>
+                            <constraint firstAttribute="trailing" secondItem="MQy-9O-vzM" secondAttribute="trailing" id="rvM-ay-xMI"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="history" id="b59-HL-Kv1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kvt-tg-EHg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="813"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="YJm-Hw-MHd">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="R9S-o8-q6T" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="LUg-cz-I0H">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="msR-Ve-k6J"/>
+                        <segue destination="vAa-UH-hir" kind="relationship" relationship="viewControllers" id="cl7-BG-1a6"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RBh-Qu-fJ9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
         </scene>
     </scenes>
 </document>

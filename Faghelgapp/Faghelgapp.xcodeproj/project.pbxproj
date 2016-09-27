@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9FEB719E1D9ACCAE00BBFA54 /* ProgramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB719D1D9ACCAE00BBFA54 /* ProgramView.swift */; };
+		9FEB71A01D9ACCB700BBFA54 /* ProgramView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FEB719F1D9ACCB700BBFA54 /* ProgramView.xib */; };
+		9FEB71A31D9ACD1200BBFA54 /* NibLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB71A21D9ACD1200BBFA54 /* NibLoadingView.swift */; };
+		9FEB71A51D9ACD7D00BBFA54 /* ProgramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB71A41D9ACD7D00BBFA54 /* ProgramViewController.swift */; };
+		9FEB71A81D9ACDF300BBFA54 /* PeopleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB71A71D9ACDF300BBFA54 /* PeopleView.swift */; };
+		9FEB71AA1D9ACDFE00BBFA54 /* PeopleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FEB71A91D9ACDFE00BBFA54 /* PeopleView.xib */; };
 		B192B59A1D9AC9A200C8B9C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B192B5991D9AC9A200C8B9C2 /* AppDelegate.swift */; };
 		B192B59C1D9AC9A200C8B9C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B192B59B1D9AC9A200C8B9C2 /* ViewController.swift */; };
 		B192B59F1D9AC9A200C8B9C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B192B59D1D9AC9A200C8B9C2 /* Main.storyboard */; };
@@ -26,6 +32,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9FEB719D1D9ACCAE00BBFA54 /* ProgramView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProgramView.swift; path = Faghelgapp/Views/ProgramView.swift; sourceTree = SOURCE_ROOT; };
+		9FEB719F1D9ACCB700BBFA54 /* ProgramView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProgramView.xib; path = Faghelgapp/Views/ProgramView.xib; sourceTree = SOURCE_ROOT; };
+		9FEB71A21D9ACD1200BBFA54 /* NibLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadingView.swift; sourceTree = "<group>"; };
+		9FEB71A41D9ACD7D00BBFA54 /* ProgramViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramViewController.swift; sourceTree = "<group>"; };
+		9FEB71A71D9ACDF300BBFA54 /* PeopleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleView.swift; sourceTree = "<group>"; };
+		9FEB71A91D9ACDFE00BBFA54 /* PeopleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PeopleView.xib; sourceTree = "<group>"; };
 		B192B5961D9AC9A200C8B9C2 /* Faghelgapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Faghelgapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B192B5991D9AC9A200C8B9C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B192B59B1D9AC9A200C8B9C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +68,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9FEB719A1D9ACC2300BBFA54 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B192B59D1D9AC9A200C8B9C2 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		9FEB719B1D9ACC6D00BBFA54 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9FEB71A41D9ACD7D00BBFA54 /* ProgramViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9FEB719C1D9ACC8700BBFA54 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9FEB71A61D9ACDD500BBFA54 /* PeopleView */,
+				9FEB71A11D9ACCE400BBFA54 /* ProgramView */,
+				9FEB71A21D9ACD1200BBFA54 /* NibLoadingView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9FEB71A11D9ACCE400BBFA54 /* ProgramView */ = {
+			isa = PBXGroup;
+			children = (
+				9FEB719D1D9ACCAE00BBFA54 /* ProgramView.swift */,
+				9FEB719F1D9ACCB700BBFA54 /* ProgramView.xib */,
+			);
+			path = ProgramView;
+			sourceTree = "<group>";
+		};
+		9FEB71A61D9ACDD500BBFA54 /* PeopleView */ = {
+			isa = PBXGroup;
+			children = (
+				9FEB71A71D9ACDF300BBFA54 /* PeopleView.swift */,
+				9FEB71A91D9ACDFE00BBFA54 /* PeopleView.xib */,
+			);
+			path = PeopleView;
+			sourceTree = "<group>";
+		};
 		B192B58D1D9AC9A200C8B9C2 = {
 			isa = PBXGroup;
 			children = (
@@ -77,9 +133,11 @@
 		B192B5981D9AC9A200C8B9C2 /* Faghelgapp */ = {
 			isa = PBXGroup;
 			children = (
+				9FEB719A1D9ACC2300BBFA54 /* Storyboards */,
+				9FEB719C1D9ACC8700BBFA54 /* Views */,
+				9FEB719B1D9ACC6D00BBFA54 /* ViewControllers */,
 				B192B5991D9AC9A200C8B9C2 /* AppDelegate.swift */,
 				B192B59B1D9AC9A200C8B9C2 /* ViewController.swift */,
-				B192B59D1D9AC9A200C8B9C2 /* Main.storyboard */,
 				B192B5A01D9AC9A200C8B9C2 /* Assets.xcassets */,
 				B192B5A21D9AC9A200C8B9C2 /* LaunchScreen.storyboard */,
 				B192B5A51D9AC9A200C8B9C2 /* Info.plist */,
@@ -181,7 +239,9 @@
 			files = (
 				B192B5A41D9AC9A200C8B9C2 /* LaunchScreen.storyboard in Resources */,
 				B192B5A11D9AC9A200C8B9C2 /* Assets.xcassets in Resources */,
+				9FEB71AA1D9ACDFE00BBFA54 /* PeopleView.xib in Resources */,
 				B192B59F1D9AC9A200C8B9C2 /* Main.storyboard in Resources */,
+				9FEB71A01D9ACCB700BBFA54 /* ProgramView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,7 +260,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B192B59C1D9AC9A200C8B9C2 /* ViewController.swift in Sources */,
+				9FEB71A31D9ACD1200BBFA54 /* NibLoadingView.swift in Sources */,
+				9FEB71A51D9ACD7D00BBFA54 /* ProgramViewController.swift in Sources */,
 				B192B59A1D9AC9A200C8B9C2 /* AppDelegate.swift in Sources */,
+				9FEB719E1D9ACCAE00BBFA54 /* ProgramView.swift in Sources */,
+				9FEB71A81D9ACDF300BBFA54 /* PeopleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +293,7 @@
 				B192B59E1D9AC9A200C8B9C2 /* Base */,
 			);
 			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		B192B5A21D9AC9A200C8B9C2 /* LaunchScreen.storyboard */ = {
@@ -406,6 +471,7 @@
 				B192B5B51D9AC9A200C8B9C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B192B5B61D9AC9A200C8B9C2 /* Build configuration list for PBXNativeTarget "FaghelgappTests" */ = {
 			isa = XCConfigurationList;
@@ -414,6 +480,7 @@
 				B192B5B81D9AC9A200C8B9C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
