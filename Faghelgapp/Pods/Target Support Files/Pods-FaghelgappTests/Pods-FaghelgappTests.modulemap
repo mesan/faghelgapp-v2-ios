@@ -1,0 +1,6 @@
+framework module Pods_FaghelgappTests {
+  umbrella header "Pods-FaghelgappTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

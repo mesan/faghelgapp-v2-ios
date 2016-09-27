@@ -36,10 +36,10 @@
             </objects>
             <point key="canvasLocation" x="-295" y="813"/>
         </scene>
-        <!--View Controller-->
+        <!--People View Controller-->
         <scene sceneID="G57-GV-Bed">
             <objects>
-                <viewController id="vAa-UH-hir" sceneMemberID="viewController">
+                <viewController id="vAa-UH-hir" customClass="PeopleViewController" customModule="Faghelgapp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gQh-b1-dd6"/>
                         <viewControllerLayoutGuide type="bottom" id="Mmu-fZ-e5m"/>
@@ -72,6 +72,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="R9S-o8-q6T" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="LUg-cz-I0H">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>

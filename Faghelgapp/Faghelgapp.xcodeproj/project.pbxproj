@@ -7,18 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F8B5060BDFFE7DB6FC4AA8C /* Pods_FaghelgappTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 544BC935E3966EC9C83606CA /* Pods_FaghelgappTests.framework */; };
 		9FEB719E1D9ACCAE00BBFA54 /* ProgramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB719D1D9ACCAE00BBFA54 /* ProgramView.swift */; };
 		9FEB71A01D9ACCB700BBFA54 /* ProgramView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FEB719F1D9ACCB700BBFA54 /* ProgramView.xib */; };
 		9FEB71A31D9ACD1200BBFA54 /* NibLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB71A21D9ACD1200BBFA54 /* NibLoadingView.swift */; };
 		9FEB71A51D9ACD7D00BBFA54 /* ProgramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB71A41D9ACD7D00BBFA54 /* ProgramViewController.swift */; };
 		9FEB71A81D9ACDF300BBFA54 /* PeopleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB71A71D9ACDF300BBFA54 /* PeopleView.swift */; };
 		9FEB71AA1D9ACDFE00BBFA54 /* PeopleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FEB71A91D9ACDFE00BBFA54 /* PeopleView.xib */; };
+		9FEB71AD1D9AD0FD00BBFA54 /* ProgramEntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB71AC1D9AD0FD00BBFA54 /* ProgramEntryCell.swift */; };
+		9FEB71AF1D9AD10600BBFA54 /* ProgramEntryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FEB71AE1D9AD10600BBFA54 /* ProgramEntryCell.xib */; };
+		9FEB71B11D9AD2E800BBFA54 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB71B01D9AD2E800BBFA54 /* PeopleViewController.swift */; };
 		B192B59A1D9AC9A200C8B9C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B192B5991D9AC9A200C8B9C2 /* AppDelegate.swift */; };
 		B192B59C1D9AC9A200C8B9C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B192B59B1D9AC9A200C8B9C2 /* ViewController.swift */; };
 		B192B59F1D9AC9A200C8B9C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B192B59D1D9AC9A200C8B9C2 /* Main.storyboard */; };
 		B192B5A11D9AC9A200C8B9C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B192B5A01D9AC9A200C8B9C2 /* Assets.xcassets */; };
 		B192B5A41D9AC9A200C8B9C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B192B5A21D9AC9A200C8B9C2 /* LaunchScreen.storyboard */; };
 		B192B5AF1D9AC9A200C8B9C2 /* FaghelgappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B192B5AE1D9AC9A200C8B9C2 /* FaghelgappTests.swift */; };
+		F282C3126DA1F03752C791B9 /* Pods_Faghelgapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D445080685542BFDD16F65C9 /* Pods_Faghelgapp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,12 +37,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0AAE2BEED2A4853F25553F07 /* Pods-FaghelgappTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaghelgappTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FaghelgappTests/Pods-FaghelgappTests.release.xcconfig"; sourceTree = "<group>"; };
+		32452F3C2530CF3E4413DD5C /* Pods-Faghelgapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Faghelgapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Faghelgapp/Pods-Faghelgapp.debug.xcconfig"; sourceTree = "<group>"; };
+		544BC935E3966EC9C83606CA /* Pods_FaghelgappTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FaghelgappTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B44F67761C6C29BE29B3E52 /* Pods-Faghelgapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Faghelgapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-Faghelgapp/Pods-Faghelgapp.release.xcconfig"; sourceTree = "<group>"; };
 		9FEB719D1D9ACCAE00BBFA54 /* ProgramView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProgramView.swift; path = Faghelgapp/Views/ProgramView.swift; sourceTree = SOURCE_ROOT; };
 		9FEB719F1D9ACCB700BBFA54 /* ProgramView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProgramView.xib; path = Faghelgapp/Views/ProgramView.xib; sourceTree = SOURCE_ROOT; };
 		9FEB71A21D9ACD1200BBFA54 /* NibLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadingView.swift; sourceTree = "<group>"; };
 		9FEB71A41D9ACD7D00BBFA54 /* ProgramViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramViewController.swift; sourceTree = "<group>"; };
 		9FEB71A71D9ACDF300BBFA54 /* PeopleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleView.swift; sourceTree = "<group>"; };
 		9FEB71A91D9ACDFE00BBFA54 /* PeopleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PeopleView.xib; sourceTree = "<group>"; };
+		9FEB71AC1D9AD0FD00BBFA54 /* ProgramEntryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramEntryCell.swift; sourceTree = "<group>"; };
+		9FEB71AE1D9AD10600BBFA54 /* ProgramEntryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProgramEntryCell.xib; sourceTree = "<group>"; };
+		9FEB71B01D9AD2E800BBFA54 /* PeopleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
 		B192B5961D9AC9A200C8B9C2 /* Faghelgapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Faghelgapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B192B5991D9AC9A200C8B9C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B192B59B1D9AC9A200C8B9C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +60,8 @@
 		B192B5AA1D9AC9A200C8B9C2 /* FaghelgappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FaghelgappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B192B5AE1D9AC9A200C8B9C2 /* FaghelgappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaghelgappTests.swift; sourceTree = "<group>"; };
 		B192B5B01D9AC9A200C8B9C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD2D24CA29C7CA7FDB04833B /* Pods-FaghelgappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaghelgappTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FaghelgappTests/Pods-FaghelgappTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D445080685542BFDD16F65C9 /* Pods_Faghelgapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Faghelgapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F282C3126DA1F03752C791B9 /* Pods_Faghelgapp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F8B5060BDFFE7DB6FC4AA8C /* Pods_FaghelgappTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				9FEB71A41D9ACD7D00BBFA54 /* ProgramViewController.swift */,
+				9FEB71B01D9AD2E800BBFA54 /* PeopleViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -97,6 +114,7 @@
 		9FEB71A11D9ACCE400BBFA54 /* ProgramView */ = {
 			isa = PBXGroup;
 			children = (
+				9FEB71AB1D9AD0D500BBFA54 /* ProgramEntryCell */,
 				9FEB719D1D9ACCAE00BBFA54 /* ProgramView.swift */,
 				9FEB719F1D9ACCB700BBFA54 /* ProgramView.xib */,
 			);
@@ -112,12 +130,34 @@
 			path = PeopleView;
 			sourceTree = "<group>";
 		};
+		9FEB71AB1D9AD0D500BBFA54 /* ProgramEntryCell */ = {
+			isa = PBXGroup;
+			children = (
+				9FEB71AC1D9AD0FD00BBFA54 /* ProgramEntryCell.swift */,
+				9FEB71AE1D9AD10600BBFA54 /* ProgramEntryCell.xib */,
+			);
+			path = ProgramEntryCell;
+			sourceTree = "<group>";
+		};
+		AC68E73D3C13F147BB819417 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				32452F3C2530CF3E4413DD5C /* Pods-Faghelgapp.debug.xcconfig */,
+				7B44F67761C6C29BE29B3E52 /* Pods-Faghelgapp.release.xcconfig */,
+				CD2D24CA29C7CA7FDB04833B /* Pods-FaghelgappTests.debug.xcconfig */,
+				0AAE2BEED2A4853F25553F07 /* Pods-FaghelgappTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B192B58D1D9AC9A200C8B9C2 = {
 			isa = PBXGroup;
 			children = (
 				B192B5981D9AC9A200C8B9C2 /* Faghelgapp */,
 				B192B5AD1D9AC9A200C8B9C2 /* FaghelgappTests */,
 				B192B5971D9AC9A200C8B9C2 /* Products */,
+				AC68E73D3C13F147BB819417 /* Pods */,
+				DDFC3D08168E12F909594D5E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -154,6 +194,15 @@
 			path = FaghelgappTests;
 			sourceTree = "<group>";
 		};
+		DDFC3D08168E12F909594D5E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D445080685542BFDD16F65C9 /* Pods_Faghelgapp.framework */,
+				544BC935E3966EC9C83606CA /* Pods_FaghelgappTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -161,9 +210,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B192B5B31D9AC9A200C8B9C2 /* Build configuration list for PBXNativeTarget "Faghelgapp" */;
 			buildPhases = (
+				B7CA4F7D15FD0A455F59E384 /* [CP] Check Pods Manifest.lock */,
 				B192B5921D9AC9A200C8B9C2 /* Sources */,
 				B192B5931D9AC9A200C8B9C2 /* Frameworks */,
 				B192B5941D9AC9A200C8B9C2 /* Resources */,
+				F2CFACF09EDDF74C30909624 /* [CP] Embed Pods Frameworks */,
+				1103B2F8D4038E3A5403087E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -178,9 +230,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B192B5B61D9AC9A200C8B9C2 /* Build configuration list for PBXNativeTarget "FaghelgappTests" */;
 			buildPhases = (
+				D45F7F037DF4EF853116DE27 /* [CP] Check Pods Manifest.lock */,
 				B192B5A61D9AC9A200C8B9C2 /* Sources */,
 				B192B5A71D9AC9A200C8B9C2 /* Frameworks */,
 				B192B5A81D9AC9A200C8B9C2 /* Resources */,
+				624031762109C80AE3932440 /* [CP] Embed Pods Frameworks */,
+				F41874CB2670AE854C31F6B3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -240,6 +295,7 @@
 				B192B5A41D9AC9A200C8B9C2 /* LaunchScreen.storyboard in Resources */,
 				B192B5A11D9AC9A200C8B9C2 /* Assets.xcassets in Resources */,
 				9FEB71AA1D9ACDFE00BBFA54 /* PeopleView.xib in Resources */,
+				9FEB71AF1D9AD10600BBFA54 /* ProgramEntryCell.xib in Resources */,
 				B192B59F1D9AC9A200C8B9C2 /* Main.storyboard in Resources */,
 				9FEB71A01D9ACCB700BBFA54 /* ProgramView.xib in Resources */,
 			);
@@ -254,15 +310,110 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1103B2F8D4038E3A5403087E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Faghelgapp/Pods-Faghelgapp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		624031762109C80AE3932440 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FaghelgappTests/Pods-FaghelgappTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7CA4F7D15FD0A455F59E384 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D45F7F037DF4EF853116DE27 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F2CFACF09EDDF74C30909624 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Faghelgapp/Pods-Faghelgapp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F41874CB2670AE854C31F6B3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FaghelgappTests/Pods-FaghelgappTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B192B5921D9AC9A200C8B9C2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B192B59C1D9AC9A200C8B9C2 /* ViewController.swift in Sources */,
+				9FEB71B11D9AD2E800BBFA54 /* PeopleViewController.swift in Sources */,
 				9FEB71A31D9ACD1200BBFA54 /* NibLoadingView.swift in Sources */,
 				9FEB71A51D9ACD7D00BBFA54 /* ProgramViewController.swift in Sources */,
 				B192B59A1D9AC9A200C8B9C2 /* AppDelegate.swift in Sources */,
+				9FEB71AD1D9AD0FD00BBFA54 /* ProgramEntryCell.swift in Sources */,
 				9FEB719E1D9ACCAE00BBFA54 /* ProgramView.swift in Sources */,
 				9FEB71A81D9ACDF300BBFA54 /* PeopleView.swift in Sources */,
 			);
@@ -402,6 +553,7 @@
 		};
 		B192B5B41D9AC9A200C8B9C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32452F3C2530CF3E4413DD5C /* Pods-Faghelgapp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Faghelgapp/Info.plist;
@@ -414,6 +566,7 @@
 		};
 		B192B5B51D9AC9A200C8B9C2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B44F67761C6C29BE29B3E52 /* Pods-Faghelgapp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Faghelgapp/Info.plist;
@@ -426,6 +579,7 @@
 		};
 		B192B5B71D9AC9A200C8B9C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD2D24CA29C7CA7FDB04833B /* Pods-FaghelgappTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -440,6 +594,7 @@
 		};
 		B192B5B81D9AC9A200C8B9C2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AAE2BEED2A4853F25553F07 /* Pods-FaghelgappTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

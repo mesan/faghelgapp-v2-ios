@@ -1,0 +1,672 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2168886984210143F450CE8EF8C455C4 /* Pods-FaghelgappTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 91240B6E15E0FE64A94D2FDD5E4757AA /* Pods-FaghelgappTests-dummy.m */; };
+		60486ABC7D80A22FAE9A26B518FDD11D /* Pods-Faghelgapp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 180F4EA125E9D254FCD16AEA329C1227 /* Pods-Faghelgapp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6781E042E60279F30EC954114CD6FBEF /* NibDesignable-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E747E7B725F06940CEE6BB268EA2ECED /* NibDesignable-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6F275FAB3990D8DA9E4EE7254B85A9ED /* Pods-Faghelgapp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFA888E483CFC37F90F87A908C37EF5 /* Pods-Faghelgapp-dummy.m */; };
+		8637160A528CF6D9712CFB9FB3B71E80 /* NibDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB8534883117822355F12080D3D7543 /* NibDesignable.swift */; };
+		9D719A1884C5924E7BCC8596D9A79404 /* Pods-FaghelgappTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 811D27E9CC1EB0D0AF20BE778148D334 /* Pods-FaghelgappTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4CE0A2EB6784DBD2811122D3525D47E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		B7813CCCC153CA098EA3BC03C38CBB0C /* NibDesignable-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE341C85EDE28D3D11464ACC7F95067 /* NibDesignable-dummy.m */; };
+		D6B0955EDECF1166ED4FBD2B0A746976 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		EEF11193EB310BE872084821ADB2FEBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AE16E13295C3C130EFE3ABFCF72B1850 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9635E9FED620B2CE25758C5EC96796A;
+			remoteInfo = NibDesignable;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		180F4EA125E9D254FCD16AEA329C1227 /* Pods-Faghelgapp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Faghelgapp-umbrella.h"; sourceTree = "<group>"; };
+		2B92D046453F2DD74B89A36172ABD4FD /* Pods-Faghelgapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Faghelgapp.release.xcconfig"; sourceTree = "<group>"; };
+		317F542B3550E7496501737D16175175 /* Pods_Faghelgapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Faghelgapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		33AE3FD71A6E3225756500BBFB27C018 /* Pods-Faghelgapp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Faghelgapp.modulemap"; sourceTree = "<group>"; };
+		3DBB96C2B8AF57DF66189532BCB9B9C5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A1164F380BD9A0C8E021D7D6A2FCA7A /* Pods-FaghelgappTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-FaghelgappTests.modulemap"; sourceTree = "<group>"; };
+		62F94B7403EB95491020674EB9607F98 /* Pods-FaghelgappTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FaghelgappTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		64E9A416A14D13E3B9C72C9B911F4D3E /* Pods-FaghelgappTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FaghelgappTests-resources.sh"; sourceTree = "<group>"; };
+		657966ACDA2292F755D9039337CF34DA /* Pods_FaghelgappTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FaghelgappTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EFA888E483CFC37F90F87A908C37EF5 /* Pods-Faghelgapp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Faghelgapp-dummy.m"; sourceTree = "<group>"; };
+		70D3C7FDCD8C01B9A232345C7497F08A /* Pods-FaghelgappTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FaghelgappTests-frameworks.sh"; sourceTree = "<group>"; };
+		74C13676C72008E7BC0B4B3D6F046068 /* Pods-Faghelgapp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Faghelgapp-resources.sh"; sourceTree = "<group>"; };
+		784FF5E8B4E33039403F9E8F3E3200AE /* Pods-Faghelgapp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Faghelgapp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		811D27E9CC1EB0D0AF20BE778148D334 /* Pods-FaghelgappTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FaghelgappTests-umbrella.h"; sourceTree = "<group>"; };
+		836E4856A491B82F0BB4203B8E704BF5 /* Pods-FaghelgappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FaghelgappTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8DA7DFF6596C40D8D2609B9F09FB3393 /* NibDesignable.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NibDesignable.xcconfig; sourceTree = "<group>"; };
+		91240B6E15E0FE64A94D2FDD5E4757AA /* Pods-FaghelgappTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FaghelgappTests-dummy.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A4F65BACAE49BC288561E3B9DF0A5FF2 /* Pods-FaghelgappTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FaghelgappTests.release.xcconfig"; sourceTree = "<group>"; };
+		ACA2B7D6387A7E9EA0869EBEF220EB31 /* Pods-Faghelgapp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Faghelgapp-frameworks.sh"; sourceTree = "<group>"; };
+		AF0E32B5CC9CDC7CC381AD48C8764C73 /* NibDesignable-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NibDesignable-prefix.pch"; sourceTree = "<group>"; };
+		B32DB38A1E8FE464C51BE1B8B58B1CD2 /* Pods-Faghelgapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Faghelgapp.debug.xcconfig"; sourceTree = "<group>"; };
+		BEB8534883117822355F12080D3D7543 /* NibDesignable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NibDesignable.swift; sourceTree = "<group>"; };
+		C03742EB7682FC173707B579803834AD /* NibDesignable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NibDesignable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		DBE341C85EDE28D3D11464ACC7F95067 /* NibDesignable-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NibDesignable-dummy.m"; sourceTree = "<group>"; };
+		E49A4CEEF793439C35B04E0FEFD8A25D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6C02A5D121B3F7AC7B2B245E78F77FF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E747E7B725F06940CEE6BB268EA2ECED /* NibDesignable-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NibDesignable-umbrella.h"; sourceTree = "<group>"; };
+		FBC672A572F129E81BF958054130882B /* Pods-Faghelgapp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Faghelgapp-acknowledgements.plist"; sourceTree = "<group>"; };
+		FC5F205AC5B9ACED26BD353A5E2C1D93 /* NibDesignable.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = NibDesignable.modulemap; sourceTree = "<group>"; };
+		FDCBFCAF1F5383A1DCC343B0D06E23B5 /* Pods-FaghelgappTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FaghelgappTests-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B96CABF3D85201B538EC3F56D2F7CD4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6B0955EDECF1166ED4FBD2B0A746976 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6D70AB80891FAC7D607DCDD15E54DCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEF11193EB310BE872084821ADB2FEBA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF4478525E2F2ABF9A2D45BD767A8AE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4CE0A2EB6784DBD2811122D3525D47E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07D14159E02FECAEFD2AE27F740E6809 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E6C02A5D121B3F7AC7B2B245E78F77FF /* Info.plist */,
+				FC5F205AC5B9ACED26BD353A5E2C1D93 /* NibDesignable.modulemap */,
+				8DA7DFF6596C40D8D2609B9F09FB3393 /* NibDesignable.xcconfig */,
+				DBE341C85EDE28D3D11464ACC7F95067 /* NibDesignable-dummy.m */,
+				AF0E32B5CC9CDC7CC381AD48C8764C73 /* NibDesignable-prefix.pch */,
+				E747E7B725F06940CEE6BB268EA2ECED /* NibDesignable-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/NibDesignable";
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		4A456634DAE667ADBCDE982FB06E0768 /* Pods-Faghelgapp */ = {
+			isa = PBXGroup;
+			children = (
+				3DBB96C2B8AF57DF66189532BCB9B9C5 /* Info.plist */,
+				33AE3FD71A6E3225756500BBFB27C018 /* Pods-Faghelgapp.modulemap */,
+				784FF5E8B4E33039403F9E8F3E3200AE /* Pods-Faghelgapp-acknowledgements.markdown */,
+				FBC672A572F129E81BF958054130882B /* Pods-Faghelgapp-acknowledgements.plist */,
+				6EFA888E483CFC37F90F87A908C37EF5 /* Pods-Faghelgapp-dummy.m */,
+				ACA2B7D6387A7E9EA0869EBEF220EB31 /* Pods-Faghelgapp-frameworks.sh */,
+				74C13676C72008E7BC0B4B3D6F046068 /* Pods-Faghelgapp-resources.sh */,
+				180F4EA125E9D254FCD16AEA329C1227 /* Pods-Faghelgapp-umbrella.h */,
+				B32DB38A1E8FE464C51BE1B8B58B1CD2 /* Pods-Faghelgapp.debug.xcconfig */,
+				2B92D046453F2DD74B89A36172ABD4FD /* Pods-Faghelgapp.release.xcconfig */,
+			);
+			name = "Pods-Faghelgapp";
+			path = "Target Support Files/Pods-Faghelgapp";
+			sourceTree = "<group>";
+		};
+		5CD7066B9D0142851D3465C465E869D6 /* NibDesignable */ = {
+			isa = PBXGroup;
+			children = (
+				BEB8534883117822355F12080D3D7543 /* NibDesignable.swift */,
+				07D14159E02FECAEFD2AE27F740E6809 /* Support Files */,
+			);
+			path = NibDesignable;
+			sourceTree = "<group>";
+		};
+		6AE213C284CF598B6D5C7C2D03FD6484 /* Pods-FaghelgappTests */ = {
+			isa = PBXGroup;
+			children = (
+				E49A4CEEF793439C35B04E0FEFD8A25D /* Info.plist */,
+				4A1164F380BD9A0C8E021D7D6A2FCA7A /* Pods-FaghelgappTests.modulemap */,
+				62F94B7403EB95491020674EB9607F98 /* Pods-FaghelgappTests-acknowledgements.markdown */,
+				FDCBFCAF1F5383A1DCC343B0D06E23B5 /* Pods-FaghelgappTests-acknowledgements.plist */,
+				91240B6E15E0FE64A94D2FDD5E4757AA /* Pods-FaghelgappTests-dummy.m */,
+				70D3C7FDCD8C01B9A232345C7497F08A /* Pods-FaghelgappTests-frameworks.sh */,
+				64E9A416A14D13E3B9C72C9B911F4D3E /* Pods-FaghelgappTests-resources.sh */,
+				811D27E9CC1EB0D0AF20BE778148D334 /* Pods-FaghelgappTests-umbrella.h */,
+				836E4856A491B82F0BB4203B8E704BF5 /* Pods-FaghelgappTests.debug.xcconfig */,
+				A4F65BACAE49BC288561E3B9DF0A5FF2 /* Pods-FaghelgappTests.release.xcconfig */,
+			);
+			name = "Pods-FaghelgappTests";
+			path = "Target Support Files/Pods-FaghelgappTests";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				DC79CF54E471E38FDA91AE2E8AAB4C72 /* Pods */,
+				9A29902AB6CA5132495EBC3AE708016B /* Products */,
+				B872BFDD1A5C8C0114F9B53B36AAFCBF /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9A29902AB6CA5132495EBC3AE708016B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C03742EB7682FC173707B579803834AD /* NibDesignable.framework */,
+				317F542B3550E7496501737D16175175 /* Pods_Faghelgapp.framework */,
+				657966ACDA2292F755D9039337CF34DA /* Pods_FaghelgappTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B872BFDD1A5C8C0114F9B53B36AAFCBF /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4A456634DAE667ADBCDE982FB06E0768 /* Pods-Faghelgapp */,
+				6AE213C284CF598B6D5C7C2D03FD6484 /* Pods-FaghelgappTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC79CF54E471E38FDA91AE2E8AAB4C72 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5CD7066B9D0142851D3465C465E869D6 /* NibDesignable */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		20BB6D4943250E090CA03CA7A0C0A4C5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D719A1884C5924E7BCC8596D9A79404 /* Pods-FaghelgappTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7152480804E23A0DD42F918E4D703D60 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6781E042E60279F30EC954114CD6FBEF /* NibDesignable-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		993C47B2937285787C3C91E5B0EFCBC1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60486ABC7D80A22FAE9A26B518FDD11D /* Pods-Faghelgapp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		06195AE262ADACC01962BAC5CBE1EAC7 /* Pods-FaghelgappTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F852596BC9255E2404A0F12E492D9BA /* Build configuration list for PBXNativeTarget "Pods-FaghelgappTests" */;
+			buildPhases = (
+				56444BDE07485C6DD60BEFD363A8481A /* Sources */,
+				2B96CABF3D85201B538EC3F56D2F7CD4 /* Frameworks */,
+				20BB6D4943250E090CA03CA7A0C0A4C5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-FaghelgappTests";
+			productName = "Pods-FaghelgappTests";
+			productReference = 657966ACDA2292F755D9039337CF34DA /* Pods_FaghelgappTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		63CB1012928BC66FC0C1201E01CE585F /* Pods-Faghelgapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86E175DD0414E69C780DBCF90B4C4BCE /* Build configuration list for PBXNativeTarget "Pods-Faghelgapp" */;
+			buildPhases = (
+				9564C6FF13FF4340B6754E0375B44106 /* Sources */,
+				A6D70AB80891FAC7D607DCDD15E54DCA /* Frameworks */,
+				993C47B2937285787C3C91E5B0EFCBC1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				326204B0A140915BE933164E13D30594 /* PBXTargetDependency */,
+			);
+			name = "Pods-Faghelgapp";
+			productName = "Pods-Faghelgapp";
+			productReference = 317F542B3550E7496501737D16175175 /* Pods_Faghelgapp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C9635E9FED620B2CE25758C5EC96796A /* NibDesignable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 145A801C32FCA82165919D29C5379BE8 /* Build configuration list for PBXNativeTarget "NibDesignable" */;
+			buildPhases = (
+				FAAFE3A4C823906E3B139F7512971F21 /* Sources */,
+				AF4478525E2F2ABF9A2D45BD767A8AE2 /* Frameworks */,
+				7152480804E23A0DD42F918E4D703D60 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NibDesignable;
+			productName = NibDesignable;
+			productReference = C03742EB7682FC173707B579803834AD /* NibDesignable.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 9A29902AB6CA5132495EBC3AE708016B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9635E9FED620B2CE25758C5EC96796A /* NibDesignable */,
+				63CB1012928BC66FC0C1201E01CE585F /* Pods-Faghelgapp */,
+				06195AE262ADACC01962BAC5CBE1EAC7 /* Pods-FaghelgappTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		56444BDE07485C6DD60BEFD363A8481A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2168886984210143F450CE8EF8C455C4 /* Pods-FaghelgappTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9564C6FF13FF4340B6754E0375B44106 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F275FAB3990D8DA9E4EE7254B85A9ED /* Pods-Faghelgapp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAAFE3A4C823906E3B139F7512971F21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7813CCCC153CA098EA3BC03C38CBB0C /* NibDesignable-dummy.m in Sources */,
+				8637160A528CF6D9712CFB9FB3B71E80 /* NibDesignable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		326204B0A140915BE933164E13D30594 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NibDesignable;
+			target = C9635E9FED620B2CE25758C5EC96796A /* NibDesignable */;
+			targetProxy = AE16E13295C3C130EFE3ABFCF72B1850 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		05942F40222FC59CC419737FE0B14138 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DA7DFF6596C40D8D2609B9F09FB3393 /* NibDesignable.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/NibDesignable/NibDesignable-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NibDesignable/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NibDesignable/NibDesignable.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = NibDesignable;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		42287DDF97330524BA3EF220F0276DA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5916C937D60D7F6A9AAB999AE29301E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B92D046453F2DD74B89A36172ABD4FD /* Pods-Faghelgapp.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Faghelgapp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Faghelgapp/Pods-Faghelgapp.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Faghelgapp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7B022173B20718B4A25871D4348BA3C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 836E4856A491B82F0BB4203B8E704BF5 /* Pods-FaghelgappTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FaghelgappTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FaghelgappTests/Pods-FaghelgappTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FaghelgappTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8DA2A8268B47D0BA17F8431982E70DA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4F65BACAE49BC288561E3B9DF0A5FF2 /* Pods-FaghelgappTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FaghelgappTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FaghelgappTests/Pods-FaghelgappTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FaghelgappTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ACD00FD5BED1AC5E7B058FC6521CC87E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B32DB38A1E8FE464C51BE1B8B58B1CD2 /* Pods-Faghelgapp.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Faghelgapp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Faghelgapp/Pods-Faghelgapp.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Faghelgapp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AE9439C22469D35336242DD983DB5C5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		D23939CCCB111EDF55852848D49F926C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DA7DFF6596C40D8D2609B9F09FB3393 /* NibDesignable.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/NibDesignable/NibDesignable-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NibDesignable/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NibDesignable/NibDesignable.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = NibDesignable;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		145A801C32FCA82165919D29C5379BE8 /* Build configuration list for PBXNativeTarget "NibDesignable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05942F40222FC59CC419737FE0B14138 /* Debug */,
+				D23939CCCB111EDF55852848D49F926C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE9439C22469D35336242DD983DB5C5F /* Debug */,
+				42287DDF97330524BA3EF220F0276DA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F852596BC9255E2404A0F12E492D9BA /* Build configuration list for PBXNativeTarget "Pods-FaghelgappTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B022173B20718B4A25871D4348BA3C0 /* Debug */,
+				8DA2A8268B47D0BA17F8431982E70DA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86E175DD0414E69C780DBCF90B4C4BCE /* Build configuration list for PBXNativeTarget "Pods-Faghelgapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACD00FD5BED1AC5E7B058FC6521CC87E /* Debug */,
+				5916C937D60D7F6A9AAB999AE29301E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
