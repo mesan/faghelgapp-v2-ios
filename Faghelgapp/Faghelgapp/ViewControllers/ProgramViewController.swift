@@ -9,6 +9,32 @@
 import Foundation
 import UIKit
 
+protocol ProgramViewControllerOutput {
+    func dayChanged(day: Day)
+}
+
 class ProgramViewController: UIViewController {
     
+    @IBOutlet weak var programView: ProgramView!
+    
+    var interactor: ProgramViewControllerOutput!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        programView.viewController = self
+        ProgramConfigurator.sharedInstance.configure(viewController: self)
+    }
+}
+
+extension ProgramViewController: ProgramViewDelegate {
+    func dayChanged(day: Day) {
+        interactor.dayChanged(day: day)
+    }
+}
+
+extension ProgramViewController: ProgramPresenterOutput {
+    func updateViews(viewModel: ProgramViewModel) {
+        programView.updateViews(viewModel: viewModel)
+    }
 }

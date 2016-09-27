@@ -9,16 +9,34 @@
 import Foundation
 import UIKit
 
+protocol ProgramViewDelegate: class {
+    func dayChanged(day: Day)
+}
+
 class ProgramView: NibLoadingView {
     @IBOutlet weak var tableView: UITableView!
     
     let programEntryCellIdentifier = "ProgramEntryCell"
+    
+    var viewController: ProgramViewDelegate?
+    
+    var viewModel = ProgramViewModel()
     
     override func awakeFromNib() {
         tableView.register(ProgramEntryCell.self, forCellReuseIdentifier: programEntryCellIdentifier)
         tableView.estimatedRowHeight = 50
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.tableFooterView = UIView()
+    }
+    
+    func updateViews(viewModel: ProgramViewModel) {
+        self.viewModel = viewModel
+        tableView.reloadData()
+    }
+    
+    @IBAction func dayButtonClicked(_ sender: UIButton) {
+        let selectedDay = Day(rawValue: sender.title(for: .normal)!)!
+        viewController?.dayChanged(day: selectedDay)
     }
 }
 
@@ -28,7 +46,14 @@ extension ProgramView: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        switch viewModel.selectedDay {
+        case .thursday:
+            return 3
+        case .friday:
+            return 5
+        case .saturday:
+            return 1
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

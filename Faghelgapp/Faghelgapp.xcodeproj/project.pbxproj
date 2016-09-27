@@ -17,8 +17,12 @@
 		9FEB71AD1D9AD0FD00BBFA54 /* ProgramEntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB71AC1D9AD0FD00BBFA54 /* ProgramEntryCell.swift */; };
 		9FEB71AF1D9AD10600BBFA54 /* ProgramEntryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FEB71AE1D9AD10600BBFA54 /* ProgramEntryCell.xib */; };
 		9FEB71B11D9AD2E800BBFA54 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB71B01D9AD2E800BBFA54 /* PeopleViewController.swift */; };
+		9FEB71B41D9AE94D00BBFA54 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB71B31D9AE94D00BBFA54 /* Day.swift */; };
+		9FEB71B71D9AEBEE00BBFA54 /* ProgramInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB71B61D9AEBEE00BBFA54 /* ProgramInteractor.swift */; };
+		9FEB71BA1D9AEC6500BBFA54 /* ProgramPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB71B91D9AEC6500BBFA54 /* ProgramPresenter.swift */; };
+		9FEB71BD1D9AECEF00BBFA54 /* ProgramViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB71BC1D9AECEF00BBFA54 /* ProgramViewModel.swift */; };
+		9FEB71C01D9AEE5200BBFA54 /* ProgramConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB71BF1D9AEE5200BBFA54 /* ProgramConfigurator.swift */; };
 		B192B59A1D9AC9A200C8B9C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B192B5991D9AC9A200C8B9C2 /* AppDelegate.swift */; };
-		B192B59C1D9AC9A200C8B9C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B192B59B1D9AC9A200C8B9C2 /* ViewController.swift */; };
 		B192B59F1D9AC9A200C8B9C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B192B59D1D9AC9A200C8B9C2 /* Main.storyboard */; };
 		B192B5A11D9AC9A200C8B9C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B192B5A01D9AC9A200C8B9C2 /* Assets.xcassets */; };
 		B192B5A41D9AC9A200C8B9C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B192B5A21D9AC9A200C8B9C2 /* LaunchScreen.storyboard */; };
@@ -50,9 +54,13 @@
 		9FEB71AC1D9AD0FD00BBFA54 /* ProgramEntryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramEntryCell.swift; sourceTree = "<group>"; };
 		9FEB71AE1D9AD10600BBFA54 /* ProgramEntryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProgramEntryCell.xib; sourceTree = "<group>"; };
 		9FEB71B01D9AD2E800BBFA54 /* PeopleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
+		9FEB71B31D9AE94D00BBFA54 /* Day.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
+		9FEB71B61D9AEBEE00BBFA54 /* ProgramInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramInteractor.swift; sourceTree = "<group>"; };
+		9FEB71B91D9AEC6500BBFA54 /* ProgramPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramPresenter.swift; sourceTree = "<group>"; };
+		9FEB71BC1D9AECEF00BBFA54 /* ProgramViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramViewModel.swift; sourceTree = "<group>"; };
+		9FEB71BF1D9AEE5200BBFA54 /* ProgramConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramConfigurator.swift; sourceTree = "<group>"; };
 		B192B5961D9AC9A200C8B9C2 /* Faghelgapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Faghelgapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B192B5991D9AC9A200C8B9C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B192B59B1D9AC9A200C8B9C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B192B59E1D9AC9A200C8B9C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B192B5A01D9AC9A200C8B9C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B192B5A31D9AC9A200C8B9C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -139,6 +147,46 @@
 			path = ProgramEntryCell;
 			sourceTree = "<group>";
 		};
+		9FEB71B21D9AE93200BBFA54 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				9FEB71B31D9AE94D00BBFA54 /* Day.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		9FEB71B51D9AEBD000BBFA54 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				9FEB71B61D9AEBEE00BBFA54 /* ProgramInteractor.swift */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		9FEB71B81D9AEC4F00BBFA54 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				9FEB71B91D9AEC6500BBFA54 /* ProgramPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		9FEB71BB1D9AECCD00BBFA54 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				9FEB71BC1D9AECEF00BBFA54 /* ProgramViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		9FEB71BE1D9AEE3700BBFA54 /* Configurators */ = {
+			isa = PBXGroup;
+			children = (
+				9FEB71BF1D9AEE5200BBFA54 /* ProgramConfigurator.swift */,
+			);
+			path = Configurators;
+			sourceTree = "<group>";
+		};
 		AC68E73D3C13F147BB819417 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,11 +224,15 @@
 				9FEB719A1D9ACC2300BBFA54 /* Storyboards */,
 				9FEB719C1D9ACC8700BBFA54 /* Views */,
 				9FEB719B1D9ACC6D00BBFA54 /* ViewControllers */,
+				9FEB71B51D9AEBD000BBFA54 /* Interactors */,
+				9FEB71B81D9AEC4F00BBFA54 /* Presenters */,
+				9FEB71BB1D9AECCD00BBFA54 /* ViewModels */,
+				9FEB71BE1D9AEE3700BBFA54 /* Configurators */,
 				B192B5991D9AC9A200C8B9C2 /* AppDelegate.swift */,
-				B192B59B1D9AC9A200C8B9C2 /* ViewController.swift */,
 				B192B5A01D9AC9A200C8B9C2 /* Assets.xcassets */,
 				B192B5A21D9AC9A200C8B9C2 /* LaunchScreen.storyboard */,
 				B192B5A51D9AC9A200C8B9C2 /* Info.plist */,
+				9FEB71B21D9AE93200BBFA54 /* Enums */,
 			);
 			path = Faghelgapp;
 			sourceTree = "<group>";
@@ -408,12 +460,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B192B59C1D9AC9A200C8B9C2 /* ViewController.swift in Sources */,
+				9FEB71C01D9AEE5200BBFA54 /* ProgramConfigurator.swift in Sources */,
 				9FEB71B11D9AD2E800BBFA54 /* PeopleViewController.swift in Sources */,
 				9FEB71A31D9ACD1200BBFA54 /* NibLoadingView.swift in Sources */,
 				9FEB71A51D9ACD7D00BBFA54 /* ProgramViewController.swift in Sources */,
 				B192B59A1D9AC9A200C8B9C2 /* AppDelegate.swift in Sources */,
+				9FEB71BD1D9AECEF00BBFA54 /* ProgramViewModel.swift in Sources */,
+				9FEB71B41D9AE94D00BBFA54 /* Day.swift in Sources */,
 				9FEB71AD1D9AD0FD00BBFA54 /* ProgramEntryCell.swift in Sources */,
+				9FEB71B71D9AEBEE00BBFA54 /* ProgramInteractor.swift in Sources */,
+				9FEB71BA1D9AEC6500BBFA54 /* ProgramPresenter.swift in Sources */,
 				9FEB719E1D9ACCAE00BBFA54 /* ProgramView.swift in Sources */,
 				9FEB71A81D9ACDF300BBFA54 /* PeopleView.swift in Sources */,
 			);
