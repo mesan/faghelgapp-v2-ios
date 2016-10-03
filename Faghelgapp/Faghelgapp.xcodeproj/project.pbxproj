@@ -20,6 +20,11 @@
 		9F25AFB91DA2B0DE00488CA6 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25AFB81DA2B0DE00488CA6 /* Person.swift */; };
 		9F25AFBC1DA2B91600488CA6 /* Date+WeekDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25AFBB1DA2B91600488CA6 /* Date+WeekDay.swift */; };
 		9F25AFBE1DA2BF7300488CA6 /* Date+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25AFBD1DA2BF7300488CA6 /* Date+Format.swift */; };
+		846DC9651DA2B3E900B05AC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846DC9631DA2B3E900B05AC8 /* Main.storyboard */; };
+		846DC9721DA2BEB000B05AC8 /* PeopleEntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846DC9701DA2BEB000B05AC8 /* PeopleEntryCell.swift */; };
+		846DC9731DA2BEB000B05AC8 /* PeopleEntryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846DC9711DA2BEB000B05AC8 /* PeopleEntryCell.xib */; };
+		846DC9861DA2C95F00B05AC8 /* PeopleHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846DC9841DA2C95F00B05AC8 /* PeopleHeaderCell.swift */; };
+		846DC9871DA2C95F00B05AC8 /* PeopleHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846DC9851DA2C95F00B05AC8 /* PeopleHeaderCell.xib */; };
 		9FEB719E1D9ACCAE00BBFA54 /* ProgramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB719D1D9ACCAE00BBFA54 /* ProgramView.swift */; };
 		9FEB71A01D9ACCB700BBFA54 /* ProgramView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FEB719F1D9ACCB700BBFA54 /* ProgramView.xib */; };
 		9FEB71A31D9ACD1200BBFA54 /* NibLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB71A21D9ACD1200BBFA54 /* NibLoadingView.swift */; };
@@ -69,6 +74,11 @@
 		9F25AFB81DA2B0DE00488CA6 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		9F25AFBB1DA2B91600488CA6 /* Date+WeekDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+WeekDay.swift"; sourceTree = "<group>"; };
 		9F25AFBD1DA2BF7300488CA6 /* Date+Format.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Format.swift"; sourceTree = "<group>"; };
+		846DC9641DA2B3E900B05AC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Faghelgapp/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		846DC9701DA2BEB000B05AC8 /* PeopleEntryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleEntryCell.swift; sourceTree = "<group>"; };
+		846DC9711DA2BEB000B05AC8 /* PeopleEntryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PeopleEntryCell.xib; sourceTree = "<group>"; };
+		846DC9841DA2C95F00B05AC8 /* PeopleHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleHeaderCell.swift; sourceTree = "<group>"; };
+		846DC9851DA2C95F00B05AC8 /* PeopleHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PeopleHeaderCell.xib; sourceTree = "<group>"; };
 		9FEB719D1D9ACCAE00BBFA54 /* ProgramView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProgramView.swift; path = Faghelgapp/Views/ProgramView.swift; sourceTree = SOURCE_ROOT; };
 		9FEB719F1D9ACCB700BBFA54 /* ProgramView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProgramView.xib; path = Faghelgapp/Views/ProgramView.xib; sourceTree = SOURCE_ROOT; };
 		9FEB71A21D9ACD1200BBFA54 /* NibLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadingView.swift; sourceTree = "<group>"; };
@@ -162,6 +172,24 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		846DC9671DA2B9BA00B05AC8 /* PeopleEntryCell */ = {
+			isa = PBXGroup;
+			children = (
+				846DC9701DA2BEB000B05AC8 /* PeopleEntryCell.swift */,
+				846DC9711DA2BEB000B05AC8 /* PeopleEntryCell.xib */,
+			);
+			path = PeopleEntryCell;
+			sourceTree = "<group>";
+		};
+		846DC9831DA2C95F00B05AC8 /* PeopleHeaderCell */ = {
+			isa = PBXGroup;
+			children = (
+				846DC9841DA2C95F00B05AC8 /* PeopleHeaderCell.swift */,
+				846DC9851DA2C95F00B05AC8 /* PeopleHeaderCell.xib */,
+			);
+			path = PeopleHeaderCell;
+			sourceTree = "<group>";
+		};
 		9FEB719A1D9ACC2300BBFA54 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +230,8 @@
 		9FEB71A61D9ACDD500BBFA54 /* PeopleView */ = {
 			isa = PBXGroup;
 			children = (
+				846DC9831DA2C95F00B05AC8 /* PeopleHeaderCell */,
+				846DC9671DA2B9BA00B05AC8 /* PeopleEntryCell */,
 				9FEB71A71D9ACDF300BBFA54 /* PeopleView.swift */,
 				9FEB71A91D9ACDFE00BBFA54 /* PeopleView.xib */,
 			);
@@ -422,6 +452,8 @@
 			files = (
 				B192B5A41D9AC9A200C8B9C2 /* LaunchScreen.storyboard in Resources */,
 				B192B5A11D9AC9A200C8B9C2 /* Assets.xcassets in Resources */,
+				846DC9731DA2BEB000B05AC8 /* PeopleEntryCell.xib in Resources */,
+				846DC9871DA2C95F00B05AC8 /* PeopleHeaderCell.xib in Resources */,
 				9FEB71AA1D9ACDFE00BBFA54 /* PeopleView.xib in Resources */,
 				9FEB71AF1D9AD10600BBFA54 /* ProgramEntryCell.xib in Resources */,
 				B192B59F1D9AC9A200C8B9C2 /* Main.storyboard in Resources */,
@@ -556,10 +588,12 @@
 				9F25AFB01DA2ADA300488CA6 /* Logger.swift in Sources */,
 				9FEB71BA1D9AEC6500BBFA54 /* ProgramPresenter.swift in Sources */,
 				9F25AFBC1DA2B91600488CA6 /* Date+WeekDay.swift in Sources */,
+				846DC9721DA2BEB000B05AC8 /* PeopleEntryCell.swift in Sources */,
 				9FEB719E1D9ACCAE00BBFA54 /* ProgramView.swift in Sources */,
 				9FEB71A81D9ACDF300BBFA54 /* PeopleView.swift in Sources */,
 				9F25AFB71DA2B04E00488CA6 /* Event.swift in Sources */,
 				9F25AFAD1DA2AD2900488CA6 /* SeededDataTask.swift in Sources */,
+				846DC9861DA2C95F00B05AC8 /* PeopleHeaderCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
