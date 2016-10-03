@@ -20,11 +20,15 @@
 		9F25AFB91DA2B0DE00488CA6 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25AFB81DA2B0DE00488CA6 /* Person.swift */; };
 		9F25AFBC1DA2B91600488CA6 /* Date+WeekDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25AFBB1DA2B91600488CA6 /* Date+WeekDay.swift */; };
 		9F25AFBE1DA2BF7300488CA6 /* Date+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25AFBD1DA2BF7300488CA6 /* Date+Format.swift */; };
+		84387BE71DA2D38D001482EF /* PeoplePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84387BE61DA2D38D001482EF /* PeoplePresenter.swift */; };
+		84387BE91DA2D3DF001482EF /* PeopleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84387BE81DA2D3DF001482EF /* PeopleViewModel.swift */; };
+		84387BEB1DA2D406001482EF /* PeopleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84387BEA1DA2D406001482EF /* PeopleConfigurator.swift */; };
 		846DC9651DA2B3E900B05AC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846DC9631DA2B3E900B05AC8 /* Main.storyboard */; };
 		846DC9721DA2BEB000B05AC8 /* PeopleEntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846DC9701DA2BEB000B05AC8 /* PeopleEntryCell.swift */; };
 		846DC9731DA2BEB000B05AC8 /* PeopleEntryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846DC9711DA2BEB000B05AC8 /* PeopleEntryCell.xib */; };
 		846DC9861DA2C95F00B05AC8 /* PeopleHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846DC9841DA2C95F00B05AC8 /* PeopleHeaderCell.swift */; };
 		846DC9871DA2C95F00B05AC8 /* PeopleHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846DC9851DA2C95F00B05AC8 /* PeopleHeaderCell.xib */; };
+		846DC9891DA2CDC100B05AC8 /* PeopleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846DC9881DA2CDC100B05AC8 /* PeopleInteractor.swift */; };
 		9FEB719E1D9ACCAE00BBFA54 /* ProgramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB719D1D9ACCAE00BBFA54 /* ProgramView.swift */; };
 		9FEB71A01D9ACCB700BBFA54 /* ProgramView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FEB719F1D9ACCB700BBFA54 /* ProgramView.xib */; };
 		9FEB71A31D9ACD1200BBFA54 /* NibLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB71A21D9ACD1200BBFA54 /* NibLoadingView.swift */; };
@@ -74,11 +78,15 @@
 		9F25AFB81DA2B0DE00488CA6 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		9F25AFBB1DA2B91600488CA6 /* Date+WeekDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+WeekDay.swift"; sourceTree = "<group>"; };
 		9F25AFBD1DA2BF7300488CA6 /* Date+Format.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Format.swift"; sourceTree = "<group>"; };
+		84387BE61DA2D38D001482EF /* PeoplePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeoplePresenter.swift; sourceTree = "<group>"; };
+		84387BE81DA2D3DF001482EF /* PeopleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleViewModel.swift; sourceTree = "<group>"; };
+		84387BEA1DA2D406001482EF /* PeopleConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleConfigurator.swift; sourceTree = "<group>"; };
 		846DC9641DA2B3E900B05AC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Faghelgapp/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		846DC9701DA2BEB000B05AC8 /* PeopleEntryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleEntryCell.swift; sourceTree = "<group>"; };
 		846DC9711DA2BEB000B05AC8 /* PeopleEntryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PeopleEntryCell.xib; sourceTree = "<group>"; };
 		846DC9841DA2C95F00B05AC8 /* PeopleHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleHeaderCell.swift; sourceTree = "<group>"; };
 		846DC9851DA2C95F00B05AC8 /* PeopleHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PeopleHeaderCell.xib; sourceTree = "<group>"; };
+		846DC9881DA2CDC100B05AC8 /* PeopleInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleInteractor.swift; sourceTree = "<group>"; };
 		9FEB719D1D9ACCAE00BBFA54 /* ProgramView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProgramView.swift; path = Faghelgapp/Views/ProgramView.swift; sourceTree = SOURCE_ROOT; };
 		9FEB719F1D9ACCB700BBFA54 /* ProgramView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProgramView.xib; path = Faghelgapp/Views/ProgramView.xib; sourceTree = SOURCE_ROOT; };
 		9FEB71A21D9ACD1200BBFA54 /* NibLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadingView.swift; sourceTree = "<group>"; };
@@ -259,6 +267,7 @@
 			isa = PBXGroup;
 			children = (
 				9FEB71B61D9AEBEE00BBFA54 /* ProgramInteractor.swift */,
+				846DC9881DA2CDC100B05AC8 /* PeopleInteractor.swift */,
 			);
 			path = Interactors;
 			sourceTree = "<group>";
@@ -267,6 +276,7 @@
 			isa = PBXGroup;
 			children = (
 				9FEB71B91D9AEC6500BBFA54 /* ProgramPresenter.swift */,
+				84387BE61DA2D38D001482EF /* PeoplePresenter.swift */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -275,6 +285,7 @@
 			isa = PBXGroup;
 			children = (
 				9FEB71BC1D9AECEF00BBFA54 /* ProgramViewModel.swift */,
+				84387BE81DA2D3DF001482EF /* PeopleViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -283,6 +294,7 @@
 			isa = PBXGroup;
 			children = (
 				9FEB71BF1D9AEE5200BBFA54 /* ProgramConfigurator.swift */,
+				84387BEA1DA2D406001482EF /* PeopleConfigurator.swift */,
 			);
 			path = Configurators;
 			sourceTree = "<group>";
@@ -579,8 +591,10 @@
 				9FEB71B11D9AD2E800BBFA54 /* PeopleViewController.swift in Sources */,
 				9FEB71A31D9ACD1200BBFA54 /* NibLoadingView.swift in Sources */,
 				9FEB71A51D9ACD7D00BBFA54 /* ProgramViewController.swift in Sources */,
+				846DC9891DA2CDC100B05AC8 /* PeopleInteractor.swift in Sources */,
 				B192B59A1D9AC9A200C8B9C2 /* AppDelegate.swift in Sources */,
 				9FEB71BD1D9AECEF00BBFA54 /* ProgramViewModel.swift in Sources */,
+				84387BEB1DA2D406001482EF /* PeopleConfigurator.swift in Sources */,
 				9FEB71B41D9AE94D00BBFA54 /* Day.swift in Sources */,
 				9FEB71AD1D9AD0FD00BBFA54 /* ProgramEntryCell.swift in Sources */,
 				9FEB71B71D9AEBEE00BBFA54 /* ProgramInteractor.swift in Sources */,
@@ -590,6 +604,8 @@
 				9F25AFBC1DA2B91600488CA6 /* Date+WeekDay.swift in Sources */,
 				846DC9721DA2BEB000B05AC8 /* PeopleEntryCell.swift in Sources */,
 				9FEB719E1D9ACCAE00BBFA54 /* ProgramView.swift in Sources */,
+				84387BE71DA2D38D001482EF /* PeoplePresenter.swift in Sources */,
+				84387BE91DA2D3DF001482EF /* PeopleViewModel.swift in Sources */,
 				9FEB71A81D9ACDF300BBFA54 /* PeopleView.swift in Sources */,
 				9F25AFB71DA2B04E00488CA6 /* Event.swift in Sources */,
 				9F25AFAD1DA2AD2900488CA6 /* SeededDataTask.swift in Sources */,

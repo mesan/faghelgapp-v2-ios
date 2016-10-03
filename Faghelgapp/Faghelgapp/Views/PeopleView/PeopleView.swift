@@ -7,7 +7,46 @@
 //
 
 import Foundation
+import UIKit
+
+protocol PeopleViewDelegate: class {
+    
+}
 
 class PeopleView: NibLoadingView {
     
+    @IBOutlet weak var peopleTableView: UITableView!
+    
+    let peopleEntryCellIdentifier = "PeopleEntryCell"
+    
+    var viewController: PeopleViewDelegate?
+    
+    var viewModel = PeopleViewModel()
+    
+    override func awakeFromNib() {
+        peopleTableView.register(PeopleEntryCell.self, forCellReuseIdentifier: peopleEntryCellIdentifier)
+        peopleTableView.estimatedRowHeight = 100
+        peopleTableView.rowHeight = UITableViewAutomaticDimension
+        peopleTableView.tableFooterView = UIView()
+    }
+    
+    func updateViews(viewModel: PeopleViewModel) {
+        self.viewModel = viewModel
+        peopleTableView.reloadData()
+    }
+}
+
+extension PeopleView: UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: peopleEntryCellIdentifier)!
+        return cell;
+    }
 }
