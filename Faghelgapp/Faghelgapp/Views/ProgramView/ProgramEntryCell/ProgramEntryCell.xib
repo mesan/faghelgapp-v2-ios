@@ -6,23 +6,29 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProgramEntryCell" customModule="Faghelgapp" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProgramEntryCell" customModule="Faghelgapp" customModuleProvider="target">
+            <connections>
+                <outlet property="eventAuthorLabel" destination="mqz-1N-ual" id="spg-or-zfJ"/>
+                <outlet property="eventStartTimeLabel" destination="dB0-48-547" id="b9p-V7-f1q"/>
+                <outlet property="eventTitleLabel" destination="qiy-i9-Lzy" id="QNL-f5-5y0"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Digital Photo Printing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qiy-i9-Lzy">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="500" verticalCompressionResistancePriority="500" text="Digital Photo Printing" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qiy-i9-Lzy">
                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <color key="textColor" red="0.25098039215686274" green="0.46666666666666667" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13:45" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dB0-48-547">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="13:45" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dB0-48-547">
                     <fontDescription key="fontDescription" type="system" pointSize="30"/>
                     <color key="textColor" red="0.70588235294117641" green="0.70588235294117641" blue="0.70588235294117641" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hanne Lian" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mqz-1N-ual">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="500" verticalCompressionResistancePriority="500" text="Hanne Lian" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mqz-1N-ual">
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.70588235290000001" green="0.70588235290000001" blue="0.70588235290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
@@ -32,10 +38,12 @@
             <constraints>
                 <constraint firstItem="mqz-1N-ual" firstAttribute="top" secondItem="qiy-i9-Lzy" secondAttribute="bottom" constant="8" id="2vr-Ub-rxp"/>
                 <constraint firstAttribute="bottom" secondItem="mqz-1N-ual" secondAttribute="bottom" constant="16" id="3td-aU-E7Z"/>
-                <constraint firstAttribute="bottom" secondItem="dB0-48-547" secondAttribute="bottom" constant="16" id="9Ky-vf-q5v"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="dB0-48-547" secondAttribute="bottom" constant="16" id="9Ky-vf-q5v"/>
+                <constraint firstItem="dB0-48-547" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="mqz-1N-ual" secondAttribute="trailing" constant="16" id="IVl-ue-Aoe"/>
                 <constraint firstItem="mqz-1N-ual" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="Jfg-k1-B4F"/>
                 <constraint firstItem="qiy-i9-Lzy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="LHg-rQ-a3X"/>
                 <constraint firstItem="dB0-48-547" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="RaC-ll-BMv"/>
+                <constraint firstItem="dB0-48-547" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="qiy-i9-Lzy" secondAttribute="trailing" constant="16" id="Zyn-QI-cX1"/>
                 <constraint firstItem="qiy-i9-Lzy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="evO-2G-bUo"/>
                 <constraint firstAttribute="trailing" secondItem="dB0-48-547" secondAttribute="trailing" constant="16" id="h9a-9v-3CF"/>
             </constraints>

@@ -8,6 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		1F8B5060BDFFE7DB6FC4AA8C /* Pods_FaghelgappTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 544BC935E3966EC9C83606CA /* Pods_FaghelgappTests.framework */; };
+		9F25AFA41DA2ABFB00488CA6 /* ProgramService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25AFA31DA2ABFB00488CA6 /* ProgramService.swift */; };
+		9F25AFA71DA2ACCD00488CA6 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25AFA61DA2ACCD00488CA6 /* HTTPClient.swift */; };
+		9F25AFA91DA2ACF400488CA6 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25AFA81DA2ACF400488CA6 /* Config.swift */; };
+		9F25AFAB1DA2AD0E00488CA6 /* SeededURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25AFAA1DA2AD0E00488CA6 /* SeededURLSession.swift */; };
+		9F25AFAD1DA2AD2900488CA6 /* SeededDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25AFAC1DA2AD2900488CA6 /* SeededDataTask.swift */; };
+		9F25AFB01DA2ADA300488CA6 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25AFAF1DA2ADA300488CA6 /* Logger.swift */; };
+		9F25AFB21DA2AE2900488CA6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25AFB11DA2AE2900488CA6 /* Constants.swift */; };
+		9F25AFB51DA2AF6D00488CA6 /* Program.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25AFB41DA2AF6D00488CA6 /* Program.swift */; };
+		9F25AFB71DA2B04E00488CA6 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25AFB61DA2B04E00488CA6 /* Event.swift */; };
+		9F25AFB91DA2B0DE00488CA6 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25AFB81DA2B0DE00488CA6 /* Person.swift */; };
+		9F25AFBC1DA2B91600488CA6 /* Date+WeekDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25AFBB1DA2B91600488CA6 /* Date+WeekDay.swift */; };
+		9F25AFBE1DA2BF7300488CA6 /* Date+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25AFBD1DA2BF7300488CA6 /* Date+Format.swift */; };
 		9FEB719E1D9ACCAE00BBFA54 /* ProgramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB719D1D9ACCAE00BBFA54 /* ProgramView.swift */; };
 		9FEB71A01D9ACCB700BBFA54 /* ProgramView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FEB719F1D9ACCB700BBFA54 /* ProgramView.xib */; };
 		9FEB71A31D9ACD1200BBFA54 /* NibLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB71A21D9ACD1200BBFA54 /* NibLoadingView.swift */; };
@@ -45,6 +57,18 @@
 		32452F3C2530CF3E4413DD5C /* Pods-Faghelgapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Faghelgapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Faghelgapp/Pods-Faghelgapp.debug.xcconfig"; sourceTree = "<group>"; };
 		544BC935E3966EC9C83606CA /* Pods_FaghelgappTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FaghelgappTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B44F67761C6C29BE29B3E52 /* Pods-Faghelgapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Faghelgapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-Faghelgapp/Pods-Faghelgapp.release.xcconfig"; sourceTree = "<group>"; };
+		9F25AFA31DA2ABFB00488CA6 /* ProgramService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramService.swift; sourceTree = "<group>"; };
+		9F25AFA61DA2ACCD00488CA6 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		9F25AFA81DA2ACF400488CA6 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		9F25AFAA1DA2AD0E00488CA6 /* SeededURLSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeededURLSession.swift; sourceTree = "<group>"; };
+		9F25AFAC1DA2AD2900488CA6 /* SeededDataTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeededDataTask.swift; sourceTree = "<group>"; };
+		9F25AFAF1DA2ADA300488CA6 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		9F25AFB11DA2AE2900488CA6 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9F25AFB41DA2AF6D00488CA6 /* Program.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Program.swift; sourceTree = "<group>"; };
+		9F25AFB61DA2B04E00488CA6 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		9F25AFB81DA2B0DE00488CA6 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		9F25AFBB1DA2B91600488CA6 /* Date+WeekDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+WeekDay.swift"; sourceTree = "<group>"; };
+		9F25AFBD1DA2BF7300488CA6 /* Date+Format.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Format.swift"; sourceTree = "<group>"; };
 		9FEB719D1D9ACCAE00BBFA54 /* ProgramView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProgramView.swift; path = Faghelgapp/Views/ProgramView.swift; sourceTree = SOURCE_ROOT; };
 		9FEB719F1D9ACCB700BBFA54 /* ProgramView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProgramView.xib; path = Faghelgapp/Views/ProgramView.xib; sourceTree = SOURCE_ROOT; };
 		9FEB71A21D9ACD1200BBFA54 /* NibLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadingView.swift; sourceTree = "<group>"; };
@@ -92,6 +116,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F25AFA21DA2ABCD00488CA6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9F25AFA31DA2ABFB00488CA6 /* ProgramService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9F25AFA51DA2ACB200488CA6 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9F25AFA61DA2ACCD00488CA6 /* HTTPClient.swift */,
+				9F25AFA81DA2ACF400488CA6 /* Config.swift */,
+				9F25AFAA1DA2AD0E00488CA6 /* SeededURLSession.swift */,
+				9F25AFAC1DA2AD2900488CA6 /* SeededDataTask.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		9F25AFAE1DA2AD9200488CA6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9F25AFAF1DA2ADA300488CA6 /* Logger.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		9F25AFB31DA2AF5900488CA6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9F25AFB41DA2AF6D00488CA6 /* Program.swift */,
+				9F25AFB61DA2B04E00488CA6 /* Event.swift */,
+				9F25AFB81DA2B0DE00488CA6 /* Person.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9F25AFBA1DA2B8FF00488CA6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9F25AFBB1DA2B91600488CA6 /* Date+WeekDay.swift */,
+				9F25AFBD1DA2BF7300488CA6 /* Date+Format.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		9FEB719A1D9ACC2300BBFA54 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -225,14 +295,20 @@
 				9FEB719C1D9ACC8700BBFA54 /* Views */,
 				9FEB719B1D9ACC6D00BBFA54 /* ViewControllers */,
 				9FEB71B51D9AEBD000BBFA54 /* Interactors */,
+				9F25AFA21DA2ABCD00488CA6 /* Services */,
 				9FEB71B81D9AEC4F00BBFA54 /* Presenters */,
 				9FEB71BB1D9AECCD00BBFA54 /* ViewModels */,
+				9F25AFB31DA2AF5900488CA6 /* Models */,
 				9FEB71BE1D9AEE3700BBFA54 /* Configurators */,
+				9F25AFBA1DA2B8FF00488CA6 /* Extensions */,
+				9F25AFA51DA2ACB200488CA6 /* Network */,
+				9FEB71B21D9AE93200BBFA54 /* Enums */,
+				9F25AFAE1DA2AD9200488CA6 /* Utils */,
 				B192B5991D9AC9A200C8B9C2 /* AppDelegate.swift */,
 				B192B5A01D9AC9A200C8B9C2 /* Assets.xcassets */,
 				B192B5A21D9AC9A200C8B9C2 /* LaunchScreen.storyboard */,
 				B192B5A51D9AC9A200C8B9C2 /* Info.plist */,
-				9FEB71B21D9AE93200BBFA54 /* Enums */,
+				9F25AFB11DA2AE2900488CA6 /* Constants.swift */,
 			);
 			path = Faghelgapp;
 			sourceTree = "<group>";
@@ -460,7 +536,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F25AFB51DA2AF6D00488CA6 /* Program.swift in Sources */,
+				9F25AFA41DA2ABFB00488CA6 /* ProgramService.swift in Sources */,
+				9F25AFB21DA2AE2900488CA6 /* Constants.swift in Sources */,
 				9FEB71C01D9AEE5200BBFA54 /* ProgramConfigurator.swift in Sources */,
+				9F25AFB91DA2B0DE00488CA6 /* Person.swift in Sources */,
+				9F25AFAB1DA2AD0E00488CA6 /* SeededURLSession.swift in Sources */,
+				9F25AFBE1DA2BF7300488CA6 /* Date+Format.swift in Sources */,
+				9F25AFA91DA2ACF400488CA6 /* Config.swift in Sources */,
 				9FEB71B11D9AD2E800BBFA54 /* PeopleViewController.swift in Sources */,
 				9FEB71A31D9ACD1200BBFA54 /* NibLoadingView.swift in Sources */,
 				9FEB71A51D9ACD7D00BBFA54 /* ProgramViewController.swift in Sources */,
@@ -469,9 +552,14 @@
 				9FEB71B41D9AE94D00BBFA54 /* Day.swift in Sources */,
 				9FEB71AD1D9AD0FD00BBFA54 /* ProgramEntryCell.swift in Sources */,
 				9FEB71B71D9AEBEE00BBFA54 /* ProgramInteractor.swift in Sources */,
+				9F25AFA71DA2ACCD00488CA6 /* HTTPClient.swift in Sources */,
+				9F25AFB01DA2ADA300488CA6 /* Logger.swift in Sources */,
 				9FEB71BA1D9AEC6500BBFA54 /* ProgramPresenter.swift in Sources */,
+				9F25AFBC1DA2B91600488CA6 /* Date+WeekDay.swift in Sources */,
 				9FEB719E1D9ACCAE00BBFA54 /* ProgramView.swift in Sources */,
 				9FEB71A81D9ACDF300BBFA54 /* PeopleView.swift in Sources */,
+				9F25AFB71DA2B04E00488CA6 /* Event.swift in Sources */,
+				9F25AFAD1DA2AD2900488CA6 /* SeededDataTask.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

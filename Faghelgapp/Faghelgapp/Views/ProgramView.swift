@@ -46,18 +46,13 @@ extension ProgramView: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        switch viewModel.selectedDay {
-        case .thursday:
-            return 3
-        case .friday:
-            return 5
-        case .saturday:
-            return 1
-        }
+        return viewModel.eventsForSelectedDay.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: programEntryCellIdentifier)!
+        let cell = tableView.dequeueReusableCell(withIdentifier: programEntryCellIdentifier)! as! ProgramEntryCell
+        cell.populate(event: viewModel.eventsForSelectedDay[indexPath.row])
+        
         return cell;
     }
 }

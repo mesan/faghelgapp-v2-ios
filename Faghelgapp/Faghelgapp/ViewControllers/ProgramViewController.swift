@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 protocol ProgramViewControllerOutput {
+    func viewControllerWillAppear()
     func dayChanged(day: Day)
 }
 
@@ -24,6 +25,10 @@ class ProgramViewController: UIViewController {
         
         programView.viewController = self
         ProgramConfigurator.sharedInstance.configure(viewController: self)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        interactor.viewControllerWillAppear()
     }
 }
 

@@ -10,4 +10,8 @@ import Foundation
 
 class ProgramViewModel {
     var selectedDay: Day = .thursday
+    
+    var eventsForSelectedDay: [Event] = []
+    
+    var program: Program?
 }

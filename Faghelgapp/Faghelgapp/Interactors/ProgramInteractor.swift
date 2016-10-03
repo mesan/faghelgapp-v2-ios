@@ -10,14 +10,33 @@ import Foundation
 
 protocol ProgramInteractorOutput {
     func dayChanged(day: Day)
+    
+    func fetchedProgram(_ program: Program)
+    func fetchProgramFailed()
 }
 
 class ProgramInteractor {
     var presenter: ProgramInteractorOutput!
+    
+    var programService: ProgramService
+    
+    init(programService: ProgramService) {
+        self.programService = programService
+    }
 }
 
 extension ProgramInteractor: ProgramViewControllerOutput {
     func dayChanged(day: Day) {
         presenter.dayChanged(day: day)
+    }
+    
+    func viewControllerWillAppear() {
+        programService.getProgram() { (program) in
+            if program != nil {
+                self.presenter.fetchedProgram(program!)
+            } else {
+                self.presenter.fetchProgramFailed()
+            }
+        }
     }
 }

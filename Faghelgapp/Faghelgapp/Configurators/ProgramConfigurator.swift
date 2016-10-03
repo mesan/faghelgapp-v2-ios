@@ -20,7 +20,8 @@ class ProgramConfigurator {
         let presenter = ProgramPresenter()
         presenter.viewController = viewController
         
-        let interactor = ProgramInteractor()
+        let programService = ProgramService()
+        let interactor = ProgramInteractor(programService: programService)
         interactor.presenter = presenter
         
         viewController.interactor = interactor
