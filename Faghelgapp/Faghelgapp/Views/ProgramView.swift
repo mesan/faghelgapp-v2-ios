@@ -15,6 +15,11 @@ protocol ProgramViewDelegate: class {
 
 class ProgramView: NibLoadingView {
     @IBOutlet weak var tableView: UITableView!
+
+    @IBOutlet weak var thursdayButton: UIButton!
+    @IBOutlet weak var fridayButton: UIButton!
+    @IBOutlet weak var saturdayButton: UIButton!
+    @IBOutlet weak var selectedDayLine: UIView!
     
     let programEntryCellIdentifier = "ProgramEntryCell"
     
@@ -31,12 +36,52 @@ class ProgramView: NibLoadingView {
     
     func updateViews(viewModel: ProgramViewModel) {
         self.viewModel = viewModel
+        updateButtonColors()
+        moveSelectedDayLine()
         tableView.reloadData()
     }
     
     @IBAction func dayButtonClicked(_ sender: UIButton) {
         let selectedDay = Day(rawValue: sender.title(for: .normal)!)!
         viewController?.dayChanged(day: selectedDay)
+    }
+    
+    private func updateButtonColors() {
+        thursdayButton.setTitleColor(Constants.Colours.mesanGrey, for: .normal)
+        fridayButton.setTitleColor(Constants.Colours.mesanGrey, for: .normal)
+        saturdayButton.setTitleColor(Constants.Colours.mesanGrey, for: .normal)
+        
+        switch viewModel.selectedDay {
+        case .thursday:
+            thursdayButton.setTitleColor(Constants.Colours.mesanBlue, for: .normal)
+            break;
+        case .friday:
+            fridayButton.setTitleColor(Constants.Colours.mesanBlue, for: .normal)
+            break;
+        case .saturday:
+            saturdayButton.setTitleColor(Constants.Colours.mesanBlue, for: .normal)
+            break;
+        }
+    }
+    
+    private func moveSelectedDayLine() {
+        let distanceToMove = getDistanceToMoveSelectedDayLine()
+        UIView.animate(withDuration: 0.2) { () in
+            self.selectedDayLine.transform = CGAffineTransform(translationX: distanceToMove, y: 0)
+        }
+    }
+    
+    private func getDistanceToMoveSelectedDayLine() -> CGFloat {
+        let width = selectedDayLine.frame.width
+        
+        switch viewModel.selectedDay {
+        case .friday:
+            return width
+        case .saturday:
+            return 2 * width
+        default:
+            return 0
+        }
     }
 }
 

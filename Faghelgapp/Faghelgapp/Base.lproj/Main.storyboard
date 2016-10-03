@@ -74,6 +74,7 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="R9S-o8-q6T" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="LUg-cz-I0H">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -116,7 +117,7 @@
                     <tabBarItem key="tabBarItem" systemItem="history" id="b59-HL-Kv1"/>
                     <toolbarItems/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="Oq6-fm-utN">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="Oq6-fm-utN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.92941176470588238" green="0.2196078431372549" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
