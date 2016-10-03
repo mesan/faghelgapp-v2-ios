@@ -39,6 +39,7 @@ class ProgramView: NibLoadingView {
         updateButtonColors()
         moveSelectedDayLine()
         tableView.reloadData()
+        scrollToTopOfList()
     }
     
     @IBAction func dayButtonClicked(_ sender: UIButton) {
@@ -82,6 +83,11 @@ class ProgramView: NibLoadingView {
         default:
             return 0
         }
+    }
+    
+    private func scrollToTopOfList() {
+        let indexPath = IndexPath(row: 0, section: 0)
+        tableView.scrollToRow(at: indexPath, at: UITableViewScrollPosition.top, animated: true)
     }
 }
 
