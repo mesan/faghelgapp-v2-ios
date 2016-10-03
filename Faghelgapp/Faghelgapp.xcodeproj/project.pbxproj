@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1F8B5060BDFFE7DB6FC4AA8C /* Pods_FaghelgappTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 544BC935E3966EC9C83606CA /* Pods_FaghelgappTests.framework */; };
+		846DC9651DA2B3E900B05AC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846DC9631DA2B3E900B05AC8 /* Main.storyboard */; };
 		9FEB719E1D9ACCAE00BBFA54 /* ProgramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB719D1D9ACCAE00BBFA54 /* ProgramView.swift */; };
 		9FEB71A01D9ACCB700BBFA54 /* ProgramView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FEB719F1D9ACCB700BBFA54 /* ProgramView.xib */; };
 		9FEB71A31D9ACD1200BBFA54 /* NibLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB71A21D9ACD1200BBFA54 /* NibLoadingView.swift */; };
@@ -23,7 +24,6 @@
 		9FEB71BD1D9AECEF00BBFA54 /* ProgramViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB71BC1D9AECEF00BBFA54 /* ProgramViewModel.swift */; };
 		9FEB71C01D9AEE5200BBFA54 /* ProgramConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB71BF1D9AEE5200BBFA54 /* ProgramConfigurator.swift */; };
 		B192B59A1D9AC9A200C8B9C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B192B5991D9AC9A200C8B9C2 /* AppDelegate.swift */; };
-		B192B59F1D9AC9A200C8B9C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B192B59D1D9AC9A200C8B9C2 /* Main.storyboard */; };
 		B192B5A11D9AC9A200C8B9C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B192B5A01D9AC9A200C8B9C2 /* Assets.xcassets */; };
 		B192B5A41D9AC9A200C8B9C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B192B5A21D9AC9A200C8B9C2 /* LaunchScreen.storyboard */; };
 		B192B5AF1D9AC9A200C8B9C2 /* FaghelgappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B192B5AE1D9AC9A200C8B9C2 /* FaghelgappTests.swift */; };
@@ -45,6 +45,7 @@
 		32452F3C2530CF3E4413DD5C /* Pods-Faghelgapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Faghelgapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Faghelgapp/Pods-Faghelgapp.debug.xcconfig"; sourceTree = "<group>"; };
 		544BC935E3966EC9C83606CA /* Pods_FaghelgappTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FaghelgappTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B44F67761C6C29BE29B3E52 /* Pods-Faghelgapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Faghelgapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-Faghelgapp/Pods-Faghelgapp.release.xcconfig"; sourceTree = "<group>"; };
+		846DC9641DA2B3E900B05AC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Faghelgapp/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		9FEB719D1D9ACCAE00BBFA54 /* ProgramView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProgramView.swift; path = Faghelgapp/Views/ProgramView.swift; sourceTree = SOURCE_ROOT; };
 		9FEB719F1D9ACCB700BBFA54 /* ProgramView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProgramView.xib; path = Faghelgapp/Views/ProgramView.xib; sourceTree = SOURCE_ROOT; };
 		9FEB71A21D9ACD1200BBFA54 /* NibLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadingView.swift; sourceTree = "<group>"; };
@@ -61,7 +62,6 @@
 		9FEB71BF1D9AEE5200BBFA54 /* ProgramConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramConfigurator.swift; sourceTree = "<group>"; };
 		B192B5961D9AC9A200C8B9C2 /* Faghelgapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Faghelgapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B192B5991D9AC9A200C8B9C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B192B59E1D9AC9A200C8B9C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B192B5A01D9AC9A200C8B9C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B192B5A31D9AC9A200C8B9C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B192B5A51D9AC9A200C8B9C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -95,7 +95,7 @@
 		9FEB719A1D9ACC2300BBFA54 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				B192B59D1D9AC9A200C8B9C2 /* Main.storyboard */,
+				846DC9631DA2B3E900B05AC8 /* Main.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -347,8 +347,8 @@
 				B192B5A41D9AC9A200C8B9C2 /* LaunchScreen.storyboard in Resources */,
 				B192B5A11D9AC9A200C8B9C2 /* Assets.xcassets in Resources */,
 				9FEB71AA1D9ACDFE00BBFA54 /* PeopleView.xib in Resources */,
+				846DC9651DA2B3E900B05AC8 /* Main.storyboard in Resources */,
 				9FEB71AF1D9AD10600BBFA54 /* ProgramEntryCell.xib in Resources */,
-				B192B59F1D9AC9A200C8B9C2 /* Main.storyboard in Resources */,
 				9FEB71A01D9ACCB700BBFA54 /* ProgramView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,13 +494,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B192B59D1D9AC9A200C8B9C2 /* Main.storyboard */ = {
+		846DC9631DA2B3E900B05AC8 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B192B59E1D9AC9A200C8B9C2 /* Base */,
+				846DC9641DA2B3E900B05AC8 /* Base */,
 			);
 			name = Main.storyboard;
-			path = ..;
 			sourceTree = "<group>";
 		};
 		B192B5A21D9AC9A200C8B9C2 /* LaunchScreen.storyboard */ = {
