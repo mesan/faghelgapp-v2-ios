@@ -80,6 +80,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.92941176469999998" green="0.21960784310000001" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="FU8-lI-MNQ" kind="relationship" relationship="viewControllers" id="msR-Ve-k6J"/>
@@ -90,17 +91,17 @@
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Program-->
         <scene sceneID="Sfs-93-lHf">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FU8-lI-MNQ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="favorites" id="oht-6F-gcj"/>
+                    <tabBarItem key="tabBarItem" title="Program" image="program_active" selectedImage="program_active" id="oht-6F-gcj"/>
                     <toolbarItems/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
-                    <navigationBar key="navigationBar" opaque="NO" contentMode="scaleToFill" translucent="NO" id="FcT-cc-bkp">
+                    <navigationBar key="navigationBar" opaque="NO" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="FcT-cc-bkp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.92941176470588238" green="0.2196078431372549" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.89961904287338257" green="0.12648545205593109" blue="0.1054324209690094" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -111,11 +112,11 @@
             </objects>
             <point key="canvasLocation" x="-295.19999999999999" y="812.74362818590714"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Folk-->
         <scene sceneID="FeT-Gz-9s8">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Egc-JC-Yct" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="history" id="b59-HL-Kv1"/>
+                    <tabBarItem key="tabBarItem" title="Folk" image="people_active" selectedImage="people_active" id="b59-HL-Kv1"/>
                     <toolbarItems/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="Oq6-fm-utN">
@@ -133,4 +134,8 @@
             <point key="canvasLocation" x="1407.2" y="812.74362818590714"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="people_active" width="24" height="23"/>
+        <image name="program_active" width="24" height="23"/>
+    </resources>
 </document>
