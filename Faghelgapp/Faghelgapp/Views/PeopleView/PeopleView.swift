@@ -25,9 +25,10 @@ class PeopleView: NibLoadingView {
     
     override func awakeFromNib() {
         peopleTableView.register(PeopleEntryCell.self, forCellReuseIdentifier: peopleEntryCellIdentifier)
-        peopleTableView.estimatedRowHeight = 100
+        peopleTableView.estimatedRowHeight = 50
         peopleTableView.rowHeight = UITableViewAutomaticDimension
         peopleTableView.tableFooterView = UIView()
+        peopleTableView.tableHeaderView = PeopleHeaderCell()
     }
     
     func updateViews(viewModel: PeopleViewModel) {

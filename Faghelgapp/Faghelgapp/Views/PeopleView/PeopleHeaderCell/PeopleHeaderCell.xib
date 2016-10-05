@@ -3,41 +3,44 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
-        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="237" id="KGk-i7-Jjw" customClass="PeopleHeaderCell" customModule="Faghelgapp" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <frame key="frameInset" width="320" height="200"/>
-                <autoresizingMask key="autoresizingMask"/>
-                <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f3L-K3-u9y"/>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="E2l-Dm-Nh4">
-                        <constraints>
-                            <constraint firstAttribute="width" constant="100" id="1Q0-5z-kdb"/>
-                            <constraint firstAttribute="height" constant="100" id="BLN-kx-bRI"/>
-                        </constraints>
-                    </imageView>
-                </subviews>
-                <constraints>
-                    <constraint firstItem="E2l-Dm-Nh4" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="0MI-Rg-25s"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="f3L-K3-u9y" secondAttribute="bottom" constant="83.5" id="9Hj-B1-f1Y"/>
-                    <constraint firstItem="E2l-Dm-Nh4" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="GGz-Qf-9p1"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="f3L-K3-u9y" secondAttribute="trailing" id="i7l-eW-muR"/>
-                    <constraint firstAttribute="topMargin" secondItem="f3L-K3-u9y" secondAttribute="top" id="rod-KP-O73"/>
-                    <constraint firstAttribute="leadingMargin" secondItem="f3L-K3-u9y" secondAttribute="leading" id="w7k-E3-6FZ"/>
-                </constraints>
-            </tableViewCellContentView>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PeopleHeaderCell" customModule="Faghelgapp" customModuleProvider="target">
             <connections>
-                <outlet property="backgroundImage" destination="f3L-K3-u9y" id="Xjc-XP-wR3"/>
-                <outlet property="profileImage" destination="E2l-Dm-Nh4" id="GA7-aX-hxz"/>
+                <outlet property="backgroundImage" destination="7cJ-7A-CVT" id="xME-bA-Jwp"/>
+                <outlet property="profileImage" destination="ao1-Vi-wfa" id="rch-HU-XwK"/>
             </connections>
-            <point key="canvasLocation" x="96" y="149"/>
-        </tableViewCell>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="LZr-3W-ZgP">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7cJ-7A-CVT">
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="7cJ-7A-CVT" secondAttribute="height" multiplier="1:0.333" id="364-A6-vee"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ao1-Vi-wfa">
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="ao1-Vi-wfa" secondAttribute="height" multiplier="1:1" id="er5-8o-p44"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="7cJ-7A-CVT" firstAttribute="top" secondItem="LZr-3W-ZgP" secondAttribute="top" id="EAx-Wu-iGE"/>
+                <constraint firstAttribute="trailing" secondItem="7cJ-7A-CVT" secondAttribute="trailing" id="HVw-nI-eFe"/>
+                <constraint firstItem="ao1-Vi-wfa" firstAttribute="centerY" secondItem="LZr-3W-ZgP" secondAttribute="centerY" id="Wq9-oY-ZbG"/>
+                <constraint firstItem="7cJ-7A-CVT" firstAttribute="width" secondItem="LZr-3W-ZgP" secondAttribute="width" id="bOI-3c-Ydt"/>
+                <constraint firstItem="7cJ-7A-CVT" firstAttribute="leading" secondItem="LZr-3W-ZgP" secondAttribute="leading" id="eWt-ae-NBA"/>
+                <constraint firstItem="ao1-Vi-wfa" firstAttribute="width" secondItem="LZr-3W-ZgP" secondAttribute="width" multiplier="0.25" id="mhZ-V3-j7c"/>
+                <constraint firstItem="ao1-Vi-wfa" firstAttribute="centerX" secondItem="LZr-3W-ZgP" secondAttribute="centerX" id="x71-ln-cg7"/>
+            </constraints>
+            <point key="canvasLocation" x="55" y="269"/>
+        </view>
     </objects>
 </document>
