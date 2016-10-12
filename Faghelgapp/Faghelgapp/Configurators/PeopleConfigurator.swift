@@ -21,7 +21,8 @@ class PeopleConfigurator {
         let presenter = PeoplePresenter()
         presenter.viewController = viewController
         
-        let interactor = PeopleInteractor()
+        let peopleService = PeopleService()
+        let interactor = PeopleInteractor(peopleService: peopleService)
         interactor.presenter = presenter
         
         viewController.interactor = interactor

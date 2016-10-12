@@ -16,6 +16,7 @@
 		846DC9861DA2C95F00B05AC8 /* PeopleHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846DC9841DA2C95F00B05AC8 /* PeopleHeaderCell.swift */; };
 		846DC9871DA2C95F00B05AC8 /* PeopleHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846DC9851DA2C95F00B05AC8 /* PeopleHeaderCell.xib */; };
 		846DC9891DA2CDC100B05AC8 /* PeopleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846DC9881DA2CDC100B05AC8 /* PeopleInteractor.swift */; };
+		84824D7F1DAE81E400D176BA /* PeopleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84824D7E1DAE81E400D176BA /* PeopleService.swift */; };
 		84A157C21DA588A400B460FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A157C01DA588A400B460FF /* Main.storyboard */; };
 		9F25AFA41DA2ABFB00488CA6 /* ProgramService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25AFA31DA2ABFB00488CA6 /* ProgramService.swift */; };
 		9F25AFA71DA2ACCD00488CA6 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25AFA61DA2ACCD00488CA6 /* HTTPClient.swift */; };
@@ -85,6 +86,7 @@
 		846DC9841DA2C95F00B05AC8 /* PeopleHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleHeaderCell.swift; sourceTree = "<group>"; };
 		846DC9851DA2C95F00B05AC8 /* PeopleHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PeopleHeaderCell.xib; sourceTree = "<group>"; };
 		846DC9881DA2CDC100B05AC8 /* PeopleInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleInteractor.swift; sourceTree = "<group>"; };
+		84824D7E1DAE81E400D176BA /* PeopleService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleService.swift; sourceTree = "<group>"; };
 		84A157C11DA588A400B460FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Faghelgapp/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		9F25AFA31DA2ABFB00488CA6 /* ProgramService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramService.swift; sourceTree = "<group>"; };
 		9F25AFA61DA2ACCD00488CA6 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				9F25AFA31DA2ABFB00488CA6 /* ProgramService.swift */,
+				84824D7E1DAE81E400D176BA /* PeopleService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -651,6 +654,7 @@
 				84387BEB1DA2D406001482EF /* PeopleConfigurator.swift in Sources */,
 				9FEB71B41D9AE94D00BBFA54 /* Day.swift in Sources */,
 				9FEB71AD1D9AD0FD00BBFA54 /* ProgramEntryCell.swift in Sources */,
+				84824D7F1DAE81E400D176BA /* PeopleService.swift in Sources */,
 				9FEB71B71D9AEBEE00BBFA54 /* ProgramInteractor.swift in Sources */,
 				9F25AFA71DA2ACCD00488CA6 /* HTTPClient.swift in Sources */,
 				9F25AFB01DA2ADA300488CA6 /* Logger.swift in Sources */,

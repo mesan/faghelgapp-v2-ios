@@ -24,6 +24,7 @@ enum Constants {
         
         struct Endpoints {
             static let program = URL(string: Prod.baseUrl  + "/program")!
+            static let people = URL(string: Prod.baseUrl + "/persons")!
         }
     }
 }

@@ -9,13 +9,29 @@
 import Foundation
 
 protocol PeopleInteractorOutput {
-    
+    func fetchedPeople(_ people: [Person])
+    func fetchedPeopleFailed()
 }
 
 class PeopleInteractor {
     var presenter: PeopleInteractorOutput!
+    
+    var peopleService: PeopleService
+    
+    init(peopleService: PeopleService) {
+        self.peopleService = peopleService
+    }
 }
 
 extension PeopleInteractor: PeopleViewControllerOutput {
     
+    func viewControllerWillAppear() {
+        peopleService.getPeople() { (people) in
+            if people != nil {
+                self.presenter.fetchedPeople(people!)
+            } else {
+                self.presenter.fetchedPeopleFailed()
+            }
+        }
+    }
 }

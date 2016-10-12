@@ -12,12 +12,12 @@
             <connections>
                 <outlet property="nameLabel" destination="Nwy-S8-9Ga" id="mgZ-bd-pu2"/>
                 <outlet property="personImage" destination="aav-XY-oUk" id="KxN-Bt-Gka"/>
-                <outlet property="usernameLabel" destination="SBW-5F-gNf" id="wav-aF-opb"/>
+                <outlet property="shortNameLabel" destination="SBW-5F-gNf" id="N0P-GK-2Bm"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="HRY-zK-i0s">
-            <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aav-XY-oUk">

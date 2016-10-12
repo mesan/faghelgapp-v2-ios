@@ -13,6 +13,11 @@ class PeopleEntryCell: NibDesignableTableViewCell {
     
     @IBOutlet weak var personImage: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var usernameLabel: UILabel!
+    @IBOutlet weak var shortNameLabel: UILabel!
     
+    func populate(person: Person) {
+        self.nameLabel.text = person.fullName
+        self.shortNameLabel.text = "@\(person.shortName)"
+        // TODO: person image
+    }
 }
