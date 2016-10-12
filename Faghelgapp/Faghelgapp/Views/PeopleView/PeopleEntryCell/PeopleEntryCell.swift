@@ -15,16 +15,23 @@ class PeopleEntryCell: NibDesignableTableViewCell {
     @IBOutlet weak var personImage: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var shortNameLabel: UILabel!
+    @IBOutlet weak var personImageBorder: UIView!
     
     func populate(person: Person) {
         self.nameLabel.text = person.fullName
         self.shortNameLabel.text = "@\(person.shortName)"
         
-        // TODO: fix image rounding
-        let url = URL(string: person.profileImageUrl)
+        let borderWidth = CGFloat(1.0)
+        personImage.layer.cornerRadius = personImage.frame.size.height / 2
+        personImage.layer.borderWidth = borderWidth
+        personImage.layer.borderColor = UIColor.white.cgColor
+        
+        personImageBorder.layer.cornerRadius = personImageBorder.frame.size.height / 2
+        personImageBorder.layer.borderWidth = borderWidth
+        personImageBorder.layer.borderColor = Constants.Colours.mesanBlue.cgColor
+        
+        let url = URL(string: person.profileImageUrl)!
         let placeholderImage = UIImage(named: "person_placeholder")
-        let cornerRadius = personImage.frame.size.height / 2
-        let processor = RoundCornerImageProcessor(cornerRadius: cornerRadius)
-        personImage.kf.setImage(with: url, placeholder: placeholderImage, options: [.processor(processor)])
+        personImage.kf.setImage(with: ImageResource(downloadURL: url, cacheKey: person.shortName), placeholder: placeholderImage, options: nil)
     }
 }
