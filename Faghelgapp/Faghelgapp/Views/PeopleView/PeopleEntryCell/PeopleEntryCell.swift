@@ -8,6 +8,7 @@
 
 import UIKit
 import NibDesignable
+import Kingfisher
 
 class PeopleEntryCell: NibDesignableTableViewCell {
     
@@ -18,6 +19,12 @@ class PeopleEntryCell: NibDesignableTableViewCell {
     func populate(person: Person) {
         self.nameLabel.text = person.fullName
         self.shortNameLabel.text = "@\(person.shortName)"
-        // TODO: person image
+        
+        // TODO: fix image rounding
+        let url = URL(string: person.profileImageUrl)
+        let placeholderImage = UIImage(named: "person_placeholder")
+        let cornerRadius = personImage.frame.size.height / 2
+        let processor = RoundCornerImageProcessor(cornerRadius: cornerRadius)
+        personImage.kf.setImage(with: url, placeholder: placeholderImage, options: [.processor(processor)])
     }
 }
