@@ -22,6 +22,8 @@ class PeopleService {
                     for person in jsonResult{
                         people.append(Person.from(person))
                     }
+                
+                    people = self.sortByNameAscending(people)
                     
                     completion(people)
                 } catch let error {
@@ -34,6 +36,12 @@ class PeopleService {
                 Logger.printDebug(error?.localizedDescription)
                 completion(nil)
             }
+        }
+    }
+    
+    private func sortByNameAscending(_ people: [Person]) -> [Person] {
+        return people.sorted() { (person1, person2) -> Bool in
+            person1.fullName.compare(person2.fullName) == .orderedAscending
         }
     }
 }
