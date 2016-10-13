@@ -18,19 +18,16 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="HRY-zK-i0s">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Wl-Je-j1D">
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Wl-Je-j1D">
                     <subviews>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aav-XY-oUk">
-                            <constraints>
-                                <constraint firstAttribute="width" secondItem="aav-XY-oUk" secondAttribute="height" multiplier="1:1" id="JTq-yX-imZ"/>
-                            </constraints>
-                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aav-XY-oUk"/>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
+                        <constraint firstAttribute="width" secondItem="9Wl-Je-j1D" secondAttribute="height" multiplier="1:1" id="DUa-px-ZXe"/>
                         <constraint firstItem="aav-XY-oUk" firstAttribute="top" secondItem="9Wl-Je-j1D" secondAttribute="top" constant="5" id="GWa-RO-aSN"/>
                         <constraint firstAttribute="bottom" secondItem="aav-XY-oUk" secondAttribute="bottom" constant="5" id="dan-Rc-lmm"/>
                         <constraint firstItem="aav-XY-oUk" firstAttribute="leading" secondItem="9Wl-Je-j1D" secondAttribute="leading" constant="5" id="pQN-dF-r1p"/>
@@ -64,16 +61,14 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="kR5-bp-cIz" secondAttribute="bottom" constant="10" id="8NK-cG-rCv"/>
                 <constraint firstItem="kR5-bp-cIz" firstAttribute="centerY" secondItem="9Wl-Je-j1D" secondAttribute="centerY" id="Hg9-29-zgP"/>
-                <constraint firstItem="9Wl-Je-j1D" firstAttribute="width" secondItem="HRY-zK-i0s" secondAttribute="width" multiplier="0.2" id="Pl9-oL-uLC"/>
+                <constraint firstItem="9Wl-Je-j1D" firstAttribute="top" relation="greaterThanOrEqual" secondItem="HRY-zK-i0s" secondAttribute="top" constant="10" id="N6u-uc-fWf"/>
+                <constraint firstItem="9Wl-Je-j1D" firstAttribute="width" secondItem="HRY-zK-i0s" secondAttribute="width" multiplier="0.2" priority="900" id="Pl9-oL-uLC"/>
                 <constraint firstItem="kR5-bp-cIz" firstAttribute="leading" secondItem="9Wl-Je-j1D" secondAttribute="trailing" constant="10" id="QOW-om-KqK"/>
+                <constraint firstItem="9Wl-Je-j1D" firstAttribute="centerY" secondItem="HRY-zK-i0s" secondAttribute="centerY" id="URr-Zh-PtY"/>
                 <constraint firstItem="9Wl-Je-j1D" firstAttribute="leading" secondItem="HRY-zK-i0s" secondAttribute="leading" constant="10" id="WGu-sh-uQ3"/>
                 <constraint firstAttribute="trailing" secondItem="kR5-bp-cIz" secondAttribute="trailing" constant="10" id="Y7r-sL-bbU"/>
-                <constraint firstItem="9Wl-Je-j1D" firstAttribute="top" relation="greaterThanOrEqual" secondItem="HRY-zK-i0s" secondAttribute="top" constant="10" id="YYR-AK-cqk"/>
-                <constraint firstItem="kR5-bp-cIz" firstAttribute="top" relation="greaterThanOrEqual" secondItem="HRY-zK-i0s" secondAttribute="top" constant="10" id="lxU-br-zek"/>
-                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="9Wl-Je-j1D" secondAttribute="bottom" constant="10" id="ob8-QE-dBV"/>
-                <constraint firstItem="9Wl-Je-j1D" firstAttribute="centerY" secondItem="HRY-zK-i0s" secondAttribute="centerY" id="vmD-4P-MhA"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="9Wl-Je-j1D" secondAttribute="bottom" constant="10" id="hNy-LT-aJd"/>
             </constraints>
             <point key="canvasLocation" x="4" y="-32"/>
         </view>
