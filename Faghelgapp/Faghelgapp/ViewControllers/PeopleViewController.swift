@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 protocol PeopleViewControllerOutput {
-    func viewControllerWillAppear()
+    func viewControllerWillLayoutSubviews()
 }
 
 class PeopleViewController: UIViewController {
@@ -26,10 +26,10 @@ class PeopleViewController: UIViewController {
         PeopleConfigurator.sharedInstance.configure(viewController: self)
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
         
-        interactor.viewControllerWillAppear()
+        interactor.viewControllerWillLayoutSubviews()
     }
 }
 

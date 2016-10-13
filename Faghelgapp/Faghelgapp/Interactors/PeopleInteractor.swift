@@ -25,7 +25,7 @@ class PeopleInteractor {
 
 extension PeopleInteractor: PeopleViewControllerOutput {
     
-    func viewControllerWillAppear() {
+    func viewControllerWillLayoutSubviews() {
         peopleService.getPeople() { (people) in
             if people != nil {
                 self.presenter.fetchedPeople(people!)
