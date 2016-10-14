@@ -12,13 +12,16 @@ import UIKit
 protocol ProgramViewControllerOutput {
     func viewControllerWillAppear()
     func dayChanged(day: Day)
+    func didSelectEvent(with index: Int)
 }
 
 class ProgramViewController: UIViewController {
     
     @IBOutlet weak var programView: ProgramView!
+    @IBOutlet weak var eventScrollerView: EventScrollerView!
     
     var interactor: ProgramViewControllerOutput!
+    var router: ProgramRouterInput!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,10 +46,22 @@ extension ProgramViewController: ProgramViewDelegate {
     func dayChanged(day: Day) {
         interactor.dayChanged(day: day)
     }
+    
+    func didSelectEvent(with index: Int, from events: [Event], day: String) {
+        router.goToEventsViewController(events: events, title: day)
+    }
 }
 
 extension ProgramViewController: ProgramPresenterOutput {
     func updateViews(viewModel: ProgramViewModel) {
+        if viewModel.selectedEventIndex != nil {
+            eventScrollerView.allEvents = viewModel.eventsForSelectedDay
+            eventScrollerView.showEventWithIndex(viewModel.selectedEventIndex!)
+            eventScrollerView.isHidden = false
+        } else {
+            eventScrollerView.isHidden = true
+        }
+        
         programView.updateViews(viewModel: viewModel)
     }
 }

@@ -24,6 +24,10 @@ class ProgramConfigurator {
         let interactor = ProgramInteractor(programService: programService)
         interactor.presenter = presenter
         
+        let router = ProgramRouter()
+        viewController.router = router
+        router.viewController = viewController
+        
         viewController.interactor = interactor
     }
 }

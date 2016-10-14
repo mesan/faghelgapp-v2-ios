@@ -14,4 +14,6 @@ class ProgramViewModel {
     var eventsForSelectedDay: [Event] = []
     
     var program: Program?
+    
+    var selectedEventIndex: Int?
 }

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EventView" customModule="Faghelgapp" customModuleProvider="target">
+            <connections>
+                <outlet property="abstractLabel" destination="nQB-pW-4XU" id="ie9-bF-xDM"/>
+                <outlet property="eventImageView" destination="SVi-hu-5ZE" id="ZsU-AM-05H"/>
+                <outlet property="responsibleHandleLabel" destination="2l0-gw-gqh" id="QTy-KP-iO1"/>
+                <outlet property="responsibleImageView" destination="s5D-mO-7Ci" id="Pce-er-9lW"/>
+                <outlet property="responsibleNameLabel" destination="OkF-po-gDr" id="zHx-u7-ibW"/>
+                <outlet property="timeLabel" destination="sBn-uM-Sgr" id="jkZ-iR-QDp"/>
+                <outlet property="titleLabel" destination="k13-ab-4gR" id="gfL-QD-Uhx"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1SR-ux-apL">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="500" verticalCompressionResistancePriority="500" text="Digital Photo Printing" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k13-ab-4gR">
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="0.25098039220000001" green="0.46666666670000001" blue="0.58431372550000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="13:45" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sBn-uM-Sgr">
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <color key="textColor" red="0.70588235290000001" green="0.70588235290000001" blue="0.70588235290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="code" translatesAutoresizingMaskIntoConstraints="NO" id="SVi-hu-5ZE">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="179" id="RRU-O2-bBI"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="500" verticalCompressionResistancePriority="500" translatesAutoresizingMaskIntoConstraints="NO" id="s5D-mO-7Ci">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="75" id="1Cu-Vv-GB1"/>
+                        <constraint firstAttribute="width" constant="75" id="3TX-qj-9PC"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. " lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nQB-pW-4XU">
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.25098039220000001" green="0.46666666670000001" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="500" verticalCompressionResistancePriority="500" text="@hannel" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2l0-gw-gqh">
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.70588235290000001" green="0.70588235290000001" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="500" verticalCompressionResistancePriority="500" text="Hanne Lian" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OkF-po-gDr">
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.25098039220000001" green="0.46666666670000001" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="SVi-hu-5ZE" secondAttribute="trailing" constant="16" id="2G8-Ib-vRz"/>
+                <constraint firstAttribute="trailing" secondItem="2l0-gw-gqh" secondAttribute="trailing" constant="16" id="2cK-QN-nfk"/>
+                <constraint firstItem="sBn-uM-Sgr" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="k13-ab-4gR" secondAttribute="trailing" constant="16" id="5WA-Do-EbC"/>
+                <constraint firstAttribute="trailing" secondItem="nQB-pW-4XU" secondAttribute="trailing" constant="16" id="A8p-mi-aTm"/>
+                <constraint firstAttribute="trailing" secondItem="OkF-po-gDr" secondAttribute="trailing" constant="16" id="Gc9-lq-quD"/>
+                <constraint firstItem="OkF-po-gDr" firstAttribute="top" secondItem="SVi-hu-5ZE" secondAttribute="bottom" constant="32" id="Gmc-PT-Pvx"/>
+                <constraint firstItem="nQB-pW-4XU" firstAttribute="top" secondItem="s5D-mO-7Ci" secondAttribute="bottom" constant="16" id="Hh4-3t-T5u"/>
+                <constraint firstItem="2l0-gw-gqh" firstAttribute="leading" secondItem="s5D-mO-7Ci" secondAttribute="trailing" constant="16" id="IEh-Om-Pqp"/>
+                <constraint firstItem="2l0-gw-gqh" firstAttribute="top" secondItem="OkF-po-gDr" secondAttribute="bottom" id="JQF-Ne-EFt"/>
+                <constraint firstItem="nQB-pW-4XU" firstAttribute="leading" secondItem="1SR-ux-apL" secondAttribute="leading" constant="16" id="LLn-q3-FpC"/>
+                <constraint firstItem="s5D-mO-7Ci" firstAttribute="leading" secondItem="1SR-ux-apL" secondAttribute="leading" constant="16" id="N9D-It-hYO"/>
+                <constraint firstItem="k13-ab-4gR" firstAttribute="top" secondItem="1SR-ux-apL" secondAttribute="top" constant="16" id="PWs-sL-6Za"/>
+                <constraint firstItem="s5D-mO-7Ci" firstAttribute="top" secondItem="SVi-hu-5ZE" secondAttribute="bottom" constant="32" id="Psi-th-8YA"/>
+                <constraint firstItem="SVi-hu-5ZE" firstAttribute="top" secondItem="k13-ab-4gR" secondAttribute="bottom" constant="32" id="U72-MA-pjo"/>
+                <constraint firstItem="OkF-po-gDr" firstAttribute="leading" secondItem="s5D-mO-7Ci" secondAttribute="trailing" constant="16" id="fCF-Sl-jq2"/>
+                <constraint firstItem="k13-ab-4gR" firstAttribute="leading" secondItem="1SR-ux-apL" secondAttribute="leading" constant="16" id="nhS-VD-3jq"/>
+                <constraint firstItem="sBn-uM-Sgr" firstAttribute="top" secondItem="1SR-ux-apL" secondAttribute="top" constant="16" id="q3p-jV-fiY"/>
+                <constraint firstAttribute="trailing" secondItem="sBn-uM-Sgr" secondAttribute="trailing" constant="16" id="qT6-6m-6lJ"/>
+                <constraint firstItem="SVi-hu-5ZE" firstAttribute="leading" secondItem="1SR-ux-apL" secondAttribute="leading" constant="16" id="zjH-hw-ogA"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="code" width="132" height="132"/>
+    </resources>
+</document>

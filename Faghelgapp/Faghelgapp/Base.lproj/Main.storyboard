@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="R9S-o8-q6T">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="R9S-o8-q6T">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -21,23 +21,96 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hY3-x2-aEM" customClass="ProgramView" customModule="Faghelgapp" customModuleProvider="target">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kwl-ag-pjK" customClass="EventScrollerView" customModule="Faghelgapp" customModuleProvider="target">
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Kwl-ag-pjK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="BrO-gN-Eut"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hY3-x2-aEM" secondAttribute="bottom" id="TZq-5r-69D"/>
+                            <constraint firstItem="Kwl-ag-pjK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ThU-6F-C2w"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Kwl-ag-pjK" secondAttribute="bottom" id="eqZ-eF-GSH"/>
                             <constraint firstItem="hY3-x2-aEM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="j9Y-J8-ksu"/>
                             <constraint firstItem="hY3-x2-aEM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="nd0-QN-4Rw"/>
+                            <constraint firstAttribute="trailing" secondItem="Kwl-ag-pjK" secondAttribute="trailing" id="qpV-Pc-gbi"/>
                             <constraint firstAttribute="trailing" secondItem="hY3-x2-aEM" secondAttribute="trailing" id="xF1-Jb-QZW"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="FVg-BA-D27"/>
+                    <navigationItem key="navigationItem" id="FVg-BA-D27">
+                        <barButtonItem key="backBarButtonItem" title=" " id="6DX-oL-Eqz"/>
+                    </navigationItem>
                     <connections>
+                        <outlet property="eventScrollerView" destination="Kwl-ag-pjK" id="cph-uV-A8q"/>
                         <outlet property="programView" destination="hY3-x2-aEM" id="A7q-8m-Rcv"/>
+                        <segue destination="e3R-fP-8gc" kind="show" id="Y8g-kT-cDo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="644" y="812.74362818590714"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="OS9-0q-gtn">
+            <objects>
+                <pageViewController storyboardIdentifier="EventPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="e3R-fP-8gc" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="SWd-rU-ipV" kind="show" id="LnE-c0-omd"/>
+                    </connections>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bg4-VC-ZWV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="644" y="1525"/>
+        </scene>
+        <!--Events View Controller-->
+        <scene sceneID="Xej-5v-9Cr">
+            <objects>
+                <viewController storyboardIdentifier="EventsViewController" id="SWd-rU-ipV" customClass="EventsViewController" customModule="Faghelgapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="t7n-xV-o86"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ncg-4x-5Bu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1sy-im-5Tv">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EXD-5i-Hbp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1407" y="1524"/>
+        </scene>
+        <!--Event View Controller-->
+        <scene sceneID="4uW-oH-I62">
+            <objects>
+                <viewController storyboardIdentifier="EventViewController" id="cOy-Pf-awg" customClass="EventViewController" customModule="Faghelgapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nMf-md-FPp"/>
+                        <viewControllerLayoutGuide type="bottom" id="lFW-aR-OqZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dhN-Zb-9bI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XuK-4p-HAU" customClass="EventView" customModule="Faghelgapp" customModuleProvider="target">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XuK-4p-HAU" firstAttribute="top" secondItem="nMf-md-FPp" secondAttribute="bottom" id="5tK-ab-oBm"/>
+                            <constraint firstItem="lFW-aR-OqZ" firstAttribute="top" secondItem="XuK-4p-HAU" secondAttribute="bottom" id="7MZ-4j-APU"/>
+                            <constraint firstItem="XuK-4p-HAU" firstAttribute="leading" secondItem="dhN-Zb-9bI" secondAttribute="leading" id="AWt-nM-HXs"/>
+                            <constraint firstAttribute="trailing" secondItem="XuK-4p-HAU" secondAttribute="trailing" id="wA8-Zy-8l7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="eventView" destination="XuK-4p-HAU" id="d31-SF-n7P"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MYB-bz-m8U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2249" y="1524"/>
         </scene>
         <!--People View Controller-->
         <scene sceneID="G57-GV-Bed">
@@ -104,7 +177,11 @@
                     <navigationBar key="navigationBar" opaque="NO" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="FcT-cc-bkp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" red="0.89961904287338257" green="0.12648545205593109" blue="0.1054324209690094" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -122,7 +199,7 @@
                     <tabBarItem key="tabBarItem" title="Folk" image="people_active" selectedImage="people_active" id="b59-HL-Kv1"/>
                     <toolbarItems/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="Oq6-fm-utN">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="Oq6-fm-utN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.92941176470588238" green="0.2196078431372549" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

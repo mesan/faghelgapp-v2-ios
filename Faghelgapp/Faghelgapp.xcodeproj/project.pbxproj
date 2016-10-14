@@ -29,6 +29,13 @@
 		9F25AFB91DA2B0DE00488CA6 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25AFB81DA2B0DE00488CA6 /* Person.swift */; };
 		9F25AFBC1DA2B91600488CA6 /* Date+WeekDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25AFBB1DA2B91600488CA6 /* Date+WeekDay.swift */; };
 		9F25AFBE1DA2BF7300488CA6 /* Date+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25AFBD1DA2BF7300488CA6 /* Date+Format.swift */; };
+		9F5DC4AB1DB16D87001FDCD2 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5DC4AA1DB16D87001FDCD2 /* EventsViewController.swift */; };
+		9F5DC4AD1DB16E43001FDCD2 /* EventPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5DC4AC1DB16E43001FDCD2 /* EventPageViewController.swift */; };
+		9F5DC4AF1DB16F68001FDCD2 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5DC4AE1DB16F68001FDCD2 /* EventViewController.swift */; };
+		9F5DC4B11DB173D3001FDCD2 /* EventView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F5DC4B01DB173D3001FDCD2 /* EventView.xib */; };
+		9FCF1BE01DAEB93000F6A3D5 /* EventScrollerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCF1BDF1DAEB93000F6A3D5 /* EventScrollerView.swift */; };
+		9FCF1BE21DAEB93A00F6A3D5 /* EventScrollerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FCF1BE11DAEB93A00F6A3D5 /* EventScrollerView.xib */; };
+		9FCF1BE51DAEBAA900F6A3D5 /* EventScrollerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCF1BE41DAEBAA900F6A3D5 /* EventScrollerCell.swift */; };
 		9FEB719E1D9ACCAE00BBFA54 /* ProgramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB719D1D9ACCAE00BBFA54 /* ProgramView.swift */; };
 		9FEB71A01D9ACCB700BBFA54 /* ProgramView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FEB719F1D9ACCB700BBFA54 /* ProgramView.xib */; };
 		9FEB71A31D9ACD1200BBFA54 /* NibLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB71A21D9ACD1200BBFA54 /* NibLoadingView.swift */; };
@@ -55,6 +62,9 @@
 		9FEC6A161DAE8BA000EA1D1C /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9FEC6A0A1DAE8B8500EA1D1C /* Roboto-Regular.ttf */; };
 		9FEC6A171DAE8BA000EA1D1C /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9FEC6A0B1DAE8B8500EA1D1C /* Roboto-Thin.ttf */; };
 		9FEC6A181DAE8BA000EA1D1C /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9FEC6A0C1DAE8B8500EA1D1C /* Roboto-ThinItalic.ttf */; };
+		9FEC6A1B1DAE8CF500EA1D1C /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEC6A1A1DAE8CF500EA1D1C /* EventView.swift */; };
+		9FEC6A1D1DAE8D3400EA1D1C /* EventScrollerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FEC6A1C1DAE8D3400EA1D1C /* EventScrollerCell.xib */; };
+		9FEC6A201DAE963000EA1D1C /* ProgramRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEC6A1F1DAE963000EA1D1C /* ProgramRouter.swift */; };
 		B192B59A1D9AC9A200C8B9C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B192B5991D9AC9A200C8B9C2 /* AppDelegate.swift */; };
 		B192B5A11D9AC9A200C8B9C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B192B5A01D9AC9A200C8B9C2 /* Assets.xcassets */; };
 		B192B5A41D9AC9A200C8B9C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B192B5A21D9AC9A200C8B9C2 /* LaunchScreen.storyboard */; };
@@ -98,6 +108,13 @@
 		9F25AFB81DA2B0DE00488CA6 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		9F25AFBB1DA2B91600488CA6 /* Date+WeekDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+WeekDay.swift"; sourceTree = "<group>"; };
 		9F25AFBD1DA2BF7300488CA6 /* Date+Format.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Format.swift"; sourceTree = "<group>"; };
+		9F5DC4AA1DB16D87001FDCD2 /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		9F5DC4AC1DB16E43001FDCD2 /* EventPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventPageViewController.swift; sourceTree = "<group>"; };
+		9F5DC4AE1DB16F68001FDCD2 /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
+		9F5DC4B01DB173D3001FDCD2 /* EventView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventView.xib; sourceTree = "<group>"; };
+		9FCF1BDF1DAEB93000F6A3D5 /* EventScrollerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventScrollerView.swift; sourceTree = "<group>"; };
+		9FCF1BE11DAEB93A00F6A3D5 /* EventScrollerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventScrollerView.xib; sourceTree = "<group>"; };
+		9FCF1BE41DAEBAA900F6A3D5 /* EventScrollerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventScrollerCell.swift; sourceTree = "<group>"; };
 		9FEB719D1D9ACCAE00BBFA54 /* ProgramView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProgramView.swift; path = Faghelgapp/Views/ProgramView.swift; sourceTree = SOURCE_ROOT; };
 		9FEB719F1D9ACCB700BBFA54 /* ProgramView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProgramView.xib; path = Faghelgapp/Views/ProgramView.xib; sourceTree = SOURCE_ROOT; };
 		9FEB71A21D9ACD1200BBFA54 /* NibLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadingView.swift; sourceTree = "<group>"; };
@@ -124,6 +141,9 @@
 		9FEC6A0A1DAE8B8500EA1D1C /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		9FEC6A0B1DAE8B8500EA1D1C /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
 		9FEC6A0C1DAE8B8500EA1D1C /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		9FEC6A1A1DAE8CF500EA1D1C /* EventView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
+		9FEC6A1C1DAE8D3400EA1D1C /* EventScrollerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EventScrollerCell.xib; path = ../../Event/EventScrollerCell.xib; sourceTree = "<group>"; };
+		9FEC6A1F1DAE963000EA1D1C /* ProgramRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramRouter.swift; sourceTree = "<group>"; };
 		B192B5961D9AC9A200C8B9C2 /* Faghelgapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Faghelgapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B192B5991D9AC9A200C8B9C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B192B5A01D9AC9A200C8B9C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -220,6 +240,26 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		9FCF1BDE1DAEB90E00F6A3D5 /* EventScrollerView */ = {
+			isa = PBXGroup;
+			children = (
+				9FCF1BE31DAEBA7E00F6A3D5 /* EventScrollerCell */,
+				9FCF1BDF1DAEB93000F6A3D5 /* EventScrollerView.swift */,
+				9FCF1BE11DAEB93A00F6A3D5 /* EventScrollerView.xib */,
+			);
+			name = EventScrollerView;
+			path = EventScroller;
+			sourceTree = "<group>";
+		};
+		9FCF1BE31DAEBA7E00F6A3D5 /* EventScrollerCell */ = {
+			isa = PBXGroup;
+			children = (
+				9FCF1BE41DAEBAA900F6A3D5 /* EventScrollerCell.swift */,
+				9FEC6A1C1DAE8D3400EA1D1C /* EventScrollerCell.xib */,
+			);
+			path = EventScrollerCell;
+			sourceTree = "<group>";
+		};
 		9FEB719A1D9ACC2300BBFA54 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -233,6 +273,9 @@
 			children = (
 				9FEB71A41D9ACD7D00BBFA54 /* ProgramViewController.swift */,
 				9FEB71B01D9AD2E800BBFA54 /* PeopleViewController.swift */,
+				9F5DC4AA1DB16D87001FDCD2 /* EventsViewController.swift */,
+				9F5DC4AC1DB16E43001FDCD2 /* EventPageViewController.swift */,
+				9F5DC4AE1DB16F68001FDCD2 /* EventViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -242,6 +285,8 @@
 			children = (
 				9FEB71A61D9ACDD500BBFA54 /* PeopleView */,
 				9FEB71A11D9ACCE400BBFA54 /* ProgramView */,
+				9FEC6A191DAE8CDD00EA1D1C /* EventView */,
+				9FCF1BDE1DAEB90E00F6A3D5 /* EventScrollerView */,
 				9FEB71A21D9ACD1200BBFA54 /* NibLoadingView.swift */,
 			);
 			path = Views;
@@ -340,6 +385,24 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		9FEC6A191DAE8CDD00EA1D1C /* EventView */ = {
+			isa = PBXGroup;
+			children = (
+				9FEC6A1A1DAE8CF500EA1D1C /* EventView.swift */,
+				9F5DC4B01DB173D3001FDCD2 /* EventView.xib */,
+			);
+			name = EventView;
+			path = Event;
+			sourceTree = "<group>";
+		};
+		9FEC6A1E1DAE961A00EA1D1C /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				9FEC6A1F1DAE963000EA1D1C /* ProgramRouter.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
 		AC68E73D3C13F147BB819417 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -374,10 +437,16 @@
 		B192B5981D9AC9A200C8B9C2 /* Faghelgapp */ = {
 			isa = PBXGroup;
 			children = (
+				B192B5991D9AC9A200C8B9C2 /* AppDelegate.swift */,
+				B192B5A01D9AC9A200C8B9C2 /* Assets.xcassets */,
+				B192B5A21D9AC9A200C8B9C2 /* LaunchScreen.storyboard */,
+				B192B5A51D9AC9A200C8B9C2 /* Info.plist */,
+				9F25AFB11DA2AE2900488CA6 /* Constants.swift */,
 				9FEB719A1D9ACC2300BBFA54 /* Storyboards */,
 				9FEB719C1D9ACC8700BBFA54 /* Views */,
 				9FEB719B1D9ACC6D00BBFA54 /* ViewControllers */,
 				9FEB71B51D9AEBD000BBFA54 /* Interactors */,
+				9FEC6A1E1DAE961A00EA1D1C /* Routers */,
 				9F25AFA21DA2ABCD00488CA6 /* Services */,
 				9FEB71B81D9AEC4F00BBFA54 /* Presenters */,
 				9FEB71BB1D9AECCD00BBFA54 /* ViewModels */,
@@ -388,11 +457,6 @@
 				9FEB71B21D9AE93200BBFA54 /* Enums */,
 				9F25AFAE1DA2AD9200488CA6 /* Utils */,
 				9FEC6A001DAE8B4D00EA1D1C /* Fonts */,
-				B192B5991D9AC9A200C8B9C2 /* AppDelegate.swift */,
-				B192B5A01D9AC9A200C8B9C2 /* Assets.xcassets */,
-				B192B5A21D9AC9A200C8B9C2 /* LaunchScreen.storyboard */,
-				B192B5A51D9AC9A200C8B9C2 /* Info.plist */,
-				9F25AFB11DA2AE2900488CA6 /* Constants.swift */,
 			);
 			path = Faghelgapp;
 			sourceTree = "<group>";
@@ -504,6 +568,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FEC6A1D1DAE8D3400EA1D1C /* EventScrollerCell.xib in Resources */,
 				9FEC6A0D1DAE8BA000EA1D1C /* Roboto-Black.ttf in Resources */,
 				9FEC6A0E1DAE8BA000EA1D1C /* Roboto-BlackItalic.ttf in Resources */,
 				9FEC6A0F1DAE8BA000EA1D1C /* Roboto-Bold.ttf in Resources */,
@@ -520,6 +585,8 @@
 				B192B5A11D9AC9A200C8B9C2 /* Assets.xcassets in Resources */,
 				846DC9731DA2BEB000B05AC8 /* PeopleEntryCell.xib in Resources */,
 				84A157C21DA588A400B460FF /* Main.storyboard in Resources */,
+				9FCF1BE21DAEB93A00F6A3D5 /* EventScrollerView.xib in Resources */,
+				9F5DC4B11DB173D3001FDCD2 /* EventView.xib in Resources */,
 				846DC9871DA2C95F00B05AC8 /* PeopleHeaderCell.xib in Resources */,
 				9FEB71AA1D9ACDFE00BBFA54 /* PeopleView.xib in Resources */,
 				9FEB71AF1D9AD10600BBFA54 /* ProgramEntryCell.xib in Resources */,
@@ -635,31 +702,38 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F25AFB51DA2AF6D00488CA6 /* Program.swift in Sources */,
+				9FCF1BE51DAEBAA900F6A3D5 /* EventScrollerCell.swift in Sources */,
 				9F25AFA41DA2ABFB00488CA6 /* ProgramService.swift in Sources */,
 				9F25AFB21DA2AE2900488CA6 /* Constants.swift in Sources */,
 				9FEB71C01D9AEE5200BBFA54 /* ProgramConfigurator.swift in Sources */,
 				9F25AFB91DA2B0DE00488CA6 /* Person.swift in Sources */,
 				9F25AFAB1DA2AD0E00488CA6 /* SeededURLSession.swift in Sources */,
 				9F25AFBE1DA2BF7300488CA6 /* Date+Format.swift in Sources */,
+				9FEC6A201DAE963000EA1D1C /* ProgramRouter.swift in Sources */,
 				9F25AFA91DA2ACF400488CA6 /* Config.swift in Sources */,
 				9FEB71B11D9AD2E800BBFA54 /* PeopleViewController.swift in Sources */,
 				9FEB71A31D9ACD1200BBFA54 /* NibLoadingView.swift in Sources */,
 				9FEB71A51D9ACD7D00BBFA54 /* ProgramViewController.swift in Sources */,
 				846DC9891DA2CDC100B05AC8 /* PeopleInteractor.swift in Sources */,
+				9FCF1BE01DAEB93000F6A3D5 /* EventScrollerView.swift in Sources */,
 				B192B59A1D9AC9A200C8B9C2 /* AppDelegate.swift in Sources */,
 				9FEB71BD1D9AECEF00BBFA54 /* ProgramViewModel.swift in Sources */,
 				84387BEB1DA2D406001482EF /* PeopleConfigurator.swift in Sources */,
+				9FEC6A1B1DAE8CF500EA1D1C /* EventView.swift in Sources */,
 				9FEB71B41D9AE94D00BBFA54 /* Day.swift in Sources */,
 				9FEB71AD1D9AD0FD00BBFA54 /* ProgramEntryCell.swift in Sources */,
 				9FEB71B71D9AEBEE00BBFA54 /* ProgramInteractor.swift in Sources */,
+				9F5DC4AD1DB16E43001FDCD2 /* EventPageViewController.swift in Sources */,
 				9F25AFA71DA2ACCD00488CA6 /* HTTPClient.swift in Sources */,
 				9F25AFB01DA2ADA300488CA6 /* Logger.swift in Sources */,
 				9FEB71BA1D9AEC6500BBFA54 /* ProgramPresenter.swift in Sources */,
 				9F25AFBC1DA2B91600488CA6 /* Date+WeekDay.swift in Sources */,
 				846DC9721DA2BEB000B05AC8 /* PeopleEntryCell.swift in Sources */,
+				9F5DC4AF1DB16F68001FDCD2 /* EventViewController.swift in Sources */,
 				9FEB719E1D9ACCAE00BBFA54 /* ProgramView.swift in Sources */,
 				84387BE71DA2D38D001482EF /* PeoplePresenter.swift in Sources */,
 				84387BE91DA2D3DF001482EF /* PeopleViewModel.swift in Sources */,
+				9F5DC4AB1DB16D87001FDCD2 /* EventsViewController.swift in Sources */,
 				9FEB71A81D9ACDF300BBFA54 /* PeopleView.swift in Sources */,
 				9F25AFB71DA2B04E00488CA6 /* Event.swift in Sources */,
 				9F25AFAD1DA2AD2900488CA6 /* SeededDataTask.swift in Sources */,

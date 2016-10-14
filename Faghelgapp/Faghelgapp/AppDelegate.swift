@@ -16,7 +16,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         application.statusBarStyle = .lightContent
         
         UITabBar.appearance().tintColor = Constants.Colours.mesanRed
+        
+        setPageControlAppearance()
         return true
+    }
+    
+    private func setPageControlAppearance() {
+        let pageControl = UIPageControl.appearance()
+        pageControl.pageIndicatorTintColor = Constants.Colours.mesanGrey
+        pageControl.currentPageIndicatorTintColor = Constants.Colours.mesanRed
     }
 }
 

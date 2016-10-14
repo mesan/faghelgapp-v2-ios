@@ -38,6 +38,11 @@ extension ProgramPresenter: ProgramInteractorOutput {
         // TODO
     }
     
+    func didSelectEvent(with index: Int) {
+        viewModel.selectedEventIndex = index
+        updateViewsFromMainThread()
+    }
+    
     private func updateViewsFromMainThread() {
         DispatchQueue.main.async {
             self.viewController.updateViews(viewModel: self.viewModel)

@@ -11,6 +11,7 @@ import UIKit
 
 protocol ProgramViewDelegate: class {
     func dayChanged(day: Day)
+    func didSelectEvent(with index: Int, from events: [Event], day: String)
 }
 
 class ProgramView: NibLoadingView {
@@ -105,5 +106,11 @@ extension ProgramView: UITableViewDataSource {
         cell.populate(event: viewModel.eventsForSelectedDay[indexPath.row])
         
         return cell;
+    }
+}
+
+extension ProgramView: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        viewController?.didSelectEvent(with: indexPath.row, from: viewModel.eventsForSelectedDay, day: viewModel.selectedDay.rawValue)
     }
 }

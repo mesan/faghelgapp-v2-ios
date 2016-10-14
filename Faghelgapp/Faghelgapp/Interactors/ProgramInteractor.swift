@@ -13,6 +13,8 @@ protocol ProgramInteractorOutput {
     
     func fetchedProgram(_ program: Program)
     func fetchProgramFailed()
+    
+    func didSelectEvent(with index: Int)
 }
 
 class ProgramInteractor {
@@ -38,5 +40,9 @@ extension ProgramInteractor: ProgramViewControllerOutput {
                 self.presenter.fetchProgramFailed()
             }
         }
+    }
+    
+    func didSelectEvent(with index: Int) {
+        presenter.didSelectEvent(with: index)
     }
 }
