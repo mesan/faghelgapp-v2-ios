@@ -9,16 +9,17 @@
 import Foundation
 
 protocol ProgramRouterInput {
-    func goToEventsViewController(events: [Event], title: String)
+    func goToEventsViewController(events: [Event], title: String, index: Int)
 }
 
 class ProgramRouter: ProgramRouterInput {
     var viewController: ProgramViewController!
     
-    func goToEventsViewController(events: [Event], title: String) {
+    func goToEventsViewController(events: [Event], title: String, index: Int) {
         let eventsViewController = viewController.storyboard!.instantiateViewController(withIdentifier: "EventsViewController") as! EventsViewController
         eventsViewController.events = events
         eventsViewController.dayTitle = title
+        eventsViewController.index = index
         viewController.show(eventsViewController, sender: viewController)
     }
 }

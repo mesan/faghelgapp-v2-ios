@@ -48,7 +48,7 @@ extension ProgramViewController: ProgramViewDelegate {
     }
     
     func didSelectEvent(with index: Int, from events: [Event], day: String) {
-        router.goToEventsViewController(events: events, title: day)
+        router.goToEventsViewController(events: events, title: day, index: index)
     }
 }
 

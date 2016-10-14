@@ -15,13 +15,14 @@ class EventsViewController: UIViewController {
     
     var events: [Event]!
     var dayTitle: String!
+    var index: Int!
     
     override func viewDidLoad() {
         // Create page view controller
         self.pageViewController = self.storyboard!.instantiateViewController(withIdentifier: "EventPageViewController") as! UIPageViewController
         self.pageViewController.dataSource = self
         
-        let startingViewController = self.viewControllerAtIndex(0)
+        let startingViewController = self.viewControllerAtIndex(index)
         let viewControllers = [startingViewController!]
         self.pageViewController.setViewControllers(viewControllers, direction: UIPageViewControllerNavigationDirection.forward, animated: false, completion: nil)
         
@@ -40,6 +41,10 @@ extension EventsViewController : UIPageViewControllerDataSource {
         
         let eventViewController = viewController as! EventViewController
         var index = eventViewController.pageIndex!
+        if index == NSNotFound {
+            return nil
+        }
+        
         if index == 0 {
             return nil
         }
@@ -56,11 +61,11 @@ extension EventsViewController : UIPageViewControllerDataSource {
             return nil
         }
         
-        index += 1
         if index == self.events.count {
             return nil
         }
         
+        index += 1
         return self.viewControllerAtIndex(index)
     }
     
@@ -82,6 +87,6 @@ extension EventsViewController : UIPageViewControllerDataSource {
     }
     
     func presentationIndex(for pageViewController: UIPageViewController) -> Int {
-        return 0
+        return index
     }
 }
