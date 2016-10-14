@@ -8,6 +8,7 @@ target 'Faghelgapp' do
   # Pods for Faghelgapp
   pod 'NibDesignable'
   pod 'RealmSwift'
+  pod 'Kingfisher', '~> 3.0'
 
   target 'FaghelgappTests' do
     inherit! :search_paths

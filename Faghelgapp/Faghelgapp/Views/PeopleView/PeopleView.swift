@@ -43,11 +43,12 @@ extension PeopleView: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return self.viewModel.people.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: peopleEntryCellIdentifier)!
+        let cell = tableView.dequeueReusableCell(withIdentifier: peopleEntryCellIdentifier)! as! PeopleEntryCell
+        cell.populate(person: self.viewModel.people[indexPath.row])
         return cell;
     }
 }

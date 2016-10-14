@@ -20,4 +20,18 @@ class PeoplePresenter {
 
 extension PeoplePresenter: PeopleInteractorOutput {
     
+    func fetchedPeople(_ people: [Person]) {
+        viewModel.people = people
+        updateViewsFromMainThread()
+    }
+    
+    func fetchedPeopleFailed() {
+        // TODO
+    }
+    
+    private func updateViewsFromMainThread() {
+        DispatchQueue.main.async {
+            self.viewController.updateViews(viewModel: self.viewModel)
+        }
+    }
 }

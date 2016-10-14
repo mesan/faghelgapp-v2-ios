@@ -9,5 +9,5 @@
 import Foundation
 
 class PeopleViewModel {
-    
+    var people: [Person] = []
 }
