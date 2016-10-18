@@ -66,6 +66,9 @@
 		9FEC6A1B1DAE8CF500EA1D1C /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEC6A1A1DAE8CF500EA1D1C /* EventView.swift */; };
 		9FEC6A1D1DAE8D3400EA1D1C /* EventScrollerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FEC6A1C1DAE8D3400EA1D1C /* EventScrollerCell.xib */; };
 		9FEC6A201DAE963000EA1D1C /* ProgramRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEC6A1F1DAE963000EA1D1C /* ProgramRouter.swift */; };
+		B15D59521DB68C0E00750260 /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15D59511DB68C0E00750260 /* PersonView.swift */; };
+		B15D59541DB68C3700750260 /* PersonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B15D59531DB68C3700750260 /* PersonView.xib */; };
+		B15D59561DB697B300750260 /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15D59551DB697B300750260 /* PersonViewController.swift */; };
 		B192B59A1D9AC9A200C8B9C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B192B5991D9AC9A200C8B9C2 /* AppDelegate.swift */; };
 		B192B5A11D9AC9A200C8B9C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B192B5A01D9AC9A200C8B9C2 /* Assets.xcassets */; };
 		B192B5A41D9AC9A200C8B9C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B192B5A21D9AC9A200C8B9C2 /* LaunchScreen.storyboard */; };
@@ -146,6 +149,9 @@
 		9FEC6A1A1DAE8CF500EA1D1C /* EventView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
 		9FEC6A1C1DAE8D3400EA1D1C /* EventScrollerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EventScrollerCell.xib; path = ../../Event/EventScrollerCell.xib; sourceTree = "<group>"; };
 		9FEC6A1F1DAE963000EA1D1C /* ProgramRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramRouter.swift; sourceTree = "<group>"; };
+		B15D59511DB68C0E00750260 /* PersonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonView.swift; sourceTree = "<group>"; };
+		B15D59531DB68C3700750260 /* PersonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonView.xib; sourceTree = "<group>"; };
+		B15D59551DB697B300750260 /* PersonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
 		B192B5961D9AC9A200C8B9C2 /* Faghelgapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Faghelgapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B192B5991D9AC9A200C8B9C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B192B5A01D9AC9A200C8B9C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -279,6 +285,7 @@
 				9F5DC4AA1DB16D87001FDCD2 /* EventsViewController.swift */,
 				9F5DC4AC1DB16E43001FDCD2 /* EventPageViewController.swift */,
 				9F5DC4AE1DB16F68001FDCD2 /* EventViewController.swift */,
+				B15D59551DB697B300750260 /* PersonViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -286,6 +293,7 @@
 		9FEB719C1D9ACC8700BBFA54 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B15D59501DB68BD200750260 /* PersonView */,
 				9FEB71A61D9ACDD500BBFA54 /* PeopleView */,
 				9FEB71A11D9ACCE400BBFA54 /* ProgramView */,
 				9FEC6A191DAE8CDD00EA1D1C /* EventView */,
@@ -417,6 +425,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		B15D59501DB68BD200750260 /* PersonView */ = {
+			isa = PBXGroup;
+			children = (
+				B15D59511DB68C0E00750260 /* PersonView.swift */,
+				B15D59531DB68C3700750260 /* PersonView.xib */,
+			);
+			path = PersonView;
+			sourceTree = "<group>";
+		};
 		B192B58D1D9AC9A200C8B9C2 = {
 			isa = PBXGroup;
 			children = (
@@ -446,8 +463,6 @@
 				B192B5A51D9AC9A200C8B9C2 /* Info.plist */,
 				9F25AFB11DA2AE2900488CA6 /* Constants.swift */,
 				9FEB719A1D9ACC2300BBFA54 /* Storyboards */,
-				9FEB719C1D9ACC8700BBFA54 /* Views */,
-				9FEB719B1D9ACC6D00BBFA54 /* ViewControllers */,
 				9FEB71B51D9AEBD000BBFA54 /* Interactors */,
 				9FEC6A1E1DAE961A00EA1D1C /* Routers */,
 				9F25AFA21DA2ABCD00488CA6 /* Services */,
@@ -459,6 +474,8 @@
 				9F25AFA51DA2ACB200488CA6 /* Network */,
 				9FEB71B21D9AE93200BBFA54 /* Enums */,
 				9F25AFAE1DA2AD9200488CA6 /* Utils */,
+				9FEB719C1D9ACC8700BBFA54 /* Views */,
+				9FEB719B1D9ACC6D00BBFA54 /* ViewControllers */,
 				9FEC6A001DAE8B4D00EA1D1C /* Fonts */,
 			);
 			path = Faghelgapp;
@@ -572,6 +589,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FEC6A1D1DAE8D3400EA1D1C /* EventScrollerCell.xib in Resources */,
+				B15D59541DB68C3700750260 /* PersonView.xib in Resources */,
 				9FEC6A0D1DAE8BA000EA1D1C /* Roboto-Black.ttf in Resources */,
 				9FEC6A0E1DAE8BA000EA1D1C /* Roboto-BlackItalic.ttf in Resources */,
 				9FEC6A0F1DAE8BA000EA1D1C /* Roboto-Bold.ttf in Resources */,
@@ -713,6 +731,7 @@
 				9F25AFAB1DA2AD0E00488CA6 /* SeededURLSession.swift in Sources */,
 				9F25AFBE1DA2BF7300488CA6 /* Date+Format.swift in Sources */,
 				9FEC6A201DAE963000EA1D1C /* ProgramRouter.swift in Sources */,
+				B15D59521DB68C0E00750260 /* PersonView.swift in Sources */,
 				9F25AFA91DA2ACF400488CA6 /* Config.swift in Sources */,
 				9FEB71B11D9AD2E800BBFA54 /* PeopleViewController.swift in Sources */,
 				9FEB71A31D9ACD1200BBFA54 /* NibLoadingView.swift in Sources */,
@@ -738,6 +757,7 @@
 				84387BE71DA2D38D001482EF /* PeoplePresenter.swift in Sources */,
 				84387BE91DA2D3DF001482EF /* PeopleViewModel.swift in Sources */,
 				9F5DC4AB1DB16D87001FDCD2 /* EventsViewController.swift in Sources */,
+				B15D59561DB697B300750260 /* PersonViewController.swift in Sources */,
 				9FEB71A81D9ACDF300BBFA54 /* PeopleView.swift in Sources */,
 				9F25AFB71DA2B04E00488CA6 /* Event.swift in Sources */,
 				9F25AFAD1DA2AD2900488CA6 /* SeededDataTask.swift in Sources */,

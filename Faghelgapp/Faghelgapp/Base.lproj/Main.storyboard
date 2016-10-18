@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="R9S-o8-q6T">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="R9S-o8-q6T">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -140,11 +140,31 @@
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>
                         <outlet property="peopleView" destination="MQy-9O-vzM" id="ADg-Ve-dME"/>
+                        <segue destination="8M1-Ay-hxT" kind="showDetail" identifier="showPerson" id="rWX-Ac-fuQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kvt-tg-EHg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2346.4000000000001" y="812.74362818590714"/>
+        </scene>
+        <!--Person View Controller-->
+        <scene sceneID="Zec-Fc-tb9">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="8M1-Ay-hxT" customClass="PersonViewController" customModule="Faghelgapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cxX-Lv-8oo"/>
+                        <viewControllerLayoutGuide type="bottom" id="v8S-96-qXI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HHM-EZ-cCa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mhg-nE-PEy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3089" y="813"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="YJm-Hw-MHd">
