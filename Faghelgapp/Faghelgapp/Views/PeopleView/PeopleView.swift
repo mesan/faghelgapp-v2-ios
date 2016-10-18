@@ -28,7 +28,10 @@ class PeopleView: NibLoadingView {
         peopleTableView.estimatedRowHeight = 50
         peopleTableView.rowHeight = UITableViewAutomaticDimension
         peopleTableView.tableFooterView = UIView()
-        peopleTableView.tableHeaderView = PeopleHeaderCell()
+        
+        let header = PeopleHeaderCell()
+        header.frame.size = CGSize(width: header.frame.size.width, height: 200)
+        peopleTableView.tableHeaderView = header
     }
     
     func updateViews(viewModel: PeopleViewModel) {

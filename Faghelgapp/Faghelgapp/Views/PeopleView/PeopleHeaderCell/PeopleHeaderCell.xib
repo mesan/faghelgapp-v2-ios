@@ -19,11 +19,7 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7cJ-7A-CVT">
-                    <constraints>
-                        <constraint firstAttribute="width" secondItem="7cJ-7A-CVT" secondAttribute="height" multiplier="1:0.333" id="364-A6-vee"/>
-                    </constraints>
-                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7cJ-7A-CVT"/>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ao1-Vi-wfa">
                     <constraints>
                         <constraint firstAttribute="width" secondItem="ao1-Vi-wfa" secondAttribute="height" multiplier="1:1" id="er5-8o-p44"/>
@@ -35,9 +31,9 @@
                 <constraint firstItem="7cJ-7A-CVT" firstAttribute="top" secondItem="LZr-3W-ZgP" secondAttribute="top" id="EAx-Wu-iGE"/>
                 <constraint firstAttribute="trailing" secondItem="7cJ-7A-CVT" secondAttribute="trailing" id="HVw-nI-eFe"/>
                 <constraint firstItem="ao1-Vi-wfa" firstAttribute="centerY" secondItem="LZr-3W-ZgP" secondAttribute="centerY" id="Wq9-oY-ZbG"/>
-                <constraint firstItem="7cJ-7A-CVT" firstAttribute="width" secondItem="LZr-3W-ZgP" secondAttribute="width" id="bOI-3c-Ydt"/>
                 <constraint firstItem="7cJ-7A-CVT" firstAttribute="leading" secondItem="LZr-3W-ZgP" secondAttribute="leading" id="eWt-ae-NBA"/>
-                <constraint firstItem="ao1-Vi-wfa" firstAttribute="width" secondItem="LZr-3W-ZgP" secondAttribute="width" multiplier="0.25" id="mhZ-V3-j7c"/>
+                <constraint firstItem="ao1-Vi-wfa" firstAttribute="width" secondItem="LZr-3W-ZgP" secondAttribute="width" multiplier="0.33" id="mhZ-V3-j7c"/>
+                <constraint firstItem="7cJ-7A-CVT" firstAttribute="height" secondItem="LZr-3W-ZgP" secondAttribute="height" multiplier="0.5" id="whZ-9P-984"/>
                 <constraint firstItem="ao1-Vi-wfa" firstAttribute="centerX" secondItem="LZr-3W-ZgP" secondAttribute="centerX" id="x71-ln-cg7"/>
             </constraints>
             <point key="canvasLocation" x="55" y="269"/>
