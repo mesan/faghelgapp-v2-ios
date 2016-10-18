@@ -38,13 +38,15 @@ class PeopleView: NibLoadingView {
         self.viewModel = viewModel
         
         // find person for current user
-        let currentUser = "toreb" // TODO: replace with actual user
-        let currentPerson = self.viewModel.people.filter{ $0.shortName == currentUser }.first
-        
-        if let currentPerson = currentPerson {
-            (peopleTableView.tableHeaderView as! PeopleHeaderCell).populate(person: currentPerson)
+        if let token = UserDefaults.standard.string(forKey: Constants.UserDefaultsKeys.token) {
+            let currentUser = TokenUtil.getUsernameFromToken(token: token)
+            let currentPerson = self.viewModel.people.filter{ $0.shortName == currentUser }.first
+            
+            if let currentPerson = currentPerson {
+                (peopleTableView.tableHeaderView as! PeopleHeaderCell).populate(person: currentPerson)
+            }
         }
-    
+        
         peopleTableView.reloadData()
         peopleTableView.layoutIfNeeded()
     }
