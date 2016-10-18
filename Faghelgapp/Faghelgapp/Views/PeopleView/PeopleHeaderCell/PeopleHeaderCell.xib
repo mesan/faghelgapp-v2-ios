@@ -19,8 +19,8 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7cJ-7A-CVT"/>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ao1-Vi-wfa">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="7cJ-7A-CVT"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="ao1-Vi-wfa">
                     <constraints>
                         <constraint firstAttribute="width" secondItem="ao1-Vi-wfa" secondAttribute="height" multiplier="1:1" id="er5-8o-p44"/>
                     </constraints>
@@ -39,4 +39,8 @@
             <point key="canvasLocation" x="55" y="269"/>
         </view>
     </objects>
+    <resources>
+        <image name="background_placeholder" width="640" height="426"/>
+        <image name="person_placeholder" width="256" height="256"/>
+    </resources>
 </document>

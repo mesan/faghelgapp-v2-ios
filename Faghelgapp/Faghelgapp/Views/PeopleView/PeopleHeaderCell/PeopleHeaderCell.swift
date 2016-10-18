@@ -8,6 +8,7 @@
 
 import UIKit
 import NibDesignable
+import Kingfisher
 
 class PeopleHeaderCell: NibDesignableTableViewCell {
     
@@ -24,7 +25,12 @@ class PeopleHeaderCell: NibDesignableTableViewCell {
         
         self.profileImage.layer.cornerRadius = self.profileImage.frame.size.width / 2
         self.profileImage.layer.borderWidth = borderWidth
-        self.profileImage.layer.borderColor = Constants.Colours.mesanBlueTransparent.cgColor
+        self.profileImage.layer.borderColor = Color.white.cgColor
     }
     
+    func populate(person: Person) {
+        let url = URL(string: person.profileImageUrl)!
+        let placeholderImage = UIImage(named: "person_placeholder")
+        self.profileImage.kf.setImage(with: ImageResource(downloadURL: url, cacheKey: person.shortName), placeholder: placeholderImage, options: nil)
+    }
 }

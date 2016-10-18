@@ -30,13 +30,23 @@ class PeopleView: NibLoadingView {
         peopleTableView.tableFooterView = UIView()
         
         let header = PeopleHeaderCell()
-        header.frame.size = CGSize(width: header.frame.size.width, height: 200)
+        header.frame.size = CGSize(width: header.frame.size.width, height: 180)
         peopleTableView.tableHeaderView = header
     }
     
     func updateViews(viewModel: PeopleViewModel) {
         self.viewModel = viewModel
+        
+        // find person for current user
+        let currentUser = "toreb" // TODO: replace with actual user
+        let currentPerson = self.viewModel.people.filter{ $0.shortName == currentUser }.first
+        
+        if let currentPerson = currentPerson {
+            (peopleTableView.tableHeaderView as! PeopleHeaderCell).populate(person: currentPerson)
+        }
+    
         peopleTableView.reloadData()
+        peopleTableView.layoutIfNeeded()
     }
 }
 
@@ -55,3 +65,26 @@ extension PeopleView: UITableViewDataSource {
         return cell;
     }
 }
+
+/*
+extension PeopleView: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 200
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let header = PeopleHeaderCell()
+        
+        // find person for current user
+        let currentUser = "toreb" // TODO: replace with actual user
+        let currentPerson = self.viewModel.people.filter{ $0.shortName == currentUser }.first
+        
+        if let currentPerson = currentPerson {
+            header.populate(person: currentPerson)
+        }
+        
+        return header;
+    }
+}
+ */

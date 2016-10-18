@@ -21,7 +21,7 @@ class PeoplePresenter {
 extension PeoplePresenter: PeopleInteractorOutput {
     
     func fetchedPeople(_ people: [Person]) {
-        viewModel.people = people
+        self.viewModel.people = people
         updateViewsFromMainThread()
     }
     
