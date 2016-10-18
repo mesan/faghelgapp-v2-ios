@@ -286,7 +286,7 @@
         <scene sceneID="eDF-Xg-hVy">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZTE-KC-t33" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" selectedImage="mesan_logo" systemItem="favorites" id="ufI-55-Tb1"/>
+                    <tabBarItem key="tabBarItem" image="feed_active" selectedImage="feed_active" id="ufI-55-Tb1"/>
                     <toolbarItems/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <navigationBar key="navigationBar" opaque="NO" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="fyA-iH-4Sk">
@@ -309,7 +309,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="mesan_logo" width="371" height="60"/>
+        <image name="feed_active" width="38" height="38"/>
         <image name="people_active" width="24" height="23"/>
         <image name="program_active" width="24" height="23"/>
     </resources>
