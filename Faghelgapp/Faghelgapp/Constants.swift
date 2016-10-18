@@ -28,4 +28,8 @@ enum Constants {
             static let people = URL(string: Prod.baseUrl + "/persons")!
         }
     }
+    
+    struct UserDefaultsKeys {
+        static let token = "token"
+    }
 }

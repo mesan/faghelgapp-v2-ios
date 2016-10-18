@@ -34,6 +34,7 @@
 		9F5DC4AD1DB16E43001FDCD2 /* EventPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5DC4AC1DB16E43001FDCD2 /* EventPageViewController.swift */; };
 		9F5DC4AF1DB16F68001FDCD2 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5DC4AE1DB16F68001FDCD2 /* EventViewController.swift */; };
 		9F5DC4B11DB173D3001FDCD2 /* EventView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F5DC4B01DB173D3001FDCD2 /* EventView.xib */; };
+		9F9901611DB69A6A0043633A /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9901601DB69A6A0043633A /* LogInViewController.swift */; };
 		9FCF1BE01DAEB93000F6A3D5 /* EventScrollerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCF1BDF1DAEB93000F6A3D5 /* EventScrollerView.swift */; };
 		9FCF1BE21DAEB93A00F6A3D5 /* EventScrollerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FCF1BE11DAEB93A00F6A3D5 /* EventScrollerView.xib */; };
 		9FCF1BE51DAEBAA900F6A3D5 /* EventScrollerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCF1BE41DAEBAA900F6A3D5 /* EventScrollerCell.swift */; };
@@ -117,6 +118,8 @@
 		9F5DC4AC1DB16E43001FDCD2 /* EventPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventPageViewController.swift; sourceTree = "<group>"; };
 		9F5DC4AE1DB16F68001FDCD2 /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
 		9F5DC4B01DB173D3001FDCD2 /* EventView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventView.xib; sourceTree = "<group>"; };
+		9F99015F1DB699CE0043633A /* Faghelgapp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Faghelgapp-Bridging-Header.h"; sourceTree = "<group>"; };
+		9F9901601DB69A6A0043633A /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		9FCF1BDF1DAEB93000F6A3D5 /* EventScrollerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventScrollerView.swift; sourceTree = "<group>"; };
 		9FCF1BE11DAEB93A00F6A3D5 /* EventScrollerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventScrollerView.xib; sourceTree = "<group>"; };
 		9FCF1BE41DAEBAA900F6A3D5 /* EventScrollerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventScrollerCell.swift; sourceTree = "<group>"; };
@@ -286,6 +289,7 @@
 				9F5DC4AC1DB16E43001FDCD2 /* EventPageViewController.swift */,
 				9F5DC4AE1DB16F68001FDCD2 /* EventViewController.swift */,
 				B15D59551DB697B300750260 /* PersonViewController.swift */,
+				9F9901601DB69A6A0043633A /* LogInViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -477,6 +481,7 @@
 				9FEB719C1D9ACC8700BBFA54 /* Views */,
 				9FEB719B1D9ACC6D00BBFA54 /* ViewControllers */,
 				9FEC6A001DAE8B4D00EA1D1C /* Fonts */,
+				9F99015F1DB699CE0043633A /* Faghelgapp-Bridging-Header.h */,
 			);
 			path = Faghelgapp;
 			sourceTree = "<group>";
@@ -667,7 +672,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		D45F7F037DF4EF853116DE27 /* [CP] Check Pods Manifest.lock */ = {
@@ -682,7 +687,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		F2CFACF09EDDF74C30909624 /* [CP] Embed Pods Frameworks */ = {
@@ -755,6 +760,7 @@
 				9F5DC4AF1DB16F68001FDCD2 /* EventViewController.swift in Sources */,
 				9FEB719E1D9ACCAE00BBFA54 /* ProgramView.swift in Sources */,
 				84387BE71DA2D38D001482EF /* PeoplePresenter.swift in Sources */,
+				9F9901611DB69A6A0043633A /* LogInViewController.swift in Sources */,
 				84387BE91DA2D3DF001482EF /* PeopleViewModel.swift in Sources */,
 				9F5DC4AB1DB16D87001FDCD2 /* EventsViewController.swift in Sources */,
 				B15D59561DB697B300750260 /* PersonViewController.swift in Sources */,
@@ -905,6 +911,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = no.mesan.Faghelgapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Faghelgapp/Faghelgapp-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -918,6 +925,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = no.mesan.Faghelgapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Faghelgapp/Faghelgapp-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

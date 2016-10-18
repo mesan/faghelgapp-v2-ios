@@ -1,4 +1,5 @@
 PODS:
+  - ADALiOS (1.2.9)
   - Kingfisher (3.1.3)
   - NibDesignable (3.0.0)
   - Realm (2.0.2):
@@ -8,16 +9,18 @@ PODS:
     - Realm (= 2.0.2)
 
 DEPENDENCIES:
+  - ADALiOS
   - Kingfisher (~> 3.0)
   - NibDesignable
   - RealmSwift
 
 SPEC CHECKSUMS:
+  ADALiOS: fe8e6d04ff9eae098e1b43ecdd0c4cef08d99182
   Kingfisher: 007f5851c18c81e7cc106c9cbac1bafea1cce5dc
   NibDesignable: 6ccf1e54135cb05be0a78f803b9a8d78125a7d6d
   Realm: 0f5a194af0b7e6158b83db41b4ee1a00be7ddf1a
   RealmSwift: 0eb5070d851cba7c66e841ca756d83609dc78bc8
 
-PODFILE CHECKSUM: e5432938e07eca395f097c5356358a571e10ad21
+PODFILE CHECKSUM: b1b98d1c7f0e47535ccfbc1e13ad53ca513ed011
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.1.0.rc.3
