@@ -11,9 +11,14 @@ import UIKit
 import ADALiOS
 
 class LogInViewController: UIViewController {
-    
-    override func viewDidLoad() {
-        promptLogin()
+
+    override func viewDidAppear(_ animated: Bool) {
+        let token = UserDefaults.standard.string(forKey: Constants.UserDefaultsKeys.token)
+        if token == nil {
+            promptLogin()
+        } else {
+            loggedIn()
+        }
     }
     
     func promptLogin() {
@@ -35,12 +40,13 @@ class LogInViewController: UIViewController {
                 UserDefaults.standard.set(result?.accessToken, forKey: Constants.UserDefaultsKeys.token)
                 UserDefaults.standard.synchronize()
                 
-                let tabBarController = self.storyboard!.instantiateViewController(withIdentifier: "TabBarController") as! UITabBarController
-                self.show(tabBarController, sender: self)
-                /*self.registerForPush(result.accessToken)
-                self.showCreateMessageButton()*/
+                self.loggedIn()
             }
         })
     }
-
+    
+    private func loggedIn() {
+        let tabBarController = self.storyboard!.instantiateViewController(withIdentifier: "TabBarController") as! UITabBarController
+        self.show(tabBarController, sender: self)
+    }
 }
