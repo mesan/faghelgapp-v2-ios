@@ -13,7 +13,7 @@ protocol PeopleViewControllerOutput {
     func viewControllerWillLayoutSubviews()
 }
 
-class PeopleViewController: UIViewController {
+class PeopleViewController: MesanViewController {
     
     @IBOutlet weak var peopleView: PeopleView!
     

@@ -15,7 +15,7 @@ protocol ProgramViewControllerOutput {
     func didSelectEvent(with index: Int)
 }
 
-class ProgramViewController: UIViewController {
+class ProgramViewController: MesanViewController {
     
     @IBOutlet weak var programView: ProgramView!
     @IBOutlet weak var eventScrollerView: EventScrollerView!
@@ -28,13 +28,6 @@ class ProgramViewController: UIViewController {
         
         programView.viewController = self
         ProgramConfigurator.sharedInstance.configure(viewController: self)
-        
-        let logo = UIImage(named: "mesan_logo")
-        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 15, height: 15))
-        imageView.image = logo
-        imageView.contentMode = .scaleAspectFit
-        imageView.tintColor = UIColor.white
-        self.navigationItem.titleView = imageView
     }
     
     override func viewWillAppear(_ animated: Bool) {

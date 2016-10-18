@@ -35,6 +35,7 @@
 		9F2CF21A1DB6A065004DA01F /* FeedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F2CF2191DB6A065004DA01F /* FeedView.xib */; };
 		9F2CF21D1DB6A413004DA01F /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2CF21C1DB6A413004DA01F /* MessageCell.swift */; };
 		9F2CF21F1DB6A474004DA01F /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F2CF21E1DB6A474004DA01F /* MessageCell.xib */; };
+		9F2CF2211DB6AB55004DA01F /* MesanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2CF2201DB6AB55004DA01F /* MesanViewController.swift */; };
 		9F5DC4AB1DB16D87001FDCD2 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5DC4AA1DB16D87001FDCD2 /* EventsViewController.swift */; };
 		9F5DC4AD1DB16E43001FDCD2 /* EventPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5DC4AC1DB16E43001FDCD2 /* EventPageViewController.swift */; };
 		9F5DC4AF1DB16F68001FDCD2 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5DC4AE1DB16F68001FDCD2 /* EventViewController.swift */; };
@@ -124,6 +125,7 @@
 		9F2CF2191DB6A065004DA01F /* FeedView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedView.xib; sourceTree = "<group>"; };
 		9F2CF21C1DB6A413004DA01F /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		9F2CF21E1DB6A474004DA01F /* MessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
+		9F2CF2201DB6AB55004DA01F /* MesanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MesanViewController.swift; sourceTree = "<group>"; };
 		9F5DC4AA1DB16D87001FDCD2 /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		9F5DC4AC1DB16E43001FDCD2 /* EventPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventPageViewController.swift; sourceTree = "<group>"; };
 		9F5DC4AE1DB16F68001FDCD2 /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
@@ -320,6 +322,7 @@
 				B15D59551DB697B300750260 /* PersonViewController.swift */,
 				9F9901601DB69A6A0043633A /* LogInViewController.swift */,
 				9F2CF2141DB69FFC004DA01F /* FeedViewController.swift */,
+				9F2CF2201DB6AB55004DA01F /* MesanViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -770,6 +773,7 @@
 				9F25AFBE1DA2BF7300488CA6 /* Date+Format.swift in Sources */,
 				9FEC6A201DAE963000EA1D1C /* ProgramRouter.swift in Sources */,
 				B15D59521DB68C0E00750260 /* PersonView.swift in Sources */,
+				9F2CF2211DB6AB55004DA01F /* MesanViewController.swift in Sources */,
 				9F25AFA91DA2ACF400488CA6 /* Config.swift in Sources */,
 				9FEB71B11D9AD2E800BBFA54 /* PeopleViewController.swift in Sources */,
 				9FEB71A31D9ACD1200BBFA54 /* NibLoadingView.swift in Sources */,
