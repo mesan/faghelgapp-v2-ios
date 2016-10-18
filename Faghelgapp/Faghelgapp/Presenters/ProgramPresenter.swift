@@ -50,7 +50,7 @@ extension ProgramPresenter: ProgramInteractorOutput {
     }
     
     private func setSelectedDayToToday() {
-        dayChanged(day: .saturday)//Date().weekday())
+        dayChanged(day: Date().weekday())
     }
 
     
