@@ -6,22 +6,29 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FeedView" customModule="Faghelgapp" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FeedView" customModule="Faghelgapp" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="Owj-md-d7V" id="0z5-lw-zf5"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1d3-QH-1lc">
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Owj-md-d7V">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="213-hp-Okf"/>
+                    </connections>
+                </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="1d3-QH-1lc" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="4Rx-lo-XRv"/>
-                <constraint firstItem="1d3-QH-1lc" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="xkC-Tx-lrK"/>
+                <constraint firstItem="Owj-md-d7V" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="7OI-zE-TD3"/>
+                <constraint firstAttribute="bottom" secondItem="Owj-md-d7V" secondAttribute="bottom" id="WFC-Pu-hnQ"/>
+                <constraint firstItem="Owj-md-d7V" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Xcb-6S-Blt"/>
+                <constraint firstAttribute="trailing" secondItem="Owj-md-d7V" secondAttribute="trailing" id="xs2-dk-ZG6"/>
             </constraints>
             <point key="canvasLocation" x="34.5" y="139.5"/>
         </view>

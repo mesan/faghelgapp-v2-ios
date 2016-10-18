@@ -33,6 +33,8 @@
 		9F2CF2151DB69FFC004DA01F /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2CF2141DB69FFC004DA01F /* FeedViewController.swift */; };
 		9F2CF2181DB6A048004DA01F /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2CF2171DB6A048004DA01F /* FeedView.swift */; };
 		9F2CF21A1DB6A065004DA01F /* FeedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F2CF2191DB6A065004DA01F /* FeedView.xib */; };
+		9F2CF21D1DB6A413004DA01F /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2CF21C1DB6A413004DA01F /* MessageCell.swift */; };
+		9F2CF21F1DB6A474004DA01F /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F2CF21E1DB6A474004DA01F /* MessageCell.xib */; };
 		9F5DC4AB1DB16D87001FDCD2 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5DC4AA1DB16D87001FDCD2 /* EventsViewController.swift */; };
 		9F5DC4AD1DB16E43001FDCD2 /* EventPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5DC4AC1DB16E43001FDCD2 /* EventPageViewController.swift */; };
 		9F5DC4AF1DB16F68001FDCD2 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5DC4AE1DB16F68001FDCD2 /* EventViewController.swift */; };
@@ -120,6 +122,8 @@
 		9F2CF2141DB69FFC004DA01F /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		9F2CF2171DB6A048004DA01F /* FeedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		9F2CF2191DB6A065004DA01F /* FeedView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedView.xib; sourceTree = "<group>"; };
+		9F2CF21C1DB6A413004DA01F /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		9F2CF21E1DB6A474004DA01F /* MessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
 		9F5DC4AA1DB16D87001FDCD2 /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		9F5DC4AC1DB16E43001FDCD2 /* EventPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventPageViewController.swift; sourceTree = "<group>"; };
 		9F5DC4AE1DB16F68001FDCD2 /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
@@ -261,10 +265,20 @@
 		9F2CF2161DB6A038004DA01F /* FeedView */ = {
 			isa = PBXGroup;
 			children = (
+				9F2CF21B1DB6A400004DA01F /* Cells */,
 				9F2CF2171DB6A048004DA01F /* FeedView.swift */,
 				9F2CF2191DB6A065004DA01F /* FeedView.xib */,
 			);
 			path = FeedView;
+			sourceTree = "<group>";
+		};
+		9F2CF21B1DB6A400004DA01F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9F2CF21C1DB6A413004DA01F /* MessageCell.swift */,
+				9F2CF21E1DB6A474004DA01F /* MessageCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		9FCF1BDE1DAEB90E00F6A3D5 /* EventScrollerView */ = {
@@ -613,6 +627,7 @@
 				9FEC6A1D1DAE8D3400EA1D1C /* EventScrollerCell.xib in Resources */,
 				B15D59541DB68C3700750260 /* PersonView.xib in Resources */,
 				9FEC6A0D1DAE8BA000EA1D1C /* Roboto-Black.ttf in Resources */,
+				9F2CF21F1DB6A474004DA01F /* MessageCell.xib in Resources */,
 				9FEC6A0E1DAE8BA000EA1D1C /* Roboto-BlackItalic.ttf in Resources */,
 				9FEC6A0F1DAE8BA000EA1D1C /* Roboto-Bold.ttf in Resources */,
 				9FEC6A101DAE8BA000EA1D1C /* Roboto-BoldItalic.ttf in Resources */,
@@ -782,6 +797,7 @@
 				9F9901611DB69A6A0043633A /* LogInViewController.swift in Sources */,
 				9F2CF2151DB69FFC004DA01F /* FeedViewController.swift in Sources */,
 				84387BE91DA2D3DF001482EF /* PeopleViewModel.swift in Sources */,
+				9F2CF21D1DB6A413004DA01F /* MessageCell.swift in Sources */,
 				9F5DC4AB1DB16D87001FDCD2 /* EventsViewController.swift in Sources */,
 				B15D59561DB697B300750260 /* PersonViewController.swift in Sources */,
 				9FEB71A81D9ACDF300BBFA54 /* PeopleView.swift in Sources */,
