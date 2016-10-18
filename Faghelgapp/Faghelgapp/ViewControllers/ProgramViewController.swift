@@ -64,4 +64,10 @@ extension ProgramViewController: ProgramPresenterOutput {
         
         programView.updateViews(viewModel: viewModel)
     }
+    
+    
+    func scrollToCurrentEvent(){
+        programView.scrollToCurrentEvent()
+    }
+
 }

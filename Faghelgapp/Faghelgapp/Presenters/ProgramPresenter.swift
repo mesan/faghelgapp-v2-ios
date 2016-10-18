@@ -10,6 +10,7 @@ import Foundation
 
 protocol ProgramPresenterOutput {
     func updateViews(viewModel: ProgramViewModel)
+    func scrollToCurrentEvent()
 }
 
 class ProgramPresenter {
@@ -32,11 +33,26 @@ extension ProgramPresenter: ProgramInteractorOutput {
         viewModel.program = program
         viewModel.eventsForSelectedDay = program.getEventsForDay(day: viewModel.selectedDay)
         updateViewsFromMainThread()
+        
+        setSelectedDayToToday()
+        scrollToCurrentEvent()
+
     }
     
     func fetchProgramFailed() {
         // TODO
     }
+    
+    private func scrollToCurrentEvent(){
+        DispatchQueue.main.async {
+            self.viewController.scrollToCurrentEvent()
+        }
+    }
+    
+    private func setSelectedDayToToday() {
+        dayChanged(day: .saturday)//Date().weekday())
+    }
+
     
     func didSelectEvent(with index: Int) {
         viewModel.selectedEventIndex = index
