@@ -85,6 +85,8 @@
 		B15D59561DB697B300750260 /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15D59551DB697B300750260 /* PersonViewController.swift */; };
 		B15D595B1DBFBF3200750260 /* NewMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15D595A1DBFBF3200750260 /* NewMessageView.swift */; };
 		B15D595D1DBFBF5A00750260 /* NewMessageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B15D595C1DBFBF5A00750260 /* NewMessageView.xib */; };
+		B15D595F1DBFC52600750260 /* FeedRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15D595E1DBFC52600750260 /* FeedRouter.swift */; };
+		B15D59611DBFC61600750260 /* NewMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15D59601DBFC61600750260 /* NewMessageViewController.swift */; };
 		B192B59A1D9AC9A200C8B9C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B192B5991D9AC9A200C8B9C2 /* AppDelegate.swift */; };
 		B192B5A11D9AC9A200C8B9C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B192B5A01D9AC9A200C8B9C2 /* Assets.xcassets */; };
 		B192B5A41D9AC9A200C8B9C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B192B5A21D9AC9A200C8B9C2 /* LaunchScreen.storyboard */; };
@@ -185,6 +187,8 @@
 		B15D59551DB697B300750260 /* PersonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
 		B15D595A1DBFBF3200750260 /* NewMessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMessageView.swift; sourceTree = "<group>"; };
 		B15D595C1DBFBF5A00750260 /* NewMessageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewMessageView.xib; sourceTree = "<group>"; };
+		B15D595E1DBFC52600750260 /* FeedRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedRouter.swift; sourceTree = "<group>"; };
+		B15D59601DBFC61600750260 /* NewMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMessageViewController.swift; sourceTree = "<group>"; };
 		B192B5961D9AC9A200C8B9C2 /* Faghelgapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Faghelgapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B192B5991D9AC9A200C8B9C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B192B5A01D9AC9A200C8B9C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -345,6 +349,7 @@
 				9F9901601DB69A6A0043633A /* LogInViewController.swift */,
 				9F2CF2141DB69FFC004DA01F /* FeedViewController.swift */,
 				9F2CF2201DB6AB55004DA01F /* MesanViewController.swift */,
+				B15D59601DBFC61600750260 /* NewMessageViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -475,6 +480,7 @@
 			isa = PBXGroup;
 			children = (
 				9FEC6A1F1DAE963000EA1D1C /* ProgramRouter.swift */,
+				B15D595E1DBFC52600750260 /* FeedRouter.swift */,
 			);
 			path = Routers;
 			sourceTree = "<group>";
@@ -840,6 +846,7 @@
 				84824D7F1DAE81E400D176BA /* PeopleService.swift in Sources */,
 				9FEB71B71D9AEBEE00BBFA54 /* ProgramInteractor.swift in Sources */,
 				9F04D2991DBFA5A6002E3896 /* MessageService.swift in Sources */,
+				B15D59611DBFC61600750260 /* NewMessageViewController.swift in Sources */,
 				9F5DC4AD1DB16E43001FDCD2 /* EventPageViewController.swift in Sources */,
 				9F25AFA71DA2ACCD00488CA6 /* HTTPClient.swift in Sources */,
 				9F2CF2231DB6AFB8004DA01F /* TokenUtil.swift in Sources */,
@@ -861,6 +868,7 @@
 				9F5DC4AB1DB16D87001FDCD2 /* EventsViewController.swift in Sources */,
 				B15D59561DB697B300750260 /* PersonViewController.swift in Sources */,
 				9FEB71A81D9ACDF300BBFA54 /* PeopleView.swift in Sources */,
+				B15D595F1DBFC52600750260 /* FeedRouter.swift in Sources */,
 				B15D595B1DBFBF3200750260 /* NewMessageView.swift in Sources */,
 				9F25AFB71DA2B04E00488CA6 /* Event.swift in Sources */,
 				9F04D29B1DBFA5FE002E3896 /* Message.swift in Sources */,

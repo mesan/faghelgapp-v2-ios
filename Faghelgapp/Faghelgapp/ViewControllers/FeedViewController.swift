@@ -18,11 +18,16 @@ class FeedViewController: MesanViewController {
     @IBOutlet weak var feedView: FeedView!
     
     var interactor: FeedViewControllerOutput!
+    var router: FeedRouterInput!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         FeedConfigurator.sharedInstance.configure(viewController: self)
+    }
+    
+    @IBAction func newMessageButtonClicked(_ sender: UIBarButtonItem) {
+        router.goToNewMessageViewController()
     }
     
     override func viewDidAppear(_ animated: Bool) {

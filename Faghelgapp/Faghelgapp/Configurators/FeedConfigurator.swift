@@ -26,9 +26,9 @@ class FeedConfigurator {
         let interactor = FeedInteractor(messageService: messageService)
         interactor.presenter = presenter
         
-        /*let router = FeedRouter()
+        let router = FeedRouter()
         viewController.router = router
-        router.viewController = viewController*/
+        router.viewController = viewController
         
         viewController.interactor = interactor
     }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="C0T-B9-aY2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="C0T-B9-aY2">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -87,8 +87,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="n3M-hr-kaF">
+                        <barButtonItem key="backBarButtonItem" title=" " id="Tdu-3H-6dO"/>
                         <barButtonItem key="rightBarButtonItem" image="bullhorn" id="cP3-qr-eAZ">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="newMessageButtonClicked:" destination="OhC-Kw-kyU" id="yRG-gS-8q9"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -118,10 +122,10 @@
             </objects>
             <point key="canvasLocation" x="-458" y="2289"/>
         </scene>
-        <!--View Controller-->
+        <!--Ny melding-->
         <scene sceneID="Icl-VT-I4M">
             <objects>
-                <viewController id="fbk-ma-lNO" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NewMessageViewController" id="fbk-ma-lNO" customClass="NewMessageViewController" customModule="Faghelgapp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="M0f-86-PzB"/>
                         <viewControllerLayoutGuide type="bottom" id="1gh-pP-Coa"/>
@@ -130,7 +134,7 @@
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7B0-cs-Cox">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7B0-cs-Cox" customClass="NewMessageView" customModule="Faghelgapp" customModuleProvider="target">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
@@ -143,6 +147,9 @@
                         </constraints>
                     </view>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Ny melding" id="1NY-3Y-Rio">
+                        <barButtonItem key="backBarButtonItem" title=" " id="pK1-3n-m9d"/>
+                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rmf-xb-ph1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -348,7 +355,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bullhorn" width="24" height="23"/>
+        <image name="bullhorn" width="32" height="32"/>
         <image name="feed_active" width="38" height="38"/>
         <image name="people_active" width="24" height="23"/>
         <image name="program_active" width="24" height="23"/>

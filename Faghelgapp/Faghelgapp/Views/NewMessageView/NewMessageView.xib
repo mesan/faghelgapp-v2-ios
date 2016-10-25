@@ -13,24 +13,33 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="e6A-Oa-UaA">
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="AXG-jQ-ySL"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d49-BN-rP7">
-                    <state key="normal" title="Button"/>
+                    <color key="backgroundColor" red="0.25098039215686274" green="0.46666666666666667" blue="0.58431372549019611" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="MnF-9t-90J"/>
+                        <constraint firstAttribute="width" constant="100" id="Rvb-Ox-WKw"/>
+                    </constraints>
+                    <state key="normal" title="Publisér">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="d49-BN-rP7" secondAttribute="trailing" constant="16" id="LbA-1z-3a1"/>
-                <constraint firstItem="d49-BN-rP7" firstAttribute="top" secondItem="e6A-Oa-UaA" secondAttribute="bottom" constant="16" id="OzJ-5a-UYH"/>
                 <constraint firstAttribute="trailing" secondItem="e6A-Oa-UaA" secondAttribute="trailing" constant="16" id="a6X-Pe-iWC"/>
                 <constraint firstItem="e6A-Oa-UaA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="cyZ-gj-HXI"/>
-                <constraint firstAttribute="bottom" secondItem="d49-BN-rP7" secondAttribute="bottom" constant="16" id="e9l-Xj-sJC"/>
+                <constraint firstItem="d49-BN-rP7" firstAttribute="top" secondItem="e6A-Oa-UaA" secondAttribute="bottom" constant="16" id="fko-9h-Poj"/>
                 <constraint firstItem="e6A-Oa-UaA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="vrU-4I-ewM"/>
             </constraints>
+            <point key="canvasLocation" x="34.5" y="53.5"/>
         </view>
     </objects>
 </document>
