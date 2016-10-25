@@ -22,6 +22,7 @@
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aav-XY-oUk">
                     <constraints>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="100" id="40Q-qo-Nml"/>
                         <constraint firstAttribute="width" secondItem="aav-XY-oUk" secondAttribute="height" multiplier="1:1" id="9hf-Uh-mlE"/>
                     </constraints>
                 </imageView>

@@ -22,6 +22,7 @@
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="7cJ-7A-CVT"/>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="ao1-Vi-wfa">
                     <constraints>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="150" id="D21-gO-dlm"/>
                         <constraint firstAttribute="width" secondItem="ao1-Vi-wfa" secondAttribute="height" multiplier="1:1" id="er5-8o-p44"/>
                     </constraints>
                 </imageView>
@@ -32,7 +33,7 @@
                 <constraint firstAttribute="trailing" secondItem="7cJ-7A-CVT" secondAttribute="trailing" id="HVw-nI-eFe"/>
                 <constraint firstItem="ao1-Vi-wfa" firstAttribute="centerY" secondItem="LZr-3W-ZgP" secondAttribute="centerY" id="Wq9-oY-ZbG"/>
                 <constraint firstItem="7cJ-7A-CVT" firstAttribute="leading" secondItem="LZr-3W-ZgP" secondAttribute="leading" id="eWt-ae-NBA"/>
-                <constraint firstItem="ao1-Vi-wfa" firstAttribute="width" secondItem="LZr-3W-ZgP" secondAttribute="width" multiplier="0.33" id="mhZ-V3-j7c"/>
+                <constraint firstItem="ao1-Vi-wfa" firstAttribute="width" secondItem="LZr-3W-ZgP" secondAttribute="width" multiplier="0.33" priority="900" id="mhZ-V3-j7c"/>
                 <constraint firstItem="7cJ-7A-CVT" firstAttribute="height" secondItem="LZr-3W-ZgP" secondAttribute="height" multiplier="0.5" id="whZ-9P-984"/>
                 <constraint firstItem="ao1-Vi-wfa" firstAttribute="centerX" secondItem="LZr-3W-ZgP" secondAttribute="centerX" id="x71-ln-cg7"/>
             </constraints>
