@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="C0T-B9-aY2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="C0T-B9-aY2">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -86,7 +86,11 @@
                             <constraint firstAttribute="trailing" secondItem="P5q-JO-SJ3" secondAttribute="trailing" id="z9S-mu-73h"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="n3M-hr-kaF"/>
+                    <navigationItem key="navigationItem" id="n3M-hr-kaF">
+                        <barButtonItem key="rightBarButtonItem" image="bullhorn" id="cP3-qr-eAZ">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="feedView" destination="P5q-JO-SJ3" id="Pga-HE-qv5"/>
                         <segue destination="fbk-ma-lNO" kind="show" id="qP6-Lf-cIx"/>
@@ -138,6 +142,8 @@
                             <constraint firstItem="7B0-cs-Cox" firstAttribute="top" secondItem="M0f-86-PzB" secondAttribute="bottom" id="hiP-Ja-RP3"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rmf-xb-ph1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -342,6 +348,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bullhorn" width="24" height="23"/>
         <image name="feed_active" width="38" height="38"/>
         <image name="people_active" width="24" height="23"/>
         <image name="program_active" width="24" height="23"/>
