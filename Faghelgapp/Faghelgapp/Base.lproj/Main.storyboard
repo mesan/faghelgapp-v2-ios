@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="C0T-B9-aY2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="C0T-B9-aY2">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -245,10 +245,10 @@
             </objects>
             <point key="canvasLocation" x="2540" y="1523"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--MesanUI Tab Bar Controller-->
         <scene sceneID="YJm-Hw-MHd">
             <objects>
-                <tabBarController storyboardIdentifier="TabBarController" automaticallyAdjustsScrollViewInsets="NO" id="R9S-o8-q6T" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarController" automaticallyAdjustsScrollViewInsets="NO" id="R9S-o8-q6T" customClass="MesanUITabBarController" customModule="Faghelgapp" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="LUg-cz-I0H">
@@ -314,7 +314,7 @@
         <scene sceneID="FeT-Gz-9s8">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Egc-JC-Yct" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Folk" image="people_active" selectedImage="people_active" id="b59-HL-Kv1"/>
+                    <tabBarItem key="tabBarItem" tag="2" title="Folk" image="people_active" selectedImage="people_active" id="b59-HL-Kv1"/>
                     <toolbarItems/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="Oq6-fm-utN">
@@ -335,7 +335,7 @@
         <scene sceneID="eDF-Xg-hVy">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZTE-KC-t33" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" image="feed_active" selectedImage="feed_active" id="ufI-55-Tb1"/>
+                    <tabBarItem key="tabBarItem" tag="1" image="feed_active" selectedImage="feed_active" id="ufI-55-Tb1"/>
                     <toolbarItems/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <navigationBar key="navigationBar" opaque="NO" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="fyA-iH-4Sk">

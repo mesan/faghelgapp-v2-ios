@@ -29,6 +29,8 @@
 		9F04D2A91DBFD41F002E3896 /* NewMessagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F04D2A81DBFD41F002E3896 /* NewMessagePresenter.swift */; };
 		9F04D2AB1DBFD48D002E3896 /* NewMessageRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F04D2AA1DBFD48D002E3896 /* NewMessageRouter.swift */; };
 		9F04D2AD1DBFD54F002E3896 /* NewMessageConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F04D2AC1DBFD54F002E3896 /* NewMessageConfigurator.swift */; };
+		84A8709B1DBFE62E0090BBB3 /* UIImage+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A8709A1DBFE62E0090BBB3 /* UIImage+Color.swift */; };
+		84CA3AF11DBFF72200662994 /* MesanUITabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CA3AF01DBFF72200662994 /* MesanUITabBarController.swift */; };
 		9F25AFA41DA2ABFB00488CA6 /* ProgramService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25AFA31DA2ABFB00488CA6 /* ProgramService.swift */; };
 		9F25AFA71DA2ACCD00488CA6 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25AFA61DA2ACCD00488CA6 /* HTTPClient.swift */; };
 		9F25AFA91DA2ACF400488CA6 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25AFA81DA2ACF400488CA6 /* Config.swift */; };
@@ -135,6 +137,8 @@
 		9F04D2A81DBFD41F002E3896 /* NewMessagePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMessagePresenter.swift; sourceTree = "<group>"; };
 		9F04D2AA1DBFD48D002E3896 /* NewMessageRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMessageRouter.swift; sourceTree = "<group>"; };
 		9F04D2AC1DBFD54F002E3896 /* NewMessageConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMessageConfigurator.swift; sourceTree = "<group>"; };
+		84A8709A1DBFE62E0090BBB3 /* UIImage+Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Color.swift"; sourceTree = "<group>"; };
+		84CA3AF01DBFF72200662994 /* MesanUITabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MesanUITabBarController.swift; sourceTree = "<group>"; };
 		9F25AFA31DA2ABFB00488CA6 /* ProgramService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramService.swift; sourceTree = "<group>"; };
 		9F25AFA61DA2ACCD00488CA6 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		9F25AFA81DA2ACF400488CA6 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
@@ -296,6 +300,7 @@
 			children = (
 				9F25AFBB1DA2B91600488CA6 /* Date+WeekDay.swift */,
 				9F25AFBD1DA2BF7300488CA6 /* Date+Formats.swift */,
+				84A8709A1DBFE62E0090BBB3 /* UIImage+Color.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -556,6 +561,7 @@
 				B192B5A01D9AC9A200C8B9C2 /* Assets.xcassets */,
 				B192B5A51D9AC9A200C8B9C2 /* Info.plist */,
 				9F25AFB11DA2AE2900488CA6 /* Constants.swift */,
+				84CA3AF01DBFF72200662994 /* MesanUITabBarController.swift */,
 				9FEB719A1D9ACC2300BBFA54 /* Storyboards */,
 				9FEB71B51D9AEBD000BBFA54 /* Interactors */,
 				9FEC6A1E1DAE961A00EA1D1C /* Routers */,
@@ -846,6 +852,7 @@
 				B15D59521DB68C0E00750260 /* PersonView.swift in Sources */,
 				9F04D2A71DBFD27A002E3896 /* MessageInput.swift in Sources */,
 				9F04D29F1DBFAB56002E3896 /* FeedPresenter.swift in Sources */,
+				84CA3AF11DBFF72200662994 /* MesanUITabBarController.swift in Sources */,
 				9F2CF2211DB6AB55004DA01F /* MesanViewController.swift in Sources */,
 				9F25AFA91DA2ACF400488CA6 /* Config.swift in Sources */,
 				9FEB71B11D9AD2E800BBFA54 /* PeopleViewController.swift in Sources */,
@@ -885,6 +892,7 @@
 				9F2CF21D1DB6A413004DA01F /* MessageCell.swift in Sources */,
 				9F04D2AD1DBFD54F002E3896 /* NewMessageConfigurator.swift in Sources */,
 				9F5DC4AB1DB16D87001FDCD2 /* EventsViewController.swift in Sources */,
+				84A8709B1DBFE62E0090BBB3 /* UIImage+Color.swift in Sources */,
 				B15D59561DB697B300750260 /* PersonViewController.swift in Sources */,
 				9FEB71A81D9ACDF300BBFA54 /* PeopleView.swift in Sources */,
 				B15D595F1DBFC52600750260 /* FeedRouter.swift in Sources */,
