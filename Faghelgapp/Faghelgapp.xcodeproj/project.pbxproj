@@ -554,6 +554,7 @@
 				B192B5941D9AC9A200C8B9C2 /* Resources */,
 				F2CFACF09EDDF74C30909624 /* [CP] Embed Pods Frameworks */,
 				1103B2F8D4038E3A5403087E /* [CP] Copy Pods Resources */,
+				9F04D2971DBFA2D6002E3896 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -698,6 +699,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FaghelgappTests/Pods-FaghelgappTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		9F04D2971DBFA2D6002E3896 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" f050be13fe81907b41f0db98e604b954e6425c9e 47434df77af9aeb43729252565230534ebed102d0fc7a1d42065ebd08f15428b";
 		};
 		B7CA4F7D15FD0A455F59E384 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

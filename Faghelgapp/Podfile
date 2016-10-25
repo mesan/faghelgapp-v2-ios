@@ -10,6 +10,8 @@ target 'Faghelgapp' do
   pod 'RealmSwift'
   pod 'Kingfisher', '~> 3.0'
   pod 'ADALiOS'
+  pod 'Fabric'
+  pod 'Crashlytics'
 
   target 'FaghelgappTests' do
     inherit! :search_paths
