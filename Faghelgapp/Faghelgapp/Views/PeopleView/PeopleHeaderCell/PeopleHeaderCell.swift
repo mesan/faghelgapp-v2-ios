@@ -32,5 +32,9 @@ class PeopleHeaderCell: NibDesignableTableViewCell {
         let url = URL(string: person.profileImageUrl)!
         let placeholderImage = UIImage(named: "person_placeholder")
         self.profileImage.kf.setImage(with: ImageResource(downloadURL: url, cacheKey: person.shortName), placeholder: placeholderImage, options: nil)
+        
+        // Fixes problem with profile image on device rotation
+        self.setNeedsLayout()
+        self.layoutIfNeeded()
     }
 }
