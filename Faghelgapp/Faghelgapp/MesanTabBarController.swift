@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MesanUITabBarController: UITabBarController {
+class MesanTabBarController: UITabBarController {
 
     var feedImageView: UIImageView!
     
@@ -85,7 +85,7 @@ class MesanUITabBarController: UITabBarController {
     }
 }
 
-extension MesanUITabBarController : UITabBarControllerDelegate {
+extension MesanTabBarController : UITabBarControllerDelegate {
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
         if let selectedItem = tabBarController.tabBar.selectedItem {
             updateFeedImageTint(selectedIndex: selectedItem.tag)
