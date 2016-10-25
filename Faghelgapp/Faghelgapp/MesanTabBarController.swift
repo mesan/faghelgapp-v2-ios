@@ -42,7 +42,7 @@ class MesanTabBarController: UITabBarController {
         
         // View with a round border
         let borderView = UIView(frame:  CGRect(x: 0, y: imageOffset, width: width, height: height));
-        borderView.backgroundColor = UIColor.white
+        borderView.backgroundColor = self.tabBar.backgroundColor
         borderView.layer.cornerRadius = borderView.frame.size.width / 2
         borderView.layer.borderWidth = self.tabBar.shadowImage!.size.height
         borderView.layer.borderColor = Constants.Colours.mesanBlue.cgColor
