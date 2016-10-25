@@ -9,6 +9,7 @@
 import Foundation
 
 class ProgramService {
+    private let logTag = String(describing: ProgramService.self)
     
     let client = HTTPClient()
     
@@ -23,13 +24,13 @@ class ProgramService {
                     completion(program)
                     
                 } catch let error {
-                    Logger.printDebug(error.localizedDescription)
+                    Logger.printDebug(tag: self.logTag, error.localizedDescription)
                     completion(nil)
                 }
             }
             
             if error != nil {
-                Logger.printDebug(error?.localizedDescription)
+                Logger.printDebug(tag: self.logTag, error?.localizedDescription)
                 completion(nil)
             }
         }

@@ -11,7 +11,6 @@ import UIKit
 
 class MesanViewController: UIViewController {
     
-    
     override func viewDidLoad() {
         setLogoAsTitle()
     }

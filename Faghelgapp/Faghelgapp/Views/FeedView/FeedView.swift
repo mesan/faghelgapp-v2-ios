@@ -14,8 +14,15 @@ class FeedView: NibLoadingView {
     
     let messageCellIdentifier = "MessageCell"
     
+    var viewModel: FeedViewModel = FeedViewModel()
+    
     override func awakeFromNib() {
         initTableView()
+    }
+    
+    func updateFeed(viewModel: FeedViewModel) {
+        self.viewModel = viewModel
+        tableView.reloadData()
     }
     
     private func initTableView() {
@@ -33,11 +40,20 @@ extension FeedView: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return viewModel.messages.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: messageCellIdentifier, for: indexPath) as! MessageCell
+        cell.populate(message: viewModel.messages[indexPath.row])
         return cell
+    }
+}
+
+extension FeedView: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if let messageCell = cell as? MessageCell {
+            
+        }
     }
 }

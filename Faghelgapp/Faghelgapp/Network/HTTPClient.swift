@@ -15,6 +15,8 @@ enum HTTPError: Error {
 typealias HTTPResult = (Data?, Error?) -> Void
 
 class HTTPClient {
+    private let logTag = String(describing: HTTPClient.self)
+    
     private let urlSession: URLSession
     
     init(urlSession: URLSession = Config.urlSession) {
@@ -49,7 +51,7 @@ class HTTPClient {
     
     private func handleResponse(data: Data?, response: URLResponse?, error: Error?, completion: HTTPResult) {
         if error != nil  {
-            Logger.printDebug(error?.localizedDescription)
+            Logger.printDebug(tag: logTag, error?.localizedDescription)
             completion(nil, HTTPError.NetworkError)
         } else if let response = response as? HTTPURLResponse , 200...299 ~= response.statusCode {
             completion(data, nil)

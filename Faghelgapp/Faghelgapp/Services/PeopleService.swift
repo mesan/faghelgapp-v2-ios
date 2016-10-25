@@ -9,6 +9,8 @@
 import Foundation
 
 class PeopleService {
+    private let logTag = String(describing: PeopleService.self)
+    
     let client = HTTPClient()
     
     func getPeople(completion: @escaping ([Person]?) -> Void) {
@@ -27,13 +29,13 @@ class PeopleService {
                     
                     completion(people)
                 } catch let error {
-                    Logger.printDebug(error.localizedDescription)
+                    Logger.printDebug(tag: self.logTag, error.localizedDescription)
                     completion(nil)
                 }
             }
             
             if error != nil {
-                Logger.printDebug(error?.localizedDescription)
+                Logger.printDebug(tag: self.logTag, error?.localizedDescription)
                 completion(nil)
             }
         }

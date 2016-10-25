@@ -18,6 +18,12 @@
 		846DC9891DA2CDC100B05AC8 /* PeopleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846DC9881DA2CDC100B05AC8 /* PeopleInteractor.swift */; };
 		84824D7F1DAE81E400D176BA /* PeopleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84824D7E1DAE81E400D176BA /* PeopleService.swift */; };
 		84A157C21DA588A400B460FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A157C01DA588A400B460FF /* Main.storyboard */; };
+		9F04D2991DBFA5A6002E3896 /* MessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F04D2981DBFA5A6002E3896 /* MessageService.swift */; };
+		9F04D29B1DBFA5FE002E3896 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F04D29A1DBFA5FE002E3896 /* Message.swift */; };
+		9F04D29D1DBFA9C7002E3896 /* FeedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F04D29C1DBFA9C7002E3896 /* FeedInteractor.swift */; };
+		9F04D29F1DBFAB56002E3896 /* FeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F04D29E1DBFAB56002E3896 /* FeedPresenter.swift */; };
+		9F04D2A11DBFABC6002E3896 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F04D2A01DBFABC6002E3896 /* FeedViewModel.swift */; };
+		9F04D2A31DBFAD12002E3896 /* FeedConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F04D2A21DBFAD12002E3896 /* FeedConfigurator.swift */; };
 		9F25AFA41DA2ABFB00488CA6 /* ProgramService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25AFA31DA2ABFB00488CA6 /* ProgramService.swift */; };
 		9F25AFA71DA2ACCD00488CA6 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25AFA61DA2ACCD00488CA6 /* HTTPClient.swift */; };
 		9F25AFA91DA2ACF400488CA6 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25AFA81DA2ACF400488CA6 /* Config.swift */; };
@@ -29,7 +35,7 @@
 		9F25AFB71DA2B04E00488CA6 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25AFB61DA2B04E00488CA6 /* Event.swift */; };
 		9F25AFB91DA2B0DE00488CA6 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25AFB81DA2B0DE00488CA6 /* Person.swift */; };
 		9F25AFBC1DA2B91600488CA6 /* Date+WeekDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25AFBB1DA2B91600488CA6 /* Date+WeekDay.swift */; };
-		9F25AFBE1DA2BF7300488CA6 /* Date+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25AFBD1DA2BF7300488CA6 /* Date+Format.swift */; };
+		9F25AFBE1DA2BF7300488CA6 /* Date+Formats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25AFBD1DA2BF7300488CA6 /* Date+Formats.swift */; };
 		9F2CF2151DB69FFC004DA01F /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2CF2141DB69FFC004DA01F /* FeedViewController.swift */; };
 		9F2CF2181DB6A048004DA01F /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2CF2171DB6A048004DA01F /* FeedView.swift */; };
 		9F2CF21A1DB6A065004DA01F /* FeedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F2CF2191DB6A065004DA01F /* FeedView.xib */; };
@@ -109,6 +115,12 @@
 		846DC9881DA2CDC100B05AC8 /* PeopleInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleInteractor.swift; sourceTree = "<group>"; };
 		84824D7E1DAE81E400D176BA /* PeopleService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleService.swift; sourceTree = "<group>"; };
 		84A157C11DA588A400B460FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Faghelgapp/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		9F04D2981DBFA5A6002E3896 /* MessageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageService.swift; sourceTree = "<group>"; };
+		9F04D29A1DBFA5FE002E3896 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		9F04D29C1DBFA9C7002E3896 /* FeedInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedInteractor.swift; sourceTree = "<group>"; };
+		9F04D29E1DBFAB56002E3896 /* FeedPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
+		9F04D2A01DBFABC6002E3896 /* FeedViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		9F04D2A21DBFAD12002E3896 /* FeedConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedConfigurator.swift; sourceTree = "<group>"; };
 		9F25AFA31DA2ABFB00488CA6 /* ProgramService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramService.swift; sourceTree = "<group>"; };
 		9F25AFA61DA2ACCD00488CA6 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		9F25AFA81DA2ACF400488CA6 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
@@ -120,7 +132,7 @@
 		9F25AFB61DA2B04E00488CA6 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		9F25AFB81DA2B0DE00488CA6 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		9F25AFBB1DA2B91600488CA6 /* Date+WeekDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+WeekDay.swift"; sourceTree = "<group>"; };
-		9F25AFBD1DA2BF7300488CA6 /* Date+Format.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Format.swift"; sourceTree = "<group>"; };
+		9F25AFBD1DA2BF7300488CA6 /* Date+Formats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Formats.swift"; sourceTree = "<group>"; };
 		9F2CF2141DB69FFC004DA01F /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		9F2CF2171DB6A048004DA01F /* FeedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		9F2CF2191DB6A065004DA01F /* FeedView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedView.xib; sourceTree = "<group>"; };
@@ -224,6 +236,7 @@
 			children = (
 				9F25AFA31DA2ABFB00488CA6 /* ProgramService.swift */,
 				84824D7E1DAE81E400D176BA /* PeopleService.swift */,
+				9F04D2981DBFA5A6002E3896 /* MessageService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -254,6 +267,7 @@
 				9F25AFB41DA2AF6D00488CA6 /* Program.swift */,
 				9F25AFB61DA2B04E00488CA6 /* Event.swift */,
 				9F25AFB81DA2B0DE00488CA6 /* Person.swift */,
+				9F04D29A1DBFA5FE002E3896 /* Message.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -262,7 +276,7 @@
 			isa = PBXGroup;
 			children = (
 				9F25AFBB1DA2B91600488CA6 /* Date+WeekDay.swift */,
-				9F25AFBD1DA2BF7300488CA6 /* Date+Format.swift */,
+				9F25AFBD1DA2BF7300488CA6 /* Date+Formats.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -387,6 +401,7 @@
 			children = (
 				9FEB71B61D9AEBEE00BBFA54 /* ProgramInteractor.swift */,
 				846DC9881DA2CDC100B05AC8 /* PeopleInteractor.swift */,
+				9F04D29C1DBFA9C7002E3896 /* FeedInteractor.swift */,
 			);
 			path = Interactors;
 			sourceTree = "<group>";
@@ -396,6 +411,7 @@
 			children = (
 				9FEB71B91D9AEC6500BBFA54 /* ProgramPresenter.swift */,
 				84387BE61DA2D38D001482EF /* PeoplePresenter.swift */,
+				9F04D29E1DBFAB56002E3896 /* FeedPresenter.swift */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -405,6 +421,7 @@
 			children = (
 				9FEB71BC1D9AECEF00BBFA54 /* ProgramViewModel.swift */,
 				84387BE81DA2D3DF001482EF /* PeopleViewModel.swift */,
+				9F04D2A01DBFABC6002E3896 /* FeedViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -414,6 +431,7 @@
 			children = (
 				9FEB71BF1D9AEE5200BBFA54 /* ProgramConfigurator.swift */,
 				84387BEA1DA2D406001482EF /* PeopleConfigurator.swift */,
+				9F04D2A21DBFAD12002E3896 /* FeedConfigurator.swift */,
 			);
 			path = Configurators;
 			sourceTree = "<group>";
@@ -787,9 +805,10 @@
 				9FEB71C01D9AEE5200BBFA54 /* ProgramConfigurator.swift in Sources */,
 				9F25AFB91DA2B0DE00488CA6 /* Person.swift in Sources */,
 				9F25AFAB1DA2AD0E00488CA6 /* SeededURLSession.swift in Sources */,
-				9F25AFBE1DA2BF7300488CA6 /* Date+Format.swift in Sources */,
+				9F25AFBE1DA2BF7300488CA6 /* Date+Formats.swift in Sources */,
 				9FEC6A201DAE963000EA1D1C /* ProgramRouter.swift in Sources */,
 				B15D59521DB68C0E00750260 /* PersonView.swift in Sources */,
+				9F04D29F1DBFAB56002E3896 /* FeedPresenter.swift in Sources */,
 				9F2CF2211DB6AB55004DA01F /* MesanViewController.swift in Sources */,
 				9F25AFA91DA2ACF400488CA6 /* Config.swift in Sources */,
 				9FEB71B11D9AD2E800BBFA54 /* PeopleViewController.swift in Sources */,
@@ -805,6 +824,7 @@
 				9FEB71AD1D9AD0FD00BBFA54 /* ProgramEntryCell.swift in Sources */,
 				84824D7F1DAE81E400D176BA /* PeopleService.swift in Sources */,
 				9FEB71B71D9AEBEE00BBFA54 /* ProgramInteractor.swift in Sources */,
+				9F04D2991DBFA5A6002E3896 /* MessageService.swift in Sources */,
 				9F5DC4AD1DB16E43001FDCD2 /* EventPageViewController.swift in Sources */,
 				9F25AFA71DA2ACCD00488CA6 /* HTTPClient.swift in Sources */,
 				9F2CF2231DB6AFB8004DA01F /* TokenUtil.swift in Sources */,
@@ -813,10 +833,13 @@
 				9FEB71BA1D9AEC6500BBFA54 /* ProgramPresenter.swift in Sources */,
 				9F25AFBC1DA2B91600488CA6 /* Date+WeekDay.swift in Sources */,
 				846DC9721DA2BEB000B05AC8 /* PeopleEntryCell.swift in Sources */,
+				9F04D2A11DBFABC6002E3896 /* FeedViewModel.swift in Sources */,
+				9F04D2A31DBFAD12002E3896 /* FeedConfigurator.swift in Sources */,
 				9F5DC4AF1DB16F68001FDCD2 /* EventViewController.swift in Sources */,
 				9FEB719E1D9ACCAE00BBFA54 /* ProgramView.swift in Sources */,
 				84387BE71DA2D38D001482EF /* PeoplePresenter.swift in Sources */,
 				9F9901611DB69A6A0043633A /* LogInViewController.swift in Sources */,
+				9F04D29D1DBFA9C7002E3896 /* FeedInteractor.swift in Sources */,
 				9F2CF2151DB69FFC004DA01F /* FeedViewController.swift in Sources */,
 				84387BE91DA2D3DF001482EF /* PeopleViewModel.swift in Sources */,
 				9F2CF21D1DB6A413004DA01F /* MessageCell.swift in Sources */,
@@ -824,6 +847,7 @@
 				B15D59561DB697B300750260 /* PersonViewController.swift in Sources */,
 				9FEB71A81D9ACDF300BBFA54 /* PeopleView.swift in Sources */,
 				9F25AFB71DA2B04E00488CA6 /* Event.swift in Sources */,
+				9F04D29B1DBFA5FE002E3896 /* Message.swift in Sources */,
 				9F25AFAD1DA2AD2900488CA6 /* SeededDataTask.swift in Sources */,
 				846DC9861DA2C95F00B05AC8 /* PeopleHeaderCell.swift in Sources */,
 			);
