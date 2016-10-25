@@ -30,7 +30,7 @@
                         <constraint firstAttribute="height" constant="40" id="MnF-9t-90J"/>
                         <constraint firstAttribute="width" constant="100" id="Rvb-Ox-WKw"/>
                     </constraints>
-                    <state key="normal" title="Publisér">
+                    <state key="normal" title="Publiser">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
