@@ -22,10 +22,13 @@ class MessageCell: NibDesignableTableViewCell {
         senderNameLabel.text = message.sender
         timeSentLabel.text = message.timestamp
         
+        let placeholderImage = UIImage(named: "person_placeholder")
+        let senderImageUrl = Constants.Amazon.imageUrl(name: message.sender)
+        let url = URL(string: senderImageUrl)!
+        senderImageView.kf.setImage(with: ImageResource(downloadURL: url, cacheKey: message.sender), placeholder: placeholderImage, options: nil)
+    
         if let imageUrl = message.imageUrl {
-            let placeholderImage = UIImage(named: "person_placeholder")
-            let url = URL(string: imageUrl)!
-            senderImageView.kf.setImage(with: ImageResource(downloadURL: url, cacheKey: message.sender), placeholder: placeholderImage, options: nil)
+        
         }
     }
 }
