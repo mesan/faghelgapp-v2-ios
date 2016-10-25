@@ -25,10 +25,6 @@ class FeedInteractor {
 
 extension FeedInteractor: FeedViewControllerOutput {
     func viewDidAppear() {
-        
-    }
-    
-    func viewControllerWillLayoutSubviews() {
         messageService.getMessages() { (messages) in
             if messages != nil {
                 self.presenter.presentFeed(messages: messages!)
@@ -36,5 +32,9 @@ extension FeedInteractor: FeedViewControllerOutput {
                 self.presenter.failedToGetMessages()
             }
         }
+    }
+    
+    func viewControllerWillLayoutSubviews() {
+        
     }
 }

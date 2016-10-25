@@ -24,6 +24,11 @@
 		9F04D29F1DBFAB56002E3896 /* FeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F04D29E1DBFAB56002E3896 /* FeedPresenter.swift */; };
 		9F04D2A11DBFABC6002E3896 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F04D2A01DBFABC6002E3896 /* FeedViewModel.swift */; };
 		9F04D2A31DBFAD12002E3896 /* FeedConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F04D2A21DBFAD12002E3896 /* FeedConfigurator.swift */; };
+		9F04D2A51DBFCF69002E3896 /* NewMessageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F04D2A41DBFCF69002E3896 /* NewMessageInteractor.swift */; };
+		9F04D2A71DBFD27A002E3896 /* MessageInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F04D2A61DBFD27A002E3896 /* MessageInput.swift */; };
+		9F04D2A91DBFD41F002E3896 /* NewMessagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F04D2A81DBFD41F002E3896 /* NewMessagePresenter.swift */; };
+		9F04D2AB1DBFD48D002E3896 /* NewMessageRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F04D2AA1DBFD48D002E3896 /* NewMessageRouter.swift */; };
+		9F04D2AD1DBFD54F002E3896 /* NewMessageConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F04D2AC1DBFD54F002E3896 /* NewMessageConfigurator.swift */; };
 		9F25AFA41DA2ABFB00488CA6 /* ProgramService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25AFA31DA2ABFB00488CA6 /* ProgramService.swift */; };
 		9F25AFA71DA2ACCD00488CA6 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25AFA61DA2ACCD00488CA6 /* HTTPClient.swift */; };
 		9F25AFA91DA2ACF400488CA6 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25AFA81DA2ACF400488CA6 /* Config.swift */; };
@@ -125,6 +130,11 @@
 		9F04D29E1DBFAB56002E3896 /* FeedPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
 		9F04D2A01DBFABC6002E3896 /* FeedViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		9F04D2A21DBFAD12002E3896 /* FeedConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedConfigurator.swift; sourceTree = "<group>"; };
+		9F04D2A41DBFCF69002E3896 /* NewMessageInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMessageInteractor.swift; sourceTree = "<group>"; };
+		9F04D2A61DBFD27A002E3896 /* MessageInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageInput.swift; sourceTree = "<group>"; };
+		9F04D2A81DBFD41F002E3896 /* NewMessagePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMessagePresenter.swift; sourceTree = "<group>"; };
+		9F04D2AA1DBFD48D002E3896 /* NewMessageRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMessageRouter.swift; sourceTree = "<group>"; };
+		9F04D2AC1DBFD54F002E3896 /* NewMessageConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMessageConfigurator.swift; sourceTree = "<group>"; };
 		9F25AFA31DA2ABFB00488CA6 /* ProgramService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramService.swift; sourceTree = "<group>"; };
 		9F25AFA61DA2ACCD00488CA6 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		9F25AFA81DA2ACF400488CA6 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
@@ -276,6 +286,7 @@
 				9F25AFB61DA2B04E00488CA6 /* Event.swift */,
 				9F25AFB81DA2B0DE00488CA6 /* Person.swift */,
 				9F04D29A1DBFA5FE002E3896 /* Message.swift */,
+				9F04D2A61DBFD27A002E3896 /* MessageInput.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -413,6 +424,7 @@
 				9FEB71B61D9AEBEE00BBFA54 /* ProgramInteractor.swift */,
 				846DC9881DA2CDC100B05AC8 /* PeopleInteractor.swift */,
 				9F04D29C1DBFA9C7002E3896 /* FeedInteractor.swift */,
+				9F04D2A41DBFCF69002E3896 /* NewMessageInteractor.swift */,
 			);
 			path = Interactors;
 			sourceTree = "<group>";
@@ -423,6 +435,7 @@
 				9FEB71B91D9AEC6500BBFA54 /* ProgramPresenter.swift */,
 				84387BE61DA2D38D001482EF /* PeoplePresenter.swift */,
 				9F04D29E1DBFAB56002E3896 /* FeedPresenter.swift */,
+				9F04D2A81DBFD41F002E3896 /* NewMessagePresenter.swift */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -443,6 +456,7 @@
 				9FEB71BF1D9AEE5200BBFA54 /* ProgramConfigurator.swift */,
 				84387BEA1DA2D406001482EF /* PeopleConfigurator.swift */,
 				9F04D2A21DBFAD12002E3896 /* FeedConfigurator.swift */,
+				9F04D2AC1DBFD54F002E3896 /* NewMessageConfigurator.swift */,
 			);
 			path = Configurators;
 			sourceTree = "<group>";
@@ -481,6 +495,7 @@
 			children = (
 				9FEC6A1F1DAE963000EA1D1C /* ProgramRouter.swift */,
 				B15D595E1DBFC52600750260 /* FeedRouter.swift */,
+				9F04D2AA1DBFD48D002E3896 /* NewMessageRouter.swift */,
 			);
 			path = Routers;
 			sourceTree = "<group>";
@@ -829,6 +844,7 @@
 				9F25AFBE1DA2BF7300488CA6 /* Date+Formats.swift in Sources */,
 				9FEC6A201DAE963000EA1D1C /* ProgramRouter.swift in Sources */,
 				B15D59521DB68C0E00750260 /* PersonView.swift in Sources */,
+				9F04D2A71DBFD27A002E3896 /* MessageInput.swift in Sources */,
 				9F04D29F1DBFAB56002E3896 /* FeedPresenter.swift in Sources */,
 				9F2CF2211DB6AB55004DA01F /* MesanViewController.swift in Sources */,
 				9F25AFA91DA2ACF400488CA6 /* Config.swift in Sources */,
@@ -842,6 +858,7 @@
 				84387BEB1DA2D406001482EF /* PeopleConfigurator.swift in Sources */,
 				9FEC6A1B1DAE8CF500EA1D1C /* EventView.swift in Sources */,
 				9FEB71B41D9AE94D00BBFA54 /* Day.swift in Sources */,
+				9F04D2A51DBFCF69002E3896 /* NewMessageInteractor.swift in Sources */,
 				9FEB71AD1D9AD0FD00BBFA54 /* ProgramEntryCell.swift in Sources */,
 				84824D7F1DAE81E400D176BA /* PeopleService.swift in Sources */,
 				9FEB71B71D9AEBEE00BBFA54 /* ProgramInteractor.swift in Sources */,
@@ -864,7 +881,9 @@
 				9F04D29D1DBFA9C7002E3896 /* FeedInteractor.swift in Sources */,
 				9F2CF2151DB69FFC004DA01F /* FeedViewController.swift in Sources */,
 				84387BE91DA2D3DF001482EF /* PeopleViewModel.swift in Sources */,
+				9F04D2A91DBFD41F002E3896 /* NewMessagePresenter.swift in Sources */,
 				9F2CF21D1DB6A413004DA01F /* MessageCell.swift in Sources */,
+				9F04D2AD1DBFD54F002E3896 /* NewMessageConfigurator.swift in Sources */,
 				9F5DC4AB1DB16D87001FDCD2 /* EventsViewController.swift in Sources */,
 				B15D59561DB697B300750260 /* PersonViewController.swift in Sources */,
 				9FEB71A81D9ACDF300BBFA54 /* PeopleView.swift in Sources */,
@@ -872,6 +891,7 @@
 				B15D595B1DBFBF3200750260 /* NewMessageView.swift in Sources */,
 				9F25AFB71DA2B04E00488CA6 /* Event.swift in Sources */,
 				9F04D29B1DBFA5FE002E3896 /* Message.swift in Sources */,
+				9F04D2AB1DBFD48D002E3896 /* NewMessageRouter.swift in Sources */,
 				9F25AFAD1DA2AD2900488CA6 /* SeededDataTask.swift in Sources */,
 				846DC9861DA2C95F00B05AC8 /* PeopleHeaderCell.swift in Sources */,
 			);

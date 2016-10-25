@@ -34,13 +34,15 @@ class HTTPClient {
         task.resume()
     }
     
-    func post(url: URL, headers: [String: String], completion: @escaping HTTPResult) {
-        var request = URLRequest(url: url)
-        request.httpMethod = "POST"
-        request.timeoutInterval = 10.0
+    func post(url: URL, headers: [String: String] = [:], json: [String: Any] = [:], withAuthorization: Bool = false, completion: @escaping HTTPResult) {
+        var request = createRequest(url: url, headers: headers, httpMethod: "POST", withAuthorization: withAuthorization)
         
-        for (key, value) in headers {
-            request.setValue(value, forHTTPHeaderField: key)
+        do {
+            try request.httpBody = JSONSerialization.data(withJSONObject: json, options: .prettyPrinted)
+        } catch let error {
+            Logger.printDebug(tag: logTag, error.localizedDescription)
+            
+            completion(nil, error)
         }
         
         let task = urlSession.dataTask(with: request) { (data, response, error) in
@@ -48,6 +50,25 @@ class HTTPClient {
         }
         task.resume()
     }
+    
+    private func createRequest(url: URL, headers: [String: String], httpMethod: String, withAuthorization: Bool) -> URLRequest {
+        var request = URLRequest(url: url)
+        request.httpMethod = httpMethod
+        request.timeoutInterval = 10.0
+        
+        request.setValue(Constants.Headers.ContentType.value, forHTTPHeaderField: Constants.Headers.ContentType.name)
+        
+        if withAuthorization, let token = UserDefaults.standard.object(forKey: "token") as? String {
+            request.setValue(token, forHTTPHeaderField: Constants.Headers.authorization)
+        }
+        
+        for (key, value) in headers {
+            request.setValue(value, forHTTPHeaderField: key)
+        }
+        
+        return request
+    }
+
     
     private func handleResponse(data: Data?, response: URLResponse?, error: Error?, completion: HTTPResult) {
         if error != nil  {

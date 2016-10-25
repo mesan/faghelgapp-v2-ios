@@ -18,6 +18,15 @@ enum Constants {
         static let mesanRed = UIColor(red: 229/255.0, green: 32/255.0, blue: 27/255.0, alpha: 1.0)
     }
     
+    struct Headers {
+        static let authorization = "Authorization"
+        
+        struct ContentType {
+            static let name = "Content-Type"
+            static let value = "application/json;charset=utf-8"
+        }
+    }
+    
     struct Amazon {
         static func imageUrl(name: String) -> String {
             return "https://s3-eu-west-1.amazonaws.com/faghelg/\(name).png"

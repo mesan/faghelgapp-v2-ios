@@ -39,4 +39,17 @@ class MessageService {
 
         }
     }
+    
+    func postMessage(message: MessageInput, completion: @escaping (Bool) -> Void) {
+        client.post(url: Constants.Api.Endpoints.messages, json: message.toJson()) { (data, error) in
+             if data != nil {
+                completion(true)
+            }
+            
+            if error != nil {
+                Logger.printDebug(tag: self.logTag, error?.localizedDescription)
+                completion(false)
+            }
+        }
+    }
 }
