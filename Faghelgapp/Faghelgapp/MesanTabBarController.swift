@@ -10,6 +10,7 @@ import UIKit
 
 class MesanTabBarController: UITabBarController {
 
+    var containerView: UIView!
     var feedImageView: UIImageView!
     
     override func viewDidLoad() {
@@ -28,6 +29,10 @@ class MesanTabBarController: UITabBarController {
     }
 
     private func addFeedIcon() {
+        if (self.containerView != nil) {
+            containerView.removeFromSuperview()
+        }
+        
         let width: CGFloat = 75
         let height: CGFloat = 75
         
@@ -38,7 +43,7 @@ class MesanTabBarController: UITabBarController {
         let x = self.view.frame.size.width / 2 - (width / 2)
         
         // View that contains all the other views
-        let containerView = UIView(frame:  CGRect(x: x, y: y, width: width, height: height));
+        self.containerView = UIView(frame:  CGRect(x: x, y: y, width: width, height: height));
         
         // View with a round border
         let borderView = UIView(frame:  CGRect(x: 0, y: imageOffset, width: width, height: height));
@@ -47,13 +52,13 @@ class MesanTabBarController: UITabBarController {
         borderView.layer.borderWidth = self.tabBar.shadowImage!.size.height
         borderView.layer.borderColor = Constants.Colours.mesanBlue.cgColor
         
-        containerView.addSubview(borderView)
+        self.containerView.addSubview(borderView)
         
         // View that overlaps the round border view, to make the round view look like a semicircle
         let whiteBoxView = UIView(frame: CGRect(x: 0, y: semicircleHeight, width: width, height: height))
         whiteBoxView.backgroundColor = UIColor.white
 
-        containerView.addSubview(whiteBoxView)
+        self.containerView.addSubview(whiteBoxView)
         
         self.feedImageView = UIImageView(frame:  CGRect(x: (width - feedImageWidthHeight) / 2, y: imageOffset, width: feedImageWidthHeight, height: feedImageWidthHeight));
         self.feedImageView.image = UIImage(named: "feed_active")
@@ -67,6 +72,10 @@ class MesanTabBarController: UITabBarController {
         whiteBoxView.addSubview(self.feedImageView)
         
         self.view.addSubview(containerView);
+        
+        if let selectedTabItem = self.tabBar.selectedItem {
+            updateFeedImageTint(selectedIndex: selectedTabItem.tag)
+        }
     }
     
     func feedImageClicked() {
