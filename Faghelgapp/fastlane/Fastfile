@@ -1,0 +1,132 @@
+
+# Customise this file, documentation can be found here:
+# https://github.com/fastlane/fastlane/tree/master/fastlane/docs
+# All available actions: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Actions.md
+# can also be listed using the `fastlane actions` command
+
+# Change the syntax highlighting to Ruby
+# All lines starting with a # are ignored when running `fastlane`
+
+# If you want to automatically update fastlane if a new version is available:
+# update_fastlane
+
+# This is the minimum version number required.
+# Update this, if you use features of a newer version
+fastlane_version "1.106.2"
+
+default_platform :ios
+
+platform :ios do
+
+  lane :beta do
+    recreate_schemes(project: "./Faghelgapp.xcodeproj")
+    cocoapods
+    ENV["MATCH_FORCE_ENTERPRISE"]="1"
+    match(
+      force_for_new_devices: true,
+      type: "enterprise",
+      git_url: "https://sandan10@bitbucket.org/mesanas/certificates.git",
+    )
+    sigh
+    gym(
+      scheme: "Faghelgapp",
+      workspace: "Faghelgapp.xcworkspace"
+    )
+
+    crashlytics(
+      crashlytics_path: "./Pods/Crashlytics/",
+      api_token: "f050be13fe81907b41f0db98e604b954e6425c9e",
+      build_secret: "47434df77af9aeb43729252565230534ebed102d0fc7a1d42065ebd08f15428b",
+    )
+  end
+
+    lane :beta_local do
+    recreate_schemes(project: "./Faghelgapp.xcodeproj")
+    cocoapods
+    ENV["MATCH_FORCE_ENTERPRISE"]="1"
+    match(
+      force_for_new_devices: true,
+      type: "enterprise",
+      git_url: "https://sandan10@bitbucket.org/mesanas/certificates.git",
+    )
+    sigh
+    gym(
+      scheme: "Faghelgapp",
+      workspace: "Faghelgapp.xcworkspace"
+    )
+  end
+  lane :beta_ci do
+    recreate_schemes(project: "./Faghelgapp.xcodeproj")
+    cocoapods
+    ENV["MATCH_FORCE_ENTERPRISE"]="1"
+    match(
+      force_for_new_devices: true,
+      type: "enterprise",
+      git_url: "https://sandan10@bitbucket.org/mesanas/certificates.git",
+      readonly: true
+    )
+    sigh
+    gym(
+      scheme: "Faghelgapp",
+      workspace: "Faghelgapp.xcworkspace"
+    )
+
+    crashlytics(
+      crashlytics_path: "./Pods/Crashlytics/",
+      api_token: "f050be13fe81907b41f0db98e604b954e6425c9e",
+      build_secret: "47434df77af9aeb43729252565230534ebed102d0fc7a1d42065ebd08f15428b",
+    )
+  end
+
+  lane :cert_dev do
+    ENV["MATCH_FORCE_ENTERPRISE"]="0" 
+    match(
+      force_for_new_devices: true,
+      type: "development",
+      git_url: "https://sandan10@bitbucket.org/mesanas/certificates.git"
+    )
+  end
+
+  lane :cert_enterprise do
+    ENV["MATCH_FORCE_ENTERPRISE"]="1" 
+    match(
+      force_for_new_devices: true,
+      type: "enterprise",
+      git_url: "https://sandan10@bitbucket.org/mesanas/certificates.git"
+    )
+  end
+
+  lane :cert_all do
+    ENV["MATCH_FORCE_ENTERPRISE"]="1" 
+    match(
+      force_for_new_devices: true,
+      type: "enterprise",
+      git_url: "https://sandan10@bitbucket.org/mesanas/certificates.git"
+    )
+    ENV["MATCH_FORCE_ENTERPRISE"]="0" 
+    match(
+      force_for_new_devices: true,
+      type: "development",
+      git_url: "https://sandan10@bitbucket.org/mesanas/certificates.git"
+    )
+  end
+
+  lane :app_no_itc do
+    produce(
+      username: CredentialsManager::AppfileConfig.try_fetch_value(:apple_id),
+      app_identifier: CredentialsManager::AppfileConfig.try_fetch_value(:app_identifier),
+      app_name: CredentialsManager::AppfileConfig.try_fetch_value(:app_identifier).split(".").last,
+      language: "English",
+      app_version: "1.0",
+      skip_itc: true,
+      team_name: CredentialsManager::AppfileConfig.try_fetch_value(:team_id)
+    )
+  end 
+end
+
+
+# More information about multiple platforms in fastlane: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Platforms.md
+# All available actions: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Actions.md
+
+# fastlane reports which actions are used
+# No personal data is recorded. Learn more at https://github.com/fastlane/enhancer
