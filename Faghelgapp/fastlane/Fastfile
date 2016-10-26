@@ -78,6 +78,23 @@ platform :ios do
     )
   end
 
+  lane :beta_ci_no_fabric do
+    recreate_schemes(project: "./Faghelgapp.xcodeproj")
+    cocoapods
+    ENV["MATCH_FORCE_ENTERPRISE"]="1"
+    match(
+      force_for_new_devices: true,
+      type: "enterprise",
+      git_url: "https://sandan10@bitbucket.org/mesanas/certificates.git",
+      readonly: true
+    )
+    sigh
+    gym(
+      scheme: "Faghelgapp",
+      workspace: "Faghelgapp.xcworkspace"
+    )
+  end
+
   lane :cert_dev do
     ENV["MATCH_FORCE_ENTERPRISE"]="0" 
     match(
