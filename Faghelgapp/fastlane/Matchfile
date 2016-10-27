@@ -1,4 +1,4 @@
-git_url "https://sandan10@bitbucket.org/mesanas/certificates.git"
+git_url "git@bitbucket.org:mesanas/certificates.git"
 
 type "development" # The default type, can be: appstore, adhoc or development
 

@@ -25,7 +25,7 @@ platform :ios do
     match(
       force_for_new_devices: true,
       type: "enterprise",
-      git_url: "https://sandan10@bitbucket.org/mesanas/certificates.git",
+      git_url: "git@bitbucket.org:mesanas/certificates.git",
     )
     sigh
     gym(
@@ -47,7 +47,7 @@ platform :ios do
     match(
       force_for_new_devices: true,
       type: "enterprise",
-      git_url: "https://sandan10@bitbucket.org/mesanas/certificates.git",
+      git_url: "git@bitbucket.org:mesanas/certificates.git",
     )
     sigh
     gym(
@@ -62,7 +62,7 @@ platform :ios do
     match(
       force_for_new_devices: true,
       type: "enterprise",
-      git_url: "https://sandan10@bitbucket.org/mesanas/certificates.git",
+      git_url: "git@bitbucket.org:mesanas/certificates.git",
       readonly: true
     )
     sigh
@@ -85,7 +85,7 @@ platform :ios do
     match(
       force_for_new_devices: true,
       type: "enterprise",
-      git_url: "https://sandan10@bitbucket.org/mesanas/certificates.git",
+      git_url: "git@bitbucket.org:mesanas/certificates.git",
       readonly: true
     )
     sigh
@@ -100,7 +100,7 @@ platform :ios do
     match(
       force_for_new_devices: true,
       type: "development",
-      git_url: "https://sandan10@bitbucket.org/mesanas/certificates.git"
+      git_url: "git@bitbucket.org:mesanas/certificates.git"
     )
   end
 
@@ -109,7 +109,7 @@ platform :ios do
     match(
       force_for_new_devices: true,
       type: "enterprise",
-      git_url: "https://sandan10@bitbucket.org/mesanas/certificates.git"
+      git_url: "git@bitbucket.org:mesanas/certificates.git"
     )
   end
 
@@ -118,13 +118,13 @@ platform :ios do
     match(
       force_for_new_devices: true,
       type: "enterprise",
-      git_url: "https://sandan10@bitbucket.org/mesanas/certificates.git"
+      git_url: "git@bitbucket.org:mesanas/certificates.git"
     )
     ENV["MATCH_FORCE_ENTERPRISE"]="0" 
     match(
       force_for_new_devices: true,
       type: "development",
-      git_url: "https://sandan10@bitbucket.org/mesanas/certificates.git"
+      git_url: "git@bitbucket.org:mesanas/certificates.git"
     )
   end
 
