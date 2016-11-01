@@ -14,18 +14,18 @@ protocol NewMessageInteractorOutput {
 }
 
 class NewMessageInteractor {
-    var messageService: MessageService
+    var pushService: PushService
     var presenter: NewMessageInteractorOutput!
     
-    init(messageService: MessageService) {
-        self.messageService = messageService
+    init(pushService: PushService) {
+        self.pushService = pushService
     }
 }
 
 extension NewMessageInteractor: NewMessageViewControllerOutput {
     
     func publishButtonClicked(message: MessageInput) {
-        messageService.postMessage(message: message) { (messagePosted) in
+        pushService.postMessage(message: message) { (messagePosted) in
             if messagePosted {
                 self.presenter.messagePostedSuccessfully()
             } else {

@@ -21,8 +21,8 @@ class NewMessageConfigurator {
         presenter.viewController = viewController
         
         let client = HTTPClient()
-        let messageService = MessageService(client: client)
-        let interactor = NewMessageInteractor(messageService: messageService)
+        let pushService = PushService(client: client)
+        let interactor = NewMessageInteractor(pushService: pushService)
         interactor.presenter = presenter
         
         let router = NewMessageRouter()
