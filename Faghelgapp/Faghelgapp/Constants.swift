@@ -49,5 +49,6 @@ enum Constants {
     struct UserDefaultsKeys {
         static let token = "token"
         static let registeredForPush = "registeredForPush"
+        static let deviceToken = "deviceToken"
     }
 }

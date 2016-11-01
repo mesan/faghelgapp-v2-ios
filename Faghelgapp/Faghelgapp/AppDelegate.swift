@@ -9,6 +9,7 @@
 import UIKit
 import Fabric
 import Crashlytics
+import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -23,6 +24,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         setPageControlAppearance()
         return true
+    }
+    
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        
+        let characterSet = CharacterSet(charactersIn: "<>")
+        
+        let deviceTokenString = deviceToken.description.trimmingCharacters(in: characterSet).replacingOccurrences(of: " ", with: "")
+        
+        UserDefaults.standard.set(deviceTokenString, forKey: Constants.UserDefaultsKeys.deviceToken)
+        UserDefaults.standard.synchronize()
+    }
+    
+    func registerForPushNotifications(application: UIApplication) {
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { (granted, error) in
+            
+        }
     }
     
     private func setPageControlAppearance() {

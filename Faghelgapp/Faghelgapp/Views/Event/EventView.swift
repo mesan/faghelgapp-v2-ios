@@ -63,5 +63,12 @@ class EventView: NibLoadingView {
             self.responsibleImageView.kf.setImage(with: ImageResource(downloadURL: responsibleImageUrl!, cacheKey: event.title!), placeholder: placeholderImage, options: nil)
             self.layoutIfNeeded()
         }
+        
+        let eventPlaceholderImage = UIImage(named: "code")
+        
+        if let eventImageUrlString = event.eventImageUrl, let eventImageUrl = URL(string: eventImageUrlString) {
+            self.eventImageView.kf.setImage(with: ImageResource(downloadURL: eventImageUrl, cacheKey: eventImageUrlString), placeholder: eventPlaceholderImage, options: nil)
+            self.layoutIfNeeded()
+        }
     }
 }

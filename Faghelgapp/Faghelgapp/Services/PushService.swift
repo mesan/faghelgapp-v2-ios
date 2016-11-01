@@ -38,6 +38,10 @@ class PushService {
             }
         }
         
+        if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
+            appDelegate.registerForPushNotifications(application: UIApplication.shared)
+        }
+        
         let json = ["token": pushDevice.token, "owner": pushDevice.owner, "os": pushDevice.os]
         
         client.post(url: Constants.Api.Endpoints.register, json: json, withAuthorization: true) { (data, error) in
