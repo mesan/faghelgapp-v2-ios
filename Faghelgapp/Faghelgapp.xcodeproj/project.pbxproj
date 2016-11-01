@@ -173,6 +173,7 @@
 		9F5DC4B01DB173D3001FDCD2 /* EventView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventView.xib; sourceTree = "<group>"; };
 		9F99015F1DB699CE0043633A /* Faghelgapp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Faghelgapp-Bridging-Header.h"; sourceTree = "<group>"; };
 		9F9901601DB69A6A0043633A /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		9FA887B01DC9293D006CF37C /* Faghelgapp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Faghelgapp.entitlements; sourceTree = "<group>"; };
 		9FCF1BDF1DAEB93000F6A3D5 /* EventScrollerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventScrollerView.swift; sourceTree = "<group>"; };
 		9FCF1BE11DAEB93A00F6A3D5 /* EventScrollerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventScrollerView.xib; sourceTree = "<group>"; };
 		9FCF1BE41DAEBAA900F6A3D5 /* EventScrollerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventScrollerCell.swift; sourceTree = "<group>"; };
@@ -572,6 +573,7 @@
 		B192B5981D9AC9A200C8B9C2 /* Faghelgapp */ = {
 			isa = PBXGroup;
 			children = (
+				9FA887B01DC9293D006CF37C /* Faghelgapp.entitlements */,
 				B192B5991D9AC9A200C8B9C2 /* AppDelegate.swift */,
 				B192B5A01D9AC9A200C8B9C2 /* Assets.xcassets */,
 				B192B5A51D9AC9A200C8B9C2 /* Info.plist */,
@@ -672,7 +674,13 @@
 				TargetAttributes = {
 					B192B5951D9AC9A200C8B9C2 = {
 						CreatedOnToolsVersion = 8.0;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 74XXV957HC;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					B192B5A91D9AC9A200C8B9C2 = {
 						CreatedOnToolsVersion = 8.0;
@@ -1062,10 +1070,14 @@
 			baseConfigurationReference = 32452F3C2530CF3E4413DD5C /* Pods-Faghelgapp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Faghelgapp/Faghelgapp.entitlements;
+				DEVELOPMENT_TEAM = 74XXV957HC;
 				INFOPLIST_FILE = Faghelgapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = no.mesan.Faghelgapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5a84a310-cd95-44a7-8505-8c9bd3432a70";
+				PROVISIONING_PROFILE_SPECIFIER = "Faghelgapp Development";
 				SWIFT_OBJC_BRIDGING_HEADER = "Faghelgapp/Faghelgapp-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
@@ -1076,10 +1088,15 @@
 			baseConfigurationReference = 7B44F67761C6C29BE29B3E52 /* Pods-Faghelgapp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Faghelgapp/Faghelgapp.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 74XXV957HC;
 				INFOPLIST_FILE = Faghelgapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = no.mesan.Faghelgapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "d18862ee-0ac1-4821-95d2-409b88151545";
+				PROVISIONING_PROFILE_SPECIFIER = "Faghelgapp Distribution";
 				SWIFT_OBJC_BRIDGING_HEADER = "Faghelgapp/Faghelgapp-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
