@@ -25,11 +25,11 @@ class EventView: NibLoadingView {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        titleLabel.textColor = UIColor.mesanBlue
+        titleLabel.textColor = UIColor.white
         titleLabel.font = UIFont.listTitleFont()
         
-        timeLabel.textColor = UIColor.mesanGrey
-        timeLabel.font = UIFont.h1Font()
+        timeLabel.textColor = UIColor.white
+        timeLabel.font = UIFont.titleTabFont()
         
         responsibleNameLabel.textColor = UIColor.mesanBlue
         responsibleNameLabel.font = UIFont.pFont()
@@ -70,17 +70,12 @@ class EventView: NibLoadingView {
         let placeholderImage = UIImage(named: "person_placeholder")
         
         var responsibleImageUrl: URL?
-        if let responsible = event.responsible {
-            responsibleImageUrl = URL(string: responsible.profileImageUrl)!
-        } else {
-            if event.eventImageUrl != nil {
-                responsibleImageUrl = URL(string: event.eventImageUrl!)!
-            }
-        }
-        
-        if responsibleImageUrl != nil {
-            self.responsibleImageView.kf.setImage(with: ImageResource(downloadURL: responsibleImageUrl!, cacheKey: event.title!), placeholder: placeholderImage, options: nil)
+        if let responsible = event.responsible, let responsibleImageUrl = URL(string: responsible.profileImageUrl) {
+            self.responsibleImageView.kf.setImage(with: ImageResource(downloadURL: responsibleImageUrl, cacheKey: event.title!), placeholder: placeholderImage, options: nil)
+            responsibleImageBorder.isHidden = false
             self.layoutIfNeeded()
+        } else {
+            responsibleImageBorder.isHidden = true
         }
         
         let eventPlaceholderImage = UIImage(named: "code")

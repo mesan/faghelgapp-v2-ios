@@ -26,7 +26,7 @@ class EventsViewController: UIViewController {
         let viewControllers = [startingViewController!]
         self.pageViewController.setViewControllers(viewControllers, direction: UIPageViewControllerNavigationDirection.forward, animated: false, completion: nil)
         
-        self.pageViewController.view.frame = CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height - self.tabBarController!.tabBar.frame.size.height)
+        self.pageViewController.view.frame = CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height - self.tabBarController!.tabBar.frame.size.height - 16)
         
         self.addChildViewController(pageViewController)
         self.view.addSubview(pageViewController.view)
