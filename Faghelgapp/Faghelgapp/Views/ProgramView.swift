@@ -33,6 +33,15 @@ class ProgramView: NibLoadingView {
         tableView.estimatedRowHeight = 50
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.tableFooterView = UIView()
+        
+        thursdayButton.setTitleColor(UIColor.mesanBlue, for: .normal)
+        thursdayButton.titleLabel?.font = UIFont.titleTabFont()
+        
+        fridayButton.setTitleColor(UIColor.mesanBlue, for: .normal)
+        fridayButton.titleLabel?.font = UIFont.titleTabFont()
+        
+        saturdayButton.setTitleColor(UIColor.mesanBlue, for: .normal)
+        saturdayButton.titleLabel?.font = UIFont.titleTabFont()
     }
     
     func updateViews(viewModel: ProgramViewModel) {
@@ -57,19 +66,19 @@ class ProgramView: NibLoadingView {
     }
     
     private func updateButtonColors() {
-        thursdayButton.setTitleColor(Constants.Colours.mesanGrey, for: .normal)
-        fridayButton.setTitleColor(Constants.Colours.mesanGrey, for: .normal)
-        saturdayButton.setTitleColor(Constants.Colours.mesanGrey, for: .normal)
+        thursdayButton.setTitleColor(UIColor.mesanGrey, for: .normal)
+        fridayButton.setTitleColor(UIColor.mesanGrey, for: .normal)
+        saturdayButton.setTitleColor(UIColor.mesanGrey, for: .normal)
         
         switch viewModel.selectedDay {
         case .thursday:
-            thursdayButton.setTitleColor(Constants.Colours.mesanBlue, for: .normal)
+            thursdayButton.setTitleColor(UIColor.mesanBlue, for: .normal)
             break;
         case .friday:
-            fridayButton.setTitleColor(Constants.Colours.mesanBlue, for: .normal)
+            fridayButton.setTitleColor(UIColor.mesanBlue, for: .normal)
             break;
         case .saturday:
-            saturdayButton.setTitleColor(Constants.Colours.mesanBlue, for: .normal)
+            saturdayButton.setTitleColor(UIColor.mesanBlue, for: .normal)
             break;
         }
     }
@@ -121,6 +130,7 @@ extension ProgramView: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: programEntryCellIdentifier)! as! ProgramEntryCell
+        // TODO: index out of bounds oppstod
         cell.populate(event: viewModel.eventsForSelectedDay[indexPath.row])
         
         return cell;

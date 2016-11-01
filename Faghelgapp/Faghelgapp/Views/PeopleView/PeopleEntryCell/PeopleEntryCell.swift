@@ -16,13 +16,33 @@ class PeopleEntryCell: NibDesignableTableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var shortNameLabel: UILabel!
     
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        
+        initView()
+    }
+    
+    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        
+        initView()
+    }
+    
+    private func initView() {
+        self.nameLabel.textColor = UIColor.mesanBlue
+        self.nameLabel.font = UIFont.pFont()
+        
+        self.shortNameLabel.textColor = UIColor.mesanGrey
+        self.shortNameLabel.font = UIFont.undertekstFont()
+    }
+    
     override func layoutSubviews() {
         super.layoutSubviews()
         
         let borderWidth = CGFloat(1.0)
         self.personImage.layer.cornerRadius = self.personImage.frame.size.width / 2
         self.personImage.layer.borderWidth = borderWidth
-        self.personImage.layer.borderColor = Constants.Colours.mesanBlueTransparent.cgColor
+        self.personImage.layer.borderColor = UIColor.mesanBlueTransparent.cgColor
     }
     
     func populate(person: Person) {

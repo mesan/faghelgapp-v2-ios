@@ -81,10 +81,8 @@ extension Date {
     
     var timeSentFormat: String {
         let dateFormatter = DateFormatter()
-        //dateFormatter.timeSince(from: NSDate(), numericDates: true)  // Just now
-        //dateFormatter.timeSince(from: NSDate.init(timeInterval: 600, since: NSDate() as Date), numericDates: true)
+        
         return dateFormatter.timeSince(from: self as NSDate, numericDates: false)
-        //return Formatter.timeSentFormat.string(from: self)
     }
 }
 

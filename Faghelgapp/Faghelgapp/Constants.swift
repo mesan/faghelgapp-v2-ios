@@ -11,13 +11,6 @@ import UIKit
 
 enum Constants {
     
-    struct Colours {
-        static let mesanBlue = UIColor(red: 64/255.0, green: 119/255.0, blue: 149/255.0, alpha: 1.0)
-        static let mesanBlueTransparent = UIColor(red: 64/255.0, green: 119/255.0, blue: 149/255.0, alpha: 0.5)
-        static let mesanGrey = UIColor(red: 165/255.0, green: 165/255.0, blue: 165/255.0, alpha: 1.0)
-        static let mesanRed = UIColor(red: 229/255.0, green: 32/255.0, blue: 27/255.0, alpha: 1.0)
-    }
-    
     struct Headers {
         static let authorization = "Authorization"
         

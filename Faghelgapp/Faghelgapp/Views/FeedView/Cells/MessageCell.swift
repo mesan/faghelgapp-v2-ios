@@ -16,6 +16,19 @@ class MessageCell: NibDesignableTableViewCell {
     @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var senderNameLabel: UILabel!
     @IBOutlet weak var timeSentLabel: UILabel!
+
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        messageLabel.textColor = UIColor.mesanBlue
+        messageLabel.font = UIFont.h1Font()
+        
+        senderNameLabel.textColor = UIColor.mesanBlue
+        senderNameLabel.font = UIFont.undertekstFont()
+        
+        timeSentLabel.textColor = UIColor.mesanGrey
+        timeSentLabel.font = UIFont.timestampFont()
+    }
     
     func populate(message: Message) {
         messageLabel.text = message.content

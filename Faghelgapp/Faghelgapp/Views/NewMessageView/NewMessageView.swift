@@ -16,8 +16,14 @@ class NewMessageView: NibLoadingView {
     var viewController: NewMessageViewDelegate!
     
     @IBOutlet weak var messageTextView: UITextView!
+    @IBOutlet weak var publishButton: UIButton!
     
     override func awakeFromNib() {
+        messageTextView.textColor = UIColor.mesanBlue
+        messageTextView.font = UIFont.pFont()
+        
+        publishButton.titleLabel?.font = UIFont.pFont()
+        
         view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard)))
     }
     
