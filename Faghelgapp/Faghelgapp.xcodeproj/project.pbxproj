@@ -89,6 +89,7 @@
 		9FEC6A1B1DAE8CF500EA1D1C /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEC6A1A1DAE8CF500EA1D1C /* EventView.swift */; };
 		9FEC6A1D1DAE8D3400EA1D1C /* EventScrollerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FEC6A1C1DAE8D3400EA1D1C /* EventScrollerCell.xib */; };
 		9FEC6A201DAE963000EA1D1C /* ProgramRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEC6A1F1DAE963000EA1D1C /* ProgramRouter.swift */; };
+		B14678CC1DC8FEB8007CF61B /* DateFormatter+TimeSince.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14678CB1DC8FEB8007CF61B /* DateFormatter+TimeSince.swift */; };
 		B15D59521DB68C0E00750260 /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15D59511DB68C0E00750260 /* PersonView.swift */; };
 		B15D59541DB68C3700750260 /* PersonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B15D59531DB68C3700750260 /* PersonView.xib */; };
 		B15D59561DB697B300750260 /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15D59551DB697B300750260 /* PersonViewController.swift */; };
@@ -200,6 +201,7 @@
 		9FEC6A1A1DAE8CF500EA1D1C /* EventView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
 		9FEC6A1C1DAE8D3400EA1D1C /* EventScrollerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EventScrollerCell.xib; path = ../../Event/EventScrollerCell.xib; sourceTree = "<group>"; };
 		9FEC6A1F1DAE963000EA1D1C /* ProgramRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramRouter.swift; sourceTree = "<group>"; };
+		B14678CB1DC8FEB8007CF61B /* DateFormatter+TimeSince.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DateFormatter+TimeSince.swift"; sourceTree = "<group>"; };
 		B15D59511DB68C0E00750260 /* PersonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonView.swift; sourceTree = "<group>"; };
 		B15D59531DB68C3700750260 /* PersonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonView.xib; sourceTree = "<group>"; };
 		B15D59551DB697B300750260 /* PersonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
@@ -307,6 +309,7 @@
 				9F25AFBB1DA2B91600488CA6 /* Date+WeekDay.swift */,
 				9F25AFBD1DA2BF7300488CA6 /* Date+Formats.swift */,
 				84A8709A1DBFE62E0090BBB3 /* UIImage+Color.swift */,
+				B14678CB1DC8FEB8007CF61B /* DateFormatter+TimeSince.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -874,6 +877,7 @@
 				9F04D2A51DBFCF69002E3896 /* NewMessageInteractor.swift in Sources */,
 				9F0D58AC1DC8FF8300555BE1 /* PushService.swift in Sources */,
 				9F0D58AE1DC90B2600555BE1 /* PushDevice.swift in Sources */,
+				B14678CC1DC8FEB8007CF61B /* DateFormatter+TimeSince.swift in Sources */,
 				9FEB71AD1D9AD0FD00BBFA54 /* ProgramEntryCell.swift in Sources */,
 				84824D7F1DAE81E400D176BA /* PeopleService.swift in Sources */,
 				9FEB71B71D9AEBEE00BBFA54 /* ProgramInteractor.swift in Sources */,

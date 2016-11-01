@@ -29,6 +29,9 @@ extension Date {
         }()
     }
     
+    /*
+     Formats date like 13:59
+     */
     func 🕗() -> String {
         let formatter = DateFormatter()
         formatter.dateFormat = "HH:mm"
@@ -36,8 +39,52 @@ extension Date {
         return formatter.string(from: self)
     }
     
+    /*
+     Formats date like Tirsdag 20.10, 13:59
+     */
+    func 🕗🕗() -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd.MM, HH:mm"
+        let norwegianWeekday = 🇳🇴🕗()
+        let dateTime = formatter.string(from: self)
+        
+        return "\(norwegianWeekday) \(dateTime)"
+    }
+    
+    /*
+     Get Norwegian weekday name
+     */
+    func 🇳🇴🕗() -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "EEEE"
+        let day = formatter.string(from: self)
+        
+        switch day{
+        case "Monday":
+            return "Mandag"
+        case "Tuesday":
+            return "Tirsdag"
+        case "Wednesday":
+            return "Onsdag"
+        case "Thursday":
+            return "Torsdag"
+        case "Friday":
+            return "Fredag"
+        case "Saturday":
+            return "Lørdag"
+        case "Sunday":
+            return "Søndag"
+        default:
+            return "Ukjent"
+        }
+    }
+    
     var timeSentFormat: String {
-        return Formatter.timeSentFormat.string(from: self)
+        let dateFormatter = DateFormatter()
+        //dateFormatter.timeSince(from: NSDate(), numericDates: true)  // Just now
+        //dateFormatter.timeSince(from: NSDate.init(timeInterval: 600, since: NSDate() as Date), numericDates: true)
+        return dateFormatter.timeSince(from: self as NSDate, numericDates: false)
+        //return Formatter.timeSentFormat.string(from: self)
     }
 }
 

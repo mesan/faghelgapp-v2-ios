@@ -18,6 +18,21 @@
 		846DC9891DA2CDC100B05AC8 /* PeopleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846DC9881DA2CDC100B05AC8 /* PeopleInteractor.swift */; };
 		84824D7F1DAE81E400D176BA /* PeopleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84824D7E1DAE81E400D176BA /* PeopleService.swift */; };
 		84A157C21DA588A400B460FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A157C01DA588A400B460FF /* Main.storyboard */; };
+		84A8709B1DBFE62E0090BBB3 /* UIImage+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A8709A1DBFE62E0090BBB3 /* UIImage+Color.swift */; };
+		84CA3AF11DBFF72200662994 /* MesanTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CA3AF01DBFF72200662994 /* MesanTabBarController.swift */; };
+		9F04D2991DBFA5A6002E3896 /* MessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F04D2981DBFA5A6002E3896 /* MessageService.swift */; };
+		9F04D29B1DBFA5FE002E3896 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F04D29A1DBFA5FE002E3896 /* Message.swift */; };
+		9F04D29D1DBFA9C7002E3896 /* FeedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F04D29C1DBFA9C7002E3896 /* FeedInteractor.swift */; };
+		9F04D29F1DBFAB56002E3896 /* FeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F04D29E1DBFAB56002E3896 /* FeedPresenter.swift */; };
+		9F04D2A11DBFABC6002E3896 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F04D2A01DBFABC6002E3896 /* FeedViewModel.swift */; };
+		9F04D2A31DBFAD12002E3896 /* FeedConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F04D2A21DBFAD12002E3896 /* FeedConfigurator.swift */; };
+		9F04D2A51DBFCF69002E3896 /* NewMessageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F04D2A41DBFCF69002E3896 /* NewMessageInteractor.swift */; };
+		9F04D2A71DBFD27A002E3896 /* MessageInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F04D2A61DBFD27A002E3896 /* MessageInput.swift */; };
+		9F04D2A91DBFD41F002E3896 /* NewMessagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F04D2A81DBFD41F002E3896 /* NewMessagePresenter.swift */; };
+		9F04D2AB1DBFD48D002E3896 /* NewMessageRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F04D2AA1DBFD48D002E3896 /* NewMessageRouter.swift */; };
+		9F04D2AD1DBFD54F002E3896 /* NewMessageConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F04D2AC1DBFD54F002E3896 /* NewMessageConfigurator.swift */; };
+		9F0D58AC1DC8FF8300555BE1 /* PushService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0D58AB1DC8FF8300555BE1 /* PushService.swift */; };
+		9F0D58AE1DC90B2600555BE1 /* PushDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0D58AD1DC90B2600555BE1 /* PushDevice.swift */; };
 		9F25AFA41DA2ABFB00488CA6 /* ProgramService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25AFA31DA2ABFB00488CA6 /* ProgramService.swift */; };
 		9F25AFA71DA2ACCD00488CA6 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25AFA61DA2ACCD00488CA6 /* HTTPClient.swift */; };
 		9F25AFA91DA2ACF400488CA6 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25AFA81DA2ACF400488CA6 /* Config.swift */; };
@@ -29,10 +44,14 @@
 		9F25AFB71DA2B04E00488CA6 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25AFB61DA2B04E00488CA6 /* Event.swift */; };
 		9F25AFB91DA2B0DE00488CA6 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25AFB81DA2B0DE00488CA6 /* Person.swift */; };
 		9F25AFBC1DA2B91600488CA6 /* Date+WeekDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25AFBB1DA2B91600488CA6 /* Date+WeekDay.swift */; };
-		9F25AFBE1DA2BF7300488CA6 /* Date+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25AFBD1DA2BF7300488CA6 /* Date+Format.swift */; };
+		9F25AFBE1DA2BF7300488CA6 /* Date+Formats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25AFBD1DA2BF7300488CA6 /* Date+Formats.swift */; };
 		9F2CF2151DB69FFC004DA01F /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2CF2141DB69FFC004DA01F /* FeedViewController.swift */; };
 		9F2CF2181DB6A048004DA01F /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2CF2171DB6A048004DA01F /* FeedView.swift */; };
 		9F2CF21A1DB6A065004DA01F /* FeedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F2CF2191DB6A065004DA01F /* FeedView.xib */; };
+		9F2CF21D1DB6A413004DA01F /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2CF21C1DB6A413004DA01F /* MessageCell.swift */; };
+		9F2CF21F1DB6A474004DA01F /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F2CF21E1DB6A474004DA01F /* MessageCell.xib */; };
+		9F2CF2211DB6AB55004DA01F /* MesanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2CF2201DB6AB55004DA01F /* MesanViewController.swift */; };
+		9F2CF2231DB6AFB8004DA01F /* TokenUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2CF2221DB6AFB8004DA01F /* TokenUtil.swift */; };
 		9F5DC4AB1DB16D87001FDCD2 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5DC4AA1DB16D87001FDCD2 /* EventsViewController.swift */; };
 		9F5DC4AD1DB16E43001FDCD2 /* EventPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5DC4AC1DB16E43001FDCD2 /* EventPageViewController.swift */; };
 		9F5DC4AF1DB16F68001FDCD2 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5DC4AE1DB16F68001FDCD2 /* EventViewController.swift */; };
@@ -70,10 +89,14 @@
 		9FEC6A1B1DAE8CF500EA1D1C /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEC6A1A1DAE8CF500EA1D1C /* EventView.swift */; };
 		9FEC6A1D1DAE8D3400EA1D1C /* EventScrollerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FEC6A1C1DAE8D3400EA1D1C /* EventScrollerCell.xib */; };
 		9FEC6A201DAE963000EA1D1C /* ProgramRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEC6A1F1DAE963000EA1D1C /* ProgramRouter.swift */; };
+		B14678CC1DC8FEB8007CF61B /* DateFormatter+TimeSince.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14678CB1DC8FEB8007CF61B /* DateFormatter+TimeSince.swift */; };
 		B15D59521DB68C0E00750260 /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15D59511DB68C0E00750260 /* PersonView.swift */; };
 		B15D59541DB68C3700750260 /* PersonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B15D59531DB68C3700750260 /* PersonView.xib */; };
 		B15D59561DB697B300750260 /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15D59551DB697B300750260 /* PersonViewController.swift */; };
-		B15D59581DB69EA800750260 /* PeopleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15D59571DB69EA800750260 /* PeopleRouter.swift */; };
+		B15D595B1DBFBF3200750260 /* NewMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15D595A1DBFBF3200750260 /* NewMessageView.swift */; };
+		B15D595D1DBFBF5A00750260 /* NewMessageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B15D595C1DBFBF5A00750260 /* NewMessageView.xib */; };
+		B15D595F1DBFC52600750260 /* FeedRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15D595E1DBFC52600750260 /* FeedRouter.swift */; };
+		B15D59611DBFC61600750260 /* NewMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15D59601DBFC61600750260 /* NewMessageViewController.swift */; };
 		B192B59A1D9AC9A200C8B9C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B192B5991D9AC9A200C8B9C2 /* AppDelegate.swift */; };
 		B192B5A11D9AC9A200C8B9C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B192B5A01D9AC9A200C8B9C2 /* Assets.xcassets */; };
 		B192B5A41D9AC9A200C8B9C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B192B5A21D9AC9A200C8B9C2 /* LaunchScreen.storyboard */; };
@@ -106,6 +129,21 @@
 		846DC9881DA2CDC100B05AC8 /* PeopleInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleInteractor.swift; sourceTree = "<group>"; };
 		84824D7E1DAE81E400D176BA /* PeopleService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleService.swift; sourceTree = "<group>"; };
 		84A157C11DA588A400B460FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Faghelgapp/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		84A8709A1DBFE62E0090BBB3 /* UIImage+Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Color.swift"; sourceTree = "<group>"; };
+		84CA3AF01DBFF72200662994 /* MesanTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MesanTabBarController.swift; sourceTree = "<group>"; };
+		9F04D2981DBFA5A6002E3896 /* MessageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageService.swift; sourceTree = "<group>"; };
+		9F04D29A1DBFA5FE002E3896 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		9F04D29C1DBFA9C7002E3896 /* FeedInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedInteractor.swift; sourceTree = "<group>"; };
+		9F04D29E1DBFAB56002E3896 /* FeedPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
+		9F04D2A01DBFABC6002E3896 /* FeedViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		9F04D2A21DBFAD12002E3896 /* FeedConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedConfigurator.swift; sourceTree = "<group>"; };
+		9F04D2A41DBFCF69002E3896 /* NewMessageInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMessageInteractor.swift; sourceTree = "<group>"; };
+		9F04D2A61DBFD27A002E3896 /* MessageInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageInput.swift; sourceTree = "<group>"; };
+		9F04D2A81DBFD41F002E3896 /* NewMessagePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMessagePresenter.swift; sourceTree = "<group>"; };
+		9F04D2AA1DBFD48D002E3896 /* NewMessageRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMessageRouter.swift; sourceTree = "<group>"; };
+		9F04D2AC1DBFD54F002E3896 /* NewMessageConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMessageConfigurator.swift; sourceTree = "<group>"; };
+		9F0D58AB1DC8FF8300555BE1 /* PushService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushService.swift; sourceTree = "<group>"; };
+		9F0D58AD1DC90B2600555BE1 /* PushDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushDevice.swift; sourceTree = "<group>"; };
 		9F25AFA31DA2ABFB00488CA6 /* ProgramService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramService.swift; sourceTree = "<group>"; };
 		9F25AFA61DA2ACCD00488CA6 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		9F25AFA81DA2ACF400488CA6 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
@@ -117,10 +155,14 @@
 		9F25AFB61DA2B04E00488CA6 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		9F25AFB81DA2B0DE00488CA6 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		9F25AFBB1DA2B91600488CA6 /* Date+WeekDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+WeekDay.swift"; sourceTree = "<group>"; };
-		9F25AFBD1DA2BF7300488CA6 /* Date+Format.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Format.swift"; sourceTree = "<group>"; };
+		9F25AFBD1DA2BF7300488CA6 /* Date+Formats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Formats.swift"; sourceTree = "<group>"; };
 		9F2CF2141DB69FFC004DA01F /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		9F2CF2171DB6A048004DA01F /* FeedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		9F2CF2191DB6A065004DA01F /* FeedView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedView.xib; sourceTree = "<group>"; };
+		9F2CF21C1DB6A413004DA01F /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		9F2CF21E1DB6A474004DA01F /* MessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
+		9F2CF2201DB6AB55004DA01F /* MesanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MesanViewController.swift; sourceTree = "<group>"; };
+		9F2CF2221DB6AFB8004DA01F /* TokenUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenUtil.swift; sourceTree = "<group>"; };
 		9F5DC4AA1DB16D87001FDCD2 /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		9F5DC4AC1DB16E43001FDCD2 /* EventPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventPageViewController.swift; sourceTree = "<group>"; };
 		9F5DC4AE1DB16F68001FDCD2 /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
@@ -159,10 +201,14 @@
 		9FEC6A1A1DAE8CF500EA1D1C /* EventView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
 		9FEC6A1C1DAE8D3400EA1D1C /* EventScrollerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EventScrollerCell.xib; path = ../../Event/EventScrollerCell.xib; sourceTree = "<group>"; };
 		9FEC6A1F1DAE963000EA1D1C /* ProgramRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramRouter.swift; sourceTree = "<group>"; };
+		B14678CB1DC8FEB8007CF61B /* DateFormatter+TimeSince.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DateFormatter+TimeSince.swift"; sourceTree = "<group>"; };
 		B15D59511DB68C0E00750260 /* PersonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonView.swift; sourceTree = "<group>"; };
 		B15D59531DB68C3700750260 /* PersonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonView.xib; sourceTree = "<group>"; };
 		B15D59551DB697B300750260 /* PersonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
-		B15D59571DB69EA800750260 /* PeopleRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleRouter.swift; sourceTree = "<group>"; };
+		B15D595A1DBFBF3200750260 /* NewMessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMessageView.swift; sourceTree = "<group>"; };
+		B15D595C1DBFBF5A00750260 /* NewMessageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewMessageView.xib; sourceTree = "<group>"; };
+		B15D595E1DBFC52600750260 /* FeedRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedRouter.swift; sourceTree = "<group>"; };
+		B15D59601DBFC61600750260 /* NewMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMessageViewController.swift; sourceTree = "<group>"; };
 		B192B5961D9AC9A200C8B9C2 /* Faghelgapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Faghelgapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B192B5991D9AC9A200C8B9C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B192B5A01D9AC9A200C8B9C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -218,6 +264,8 @@
 			children = (
 				9F25AFA31DA2ABFB00488CA6 /* ProgramService.swift */,
 				84824D7E1DAE81E400D176BA /* PeopleService.swift */,
+				9F04D2981DBFA5A6002E3896 /* MessageService.swift */,
+				9F0D58AB1DC8FF8300555BE1 /* PushService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -237,6 +285,7 @@
 			isa = PBXGroup;
 			children = (
 				9F25AFAF1DA2ADA300488CA6 /* Logger.swift */,
+				9F2CF2221DB6AFB8004DA01F /* TokenUtil.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -247,6 +296,9 @@
 				9F25AFB41DA2AF6D00488CA6 /* Program.swift */,
 				9F25AFB61DA2B04E00488CA6 /* Event.swift */,
 				9F25AFB81DA2B0DE00488CA6 /* Person.swift */,
+				9F04D29A1DBFA5FE002E3896 /* Message.swift */,
+				9F04D2A61DBFD27A002E3896 /* MessageInput.swift */,
+				9F0D58AD1DC90B2600555BE1 /* PushDevice.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -255,7 +307,9 @@
 			isa = PBXGroup;
 			children = (
 				9F25AFBB1DA2B91600488CA6 /* Date+WeekDay.swift */,
-				9F25AFBD1DA2BF7300488CA6 /* Date+Format.swift */,
+				9F25AFBD1DA2BF7300488CA6 /* Date+Formats.swift */,
+				84A8709A1DBFE62E0090BBB3 /* UIImage+Color.swift */,
+				B14678CB1DC8FEB8007CF61B /* DateFormatter+TimeSince.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -263,10 +317,20 @@
 		9F2CF2161DB6A038004DA01F /* FeedView */ = {
 			isa = PBXGroup;
 			children = (
+				9F2CF21B1DB6A400004DA01F /* Cells */,
 				9F2CF2171DB6A048004DA01F /* FeedView.swift */,
 				9F2CF2191DB6A065004DA01F /* FeedView.xib */,
 			);
 			path = FeedView;
+			sourceTree = "<group>";
+		};
+		9F2CF21B1DB6A400004DA01F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9F2CF21C1DB6A413004DA01F /* MessageCell.swift */,
+				9F2CF21E1DB6A474004DA01F /* MessageCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		9FCF1BDE1DAEB90E00F6A3D5 /* EventScrollerView */ = {
@@ -292,6 +356,7 @@
 		9FEB719A1D9ACC2300BBFA54 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				B192B5A21D9AC9A200C8B9C2 /* LaunchScreen.storyboard */,
 				84A157C01DA588A400B460FF /* Main.storyboard */,
 			);
 			path = Storyboards;
@@ -302,16 +367,14 @@
 			children = (
 				9FEB71A41D9ACD7D00BBFA54 /* ProgramViewController.swift */,
 				9FEB71B01D9AD2E800BBFA54 /* PeopleViewController.swift */,
-				B15D59551DB697B300750260 /* PersonViewController.swift */,
 				9F5DC4AA1DB16D87001FDCD2 /* EventsViewController.swift */,
 				9F5DC4AC1DB16E43001FDCD2 /* EventPageViewController.swift */,
 				9F5DC4AE1DB16F68001FDCD2 /* EventViewController.swift */,
-<<<<<<< Updated upstream
 				B15D59551DB697B300750260 /* PersonViewController.swift */,
 				9F9901601DB69A6A0043633A /* LogInViewController.swift */,
 				9F2CF2141DB69FFC004DA01F /* FeedViewController.swift */,
-=======
->>>>>>> Stashed changes
+				9F2CF2201DB6AB55004DA01F /* MesanViewController.swift */,
+				B15D59601DBFC61600750260 /* NewMessageViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -319,6 +382,7 @@
 		9FEB719C1D9ACC8700BBFA54 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B15D59591DBFBEE400750260 /* NewMessageView */,
 				9F2CF2161DB6A038004DA01F /* FeedView */,
 				B15D59501DB68BD200750260 /* PersonView */,
 				9FEB71A61D9ACDD500BBFA54 /* PeopleView */,
@@ -373,6 +437,8 @@
 			children = (
 				9FEB71B61D9AEBEE00BBFA54 /* ProgramInteractor.swift */,
 				846DC9881DA2CDC100B05AC8 /* PeopleInteractor.swift */,
+				9F04D29C1DBFA9C7002E3896 /* FeedInteractor.swift */,
+				9F04D2A41DBFCF69002E3896 /* NewMessageInteractor.swift */,
 			);
 			path = Interactors;
 			sourceTree = "<group>";
@@ -382,6 +448,8 @@
 			children = (
 				9FEB71B91D9AEC6500BBFA54 /* ProgramPresenter.swift */,
 				84387BE61DA2D38D001482EF /* PeoplePresenter.swift */,
+				9F04D29E1DBFAB56002E3896 /* FeedPresenter.swift */,
+				9F04D2A81DBFD41F002E3896 /* NewMessagePresenter.swift */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -391,6 +459,7 @@
 			children = (
 				9FEB71BC1D9AECEF00BBFA54 /* ProgramViewModel.swift */,
 				84387BE81DA2D3DF001482EF /* PeopleViewModel.swift */,
+				9F04D2A01DBFABC6002E3896 /* FeedViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -400,6 +469,8 @@
 			children = (
 				9FEB71BF1D9AEE5200BBFA54 /* ProgramConfigurator.swift */,
 				84387BEA1DA2D406001482EF /* PeopleConfigurator.swift */,
+				9F04D2A21DBFAD12002E3896 /* FeedConfigurator.swift */,
+				9F04D2AC1DBFD54F002E3896 /* NewMessageConfigurator.swift */,
 			);
 			path = Configurators;
 			sourceTree = "<group>";
@@ -437,7 +508,8 @@
 			isa = PBXGroup;
 			children = (
 				9FEC6A1F1DAE963000EA1D1C /* ProgramRouter.swift */,
-				B15D59571DB69EA800750260 /* PeopleRouter.swift */,
+				B15D595E1DBFC52600750260 /* FeedRouter.swift */,
+				9F04D2AA1DBFD48D002E3896 /* NewMessageRouter.swift */,
 			);
 			path = Routers;
 			sourceTree = "<group>";
@@ -460,6 +532,15 @@
 				B15D59531DB68C3700750260 /* PersonView.xib */,
 			);
 			path = PersonView;
+			sourceTree = "<group>";
+		};
+		B15D59591DBFBEE400750260 /* NewMessageView */ = {
+			isa = PBXGroup;
+			children = (
+				B15D595A1DBFBF3200750260 /* NewMessageView.swift */,
+				B15D595C1DBFBF5A00750260 /* NewMessageView.xib */,
+			);
+			path = NewMessageView;
 			sourceTree = "<group>";
 		};
 		B192B58D1D9AC9A200C8B9C2 = {
@@ -487,9 +568,9 @@
 			children = (
 				B192B5991D9AC9A200C8B9C2 /* AppDelegate.swift */,
 				B192B5A01D9AC9A200C8B9C2 /* Assets.xcassets */,
-				B192B5A21D9AC9A200C8B9C2 /* LaunchScreen.storyboard */,
 				B192B5A51D9AC9A200C8B9C2 /* Info.plist */,
 				9F25AFB11DA2AE2900488CA6 /* Constants.swift */,
+				84CA3AF01DBFF72200662994 /* MesanTabBarController.swift */,
 				9FEB719A1D9ACC2300BBFA54 /* Storyboards */,
 				9FEB71B51D9AEBD000BBFA54 /* Interactors */,
 				9FEC6A1E1DAE961A00EA1D1C /* Routers */,
@@ -541,6 +622,7 @@
 				B192B5941D9AC9A200C8B9C2 /* Resources */,
 				F2CFACF09EDDF74C30909624 /* [CP] Embed Pods Frameworks */,
 				1103B2F8D4038E3A5403087E /* [CP] Copy Pods Resources */,
+				9F04D2971DBFA2D6002E3896 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -620,6 +702,7 @@
 				9FEC6A1D1DAE8D3400EA1D1C /* EventScrollerCell.xib in Resources */,
 				B15D59541DB68C3700750260 /* PersonView.xib in Resources */,
 				9FEC6A0D1DAE8BA000EA1D1C /* Roboto-Black.ttf in Resources */,
+				9F2CF21F1DB6A474004DA01F /* MessageCell.xib in Resources */,
 				9FEC6A0E1DAE8BA000EA1D1C /* Roboto-BlackItalic.ttf in Resources */,
 				9FEC6A0F1DAE8BA000EA1D1C /* Roboto-Bold.ttf in Resources */,
 				9FEC6A101DAE8BA000EA1D1C /* Roboto-BoldItalic.ttf in Resources */,
@@ -631,6 +714,7 @@
 				9FEC6A161DAE8BA000EA1D1C /* Roboto-Regular.ttf in Resources */,
 				9FEC6A171DAE8BA000EA1D1C /* Roboto-Thin.ttf in Resources */,
 				9FEC6A181DAE8BA000EA1D1C /* Roboto-ThinItalic.ttf in Resources */,
+				B15D595D1DBFBF5A00750260 /* NewMessageView.xib in Resources */,
 				B192B5A41D9AC9A200C8B9C2 /* LaunchScreen.storyboard in Resources */,
 				9F2CF21A1DB6A065004DA01F /* FeedView.xib in Resources */,
 				B192B5A11D9AC9A200C8B9C2 /* Assets.xcassets in Resources */,
@@ -684,6 +768,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FaghelgappTests/Pods-FaghelgappTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		9F04D2971DBFA2D6002E3896 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" f050be13fe81907b41f0db98e604b954e6425c9e 47434df77af9aeb43729252565230534ebed102d0fc7a1d42065ebd08f15428b";
 		};
 		B7CA4F7D15FD0A455F59E384 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -759,12 +856,15 @@
 				9FEB71C01D9AEE5200BBFA54 /* ProgramConfigurator.swift in Sources */,
 				9F25AFB91DA2B0DE00488CA6 /* Person.swift in Sources */,
 				9F25AFAB1DA2AD0E00488CA6 /* SeededURLSession.swift in Sources */,
-				9F25AFBE1DA2BF7300488CA6 /* Date+Format.swift in Sources */,
+				9F25AFBE1DA2BF7300488CA6 /* Date+Formats.swift in Sources */,
 				9FEC6A201DAE963000EA1D1C /* ProgramRouter.swift in Sources */,
 				B15D59521DB68C0E00750260 /* PersonView.swift in Sources */,
+				9F04D2A71DBFD27A002E3896 /* MessageInput.swift in Sources */,
+				9F04D29F1DBFAB56002E3896 /* FeedPresenter.swift in Sources */,
+				84CA3AF11DBFF72200662994 /* MesanTabBarController.swift in Sources */,
+				9F2CF2211DB6AB55004DA01F /* MesanViewController.swift in Sources */,
 				9F25AFA91DA2ACF400488CA6 /* Config.swift in Sources */,
 				9FEB71B11D9AD2E800BBFA54 /* PeopleViewController.swift in Sources */,
-				B15D59581DB69EA800750260 /* PeopleRouter.swift in Sources */,
 				9FEB71A31D9ACD1200BBFA54 /* NibLoadingView.swift in Sources */,
 				9FEB71A51D9ACD7D00BBFA54 /* ProgramViewController.swift in Sources */,
 				846DC9891DA2CDC100B05AC8 /* PeopleInteractor.swift in Sources */,
@@ -774,26 +874,47 @@
 				84387BEB1DA2D406001482EF /* PeopleConfigurator.swift in Sources */,
 				9FEC6A1B1DAE8CF500EA1D1C /* EventView.swift in Sources */,
 				9FEB71B41D9AE94D00BBFA54 /* Day.swift in Sources */,
+				9F04D2A51DBFCF69002E3896 /* NewMessageInteractor.swift in Sources */,
+<<<<<<< HEAD
+				9F0D58AC1DC8FF8300555BE1 /* PushService.swift in Sources */,
+				9F0D58AE1DC90B2600555BE1 /* PushDevice.swift in Sources */,
+=======
+				B14678CC1DC8FEB8007CF61B /* DateFormatter+TimeSince.swift in Sources */,
+>>>>>>> 7646971c705a190bffb8559ad8ad15fdf6b38f86
 				9FEB71AD1D9AD0FD00BBFA54 /* ProgramEntryCell.swift in Sources */,
 				84824D7F1DAE81E400D176BA /* PeopleService.swift in Sources */,
 				9FEB71B71D9AEBEE00BBFA54 /* ProgramInteractor.swift in Sources */,
+				9F04D2991DBFA5A6002E3896 /* MessageService.swift in Sources */,
+				B15D59611DBFC61600750260 /* NewMessageViewController.swift in Sources */,
 				9F5DC4AD1DB16E43001FDCD2 /* EventPageViewController.swift in Sources */,
 				9F25AFA71DA2ACCD00488CA6 /* HTTPClient.swift in Sources */,
+				9F2CF2231DB6AFB8004DA01F /* TokenUtil.swift in Sources */,
 				9F25AFB01DA2ADA300488CA6 /* Logger.swift in Sources */,
 				9F2CF2181DB6A048004DA01F /* FeedView.swift in Sources */,
 				9FEB71BA1D9AEC6500BBFA54 /* ProgramPresenter.swift in Sources */,
 				9F25AFBC1DA2B91600488CA6 /* Date+WeekDay.swift in Sources */,
 				846DC9721DA2BEB000B05AC8 /* PeopleEntryCell.swift in Sources */,
+				9F04D2A11DBFABC6002E3896 /* FeedViewModel.swift in Sources */,
+				9F04D2A31DBFAD12002E3896 /* FeedConfigurator.swift in Sources */,
 				9F5DC4AF1DB16F68001FDCD2 /* EventViewController.swift in Sources */,
 				9FEB719E1D9ACCAE00BBFA54 /* ProgramView.swift in Sources */,
 				84387BE71DA2D38D001482EF /* PeoplePresenter.swift in Sources */,
 				9F9901611DB69A6A0043633A /* LogInViewController.swift in Sources */,
+				9F04D29D1DBFA9C7002E3896 /* FeedInteractor.swift in Sources */,
 				9F2CF2151DB69FFC004DA01F /* FeedViewController.swift in Sources */,
 				84387BE91DA2D3DF001482EF /* PeopleViewModel.swift in Sources */,
+				9F04D2A91DBFD41F002E3896 /* NewMessagePresenter.swift in Sources */,
+				9F2CF21D1DB6A413004DA01F /* MessageCell.swift in Sources */,
+				9F04D2AD1DBFD54F002E3896 /* NewMessageConfigurator.swift in Sources */,
 				9F5DC4AB1DB16D87001FDCD2 /* EventsViewController.swift in Sources */,
+				84A8709B1DBFE62E0090BBB3 /* UIImage+Color.swift in Sources */,
 				B15D59561DB697B300750260 /* PersonViewController.swift in Sources */,
 				9FEB71A81D9ACDF300BBFA54 /* PeopleView.swift in Sources */,
+				B15D595F1DBFC52600750260 /* FeedRouter.swift in Sources */,
+				B15D595B1DBFBF3200750260 /* NewMessageView.swift in Sources */,
 				9F25AFB71DA2B04E00488CA6 /* Event.swift in Sources */,
+				9F04D29B1DBFA5FE002E3896 /* Message.swift in Sources */,
+				9F04D2AB1DBFD48D002E3896 /* NewMessageRouter.swift in Sources */,
 				9F25AFAD1DA2AD2900488CA6 /* SeededDataTask.swift in Sources */,
 				846DC9861DA2C95F00B05AC8 /* PeopleHeaderCell.swift in Sources */,
 			);
@@ -832,6 +953,7 @@
 				B192B5A31D9AC9A200C8B9C2 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
