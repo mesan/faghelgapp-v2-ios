@@ -18,8 +18,14 @@ class ProgramEntryCell: NibDesignableTableViewCell {
     func populate(event: Event) {
         eventTitleLabel.text = event.title
         eventStartTimeLabel.text = event.start.🕗()
-        if let hostNames = event.hostNames {
-            eventAuthorLabel.text = hostNames
+        if let speakers = event.speakers {
+            let speakersListedString = speakers.map{String($0.shortName)}.joined(separator: ",")
+            
+            eventAuthorLabel.text = speakersListedString
         }
+        
+        //if let hostNames = event.hostNames {
+         //   eventAuthorLabel.text = hostNames
+        //}
     }
 }
