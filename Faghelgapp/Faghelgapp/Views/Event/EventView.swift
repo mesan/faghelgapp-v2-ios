@@ -22,6 +22,25 @@ class EventView: NibLoadingView {
     
     var allEvents: [Event]!
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        titleLabel.textColor = UIColor.mesanBlue
+        titleLabel.font = UIFont.listTitleFont()
+        
+        timeLabel.textColor = UIColor.mesanGrey
+        timeLabel.font = UIFont.h1Font()
+        
+        responsibleNameLabel.textColor = UIColor.mesanBlue
+        responsibleNameLabel.font = UIFont.pFont()
+        
+        responsibleHandleLabel.textColor = UIColor.mesanGrey
+        responsibleHandleLabel.font = UIFont.undertekstFont()
+        
+        abstractLabel.textColor = UIColor.mesanBlue
+        abstractLabel.font = UIFont.brdtekstFont()
+    }
+    
     override func layoutSubviews() {
         super.layoutSubviews()
         

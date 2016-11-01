@@ -8,39 +8,45 @@
 
 import Foundation
 extension UIFont {
+    private class func convert(_ fontSize: CGFloat) -> CGFloat {
+        let multiplier: CGFloat = 2.0
+        return fontSize * multiplier
+    }
+    
     class func h1Font() -> UIFont? {
-        return UIFont(name: "Roboto-Light", size: 16.0)
+        return UIFont(name: "Roboto-Light", size: convert(16.0))
     }
     
     class func listTitleFont() -> UIFont? {
-        return UIFont(name: "Roboto-Regular", size: 12.0)
+        return UIFont(name: "Roboto-Regular", size: convert(12.0))
     }
     
     class func titleTabFont() -> UIFont? {
-        return UIFont(name: "Roboto-Bold", size: 7.5)
+        return UIFont(name: "Roboto-Bold", size: convert(7.5))
     }
     
     class func pFont() -> UIFont? {
-        return UIFont(name: "Roboto-Regular", size: 7.0)
+        return UIFont(name: "Roboto-Regular", size: convert(8.0))
     }
     
     class func undertekstFont() -> UIFont? {
-        return UIFont(name: "Roboto-Regular", size: 7.0)
+        return UIFont(name: "Roboto-Regular", size: convert(8.0))
     }
     
-    class func subtittelFont() -> UIFont? {
-        return UIFont(name: "Roboto-Bold", size: 5.0)
-    }
+    /*class func subtittelFont() -> UIFont? {
+        return UIFont(name: "Roboto-Bold", size: convert(5.0))
+    }*/
     
     class func brdtekstFont() -> UIFont? {
-        return UIFont(name: "Roboto-Regular", size: 5.0)
+        return UIFont(name: "Roboto-Regular", size: convert(8.0))
     }
     
     class func timestampFont() -> UIFont? {
-        return UIFont(name: "Roboto-Regular", size: 5.0)
+        return UIFont(name: "Roboto-Regular", size: convert(7.0))
     }
     
-    class func belowIconFont() -> UIFont? {
-        return UIFont(name: "Roboto-Light", size: 5.0)
-    }
+    
+    /*class func belowIconFont() -> UIFont? {
+        return UIFont(name: "Roboto-Light", size: convert(5.0))
+    }*/
 }

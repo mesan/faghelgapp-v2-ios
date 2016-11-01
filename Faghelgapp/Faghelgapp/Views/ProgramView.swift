@@ -33,6 +33,15 @@ class ProgramView: NibLoadingView {
         tableView.estimatedRowHeight = 50
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.tableFooterView = UIView()
+        
+        thursdayButton.setTitleColor(UIColor.mesanBlue, for: .normal)
+        thursdayButton.titleLabel?.font = UIFont.titleTabFont()
+        
+        fridayButton.setTitleColor(UIColor.mesanBlue, for: .normal)
+        fridayButton.titleLabel?.font = UIFont.titleTabFont()
+        
+        saturdayButton.setTitleColor(UIColor.mesanBlue, for: .normal)
+        saturdayButton.titleLabel?.font = UIFont.titleTabFont()
     }
     
     func updateViews(viewModel: ProgramViewModel) {
