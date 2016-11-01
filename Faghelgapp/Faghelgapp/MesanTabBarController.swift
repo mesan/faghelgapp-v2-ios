@@ -18,7 +18,7 @@ class MesanTabBarController: UITabBarController {
         self.delegate = self
         
         self.tabBar.backgroundColor = UIColor.white
-        self.tabBar.shadowImage = UIImage(color: Constants.Colours.mesanBlue, size: CGSize(width: 1, height: 0.5))
+        self.tabBar.shadowImage = UIImage(color: UIColor.mesanBlue, size: CGSize(width: 1, height: 0.5))
         self.tabBar.backgroundImage = UIImage(color: UIColor.white)
     }
     
@@ -50,7 +50,7 @@ class MesanTabBarController: UITabBarController {
         borderView.backgroundColor = self.tabBar.backgroundColor
         borderView.layer.cornerRadius = borderView.frame.size.width / 2
         borderView.layer.borderWidth = self.tabBar.shadowImage!.size.height
-        borderView.layer.borderColor = Constants.Colours.mesanBlue.cgColor
+        borderView.layer.borderColor = UIColor.mesanBlue.cgColor
         
         self.containerView.addSubview(borderView)
         
@@ -87,7 +87,7 @@ class MesanTabBarController: UITabBarController {
     func updateFeedImageTint(selectedIndex: Int) {
         switch selectedIndex {
         case 1:
-            self.feedImageView.tintColor = Constants.Colours.mesanRed
+            self.feedImageView.tintColor = UIColor.mesanRed
         default:
             self.feedImageView.tintColor = UIColor.gray
         }

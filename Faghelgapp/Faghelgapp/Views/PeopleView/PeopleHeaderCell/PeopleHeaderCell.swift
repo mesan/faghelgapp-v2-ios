@@ -21,7 +21,7 @@ class PeopleHeaderCell: NibDesignableTableViewCell {
         let borderWidth = CGFloat(1.0)
         
         self.backgroundImage.layer.borderWidth = borderWidth
-        self.backgroundImage.layer.borderColor = Constants.Colours.mesanBlueTransparent.cgColor
+        self.backgroundImage.layer.borderColor = UIColor.mesanBlueTransparent.cgColor
         
         self.profileImage.layer.cornerRadius = self.profileImage.frame.size.width / 2
         self.profileImage.layer.borderWidth = borderWidth

@@ -22,7 +22,9 @@ class PeopleEntryCell: NibDesignableTableViewCell {
         let borderWidth = CGFloat(1.0)
         self.personImage.layer.cornerRadius = self.personImage.frame.size.width / 2
         self.personImage.layer.borderWidth = borderWidth
-        self.personImage.layer.borderColor = Constants.Colours.mesanBlueTransparent.cgColor
+        self.personImage.layer.borderColor = UIColor.mesanBlueTransparent.cgColor
+        
+        
     }
     
     func populate(person: Person) {

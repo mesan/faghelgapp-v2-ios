@@ -32,7 +32,7 @@ class EventView: NibLoadingView {
         
         self.responsibleImageBorder.layer.cornerRadius = self.responsibleImageBorder.frame.size.height / 2
         self.responsibleImageBorder.layer.borderWidth = borderWidth
-        self.responsibleImageBorder.layer.borderColor = Constants.Colours.mesanBlue.cgColor
+        self.responsibleImageBorder.layer.borderColor = UIColor.mesanBlue.cgColor
     }
 
     func populate(event: Event) {
