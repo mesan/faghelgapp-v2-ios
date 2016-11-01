@@ -19,6 +19,7 @@ class EventView: NibLoadingView {
     @IBOutlet weak var responsibleNameLabel: UILabel!
     @IBOutlet weak var responsibleHandleLabel: UILabel!
     @IBOutlet weak var abstractLabel: UILabel!
+    @IBOutlet weak var indexLabel: UILabel!
     
     var allEvents: [Event]!
     
@@ -54,9 +55,11 @@ class EventView: NibLoadingView {
         self.responsibleImageBorder.layer.borderColor = UIColor.mesanBlue.cgColor
     }
 
-    func populate(event: Event) {
+    func populate(event: Event, number: Int, totalNumber: Int) {
         titleLabel.text = event.title
         timeLabel.text = event.start.🕗()
+        
+        indexLabel.text = "\(number + 1)/\(totalNumber)"
         
         if let responsible = event.responsible {
             responsibleNameLabel.text = responsible.fullName

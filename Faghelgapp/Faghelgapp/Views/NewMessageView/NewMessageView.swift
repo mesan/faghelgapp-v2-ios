@@ -32,7 +32,9 @@ class NewMessageView: NibLoadingView {
     }
     
     @IBAction func publishButtonClicked(_ sender: UIButton) {
-        let message = MessageInput(title: "", content: messageTextView.text)
-        viewController.publishButtonClicked(message: message)
+        if !messageTextView.text.isEmpty {
+            let message = MessageInput(title: "", content: messageTextView.text)
+            viewController.publishButtonClicked(message: message)
+        }
     }
 }

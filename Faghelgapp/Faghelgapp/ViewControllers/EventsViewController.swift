@@ -78,15 +78,16 @@ extension EventsViewController : UIPageViewControllerDataSource {
         let eventViewController = self.storyboard!.instantiateViewController(withIdentifier: "EventViewController") as! EventViewController
         eventViewController.event = events[index]
         eventViewController.pageIndex = index;
+        eventViewController.totalNumber = events.count
         
         return eventViewController;
     }
     
-    func presentationCount(for pageViewController: UIPageViewController) -> Int {
+    /*func presentationCount(for pageViewController: UIPageViewController) -> Int {
         return self.events.count
     }
     
     func presentationIndex(for pageViewController: UIPageViewController) -> Int {
         return index
-    }
+    }*/
 }

@@ -14,6 +14,7 @@
             <connections>
                 <outlet property="abstractLabel" destination="nQB-pW-4XU" id="ie9-bF-xDM"/>
                 <outlet property="eventImageView" destination="SVi-hu-5ZE" id="ZsU-AM-05H"/>
+                <outlet property="indexLabel" destination="K4M-Rs-MAM" id="RFa-lF-Npi"/>
                 <outlet property="responsibleHandleLabel" destination="2l0-gw-gqh" id="QTy-KP-iO1"/>
                 <outlet property="responsibleImageBorder" destination="gLj-pd-G0l" id="3zE-S9-aeW"/>
                 <outlet property="responsibleImageView" destination="s5D-mO-7Ci" id="Pce-er-9lW"/>
@@ -28,7 +29,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oeQ-Ts-bq5">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="598"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pSl-if-JHd">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="376.5"/>
@@ -148,20 +149,27 @@
                         <constraint firstAttribute="trailing" secondItem="pSl-if-JHd" secondAttribute="trailing" id="zsz-np-pRt"/>
                     </constraints>
                 </scrollView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="1/42" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K4M-Rs-MAM">
+                    <rect key="frame" x="170.5" y="614" width="34" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.89961904290000005" green="0.12648545210000001" blue="0.105432421" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <constraints>
+                <constraint firstItem="K4M-Rs-MAM" firstAttribute="centerX" secondItem="oeQ-Ts-bq5" secondAttribute="centerX" id="22Q-9t-zMM"/>
+                <constraint firstItem="K4M-Rs-MAM" firstAttribute="top" secondItem="oeQ-Ts-bq5" secondAttribute="bottom" constant="16" id="2HN-GN-SpZ"/>
+                <constraint firstAttribute="bottom" secondItem="K4M-Rs-MAM" secondAttribute="bottom" constant="32" id="HFn-pB-tSy"/>
                 <constraint firstItem="oeQ-Ts-bq5" firstAttribute="top" secondItem="1SR-ux-apL" secondAttribute="top" id="JSC-Mg-kFp"/>
-                <constraint firstItem="oeQ-Ts-bq5" firstAttribute="centerY" secondItem="1SR-ux-apL" secondAttribute="centerY" id="PMa-IS-ory"/>
                 <constraint firstItem="pSl-if-JHd" firstAttribute="width" secondItem="1SR-ux-apL" secondAttribute="width" id="VGu-gs-Cxe"/>
                 <constraint firstAttribute="trailing" secondItem="oeQ-Ts-bq5" secondAttribute="trailing" id="WMd-q0-njR"/>
                 <constraint firstItem="oeQ-Ts-bq5" firstAttribute="leading" secondItem="1SR-ux-apL" secondAttribute="leading" id="kor-dJ-ghS"/>
-                <constraint firstAttribute="bottom" secondItem="oeQ-Ts-bq5" secondAttribute="bottom" id="yB4-ZI-alk"/>
                 <constraint firstItem="oeQ-Ts-bq5" firstAttribute="centerX" secondItem="1SR-ux-apL" secondAttribute="centerX" id="zzX-Pw-aku"/>
             </constraints>
             <point key="canvasLocation" x="33.5" y="54.5"/>
         </view>
     </objects>
     <resources>
-        <image name="code" width="132" height="132"/>
+        <image name="code" width="17" height="17"/>
     </resources>
 </document>

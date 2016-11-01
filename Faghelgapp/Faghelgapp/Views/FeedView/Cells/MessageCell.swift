@@ -12,11 +12,12 @@ import UIKit
 import Kingfisher
 
 class MessageCell: NibDesignableTableViewCell {
+    @IBOutlet weak var senderImageBorder: UIView!
     @IBOutlet weak var senderImageView: UIImageView!
     @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var senderNameLabel: UILabel!
     @IBOutlet weak var timeSentLabel: UILabel!
-
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -30,9 +31,22 @@ class MessageCell: NibDesignableTableViewCell {
         timeSentLabel.font = UIFont.timestampFont()
     }
     
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        let borderWidth = CGFloat(1.0)
+        self.senderImageView.layer.cornerRadius = self.senderImageView.frame.size.width / 2
+        self.senderImageView.layer.borderWidth = borderWidth
+        self.senderImageView.layer.borderColor = UIColor.white.cgColor
+        
+        self.senderImageBorder.layer.cornerRadius = self.senderImageBorder.frame.size.height / 2
+        self.senderImageBorder.layer.borderWidth = borderWidth
+        self.senderImageBorder.layer.borderColor = UIColor.mesanBlue.cgColor
+    }
+    
     func populate(message: Message) {
         messageLabel.text = message.content
-        senderNameLabel.text = message.sender
+        senderNameLabel.text = "@\(message.sender)"
         timeSentLabel.text = message.timestamp
         
         let placeholderImage = UIImage(named: "person_placeholder")

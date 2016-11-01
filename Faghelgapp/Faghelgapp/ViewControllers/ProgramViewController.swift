@@ -28,9 +28,7 @@ class ProgramViewController: MesanViewController {
         
         programView.viewController = self
         ProgramConfigurator.sharedInstance.configure(viewController: self)
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
+        
         interactor.viewControllerWillAppear()
     }
 }

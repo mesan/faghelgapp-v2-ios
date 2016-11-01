@@ -13,10 +13,11 @@ class EventViewController: UIViewController {
     
     var event: Event!
     var pageIndex: Int!
+    var totalNumber: Int!
     
     @IBOutlet weak var eventView: EventView!
     
     override func viewWillAppear(_ animated: Bool) {
-        eventView.populate(event: event)
+        eventView.populate(event: event, number: pageIndex, totalNumber: totalNumber)
     }
 }
