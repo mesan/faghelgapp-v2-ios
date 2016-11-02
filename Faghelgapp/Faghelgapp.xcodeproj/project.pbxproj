@@ -677,6 +677,9 @@
 						DevelopmentTeam = 74XXV957HC;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
 							com.apple.Push = {
 								enabled = 1;
 							};
@@ -1071,12 +1074,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Faghelgapp/Faghelgapp.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Thomas Pettersen (M8AEARF2WB)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 74XXV957HC;
 				INFOPLIST_FILE = Faghelgapp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = no.mesan.Faghelgapp;
+				PRODUCT_BUNDLE_IDENTIFIER = no.mesan.faghelgapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5a84a310-cd95-44a7-8505-8c9bd3432a70";
+				PROVISIONING_PROFILE = "314d7cdf-c184-41d4-b38e-302bfc6ecf54";
 				PROVISIONING_PROFILE_SPECIFIER = "Faghelgapp Development";
 				SWIFT_OBJC_BRIDGING_HEADER = "Faghelgapp/Faghelgapp-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
@@ -1089,11 +1095,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Faghelgapp/Faghelgapp.entitlements;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: MESAN AS";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: MESAN AS";
 				DEVELOPMENT_TEAM = 74XXV957HC;
 				INFOPLIST_FILE = Faghelgapp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = no.mesan.Faghelgapp;
+				PRODUCT_BUNDLE_IDENTIFIER = no.mesan.faghelgapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "d18862ee-0ac1-4821-95d2-409b88151545";
 				PROVISIONING_PROFILE_SPECIFIER = "Faghelgapp Distribution";

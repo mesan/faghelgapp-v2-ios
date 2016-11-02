@@ -13,6 +13,8 @@ import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    private let logTag = String(describing: AppDelegate.self)
+    
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -27,18 +29,49 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        //let characterSet = CharacterSet(charactersIn: "<>")
         
-        let characterSet = CharacterSet(charactersIn: "<>")
-        
-        let deviceTokenString = deviceToken.description.trimmingCharacters(in: characterSet).replacingOccurrences(of: " ", with: "")
+        //let deviceTokenString = deviceToken.description.trimmingCharacters(in: characterSet).replacingOccurrences(of: " ", with: "")
+        let deviceTokenString = deviceToken.reduce("", {$0 + String(format: "%02X", $1)})
+        print(deviceTokenString)
         
         UserDefaults.standard.set(deviceTokenString, forKey: Constants.UserDefaultsKeys.deviceToken)
         UserDefaults.standard.synchronize()
+        
+        let accessToken = UserDefaults.standard.string(forKey: Constants.UserDefaultsKeys.token)
+        
+        
+        
+        self.registerForPush(deviceToken: deviceTokenString, accessToken: accessToken!)
+    }
+    
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any]) {
+        Logger.printDebug(tag: logTag, "didReceiveRemoteNotification")
     }
     
     func registerForPushNotifications(application: UIApplication) {
-        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { (granted, error) in
+        let settings = UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
+        application.registerUserNotificationSettings(settings)
+        application.registerForRemoteNotifications()
+    }
+    
+    func registerForPush(deviceToken: String, accessToken: String) {
+        let pushService = PushService(client: HTTPClient())
+        pushService.registerForPush(pushDevice: PushDevice(token: deviceToken, owner: TokenUtil.getUsernameFromToken(token: accessToken)!)) { (registeredSuccessfully) in
             
+            if registeredSuccessfully {
+                UserDefaults.standard.set(true, forKey: Constants.UserDefaultsKeys.registeredForPush)
+                UserDefaults.standard.synchronize()
+            }
+        }
+    }
+    
+    
+    func registerForPushNotifications(application: UIApplication) {
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { (granted, error) in
+            if granted {
+                application.registerForRemoteNotifications()
+            }
         }
     }
     

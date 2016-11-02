@@ -82,12 +82,4 @@ extension EventsViewController : UIPageViewControllerDataSource {
         
         return eventViewController;
     }
-    
-    /*func presentationCount(for pageViewController: UIPageViewController) -> Int {
-        return self.events.count
-    }
-    
-    func presentationIndex(for pageViewController: UIPageViewController) -> Int {
-        return index
-    }*/
 }

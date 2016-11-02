@@ -40,7 +40,10 @@ class LogInViewController: UIViewController {
                 UserDefaults.standard.set(result?.accessToken, forKey: Constants.UserDefaultsKeys.token)
                 UserDefaults.standard.synchronize()
                 
-                self.registerForPush(accessToken: result!.accessToken)
+                if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
+                    appDelegate.registerForPushNotifications(application: UIApplication.shared)
+                }
+                
                 self.loggedIn()
             }
         })
@@ -49,16 +52,5 @@ class LogInViewController: UIViewController {
     private func loggedIn() {
         let tabBarController = self.storyboard!.instantiateViewController(withIdentifier: "TabBarController") as! UITabBarController
         self.show(tabBarController, sender: self)
-    }
-    
-    func registerForPush(accessToken: String) {
-        let pushService = PushService(client: HTTPClient())
-        pushService.registerForPush(pushDevice: PushDevice(token: accessToken, owner: TokenUtil.getUsernameFromToken(token: accessToken)!)) { (registeredSuccessfully) in
-            
-            if registeredSuccessfully {
-                UserDefaults.standard.set(true, forKey: Constants.UserDefaultsKeys.registeredForPush)
-                UserDefaults.standard.synchronize()
-            }
-        }
     }
 }
