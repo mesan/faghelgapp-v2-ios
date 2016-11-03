@@ -66,15 +66,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
-    
-    func registerForPushNotifications(application: UIApplication) {
-        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { (granted, error) in
-            if granted {
-                application.registerForRemoteNotifications()
-            }
-        }
-    }
-    
     private func setPageControlAppearance() {
         let pageControl = UIPageControl.appearance()
         pageControl.pageIndicatorTintColor = UIColor.mesanGrey

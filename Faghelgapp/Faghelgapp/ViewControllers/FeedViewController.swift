@@ -24,6 +24,12 @@ class FeedViewController: MesanViewController {
         super.viewDidLoad()
         
         FeedConfigurator.sharedInstance.configure(viewController: self)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(willEnterForeground), name: NSNotification.Name.UIApplicationWillEnterForeground, object: nil)
+    }
+    
+    func willEnterForeground() {
+        interactor.viewDidAppear()
     }
     
     @IBAction func newMessageButtonClicked(_ sender: UIBarButtonItem) {
