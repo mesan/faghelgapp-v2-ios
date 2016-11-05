@@ -33,8 +33,21 @@ class NewMessageView: NibLoadingView {
     
     @IBAction func publishButtonClicked(_ sender: UIButton) {
         if !messageTextView.text.isEmpty {
+            sender.isEnabled = false
             let message = MessageInput(title: "", content: messageTextView.text)
             viewController.publishButtonClicked(message: message)
         }
+    }
+}
+
+extension NewMessageView: UITextViewDelegate {
+    
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        let currentCharacterCount = textView.text?.characters.count ?? 0
+        if (range.length + range.location > currentCharacterCount){
+            return false
+        }
+        let newLength = currentCharacterCount + text.characters.count - range.length
+        return newLength <= 140
     }
 }
