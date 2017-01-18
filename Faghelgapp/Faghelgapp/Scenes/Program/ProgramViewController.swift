@@ -60,5 +60,5 @@ extension ProgramViewController: ProgramPresenterOutput {
     func scrollToCurrentEvent(){
         programView.scrollToCurrentEvent()
     }
-
+    
 }

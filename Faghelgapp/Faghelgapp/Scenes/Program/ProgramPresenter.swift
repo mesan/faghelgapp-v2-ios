@@ -36,7 +36,7 @@ extension ProgramPresenter: ProgramInteractorOutput {
         
         setSelectedDayToToday()
         scrollToCurrentEvent()
-
+        
     }
     
     func fetchProgramFailed() {
@@ -52,7 +52,7 @@ extension ProgramPresenter: ProgramInteractorOutput {
     private func setSelectedDayToToday() {
         dayChanged(day: Date().weekday())
     }
-
+    
     
     func didSelectEvent(with index: Int) {
         viewModel.selectedEventIndex = index
