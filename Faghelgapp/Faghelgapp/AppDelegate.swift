@@ -40,8 +40,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let accessToken = UserDefaults.standard.string(forKey: Constants.UserDefaultsKeys.token)
         
-        
-        
         self.registerForPush(deviceToken: deviceTokenString, accessToken: accessToken!)
     }
     

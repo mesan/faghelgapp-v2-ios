@@ -9,14 +9,19 @@
 import Foundation
 
 protocol NewMessageViewDelegate {
+    func cameraButtonClicked()
+    func galleryButtonClicked()
     func publishButtonClicked(message: MessageInput)
 }
 
 class NewMessageView: NibLoadingView {
-    var viewController: NewMessageViewDelegate!
+    var delegate: NewMessageViewDelegate!
     
     @IBOutlet weak var messageTextView: UITextView!
+    @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var publishButton: UIButton!
+    
+    @IBOutlet weak var imageViewHeightConstraint: NSLayoutConstraint!
     
     override func awakeFromNib() {
         messageTextView.textColor = UIColor.mesanBlue
@@ -31,11 +36,25 @@ class NewMessageView: NibLoadingView {
         view.endEditing(true)
     }
     
+    func set(image: UIImage) {
+        imageViewHeightConstraint.constant = 150
+        imageView.isHidden = false
+        imageView.image = image
+    }
+    
+    @IBAction func cameraButtonClicked(_ sender: UIButton) {
+        delegate.cameraButtonClicked()
+    }
+    
+    @IBAction func galleryButtonClicked(_ sender: UIButton) {
+        delegate.galleryButtonClicked()
+    }
+    
     @IBAction func publishButtonClicked(_ sender: UIButton) {
         if !messageTextView.text.isEmpty {
             sender.isEnabled = false
             let message = MessageInput(title: "", content: messageTextView.text)
-            viewController.publishButtonClicked(message: message)
+            delegate.publishButtonClicked(message: message)
         }
     }
 }

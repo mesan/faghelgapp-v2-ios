@@ -11,10 +11,12 @@ import Foundation
 
 protocol NewMessageRouterInput {
     func navigateBackToFeed()
+    func openImagePicker(sourceType: UIImagePickerControllerSourceType)
 }
 
-class NewMessageRouter: NewMessageRouterInput {
-    var viewController: NewMessageViewController!
+class NewMessageRouter: NewMessageRouterInput, ImagePicking {
+    typealias T = NewMessageViewController
+    internal weak var viewController: NewMessageViewController!
     
     func navigateBackToFeed() {
         let _ = viewController.navigationController?.popViewController(animated: false)
