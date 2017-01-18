@@ -62,7 +62,13 @@ class NewMessageView: NibLoadingView {
     @IBAction func publishButtonClicked(_ sender: UIButton) {
         if !messageTextView.text.isEmpty {
             sender.isEnabled = false
-            let message = MessageInput(title: "", content: messageTextView.text)
+            var imageString: String?
+            
+            if let image = imageView.image {
+                imageString = ImageEncoder.encode(image: image)
+            }
+            
+            let message = MessageInput(title: "", content: messageTextView.text, image: imageString)
             delegate.publishButtonClicked(message: message)
         }
     }

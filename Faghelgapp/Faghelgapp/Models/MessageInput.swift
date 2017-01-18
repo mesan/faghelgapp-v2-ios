@@ -11,18 +11,23 @@ import Foundation
 class MessageInput {
     var title: String
     var content: String
+    var image: String?
     
-    init(title: String, content: String) {
+    init(title: String, content: String, image: String?) {
         self.title = title
         self.content = content
+        self.image = image
     }
     
     func toJson() -> [String: Any] {
-        let json = [
+        var json = [
             "title": title,
-            "content": content,
-            "imageUrl": "" // Hard coded until we start using it
+            "content": content
             ] as [String: Any]
+        
+        if let image = image {
+            json["image"] = image
+        }
         
         return json
     }    

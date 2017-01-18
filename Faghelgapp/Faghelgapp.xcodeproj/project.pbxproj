@@ -73,6 +73,7 @@
 		9F5DC4B11DB173D3001FDCD2 /* EventView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F5DC4B01DB173D3001FDCD2 /* EventView.xib */; };
 		9F9901611DB69A6A0043633A /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9901601DB69A6A0043633A /* LogInViewController.swift */; };
 		9FB329901E2FDE670056AB56 /* ImagePicking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB3298F1E2FDE670056AB56 /* ImagePicking.swift */; };
+		9FBD772F1E2FEE41000E0A1D /* ImageEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBD772E1E2FEE41000E0A1D /* ImageEncoder.swift */; };
 		9FCF1BE01DAEB93000F6A3D5 /* EventScrollerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCF1BDF1DAEB93000F6A3D5 /* EventScrollerView.swift */; };
 		9FCF1BE21DAEB93A00F6A3D5 /* EventScrollerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FCF1BE11DAEB93A00F6A3D5 /* EventScrollerView.xib */; };
 		9FCF1BE51DAEBAA900F6A3D5 /* EventScrollerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCF1BE41DAEBAA900F6A3D5 /* EventScrollerCell.swift */; };
@@ -191,6 +192,7 @@
 		9F9901601DB69A6A0043633A /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		9FA887B01DC9293D006CF37C /* Faghelgapp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Faghelgapp.entitlements; sourceTree = "<group>"; };
 		9FB3298F1E2FDE670056AB56 /* ImagePicking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicking.swift; sourceTree = "<group>"; };
+		9FBD772E1E2FEE41000E0A1D /* ImageEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageEncoder.swift; sourceTree = "<group>"; };
 		9FCF1BDF1DAEB93000F6A3D5 /* EventScrollerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventScrollerView.swift; sourceTree = "<group>"; };
 		9FCF1BE11DAEB93A00F6A3D5 /* EventScrollerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventScrollerView.xib; sourceTree = "<group>"; };
 		9FCF1BE41DAEBAA900F6A3D5 /* EventScrollerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventScrollerCell.swift; sourceTree = "<group>"; };
@@ -297,6 +299,7 @@
 			children = (
 				9F25AFAF1DA2ADA300488CA6 /* Logger.swift */,
 				9F2CF2221DB6AFB8004DA01F /* TokenUtil.swift */,
+				9FBD772E1E2FEE41000E0A1D /* ImageEncoder.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -959,6 +962,7 @@
 				9F04D29B1DBFA5FE002E3896 /* Message.swift in Sources */,
 				9F25AFAD1DA2AD2900488CA6 /* SeededDataTask.swift in Sources */,
 				9F5C003F1E2FDC4900636470 /* NewMessageView.swift in Sources */,
+				9FBD772F1E2FEE41000E0A1D /* ImageEncoder.swift in Sources */,
 				9F5C00101E2FD60600636470 /* ProgramInteractor.swift in Sources */,
 				846DC9861DA2C95F00B05AC8 /* PeopleHeaderCell.swift in Sources */,
 			);
