@@ -58,5 +58,4 @@ extension NewMessageViewController: UIImagePickerControllerDelegate, UINavigatio
             newMessageView.set(image: pickedImage)
         }
     }
-
 }
