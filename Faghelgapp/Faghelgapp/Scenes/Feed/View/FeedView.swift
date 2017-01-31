@@ -12,7 +12,8 @@ class FeedView: NibLoadingView {
     
     @IBOutlet weak var tableView: UITableView!
     
-    let messageCellIdentifier = "MessageCell"
+    let textMessageCellIdentifier = "TextMessageCell"
+    let imageMessageCellIdentifier = "ImageMessageCell"
     
     var viewModel: FeedViewModel = FeedViewModel()
     
@@ -26,7 +27,8 @@ class FeedView: NibLoadingView {
     }
     
     private func initTableView() {
-        tableView.register(MessageCell.self, forCellReuseIdentifier: messageCellIdentifier)
+        tableView.register(TextMessageCell.self, forCellReuseIdentifier: textMessageCellIdentifier)
+        tableView.register(ImageMessageCell.self, forCellReuseIdentifier: imageMessageCellIdentifier)
         
         tableView.estimatedRowHeight = 50
         tableView.rowHeight = UITableViewAutomaticDimension
@@ -44,16 +46,16 @@ extension FeedView: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: messageCellIdentifier, for: indexPath) as! MessageCell
-        cell.populate(message: viewModel.messages[indexPath.row])
-        return cell
-    }
-}
-
-extension FeedView: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        if let messageCell = cell as? MessageCell {
-            
+        var cell: TextMessageCell!
+        
+        let message = viewModel.messages[indexPath.row]
+        if let imageUrl = message.imageUrl, !imageUrl.isEmpty {
+            cell = tableView.dequeueReusableCell(withIdentifier: imageMessageCellIdentifier, for: indexPath) as! ImageMessageCell
+        } else {
+            cell = tableView.dequeueReusableCell(withIdentifier: textMessageCellIdentifier, for: indexPath) as! TextMessageCell
         }
+        
+        cell.populate(message: message)
+        return cell
     }
 }

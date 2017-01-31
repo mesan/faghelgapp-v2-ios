@@ -24,8 +24,8 @@
 		9F16FA451E2FF196009971B3 /* PeopleEntryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F16FA431E2FF196009971B3 /* PeopleEntryCell.xib */; };
 		9F16FA491E2FF1AA009971B3 /* PeopleHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F16FA471E2FF1AA009971B3 /* PeopleHeaderCell.swift */; };
 		9F16FA4A1E2FF1AA009971B3 /* PeopleHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F16FA481E2FF1AA009971B3 /* PeopleHeaderCell.xib */; };
-		9F16FA4E1E2FF1DB009971B3 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F16FA4C1E2FF1DB009971B3 /* MessageCell.swift */; };
-		9F16FA4F1E2FF1DB009971B3 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F16FA4D1E2FF1DB009971B3 /* MessageCell.xib */; };
+		9F16FA4E1E2FF1DB009971B3 /* TextMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F16FA4C1E2FF1DB009971B3 /* TextMessageCell.swift */; };
+		9F16FA4F1E2FF1DB009971B3 /* TextMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F16FA4D1E2FF1DB009971B3 /* TextMessageCell.xib */; };
 		9F16FA531E2FF1FC009971B3 /* ProgramEntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F16FA511E2FF1FC009971B3 /* ProgramEntryCell.swift */; };
 		9F16FA541E2FF1FC009971B3 /* ProgramEntryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F16FA521E2FF1FC009971B3 /* ProgramEntryCell.xib */; };
 		9F16FA571E2FF217009971B3 /* ProgramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F16FA551E2FF217009971B3 /* ProgramView.swift */; };
@@ -74,6 +74,8 @@
 		9F5DC4AD1DB16E43001FDCD2 /* EventPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5DC4AC1DB16E43001FDCD2 /* EventPageViewController.swift */; };
 		9F5DC4AF1DB16F68001FDCD2 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5DC4AE1DB16F68001FDCD2 /* EventViewController.swift */; };
 		9F5DC4B11DB173D3001FDCD2 /* EventView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F5DC4B01DB173D3001FDCD2 /* EventView.xib */; };
+		9F7F0EFD1E411C9F001BBE9C /* ImageMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7F0EFC1E411C9F001BBE9C /* ImageMessageCell.swift */; };
+		9F7F0EFF1E411CC3001BBE9C /* ImageMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F7F0EFE1E411CC3001BBE9C /* ImageMessageCell.xib */; };
 		9F9901611DB69A6A0043633A /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9901601DB69A6A0043633A /* LogInViewController.swift */; };
 		9FB329901E2FDE670056AB56 /* ImagePicking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB3298F1E2FDE670056AB56 /* ImagePicking.swift */; };
 		9FBD772F1E2FEE41000E0A1D /* ImageEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBD772E1E2FEE41000E0A1D /* ImageEncoder.swift */; };
@@ -141,8 +143,8 @@
 		9F16FA431E2FF196009971B3 /* PeopleEntryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PeopleEntryCell.xib; sourceTree = "<group>"; };
 		9F16FA471E2FF1AA009971B3 /* PeopleHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleHeaderCell.swift; sourceTree = "<group>"; };
 		9F16FA481E2FF1AA009971B3 /* PeopleHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PeopleHeaderCell.xib; sourceTree = "<group>"; };
-		9F16FA4C1E2FF1DB009971B3 /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
-		9F16FA4D1E2FF1DB009971B3 /* MessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
+		9F16FA4C1E2FF1DB009971B3 /* TextMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextMessageCell.swift; sourceTree = "<group>"; };
+		9F16FA4D1E2FF1DB009971B3 /* TextMessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextMessageCell.xib; sourceTree = "<group>"; };
 		9F16FA511E2FF1FC009971B3 /* ProgramEntryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramEntryCell.swift; sourceTree = "<group>"; };
 		9F16FA521E2FF1FC009971B3 /* ProgramEntryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProgramEntryCell.xib; sourceTree = "<group>"; };
 		9F16FA551E2FF217009971B3 /* ProgramView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramView.swift; sourceTree = "<group>"; };
@@ -191,6 +193,8 @@
 		9F5DC4AC1DB16E43001FDCD2 /* EventPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventPageViewController.swift; sourceTree = "<group>"; };
 		9F5DC4AE1DB16F68001FDCD2 /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
 		9F5DC4B01DB173D3001FDCD2 /* EventView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventView.xib; sourceTree = "<group>"; };
+		9F7F0EFC1E411C9F001BBE9C /* ImageMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageMessageCell.swift; sourceTree = "<group>"; };
+		9F7F0EFE1E411CC3001BBE9C /* ImageMessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageMessageCell.xib; sourceTree = "<group>"; };
 		9F99015F1DB699CE0043633A /* Faghelgapp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Faghelgapp-Bridging-Header.h"; sourceTree = "<group>"; };
 		9F9901601DB69A6A0043633A /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		9FA887B01DC9293D006CF37C /* Faghelgapp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Faghelgapp.entitlements; sourceTree = "<group>"; };
@@ -275,8 +279,10 @@
 		9F16FA4B1E2FF1C9009971B3 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				9F16FA4C1E2FF1DB009971B3 /* MessageCell.swift */,
-				9F16FA4D1E2FF1DB009971B3 /* MessageCell.xib */,
+				9F16FA4C1E2FF1DB009971B3 /* TextMessageCell.swift */,
+				9F16FA4D1E2FF1DB009971B3 /* TextMessageCell.xib */,
+				9F7F0EFC1E411C9F001BBE9C /* ImageMessageCell.swift */,
+				9F7F0EFE1E411CC3001BBE9C /* ImageMessageCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -749,7 +755,7 @@
 				9FBD77361E2FEFC8000E0A1D /* FeedView.xib in Resources */,
 				9FEC6A141DAE8BA000EA1D1C /* Roboto-Medium.ttf in Resources */,
 				9FEC6A151DAE8BA000EA1D1C /* Roboto-MediumItalic.ttf in Resources */,
-				9F16FA4F1E2FF1DB009971B3 /* MessageCell.xib in Resources */,
+				9F16FA4F1E2FF1DB009971B3 /* TextMessageCell.xib in Resources */,
 				9F16FA541E2FF1FC009971B3 /* ProgramEntryCell.xib in Resources */,
 				9FEC6A161DAE8BA000EA1D1C /* Roboto-Regular.ttf in Resources */,
 				9F16FA581E2FF217009971B3 /* ProgramView.xib in Resources */,
@@ -757,6 +763,7 @@
 				9FEC6A181DAE8BA000EA1D1C /* Roboto-ThinItalic.ttf in Resources */,
 				9F5C00401E2FDC4900636470 /* NewMessageView.xib in Resources */,
 				9F16FA451E2FF196009971B3 /* PeopleEntryCell.xib in Resources */,
+				9F7F0EFF1E411CC3001BBE9C /* ImageMessageCell.xib in Resources */,
 				9F16FA4A1E2FF1AA009971B3 /* PeopleHeaderCell.xib in Resources */,
 				9FBD773F1E2FF063000E0A1D /* PeopleView.xib in Resources */,
 				B192B5A11D9AC9A200C8B9C2 /* Assets.xcassets in Resources */,
@@ -887,6 +894,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F25AFB51DA2AF6D00488CA6 /* Program.swift in Sources */,
+				9F7F0EFD1E411C9F001BBE9C /* ImageMessageCell.swift in Sources */,
 				9FCF1BE51DAEBAA900F6A3D5 /* EventScrollerCell.swift in Sources */,
 				9F25AFA41DA2ABFB00488CA6 /* ProgramService.swift in Sources */,
 				9F25AFB21DA2AE2900488CA6 /* Constants.swift in Sources */,
@@ -927,7 +935,7 @@
 				9F2CF2231DB6AFB8004DA01F /* TokenUtil.swift in Sources */,
 				9F5C00371E2FD85B00636470 /* NewMessageInteractor.swift in Sources */,
 				9F25AFB01DA2ADA300488CA6 /* Logger.swift in Sources */,
-				9F16FA4E1E2FF1DB009971B3 /* MessageCell.swift in Sources */,
+				9F16FA4E1E2FF1DB009971B3 /* TextMessageCell.swift in Sources */,
 				9F5C00391E2FD85B00636470 /* NewMessageRouter.swift in Sources */,
 				9F5C002D1E2FD7F200636470 /* PeopleViewController.swift in Sources */,
 				9F25AFBC1DA2B91600488CA6 /* Date+WeekDay.swift in Sources */,

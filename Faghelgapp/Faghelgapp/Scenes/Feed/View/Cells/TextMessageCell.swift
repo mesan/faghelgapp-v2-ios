@@ -11,14 +11,12 @@ import NibDesignable
 import UIKit
 import Kingfisher
 
-class MessageCell: NibDesignableTableViewCell {
+class TextMessageCell: NibDesignableTableViewCell {
     @IBOutlet weak var senderImageBorder: UIView!
     @IBOutlet weak var senderImageView: UIImageView!
     @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var senderNameLabel: UILabel!
     @IBOutlet weak var timeSentLabel: UILabel!
-    @IBOutlet weak var messageImageView: UIImageView!
-    @IBOutlet weak var messageImageViewHeightConstraint: NSLayoutConstraint!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -56,13 +54,5 @@ class MessageCell: NibDesignableTableViewCell {
         let url = URL(string: senderImageUrl)!
         senderImageView.kf.setImage(with: ImageResource(downloadURL: url, cacheKey: message.sender), placeholder: placeholderImage, options: nil)
     
-        if let imageUrl = message.imageUrl, let url = URL(string: imageUrl) {
-            messageImageView.isHidden = false
-            messageImageViewHeightConstraint.constant = 200
-            messageImageView.kf.setImage(with: ImageResource(downloadURL: url, cacheKey: imageUrl), placeholder: UIImage(named: "background_placeholder"), options: nil)
-        } else {
-            messageImageView.isHidden = true
-            messageImageViewHeightConstraint.constant = 0
         }
-    }
 }
