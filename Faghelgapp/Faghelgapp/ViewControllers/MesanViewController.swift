@@ -16,8 +16,8 @@ class MesanViewController: UIViewController {
     }
     
     private func setLogoAsTitle() {
-        let logo = UIImage(named: "mesan_logo")
-        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 15, height: 15))
+        let logo = UIImage(named: "ncheader")
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
         imageView.image = logo
         imageView.contentMode = .scaleAspectFit
         imageView.tintColor = UIColor.white

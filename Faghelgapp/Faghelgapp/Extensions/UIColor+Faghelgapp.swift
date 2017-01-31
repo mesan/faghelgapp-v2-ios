@@ -21,7 +21,7 @@ extension UIColor {
         return UIColor(white: 180.0 / 255.0, alpha: 1.0)
     }
     
-    class var mesanRed: UIColor {
-        return UIColor(red: 237.0 / 255.0, green: 56.0 / 255.0, blue: 35.0 / 255.0, alpha: 1.0)
+    class var netcompanyBlue: UIColor {
+        return UIColor(red: 57 / 255.0, green: 91.0 / 255.0, blue: 115.0 / 255.0, alpha: 1.0)
     }
 }

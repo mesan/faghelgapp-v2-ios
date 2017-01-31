@@ -74,22 +74,22 @@ class MesanTabBarController: UITabBarController {
         self.view.addSubview(containerView);
         
         if let selectedTabItem = self.tabBar.selectedItem {
-            updateFeedImageTint(selectedIndex: selectedTabItem.tag)
+            updateFeedImage(selectedIndex: selectedTabItem.tag)
         }
     }
     
     func feedImageClicked() {
         let index = 1
         self.selectedIndex = index
-        updateFeedImageTint(selectedIndex: index)
+        updateFeedImage(selectedIndex: index)
     }
     
-    func updateFeedImageTint(selectedIndex: Int) {
+    func updateFeedImage(selectedIndex: Int) {
         switch selectedIndex {
         case 1:
-            self.feedImageView.tintColor = UIColor.mesanRed
+            self.feedImageView.image = UIImage(named: "feed_active")
         default:
-            self.feedImageView.tintColor = UIColor.gray
+            self.feedImageView.image = UIImage(named: "feed_passive")
         }
     }
 }
@@ -97,7 +97,7 @@ class MesanTabBarController: UITabBarController {
 extension MesanTabBarController : UITabBarControllerDelegate {
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
         if let selectedItem = tabBarController.tabBar.selectedItem {
-            updateFeedImageTint(selectedIndex: selectedItem.tag)
+            updateFeedImage(selectedIndex: selectedItem.tag)
         }
     }
 }

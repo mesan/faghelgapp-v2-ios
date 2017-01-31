@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         application.statusBarStyle = .lightContent
         
-        UITabBar.appearance().tintColor = UIColor.mesanRed
+        UITabBar.appearance().tintColor = UIColor.netcompanyBlue
         
         setPageControlAppearance()
         return true
@@ -67,7 +67,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private func setPageControlAppearance() {
         let pageControl = UIPageControl.appearance()
         pageControl.pageIndicatorTintColor = UIColor.mesanGrey
-        pageControl.currentPageIndicatorTintColor = UIColor.mesanRed
+        pageControl.currentPageIndicatorTintColor = UIColor.netcompanyBlue
     }
 }
 
