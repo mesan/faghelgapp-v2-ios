@@ -53,13 +53,14 @@ class ProgramView: NibLoadingView {
     }
     
     func scrollToCurrentEvent() {
-        let indexRow = getCurrentEventRow()
-        let indexPath = IndexPath(row: indexRow, section: 0)
-        
-        tableView.scrollToRow(at: indexPath, at: UITableViewScrollPosition.top, animated: true)
+        if !viewModel.eventsForSelectedDay.isEmpty {
+            let indexRow = getCurrentEventRow()
+            let indexPath = IndexPath(row: indexRow, section: 0)
+            
+            tableView.scrollToRow(at: indexPath, at: UITableViewScrollPosition.top, animated: true)
+        }
     }
 
-    
     @IBAction func dayButtonClicked(_ sender: UIButton) {
         let selectedDay = Day(rawValue: sender.title(for: .normal)!)!
         viewController?.dayChanged(day: selectedDay)
@@ -104,8 +105,10 @@ class ProgramView: NibLoadingView {
     }
     
     private func scrollToTopOfList() {
-        let indexPath = IndexPath(row: 0, section: 0)
-        tableView.scrollToRow(at: indexPath, at: UITableViewScrollPosition.top, animated: true)
+        if !viewModel.eventsForSelectedDay.isEmpty {
+            let indexPath = IndexPath(row: 0, section: 0)
+            tableView.scrollToRow(at: indexPath, at: UITableViewScrollPosition.top, animated: true)
+        }
     }
     
     private func getCurrentEventRow() -> Int{
