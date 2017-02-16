@@ -14,14 +14,14 @@ class ImageMessageCell: TextMessageCell {
     @IBOutlet weak var backgroundMessageImageView: UIImageView!
     @IBOutlet weak var backgroundMessageImageViewHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var messageImageView: UIImageView!
-    @IBOutlet weak var messageImageViewHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var blurHeightConstraint: NSLayoutConstraint!
     
     override func populate(message: Message) {
         super.populate(message: message)
         
         if let imageUrl = message.imageUrl, let url = URL(string: imageUrl) {
             messageImageView.isHidden = false
-            messageImageViewHeightConstraint.constant = 200
+            blurHeightConstraint.constant = 200
             messageImageView.kf.setImage(with: ImageResource(downloadURL: url, cacheKey: imageUrl), placeholder: UIImage(named: "background_placeholder"), options: nil)
             
             backgroundMessageImageView.isHidden = false
@@ -32,7 +32,7 @@ class ImageMessageCell: TextMessageCell {
             backgroundMessageImageViewHeightConstraint.constant = 0
             
             messageImageView.isHidden = true
-            messageImageViewHeightConstraint.constant = 0
+            blurHeightConstraint.constant = 0
         }
     }
 }

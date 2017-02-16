@@ -27,7 +27,6 @@ class FeedView: NibLoadingView {
     }
     
     private func initTableView() {
-        tableView.register(TextMessageCell.self, forCellReuseIdentifier: textMessageCellIdentifier)
         tableView.register(ImageMessageCell.self, forCellReuseIdentifier: imageMessageCellIdentifier)
         
         tableView.estimatedRowHeight = 50
@@ -46,14 +45,8 @@ extension FeedView: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell: TextMessageCell!
-        
         let message = viewModel.messages[indexPath.row]
-        if let imageUrl = message.imageUrl, !imageUrl.isEmpty {
-            cell = tableView.dequeueReusableCell(withIdentifier: imageMessageCellIdentifier, for: indexPath) as! ImageMessageCell
-        } else {
-            cell = tableView.dequeueReusableCell(withIdentifier: textMessageCellIdentifier, for: indexPath) as! TextMessageCell
-        }
+        let cell = tableView.dequeueReusableCell(withIdentifier: imageMessageCellIdentifier, for: indexPath) as! ImageMessageCell
         
         cell.populate(message: message)
         return cell
