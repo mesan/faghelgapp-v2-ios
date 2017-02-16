@@ -92,6 +92,10 @@ class MesanTabBarController: UITabBarController {
             self.feedImageView.image = UIImage(named: "feed_passive")
         }
     }
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.all
+    }
 }
 
 extension MesanTabBarController : UITabBarControllerDelegate {
