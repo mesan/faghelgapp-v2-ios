@@ -11,6 +11,8 @@ import UIKit
 import Kingfisher
 
 class ImageMessageCell: TextMessageCell {
+    @IBOutlet weak var backgroundMessageImageView: UIImageView!
+    @IBOutlet weak var backgroundMessageImageViewHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var messageImageView: UIImageView!
     @IBOutlet weak var messageImageViewHeightConstraint: NSLayoutConstraint!
     
@@ -21,7 +23,14 @@ class ImageMessageCell: TextMessageCell {
             messageImageView.isHidden = false
             messageImageViewHeightConstraint.constant = 200
             messageImageView.kf.setImage(with: ImageResource(downloadURL: url, cacheKey: imageUrl), placeholder: UIImage(named: "background_placeholder"), options: nil)
+            
+            backgroundMessageImageView.isHidden = false
+            backgroundMessageImageViewHeightConstraint.constant = 200
+            backgroundMessageImageView.kf.setImage(with: ImageResource(downloadURL: url, cacheKey: imageUrl), placeholder: UIImage(named: "background_placeholder"), options: nil)
         } else {
+            backgroundMessageImageView.isHidden = true
+            backgroundMessageImageViewHeightConstraint.constant = 0
+            
             messageImageView.isHidden = true
             messageImageViewHeightConstraint.constant = 0
         }
