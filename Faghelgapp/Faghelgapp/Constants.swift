@@ -30,7 +30,7 @@ enum Constants {
             static let baseUrl = "https://faghelg.herokuapp.com"
         }
         struct Local {
-            static let baseUrl = "http://192.168.0.103:8080"
+            static let baseUrl = "http://10.22.200.57:8080"
         }
         
         struct Endpoints {

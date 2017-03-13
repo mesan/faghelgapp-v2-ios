@@ -1,11 +1,3 @@
-//
-//  PushService.swift
-//  Faghelgapp
-//
-//  Created by Anders Ullnæss on 01/11/16.
-//  Copyright © 2016 Idar Vassdal. All rights reserved.
-//
-
 import Foundation
 
 class PushService {
@@ -38,7 +30,7 @@ class PushService {
             }
         }
         
-        let json = ["token": pushDevice.token, "owner": pushDevice.owner, "os": pushDevice.os]
+        let json = ["token": pushDevice.token, "os": pushDevice.os]
         
         client.post(url: Constants.Api.Endpoints.register, json: json, withAuthorization: true) { (data, error) in
             if data != nil {
@@ -49,7 +41,6 @@ class PushService {
                 Logger.printDebug(tag: self.logTag, error?.localizedDescription)
                 completion(false)
             }
-            
         }
     }
 }
