@@ -21,7 +21,7 @@ class ProgramViewController: MesanViewController {
     @IBOutlet weak var eventScrollerView: EventScrollerView!
     
     var interactor: ProgramViewControllerOutput!
-    var router: ProgramRouterInput!
+    var router: ProgramRouter!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +29,9 @@ class ProgramViewController: MesanViewController {
         programView.viewController = self
         ProgramConfigurator.sharedInstance.configure(viewController: self)
         
-        interactor.viewControllerWillAppear()
+        router.showLoadingView(text: "Henter program...") {
+            self.interactor.viewControllerWillAppear()
+        }
     }
 }
 
@@ -53,12 +55,12 @@ extension ProgramViewController: ProgramPresenterOutput {
             eventScrollerView.isHidden = true
         }
         
-        programView.updateViews(viewModel: viewModel)
+        router.hideLoadingView() {
+            self.programView.updateViews(viewModel: viewModel)
+        }
     }
-    
     
     func scrollToCurrentEvent(){
         programView.scrollToCurrentEvent()
     }
-    
 }

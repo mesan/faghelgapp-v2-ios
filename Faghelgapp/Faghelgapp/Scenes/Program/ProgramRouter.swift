@@ -12,7 +12,7 @@ protocol ProgramRouterInput {
     func goToEventsViewController(events: [Event], title: String, index: Int)
 }
 
-class ProgramRouter: ProgramRouterInput {
+class ProgramRouter: ProgramRouterInput, Loading {
     var viewController: ProgramViewController!
     
     func goToEventsViewController(events: [Event], title: String, index: Int) {

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F1194E11E562FC300838CB3 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1194E01E562FC300838CB3 /* LoadingView.swift */; };
+		1F1194E31E5630C400838CB3 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F1194E21E5630C300838CB3 /* LoadingView.xib */; };
+		1F1194E51E56326900838CB3 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1194E41E56326900838CB3 /* LoadingViewController.swift */; };
+		1F1194E71E56333D00838CB3 /* Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1194E61E56333D00838CB3 /* Loading.swift */; };
 		1F8B5060BDFFE7DB6FC4AA8C /* Pods_FaghelgappTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 544BC935E3966EC9C83606CA /* Pods_FaghelgappTests.framework */; };
 		84824D7F1DAE81E400D176BA /* PeopleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84824D7E1DAE81E400D176BA /* PeopleService.swift */; };
 		8484EE381E4107A900B89B6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8484EE361E4107A900B89B6E /* LaunchScreen.storyboard */; };
@@ -124,6 +128,10 @@
 
 /* Begin PBXFileReference section */
 		0AAE2BEED2A4853F25553F07 /* Pods-FaghelgappTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaghelgappTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FaghelgappTests/Pods-FaghelgappTests.release.xcconfig"; sourceTree = "<group>"; };
+		1F1194E01E562FC300838CB3 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		1F1194E21E5630C300838CB3 /* LoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
+		1F1194E41E56326900838CB3 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		1F1194E61E56333D00838CB3 /* Loading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loading.swift; sourceTree = "<group>"; };
 		32452F3C2530CF3E4413DD5C /* Pods-Faghelgapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Faghelgapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Faghelgapp/Pods-Faghelgapp.debug.xcconfig"; sourceTree = "<group>"; };
 		544BC935E3966EC9C83606CA /* Pods_FaghelgappTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FaghelgappTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B44F67761C6C29BE29B3E52 /* Pods-Faghelgapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Faghelgapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-Faghelgapp/Pods-Faghelgapp.release.xcconfig"; sourceTree = "<group>"; };
@@ -258,6 +266,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F1194DF1E562F8A00838CB3 /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				1F1194E01E562FC300838CB3 /* LoadingView.swift */,
+				1F1194E21E5630C300838CB3 /* LoadingView.xib */,
+			);
+			name = LoadingView;
+			sourceTree = "<group>";
+		};
 		9F16FA411E2FF181009971B3 /* PeopleEntryCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -434,6 +451,7 @@
 			isa = PBXGroup;
 			children = (
 				9FB3298F1E2FDE670056AB56 /* ImagePicking.swift */,
+				1F1194E61E56333D00838CB3 /* Loading.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -507,6 +525,7 @@
 				B15D59551DB697B300750260 /* PersonViewController.swift */,
 				9F9901601DB69A6A0043633A /* LogInViewController.swift */,
 				9F2CF2201DB6AB55004DA01F /* MesanViewController.swift */,
+				1F1194E41E56326900838CB3 /* LoadingViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -514,6 +533,7 @@
 		9FEB719C1D9ACC8700BBFA54 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1F1194DF1E562F8A00838CB3 /* LoadingView */,
 				B15D59501DB68BD200750260 /* PersonView */,
 				9FEC6A191DAE8CDD00EA1D1C /* EventView */,
 				9FCF1BDE1DAEB90E00F6A3D5 /* EventScrollerView */,
@@ -701,7 +721,7 @@
 					B192B5951D9AC9A200C8B9C2 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 74XXV957HC;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -745,6 +765,7 @@
 				8484EE381E4107A900B89B6E /* LaunchScreen.storyboard in Resources */,
 				9FEC6A1D1DAE8D3400EA1D1C /* EventScrollerCell.xib in Resources */,
 				B15D59541DB68C3700750260 /* PersonView.xib in Resources */,
+				1F1194E31E5630C400838CB3 /* LoadingView.xib in Resources */,
 				9FEC6A0D1DAE8BA000EA1D1C /* Roboto-Black.ttf in Resources */,
 				9FEC6A0E1DAE8BA000EA1D1C /* Roboto-BlackItalic.ttf in Resources */,
 				9FEC6A0F1DAE8BA000EA1D1C /* Roboto-Bold.ttf in Resources */,
@@ -902,6 +923,7 @@
 				9F25AFB91DA2B0DE00488CA6 /* Person.swift in Sources */,
 				9F25AFAB1DA2AD0E00488CA6 /* SeededURLSession.swift in Sources */,
 				9F5C00381E2FD85B00636470 /* NewMessagePresenter.swift in Sources */,
+				1F1194E51E56326900838CB3 /* LoadingViewController.swift in Sources */,
 				9F5C003A1E2FD85B00636470 /* NewMessageViewController.swift in Sources */,
 				9F25AFBE1DA2BF7300488CA6 /* Date+Formats.swift in Sources */,
 				B15D59521DB68C0E00750260 /* PersonView.swift in Sources */,
@@ -929,6 +951,7 @@
 				84824D7F1DAE81E400D176BA /* PeopleService.swift in Sources */,
 				9F04D2991DBFA5A6002E3896 /* MessageService.swift in Sources */,
 				9F5C003B1E2FD85B00636470 /* NewMessageViewModel.swift in Sources */,
+				1F1194E71E56333D00838CB3 /* Loading.swift in Sources */,
 				9F5DC4AD1DB16E43001FDCD2 /* EventPageViewController.swift in Sources */,
 				9F5C000F1E2FD60600636470 /* ProgramConfigurator.swift in Sources */,
 				9F25AFA71DA2ACCD00488CA6 /* HTTPClient.swift in Sources */,
@@ -957,6 +980,7 @@
 				84C9E2D51DC8FFDC00C85042 /* UIFont+Faghelgapp.swift in Sources */,
 				9FBD77351E2FEFC8000E0A1D /* FeedView.swift in Sources */,
 				9F25AFB71DA2B04E00488CA6 /* Event.swift in Sources */,
+				1F1194E11E562FC300838CB3 /* LoadingView.swift in Sources */,
 				9F04D29B1DBFA5FE002E3896 /* Message.swift in Sources */,
 				9F16FA491E2FF1AA009971B3 /* PeopleHeaderCell.swift in Sources */,
 				9F16FA441E2FF196009971B3 /* PeopleEntryCell.swift in Sources */,
@@ -1113,8 +1137,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = no.mesan.faghelgapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "314d7cdf-c184-41d4-b38e-302bfc6ecf54";
-				PROVISIONING_PROFILE_SPECIFIER = "Faghelgapp Development";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Faghelgapp/Faghelgapp-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
@@ -1127,15 +1151,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Faghelgapp/Faghelgapp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: MESAN AS";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: MESAN AS";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 74XXV957HC;
 				INFOPLIST_FILE = Faghelgapp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = no.mesan.faghelgapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "d18862ee-0ac1-4821-95d2-409b88151545";
-				PROVISIONING_PROFILE_SPECIFIER = "Faghelgapp Distribution";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Faghelgapp/Faghelgapp-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
