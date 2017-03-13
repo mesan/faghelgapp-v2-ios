@@ -12,7 +12,7 @@ protocol FeedRouterInput {
     func goToNewMessageViewController()
 }
 
-class FeedRouter: FeedRouterInput {
+class FeedRouter: FeedRouterInput, Loading {
     var viewController: FeedViewController!
     
     func goToNewMessageViewController() {

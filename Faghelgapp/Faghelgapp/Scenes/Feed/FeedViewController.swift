@@ -1,11 +1,3 @@
-//
-//  FeedViewController.swift
-//  Faghelgapp
-//
-//  Created by Anders Ullnæss on 18/10/16.
-//  Copyright © 2016 Idar Vassdal. All rights reserved.
-//
-
 import Foundation
 import UIKit
 
@@ -18,7 +10,7 @@ class FeedViewController: MesanViewController {
     @IBOutlet weak var feedView: FeedView!
     
     var interactor: FeedViewControllerOutput!
-    var router: FeedRouterInput!
+    var router: FeedRouter!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +18,10 @@ class FeedViewController: MesanViewController {
         FeedConfigurator.sharedInstance.configure(viewController: self)
         
         NotificationCenter.default.addObserver(self, selector: #selector(willEnterForeground), name: NSNotification.Name.UIApplicationWillEnterForeground, object: nil)
+        
+        router.showLoadingView(text: "Henter feed...") {
+            self.interactor.viewDidAppear()
+        }
     }
     
     func willEnterForeground() {
@@ -51,6 +47,8 @@ class FeedViewController: MesanViewController {
 
 extension FeedViewController: FeedPresenterOutput {
     func updateFeed(viewModel: FeedViewModel) {
-        feedView.updateFeed(viewModel: viewModel)
+        router.hideLoadingView() {
+            self.feedView.updateFeed(viewModel: viewModel)
+        }
     }
 }
