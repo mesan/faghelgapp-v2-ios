@@ -21,7 +21,7 @@ class ProgramViewController: MesanViewController {
         programView.viewController = self
         ProgramConfigurator.sharedInstance.configure(viewController: self)
         
-        router.showLoadingView(text: "Henter program...") {
+        router.showLoadingView(text: "Henter program") {
             self.interactor.viewControllerWillAppear()
         }
     }

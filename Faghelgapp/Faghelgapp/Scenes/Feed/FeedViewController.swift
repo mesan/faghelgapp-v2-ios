@@ -19,7 +19,7 @@ class FeedViewController: MesanViewController {
         
         NotificationCenter.default.addObserver(self, selector: #selector(willEnterForeground), name: NSNotification.Name.UIApplicationWillEnterForeground, object: nil)
         
-        router.showLoadingView(text: "Henter feed...") {
+        router.showLoadingView(text: "Henter feed") {
             self.interactor.viewDidAppear()
         }
     }
