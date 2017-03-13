@@ -26,6 +26,10 @@ extension Loading where T: UIViewController {
     func hideLoadingView(completion: (() -> Void)? = nil) {
         if let loadingViewController = viewController.presentedViewController as? LoadingViewController {
             loadingViewController.dismiss(animated: false, completion: completion)
+        } else {
+            if let completion = completion {
+                completion()
+            }
         }
     }
 }
