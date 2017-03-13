@@ -29,13 +29,17 @@ enum Constants {
         struct Prod {
             static let baseUrl = "https://faghelg.herokuapp.com"
         }
+        struct Local {
+            static let baseUrl = "http://192.168.0.103:8080"
+        }
         
         struct Endpoints {
-            static let program = URL(string: Prod.baseUrl  + "/program")!
-            static let people = URL(string: Prod.baseUrl + "/persons")!
-            static let messages = URL(string: Prod.baseUrl + "/messages")!
-            static let push = URL(string: Prod.baseUrl + "/push")!
-            static let register = URL(string: Prod.baseUrl + "/push/register")!
+            static let baseUrl = Prod.baseUrl
+            static let program = URL(string: baseUrl  + "/program")!
+            static let people = URL(string: baseUrl + "/persons")!
+            static let messages = URL(string: baseUrl + "/messages")!
+            static let push = URL(string: baseUrl + "/push")!
+            static let register = URL(string: baseUrl + "/push/register")!
         }
     }
     
