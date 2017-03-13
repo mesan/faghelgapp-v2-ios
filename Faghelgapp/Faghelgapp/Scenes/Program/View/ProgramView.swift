@@ -1,11 +1,3 @@
-//
-//  ProgramView.swift
-//  Faghelgapp
-//
-//  Created by Anders Ullnæss on 27/09/16.
-//  Copyright © 2016 Idar Vassdal. All rights reserved.
-//
-
 import Foundation
 import UIKit
 
@@ -143,5 +135,6 @@ extension ProgramView: UITableViewDataSource {
 extension ProgramView: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         viewController?.didSelectEvent(with: indexPath.row, from: viewModel.eventsForSelectedDay, day: viewModel.selectedDay.rawValue)
+        tableView.deselectRow(at: indexPath, animated: false)
     }
 }
