@@ -15,6 +15,8 @@ class FeedViewController: MesanViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        feedView.delegate = self
+        
         FeedConfigurator.sharedInstance.configure(viewController: self)
         
         NotificationCenter.default.addObserver(self, selector: #selector(willEnterForeground), name: NSNotification.Name.UIApplicationWillEnterForeground, object: nil)
@@ -42,6 +44,12 @@ class FeedViewController: MesanViewController {
         super.viewWillLayoutSubviews()
         
         interactor.viewControllerWillLayoutSubviews()
+    }
+}
+
+extension FeedViewController: FeedViewDelegate {
+    func didSelectMessage(message: Message) {
+        router.goToFullscreenImageViewController(message: message)
     }
 }
 

@@ -1,12 +1,8 @@
-//
-//  FeedView.swift
-//  Faghelgapp
-//
-//  Created by Anders Ullnæss on 18/10/16.
-//  Copyright © 2016 Idar Vassdal. All rights reserved.
-//
-
 import Foundation
+
+protocol FeedViewDelegate: class {
+    func didSelectMessage(message : Message)
+}
 
 class FeedView: NibLoadingView {
     
@@ -14,6 +10,8 @@ class FeedView: NibLoadingView {
     
     let textMessageCellIdentifier = "TextMessageCell"
     let imageMessageCellIdentifier = "ImageMessageCell"
+    
+    var delegate: FeedViewDelegate?
     
     var viewModel: FeedViewModel = FeedViewModel()
     
@@ -48,7 +46,21 @@ extension FeedView: UITableViewDataSource {
         let message = viewModel.messages[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: imageMessageCellIdentifier, for: indexPath) as! ImageMessageCell
         
+        if message.imageUrl == nil || message.imageUrl == "" {
+            cell.isUserInteractionEnabled = false
+        } else {
+            cell.isUserInteractionEnabled = true
+        }
+        
         cell.populate(message: message)
         return cell
+    }
+}
+
+extension FeedView: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let message = viewModel.messages[indexPath.row]
+        delegate?.didSelectMessage(message: message)
+        tableView.deselectRow(at: indexPath, animated: false)
     }
 }

@@ -11,6 +11,11 @@
 		1F1194E31E5630C400838CB3 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F1194E21E5630C300838CB3 /* LoadingView.xib */; };
 		1F1194E51E56326900838CB3 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1194E41E56326900838CB3 /* LoadingViewController.swift */; };
 		1F1194E71E56333D00838CB3 /* Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1194E61E56333D00838CB3 /* Loading.swift */; };
+		1F41090F1E7728DB0028ACFA /* FullscreenImageConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4109071E7728DB0028ACFA /* FullscreenImageConfigurator.swift */; };
+		1F4109121E7728DB0028ACFA /* FullscreenImageRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F41090A1E7728DB0028ACFA /* FullscreenImageRouter.swift */; };
+		1F4109131E7728DB0028ACFA /* FullscreenImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F41090B1E7728DB0028ACFA /* FullscreenImageView.swift */; };
+		1F4109141E7728DC0028ACFA /* FullscreenImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F41090C1E7728DB0028ACFA /* FullscreenImageView.xib */; };
+		1F4109151E7728DC0028ACFA /* FullscreenImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F41090D1E7728DB0028ACFA /* FullscreenImageViewController.swift */; };
 		1F8B5060BDFFE7DB6FC4AA8C /* Pods_FaghelgappTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 544BC935E3966EC9C83606CA /* Pods_FaghelgappTests.framework */; };
 		84824D7F1DAE81E400D176BA /* PeopleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84824D7E1DAE81E400D176BA /* PeopleService.swift */; };
 		8484EE381E4107A900B89B6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8484EE361E4107A900B89B6E /* LaunchScreen.storyboard */; };
@@ -132,6 +137,11 @@
 		1F1194E21E5630C300838CB3 /* LoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
 		1F1194E41E56326900838CB3 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		1F1194E61E56333D00838CB3 /* Loading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loading.swift; sourceTree = "<group>"; };
+		1F4109071E7728DB0028ACFA /* FullscreenImageConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullscreenImageConfigurator.swift; sourceTree = "<group>"; };
+		1F41090A1E7728DB0028ACFA /* FullscreenImageRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullscreenImageRouter.swift; sourceTree = "<group>"; };
+		1F41090B1E7728DB0028ACFA /* FullscreenImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullscreenImageView.swift; sourceTree = "<group>"; };
+		1F41090C1E7728DB0028ACFA /* FullscreenImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FullscreenImageView.xib; sourceTree = "<group>"; };
+		1F41090D1E7728DB0028ACFA /* FullscreenImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullscreenImageViewController.swift; sourceTree = "<group>"; };
 		32452F3C2530CF3E4413DD5C /* Pods-Faghelgapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Faghelgapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Faghelgapp/Pods-Faghelgapp.debug.xcconfig"; sourceTree = "<group>"; };
 		544BC935E3966EC9C83606CA /* Pods_FaghelgappTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FaghelgappTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B44F67761C6C29BE29B3E52 /* Pods-Faghelgapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Faghelgapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-Faghelgapp/Pods-Faghelgapp.release.xcconfig"; sourceTree = "<group>"; };
@@ -275,6 +285,26 @@
 			name = LoadingView;
 			sourceTree = "<group>";
 		};
+		1F2DC8671EA9222200B5B411 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1F41090B1E7728DB0028ACFA /* FullscreenImageView.swift */,
+				1F41090C1E7728DB0028ACFA /* FullscreenImageView.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		1F4109061E77289A0028ACFA /* FullscreenImage */ = {
+			isa = PBXGroup;
+			children = (
+				1F2DC8671EA9222200B5B411 /* View */,
+				1F4109071E7728DB0028ACFA /* FullscreenImageConfigurator.swift */,
+				1F41090A1E7728DB0028ACFA /* FullscreenImageRouter.swift */,
+				1F41090D1E7728DB0028ACFA /* FullscreenImageViewController.swift */,
+			);
+			path = FullscreenImage;
+			sourceTree = "<group>";
+		};
 		9F16FA411E2FF181009971B3 /* PeopleEntryCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -374,6 +404,7 @@
 		9F5C00071E2FD5BF00636470 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				1F4109061E77289A0028ACFA /* FullscreenImage */,
 				9F5C002F1E2FD84200636470 /* NewMessage */,
 				9F5C00221E2FD7DC00636470 /* People */,
 				9F5C00151E2FD75400636470 /* Feed */,
@@ -770,6 +801,7 @@
 				B15D59541DB68C3700750260 /* PersonView.xib in Resources */,
 				1F1194E31E5630C400838CB3 /* LoadingView.xib in Resources */,
 				9FEC6A0D1DAE8BA000EA1D1C /* Roboto-Black.ttf in Resources */,
+				1F4109141E7728DC0028ACFA /* FullscreenImageView.xib in Resources */,
 				9FEC6A0E1DAE8BA000EA1D1C /* Roboto-BlackItalic.ttf in Resources */,
 				9FEC6A0F1DAE8BA000EA1D1C /* Roboto-Bold.ttf in Resources */,
 				9FEC6A101DAE8BA000EA1D1C /* Roboto-BoldItalic.ttf in Resources */,
@@ -922,12 +954,14 @@
 				9FCF1BE51DAEBAA900F6A3D5 /* EventScrollerCell.swift in Sources */,
 				9F25AFA41DA2ABFB00488CA6 /* ProgramService.swift in Sources */,
 				9F25AFB21DA2AE2900488CA6 /* Constants.swift in Sources */,
+				1F4109131E7728DB0028ACFA /* FullscreenImageView.swift in Sources */,
 				9F5C002C1E2FD7F200636470 /* PeopleRouter.swift in Sources */,
 				9F25AFB91DA2B0DE00488CA6 /* Person.swift in Sources */,
 				9F25AFAB1DA2AD0E00488CA6 /* SeededURLSession.swift in Sources */,
 				9F5C00381E2FD85B00636470 /* NewMessagePresenter.swift in Sources */,
 				1F1194E51E56326900838CB3 /* LoadingViewController.swift in Sources */,
 				9F5C003A1E2FD85B00636470 /* NewMessageViewController.swift in Sources */,
+				1F41090F1E7728DB0028ACFA /* FullscreenImageConfigurator.swift in Sources */,
 				9F25AFBE1DA2BF7300488CA6 /* Date+Formats.swift in Sources */,
 				B15D59521DB68C0E00750260 /* PersonView.swift in Sources */,
 				9F04D2A71DBFD27A002E3896 /* MessageInput.swift in Sources */,
@@ -936,6 +970,7 @@
 				9F5C00111E2FD60600636470 /* ProgramPresenter.swift in Sources */,
 				9F5C00291E2FD7F200636470 /* PeopleConfigurator.swift in Sources */,
 				9F5C00121E2FD60600636470 /* ProgramRouter.swift in Sources */,
+				1F4109151E7728DC0028ACFA /* FullscreenImageViewController.swift in Sources */,
 				9F2CF2211DB6AB55004DA01F /* MesanViewController.swift in Sources */,
 				9F25AFA91DA2ACF400488CA6 /* Config.swift in Sources */,
 				9FEB71A31D9ACD1200BBFA54 /* NibLoadingView.swift in Sources */,
@@ -955,6 +990,7 @@
 				9F04D2991DBFA5A6002E3896 /* MessageService.swift in Sources */,
 				9F5C003B1E2FD85B00636470 /* NewMessageViewModel.swift in Sources */,
 				1F1194E71E56333D00838CB3 /* Loading.swift in Sources */,
+				1F4109121E7728DB0028ACFA /* FullscreenImageRouter.swift in Sources */,
 				9F5DC4AD1DB16E43001FDCD2 /* EventPageViewController.swift in Sources */,
 				9F5C000F1E2FD60600636470 /* ProgramConfigurator.swift in Sources */,
 				9F25AFA71DA2ACCD00488CA6 /* HTTPClient.swift in Sources */,

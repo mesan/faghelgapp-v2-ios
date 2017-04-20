@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="C0T-B9-aY2">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="C0T-B9-aY2">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -397,6 +397,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fk2-1t-vVB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="522" y="813"/>
+        </scene>
+        <!--Fullscreen Image View Controller-->
+        <scene sceneID="2Ot-bI-7qU">
+            <objects>
+                <viewController storyboardIdentifier="FullscreenImageViewController" id="kQD-eD-x7o" customClass="FullscreenImageViewController" customModule="Faghelgapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ksj-Zd-iK7"/>
+                        <viewControllerLayoutGuide type="bottom" id="3nY-jJ-g6V"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lEe-nr-dDk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bt4-te-HG9" customClass="FullscreenImageView" customModule="Faghelgapp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Bt4-te-HG9" secondAttribute="trailing" id="0Hw-dJ-I1c"/>
+                            <constraint firstItem="Bt4-te-HG9" firstAttribute="top" secondItem="ksj-Zd-iK7" secondAttribute="bottom" id="dn3-91-2HQ"/>
+                            <constraint firstItem="3nY-jJ-g6V" firstAttribute="top" secondItem="Bt4-te-HG9" secondAttribute="bottom" id="nE0-Qm-wlM"/>
+                            <constraint firstItem="Bt4-te-HG9" firstAttribute="leading" secondItem="lEe-nr-dDk" secondAttribute="leading" id="w5N-vL-hew"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="fullscreenImageView" destination="Bt4-te-HG9" id="xzK-7H-LqS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Jr-n6-Zkn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="521" y="2289"/>
         </scene>
     </scenes>
     <resources>
