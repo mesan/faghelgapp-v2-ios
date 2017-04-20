@@ -260,17 +260,16 @@
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>
                         <outlet property="peopleView" destination="MQy-9O-vzM" id="ADg-Ve-dME"/>
-                        <segue destination="8M1-Ay-hxT" kind="showDetail" identifier="showPerson" id="rWX-Ac-fuQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kvt-tg-EHg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1591" y="1523"/>
         </scene>
-        <!--Person View Controller-->
+        <!--Person Details View Controller-->
         <scene sceneID="Zec-Fc-tb9">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="8M1-Ay-hxT" customClass="PersonViewController" customModule="Faghelgapp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PersonDetailsViewController" automaticallyAdjustsScrollViewInsets="NO" id="8M1-Ay-hxT" customClass="PersonDetailsViewController" customModule="Faghelgapp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cxX-Lv-8oo"/>
                         <viewControllerLayoutGuide type="bottom" id="v8S-96-qXI"/>
@@ -278,13 +277,27 @@
                     <view key="view" contentMode="scaleToFill" id="HHM-EZ-cCa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jrc-cW-7KC" customClass="PersonDetailsView" customModule="Faghelgapp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Jrc-cW-7KC" firstAttribute="centerX" secondItem="HHM-EZ-cCa" secondAttribute="centerX" id="BPm-do-Q9c"/>
+                            <constraint firstItem="Jrc-cW-7KC" firstAttribute="width" secondItem="HHM-EZ-cCa" secondAttribute="width" id="L01-J8-67i"/>
+                            <constraint firstItem="Jrc-cW-7KC" firstAttribute="centerY" secondItem="HHM-EZ-cCa" secondAttribute="centerY" id="Mkv-24-Nlz"/>
+                            <constraint firstItem="Jrc-cW-7KC" firstAttribute="height" secondItem="HHM-EZ-cCa" secondAttribute="height" id="yTQ-e3-HZH"/>
+                        </constraints>
                     </view>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <connections>
+                        <outlet property="personDetailsView" destination="Jrc-cW-7KC" id="XRR-iU-7rA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mhg-nE-PEy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2540" y="1523"/>
+            <point key="canvasLocation" x="2538.4000000000001" y="1522.488755622189"/>
         </scene>
         <!--Mesan Tab Bar Controller-->
         <scene sceneID="YJm-Hw-MHd">

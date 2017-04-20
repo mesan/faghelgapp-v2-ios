@@ -10,6 +10,7 @@ class PeopleViewController: MesanViewController {
     @IBOutlet weak var peopleView: PeopleView!
     
     var interactor: PeopleViewControllerOutput!
+    var router: PeopleRouter!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +27,9 @@ class PeopleViewController: MesanViewController {
 }
 
 extension PeopleViewController: PeopleViewDelegate {
-    
+    func didSelectPerson(person: Person) {
+        router.goToPersonDetailsViewController(person: person)
+    }
 }
 
 extension PeopleViewController: PeoplePresenterOutput {

@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 protocol PeopleViewDelegate: class {
-    
+    func didSelectPerson(person: Person)
 }
 
 class PeopleView: NibLoadingView {
@@ -32,23 +32,36 @@ class PeopleView: NibLoadingView {
         let header = PeopleHeaderCell()
         header.frame.size = CGSize(width: header.frame.size.width, height: 180)
         peopleTableView.tableHeaderView = header
+        
+        header.isUserInteractionEnabled = true
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(headerTapped(tapGestureRecognizer:)))
+        header.addGestureRecognizer(tapGestureRecognizer)
+    }
+    
+    func getLoggedInPerson() -> Person? {
+        if let token = UserDefaults.standard.string(forKey: Constants.UserDefaultsKeys.token) {
+            let currentUser = TokenUtil.getUsernameFromToken(token: token)
+            return self.viewModel.people.filter{ $0.shortName == currentUser }.first
+        }
+        
+        return nil
     }
     
     func updateViews(viewModel: PeopleViewModel) {
         self.viewModel = viewModel
-        
-        // find person for current user
-        if let token = UserDefaults.standard.string(forKey: Constants.UserDefaultsKeys.token) {
-            let currentUser = TokenUtil.getUsernameFromToken(token: token)
-            let currentPerson = self.viewModel.people.filter{ $0.shortName == currentUser }.first
             
-            if let currentPerson = currentPerson {
-                (peopleTableView.tableHeaderView as! PeopleHeaderCell).populate(person: currentPerson)
-            }
+        if let currentPerson = getLoggedInPerson() {
+            (peopleTableView.tableHeaderView as! PeopleHeaderCell).populate(person: currentPerson)
         }
         
         peopleTableView.reloadData()
         peopleTableView.layoutIfNeeded()
+    }
+    
+    func headerTapped(tapGestureRecognizer: UITapGestureRecognizer) {
+        if let currentPerson = getLoggedInPerson() {
+            viewController?.didSelectPerson(person: currentPerson)
+        }
     }
 }
 
@@ -68,25 +81,9 @@ extension PeopleView: UITableViewDataSource {
     }
 }
 
-/*
 extension PeopleView: UITableViewDelegate {
-    
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 200
-    }
-    
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let header = PeopleHeaderCell()
-        
-        // find person for current user
-        let currentUser = "toreb" // TODO: replace with actual user
-        let currentPerson = self.viewModel.people.filter{ $0.shortName == currentUser }.first
-        
-        if let currentPerson = currentPerson {
-            header.populate(person: currentPerson)
-        }
-        
-        return header;
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let person = self.viewModel.people[indexPath.row]
+        viewController?.didSelectPerson(person: person)
     }
 }
- */

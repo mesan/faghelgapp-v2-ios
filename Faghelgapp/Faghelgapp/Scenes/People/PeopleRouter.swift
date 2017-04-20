@@ -19,4 +19,10 @@ class PeopleRouter: PeopleRouterInput {
     init(viewController: PeopleViewController) {
         self.viewController = viewController
     }
+    
+    func goToPersonDetailsViewController(person: Person) {
+        let personDetailsViewController = viewController.storyboard!.instantiateViewController(withIdentifier: "PersonDetailsViewController") as! PersonDetailsViewController
+        personDetailsViewController.person = person
+        viewController.show(personDetailsViewController, sender: viewController)
+    }
 }

@@ -25,6 +25,9 @@ class PeopleConfigurator {
         let interactor = PeopleInteractor(peopleService: peopleService)
         interactor.presenter = presenter
         
+        let router = PeopleRouter(viewController: viewController)
+        
         viewController.interactor = interactor
+        viewController.router = router;
     }
 }
