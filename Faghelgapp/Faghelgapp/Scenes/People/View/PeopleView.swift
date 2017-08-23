@@ -58,7 +58,7 @@ class PeopleView: NibLoadingView {
         peopleTableView.layoutIfNeeded()
     }
     
-    func headerTapped(tapGestureRecognizer: UITapGestureRecognizer) {
+    @objc func headerTapped(tapGestureRecognizer: UITapGestureRecognizer) {
         if let currentPerson = getLoggedInPerson() {
             viewController?.didSelectPerson(person: currentPerson)
         }
