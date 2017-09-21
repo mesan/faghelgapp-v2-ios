@@ -26,7 +26,7 @@ class FeedViewController: MesanViewController {
         }
     }
     
-    func willEnterForeground() {
+    @objc func willEnterForeground() {
         interactor.viewDidAppear()
     }
     

@@ -78,7 +78,7 @@ class MesanTabBarController: UITabBarController {
         }
     }
     
-    func feedImageClicked() {
+    @objc func feedImageClicked() {
         let index = 1
         self.selectedIndex = index
         updateFeedImage(selectedIndex: index)
