@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import UIKit
+
 extension UIFont {
     private class func convert(_ fontSize: CGFloat) -> CGFloat {
         let multiplier: CGFloat = 2.0

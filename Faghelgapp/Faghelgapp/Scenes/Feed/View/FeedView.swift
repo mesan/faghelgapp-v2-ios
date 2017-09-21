@@ -1,4 +1,5 @@
 import Foundation
+import UIKit
 
 protocol FeedViewDelegate: class {
     func didSelectMessage(message : Message)

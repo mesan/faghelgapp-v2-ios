@@ -1,33 +1,33 @@
 PODS:
-  - ADALiOS (1.2.9)
-  - Crashlytics (3.8.3):
+  - Crashlytics (3.8.6):
     - Fabric (~> 1.6.3)
-  - Fabric (1.6.9)
-  - Kingfisher (3.1.3)
+  - Fabric (1.6.13)
+  - Kingfisher (3.13.1)
   - NibDesignable (3.0.0)
-  - Realm (2.0.2):
-    - Realm/Headers (= 2.0.2)
-  - Realm/Headers (2.0.2)
-  - RealmSwift (2.0.2):
-    - Realm (= 2.0.2)
+  - Realm (2.10.1):
+    - Realm/Headers (= 2.10.1)
+  - Realm/Headers (2.10.1)
+  - RealmSwift (2.10.1):
+    - Realm (= 2.10.1)
+  - SwiftLint (0.22.0)
 
 DEPENDENCIES:
-  - ADALiOS
   - Crashlytics
   - Fabric
   - Kingfisher (~> 3.0)
   - NibDesignable
   - RealmSwift
+  - SwiftLint
 
 SPEC CHECKSUMS:
-  ADALiOS: fe8e6d04ff9eae098e1b43ecdd0c4cef08d99182
-  Crashlytics: 2b6dbe138a42395577cfa73dfa1aa7248cadf39e
-  Fabric: bc5bec42cef4bcf1ee3ce0e218fc518e4b44dfbb
-  Kingfisher: 007f5851c18c81e7cc106c9cbac1bafea1cce5dc
+  Crashlytics: 95d05f4e4c19a771250c4bd9ce344d996de32bbf
+  Fabric: 2fb5676bc811af011a04513451f463dac6803206
+  Kingfisher: ed9707a409cc47fddafbcd12a43a9757e3600af5
   NibDesignable: 6ccf1e54135cb05be0a78f803b9a8d78125a7d6d
-  Realm: 0f5a194af0b7e6158b83db41b4ee1a00be7ddf1a
-  RealmSwift: 0eb5070d851cba7c66e841ca756d83609dc78bc8
+  Realm: fc7a317a5c2c9ba91f5f235ede4e2ea76e9eba0c
+  RealmSwift: 505ed6c15942a2e76f5cfa78a8667cfa997ee75b
+  SwiftLint: 1134786caedd2caab0560d2f36b76414a5a56808
 
-PODFILE CHECKSUM: 9121bccdee16b6eda5aaaddb2eb4eac34c67b035
+PODFILE CHECKSUM: 835e33bb8b36b6aebbd5a7bea8fb2be15d25bf7d
 
 COCOAPODS: 1.3.1

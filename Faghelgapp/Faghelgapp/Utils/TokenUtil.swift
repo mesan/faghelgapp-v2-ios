@@ -1,3 +1,5 @@
+import Foundation
+
 class TokenUtil {
     
     class func getUsernameFromToken(token: String) -> String? {
@@ -16,9 +18,10 @@ class TokenUtil {
             let str = NSString(data: data, encoding: String.Encoding.utf8.rawValue)!
             
             let JSONData = str.data(using: String.Encoding.utf8.rawValue, allowLossyConversion: false)
-            
+            //swiftlint:disable force_try
             let JSONDictionary: Dictionary = (try! JSONSerialization.jsonObject(with: JSONData!, options: [])) as! [String: AnyObject]
             
+            // swiftlint:disable force_cast
             let unique_name = JSONDictionary["unique_name"] as! String
             let username = unique_name.characters.split {$0 == "@"}.map { String($0) }[0]
             

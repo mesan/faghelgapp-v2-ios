@@ -8,7 +8,6 @@
 
 import Foundation
 import UIKit
-import ADALiOS
 
 class LogInViewController: UIViewController {
 
@@ -22,32 +21,15 @@ class LogInViewController: UIViewController {
     }
     
     func promptLogin() {
-        let authority = "https://login.windows.net/common"
-        let clientID = "685ff077-c1ca-4d18-b364-7746b4560cea"
-        let redirectURI:NSURL = NSURL(string: "https://faghelg.herokuapp.com")!
-        
-        //Use ADAL to authenticate the user against Azure Active Directory
-        var er: ADAuthenticationError? = nil
-        let authContext:ADAuthenticationContext = ADAuthenticationContext(authority: authority, error: &er)
-        authContext.acquireToken(withResource: "https://faghelg.herokuapp.com", clientId: clientID, redirectUri: redirectURI as URL!, completionBlock: { (result) in
-            
-            if result?.error != nil {
-                // TODO
-                // Go back to the first ViewController
-                //self.tabBarController?.selectedIndex = 0
-            }
-            if result?.accessToken != nil {
-                UserDefaults.standard.set(result?.accessToken, forKey: Constants.UserDefaultsKeys.token)
-                UserDefaults.standard.synchronize()
+/*UserDefaults.standard.set(result?.accessToken, forKey: Constants.UserDefaultsKeys.token)
+UserDefaults.standard.synchronize()
+*/
+if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
+appDelegate.registerForPushNotifications(application: UIApplication.shared)
+}
                 
-                if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
-                    appDelegate.registerForPushNotifications(application: UIApplication.shared)
-                }
-                
-                self.loggedIn()
-            }
-        })
-    }
+self.loggedIn()
+}
     
     private func loggedIn() {
         let tabBarController = self.storyboard!.instantiateViewController(withIdentifier: "TabBarController") as! UITabBarController

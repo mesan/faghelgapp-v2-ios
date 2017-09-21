@@ -28,6 +28,6 @@ class PeopleConfigurator {
         let router = PeopleRouter(viewController: viewController)
         
         viewController.interactor = interactor
-        viewController.router = router;
+        viewController.router = router
     }
 }
