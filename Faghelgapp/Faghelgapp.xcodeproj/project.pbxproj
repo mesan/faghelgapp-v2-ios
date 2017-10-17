@@ -123,15 +123,9 @@
 		B192B59A1D9AC9A200C8B9C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B192B5991D9AC9A200C8B9C2 /* AppDelegate.swift */; };
 		B192B5A11D9AC9A200C8B9C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B192B5A01D9AC9A200C8B9C2 /* Assets.xcassets */; };
 		B192B5AF1D9AC9A200C8B9C2 /* FaghelgappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B192B5AE1D9AC9A200C8B9C2 /* FaghelgappTests.swift */; };
-		E146084D1F7427C900C2D32A /* LoginConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14608451F7427C900C2D32A /* LoginConfigurator.swift */; };
-		E146084E1F7427C900C2D32A /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14608461F7427C900C2D32A /* LoginInteractor.swift */; };
-		E146084F1F7427C900C2D32A /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14608471F7427C900C2D32A /* LoginPresenter.swift */; };
-		E14608501F7427C900C2D32A /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14608481F7427C900C2D32A /* LoginRouter.swift */; };
-		E14608511F7427C900C2D32A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14608491F7427C900C2D32A /* LoginView.swift */; };
-		E14608521F7427C900C2D32A /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E146084A1F7427C900C2D32A /* LoginView.xib */; };
-		E14608531F7427C900C2D32A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E146084B1F7427C900C2D32A /* LoginViewController.swift */; };
-		E14608541F7427C900C2D32A /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E146084C1F7427C900C2D32A /* LoginViewModel.swift */; };
 		E1F5B2A81F96647400A13B56 /* NibDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F5B2A71F96647300A13B56 /* NibDesignable.swift */; };
+		E1F5B2AC1F9670EC00A13B56 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1F5B2AB1F9670EC00A13B56 /* GoogleService-Info.plist */; };
+		E1F5B2AE1F96853100A13B56 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F5B2AD1F96853100A13B56 /* AuthService.swift */; };
 		F282C3126DA1F03752C791B9 /* Pods_Faghelgapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D445080685542BFDD16F65C9 /* Pods_Faghelgapp.framework */; };
 /* End PBXBuildFile section */
 
@@ -272,15 +266,9 @@
 		B192B5B01D9AC9A200C8B9C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD2D24CA29C7CA7FDB04833B /* Pods-FaghelgappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaghelgappTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FaghelgappTests/Pods-FaghelgappTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D445080685542BFDD16F65C9 /* Pods_Faghelgapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Faghelgapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E14608451F7427C900C2D32A /* LoginConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginConfigurator.swift; sourceTree = "<group>"; };
-		E14608461F7427C900C2D32A /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
-		E14608471F7427C900C2D32A /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
-		E14608481F7427C900C2D32A /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
-		E14608491F7427C900C2D32A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		E146084A1F7427C900C2D32A /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
-		E146084B1F7427C900C2D32A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		E146084C1F7427C900C2D32A /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		E1F5B2A71F96647300A13B56 /* NibDesignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibDesignable.swift; sourceTree = "<group>"; };
+		E1F5B2AB1F9670EC00A13B56 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E1F5B2AD1F96853100A13B56 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -400,6 +388,7 @@
 				84824D7E1DAE81E400D176BA /* PeopleService.swift */,
 				9F04D2981DBFA5A6002E3896 /* MessageService.swift */,
 				9F0D58AB1DC8FF8300555BE1 /* PushService.swift */,
+				E1F5B2AD1F96853100A13B56 /* AuthService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -454,7 +443,6 @@
 		9F5C00071E2FD5BF00636470 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				E14608441F7427BC00C2D32A /* Login */,
 				84BD34071E5617E400D2E7C1 /* PersonDetails */,
 				1F4109061E77289A0028ACFA /* FullscreenImage */,
 				9F5C002F1E2FD84200636470 /* NewMessage */,
@@ -694,6 +682,7 @@
 		B192B5981D9AC9A200C8B9C2 /* Faghelgapp */ = {
 			isa = PBXGroup;
 			children = (
+				E1F5B2AB1F9670EC00A13B56 /* GoogleService-Info.plist */,
 				E1F5B2A71F96647300A13B56 /* NibDesignable.swift */,
 				9FA887B01DC9293D006CF37C /* Faghelgapp.entitlements */,
 				B192B5991D9AC9A200C8B9C2 /* AppDelegate.swift */,
@@ -733,21 +722,6 @@
 				544BC935E3966EC9C83606CA /* Pods_FaghelgappTests.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		E14608441F7427BC00C2D32A /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				E14608451F7427C900C2D32A /* LoginConfigurator.swift */,
-				E14608461F7427C900C2D32A /* LoginInteractor.swift */,
-				E14608471F7427C900C2D32A /* LoginPresenter.swift */,
-				E14608481F7427C900C2D32A /* LoginRouter.swift */,
-				E14608491F7427C900C2D32A /* LoginView.swift */,
-				E146084A1F7427C900C2D32A /* LoginView.xib */,
-				E146084B1F7427C900C2D32A /* LoginViewController.swift */,
-				E146084C1F7427C900C2D32A /* LoginViewModel.swift */,
-			);
-			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -870,12 +844,12 @@
 				9FEC6A141DAE8BA000EA1D1C /* Roboto-Medium.ttf in Resources */,
 				9FEC6A151DAE8BA000EA1D1C /* Roboto-MediumItalic.ttf in Resources */,
 				9F16FA4F1E2FF1DB009971B3 /* TextMessageCell.xib in Resources */,
+				E1F5B2AC1F9670EC00A13B56 /* GoogleService-Info.plist in Resources */,
 				84BD34181E5618B000D2E7C1 /* PersonDetailsView.xib in Resources */,
 				9F16FA541E2FF1FC009971B3 /* ProgramEntryCell.xib in Resources */,
 				9FEC6A161DAE8BA000EA1D1C /* Roboto-Regular.ttf in Resources */,
 				9F16FA581E2FF217009971B3 /* ProgramView.xib in Resources */,
 				9FEC6A171DAE8BA000EA1D1C /* Roboto-Thin.ttf in Resources */,
-				E14608521F7427C900C2D32A /* LoginView.xib in Resources */,
 				9FEC6A181DAE8BA000EA1D1C /* Roboto-ThinItalic.ttf in Resources */,
 				9F5C00401E2FDC4900636470 /* NewMessageView.xib in Resources */,
 				9F16FA451E2FF196009971B3 /* PeopleEntryCell.xib in Resources */,
@@ -998,6 +972,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Faghelgapp/Pods-Faghelgapp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
@@ -1006,6 +981,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
@@ -1057,8 +1033,6 @@
 				9F04D2A71DBFD27A002E3896 /* MessageInput.swift in Sources */,
 				84BD34121E56184000D2E7C1 /* PersonDetailsViewController.swift in Sources */,
 				9F5C002B1E2FD7F200636470 /* PeoplePresenter.swift in Sources */,
-				E14608531F7427C900C2D32A /* LoginViewController.swift in Sources */,
-				E146084F1F7427C900C2D32A /* LoginPresenter.swift in Sources */,
 				84CA3AF11DBFF72200662994 /* MesanTabBarController.swift in Sources */,
 				9F5C00111E2FD60600636470 /* ProgramPresenter.swift in Sources */,
 				9F5C00291E2FD7F200636470 /* PeopleConfigurator.swift in Sources */,
@@ -1068,12 +1042,9 @@
 				9F25AFA91DA2ACF400488CA6 /* Config.swift in Sources */,
 				9FEB71A31D9ACD1200BBFA54 /* NibLoadingView.swift in Sources */,
 				9F16FA571E2FF217009971B3 /* ProgramView.swift in Sources */,
-				E14608511F7427C900C2D32A /* LoginView.swift in Sources */,
 				9FCF1BE01DAEB93000F6A3D5 /* EventScrollerView.swift in Sources */,
 				9FB329901E2FDE670056AB56 /* ImagePicking.swift in Sources */,
-				E14608501F7427C900C2D32A /* LoginRouter.swift in Sources */,
 				B192B59A1D9AC9A200C8B9C2 /* AppDelegate.swift in Sources */,
-				E14608541F7427C900C2D32A /* LoginViewModel.swift in Sources */,
 				9FEC6A1B1DAE8CF500EA1D1C /* EventView.swift in Sources */,
 				9FEB71B41D9AE94D00BBFA54 /* Day.swift in Sources */,
 				9F5C00361E2FD85B00636470 /* NewMessageConfigurator.swift in Sources */,
@@ -1097,6 +1068,7 @@
 				9F16FA4E1E2FF1DB009971B3 /* TextMessageCell.swift in Sources */,
 				9F5C00391E2FD85B00636470 /* NewMessageRouter.swift in Sources */,
 				9F5C002D1E2FD7F200636470 /* PeopleViewController.swift in Sources */,
+				E1F5B2AE1F96853100A13B56 /* AuthService.swift in Sources */,
 				84BD340E1E56184000D2E7C1 /* PersonDetailsConfigurator.swift in Sources */,
 				9F25AFBC1DA2B91600488CA6 /* Date+WeekDay.swift in Sources */,
 				9F5C001E1E2FD77000636470 /* FeedPresenter.swift in Sources */,
@@ -1105,7 +1077,6 @@
 				9F5C002E1E2FD7F200636470 /* PeopleViewModel.swift in Sources */,
 				9F5C00201E2FD77000636470 /* FeedViewController.swift in Sources */,
 				9F5C001C1E2FD77000636470 /* FeedConfigurator.swift in Sources */,
-				E146084E1F7427C900C2D32A /* LoginInteractor.swift in Sources */,
 				9F9901611DB69A6A0043633A /* LogInViewController.swift in Sources */,
 				9F5C00131E2FD60600636470 /* ProgramViewController.swift in Sources */,
 				9FBD773E1E2FF063000E0A1D /* PeopleView.swift in Sources */,
@@ -1129,7 +1100,6 @@
 				9F16FA531E2FF1FC009971B3 /* ProgramEntryCell.swift in Sources */,
 				9FBD772F1E2FEE41000E0A1D /* ImageEncoder.swift in Sources */,
 				84BD34161E56189F00D2E7C1 /* PersonDetailsView.swift in Sources */,
-				E146084D1F7427C900C2D32A /* LoginConfigurator.swift in Sources */,
 				9F5C00101E2FD60600636470 /* ProgramInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

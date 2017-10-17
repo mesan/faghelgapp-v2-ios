@@ -5,7 +5,6 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -300,39 +299,6 @@
             </objects>
             <point key="canvasLocation" x="2538.4000000000001" y="1522.488755622189"/>
         </scene>
-        <!--Login View Controller View Controller-->
-        <scene sceneID="Eam-Bo-lUL">
-            <objects>
-                <viewController id="NN4-Ge-GHn" customClass="LoginViewControllerViewController" customModule="Faghelgapp" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="tJE-eF-gbh"/>
-                        <viewControllerLayoutGuide type="bottom" id="qCn-uo-cEz"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="wxG-y3-zc5">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ArW-42-m5K" customClass="LoginView" customModule="Faghelgapp" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="ArW-42-m5K" firstAttribute="leading" secondItem="wxG-y3-zc5" secondAttribute="leadingMargin" constant="-16" id="Fmd-qS-JA1"/>
-                            <constraint firstAttribute="bottom" secondItem="ArW-42-m5K" secondAttribute="bottom" id="Pwt-mD-v1b"/>
-                            <constraint firstItem="ArW-42-m5K" firstAttribute="top" secondItem="wxG-y3-zc5" secondAttribute="top" constant="20" id="UYg-8A-eSe"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ArW-42-m5K" secondAttribute="trailing" constant="-16" id="VEJ-sm-xav"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="loginView" destination="ArW-42-m5K" id="mBR-2T-h9A"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2io-96-g77" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2381.5999999999999" y="2312.2938530734637"/>
-        </scene>
         <!--Mesan Tab Bar Controller-->
         <scene sceneID="YJm-Hw-MHd">
             <objects>
@@ -367,8 +333,52 @@
                     <view key="view" contentMode="scaleToFill" id="Zav-Ic-t6v">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E1V-LV-q0g">
+                                <rect key="frame" x="16" y="242.5" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n6n-9K-QDy">
+                                <rect key="frame" x="164" y="280" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="btnSendPhoneNumberClicked:" destination="C0T-B9-aY2" eventType="touchUpInside" id="bw6-OQ-DEq"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V7f-G2-2QX">
+                                <rect key="frame" x="16" y="318.5" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ym-ow-6ev">
+                                <rect key="frame" x="164" y="356.5" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="btnSendSmsCodeClicked:" destination="C0T-B9-aY2" eventType="touchUpInside" id="SSS-jm-WtL"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="V7f-G2-2QX" firstAttribute="centerX" secondItem="n6n-9K-QDy" secondAttribute="centerX" id="2LS-dj-tDm"/>
+                            <constraint firstItem="n6n-9K-QDy" firstAttribute="top" secondItem="E1V-LV-q0g" secondAttribute="bottom" constant="8" id="Bat-uB-z6R"/>
+                            <constraint firstItem="V7f-G2-2QX" firstAttribute="leading" secondItem="Zav-Ic-t6v" secondAttribute="leading" constant="16" id="GDe-sV-zxN"/>
+                            <constraint firstAttribute="trailing" secondItem="V7f-G2-2QX" secondAttribute="trailing" constant="16" id="IZx-8p-b0v"/>
+                            <constraint firstItem="9Ym-ow-6ev" firstAttribute="top" secondItem="V7f-G2-2QX" secondAttribute="bottom" constant="8" id="bvD-xH-c9g"/>
+                            <constraint firstItem="V7f-G2-2QX" firstAttribute="centerY" secondItem="Zav-Ic-t6v" secondAttribute="centerY" id="ck3-X1-xly"/>
+                            <constraint firstItem="E1V-LV-q0g" firstAttribute="leading" secondItem="Zav-Ic-t6v" secondAttribute="leading" constant="16" id="dKH-iZ-UZq"/>
+                            <constraint firstAttribute="trailing" secondItem="E1V-LV-q0g" secondAttribute="trailing" constant="16" id="fj6-zN-qgY"/>
+                            <constraint firstItem="V7f-G2-2QX" firstAttribute="top" secondItem="n6n-9K-QDy" secondAttribute="bottom" constant="8" id="kOr-34-aCp"/>
+                            <constraint firstItem="9Ym-ow-6ev" firstAttribute="centerX" secondItem="V7f-G2-2QX" secondAttribute="centerX" id="vxS-js-jhi"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tfPhoneNumber" destination="E1V-LV-q0g" id="2P4-Re-P5h"/>
+                        <outlet property="tfSmsCode" destination="V7f-G2-2QX" id="S1g-c4-ALg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B9A-EW-uXI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -34,15 +34,19 @@ class HTTPClient {
         task.resume()
     }
 
-    func post(url: URL, headers: [String: String] = [:], json: [String: Any] = [:], withAuthorization: Bool = false, completion: @escaping HTTPResult) {
+    func post(url: URL, headers: [String: String] = [:], json: [String: Any]? = nil, withAuthorization: Bool = false, completion: @escaping HTTPResult) {
         var request = createRequest(url: url, headers: headers, httpMethod: "POST", withAuthorization: withAuthorization)
 
+        if json != nil {
+            
+        
         do {
             try request.httpBody = JSONSerialization.data(withJSONObject: json, options: .prettyPrinted)
         } catch let error {
             Logger.printDebug(tag: logTag, error.localizedDescription)
 
             completion(nil, error)
+        }
         }
 
         let task = urlSession.dataTask(with: request) { (data, response, error) in

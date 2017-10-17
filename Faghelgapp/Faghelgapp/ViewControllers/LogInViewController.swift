@@ -8,28 +8,66 @@
 
 import Foundation
 import UIKit
+import Firebase
+import FirebaseAuth
 
-class LogInViewControllerr: UIViewController {
+class LogInViewController: UIViewController {
 
-    @IBOutlet weak var loginView: LoginView!
+    @IBOutlet weak var tfPhoneNumber: UITextField!
+    @IBOutlet weak var tfSmsCode: UITextField!
+    
+    var verificationId: String?
+    var authService = AuthService()
+    
+    @IBAction func btnSendPhoneNumberClicked(_ sender: Any) {
+        promptLogin()
+    }
+    @IBAction func btnSendSmsCodeClicked(_ sender: Any) {
+        let credential = PhoneAuthProvider.provider().credential(
+            withVerificationID: verificationId!,
+            verificationCode: tfSmsCode.text!)
+        Auth.auth().signIn(with: credential) { (user, error) in
+            if let error = error {
+                return
+            }
+            
+            user?.getIDToken { idToken, error in
+                UserDefaults.standard.set(idToken, forKey: Constants.UserDefaultsKeys.token)
+                
+                self.authService.getToken(phone: self.tfPhoneNumber.text!) { authed in
+                    if authed {
+                        DispatchQueue.main.async {
+                            self.loggedIn()
+
+                        }
+                    }
+                }
+                // TODO
+                /*if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
+                    appDelegate.registerForPushNotifications(application: UIApplication.shared)
+                }*/
+            }
+        }
+    }
     override func viewDidAppear(_ animated: Bool) {
         let token = UserDefaults.standard.string(forKey: Constants.UserDefaultsKeys.token)
-        if token == nil {
-            promptLogin()
-        } else {
+        if token != nil {
             loggedIn()
         }
     }
     
     func promptLogin() {
-        /*UserDefaults.standard.set(result?.accessToken, forKey: Constants.UserDefaultsKeys.token)
-         UserDefaults.standard.synchronize()
-         */
-        if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
-            appDelegate.registerForPushNotifications(application: UIApplication.shared)
+        Auth.auth().languageCode = "no";
+        let phone =  "+47\(tfPhoneNumber.text!)"
+        PhoneAuthProvider.provider().verifyPhoneNumber(phone, uiDelegate: nil) { (verificationID, error) in
+            if let error = error {
+                return
+            }
+            
+            self.verificationId = verificationID
+            
+            
         }
-
-        self.loggedIn()
     }
 
     private func loggedIn() {

@@ -12,7 +12,8 @@ target 'Faghelgapp' do
   pod 'Crashlytics'
   pod 'SwiftLint'
   pod 'Firebase/Core'
-
+  pod 'Firebase/Auth'
+  
   target 'FaghelgappTests' do
     inherit! :search_paths
     # Pods for testing

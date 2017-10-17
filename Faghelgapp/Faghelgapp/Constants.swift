@@ -40,6 +40,9 @@ enum Constants {
             static let messages = URL(string: baseUrl + "/messages")!
             static let push = URL(string: baseUrl + "/push")!
             static let register = URL(string: baseUrl + "/push/register")!
+            static func auth(phone: String) -> URL {
+                return URL(string: baseUrl + "/auth?phone=\(phone)")!
+            }
         }
     }
 
@@ -47,5 +50,6 @@ enum Constants {
         static let token = "token"
         static let registeredForPush = "registeredForPush"
         static let deviceToken = "deviceToken"
+        static let phone = "phone"
     }
 }
