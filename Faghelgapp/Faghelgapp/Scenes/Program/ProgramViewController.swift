@@ -8,19 +8,19 @@ protocol ProgramViewControllerOutput {
 }
 
 class ProgramViewController: MesanViewController {
-    
+
     @IBOutlet weak var programView: ProgramView!
     @IBOutlet weak var eventScrollerView: EventScrollerView!
-    
+
     var interactor: ProgramViewControllerOutput!
     var router: ProgramRouter!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         programView.viewController = self
         ProgramConfigurator.sharedInstance.configure(viewController: self)
-        
+
         router.showLoadingView(text: "Henter program") {
             self.interactor.viewControllerWillAppear()
         }
@@ -31,7 +31,7 @@ extension ProgramViewController: ProgramViewDelegate {
     func dayChanged(day: Day) {
         interactor.dayChanged(day: day)
     }
-    
+
     func didSelectEvent(with index: Int, from events: [Event], day: String) {
         router.goToEventsViewController(events: events, title: day, index: index)
     }
@@ -46,13 +46,13 @@ extension ProgramViewController: ProgramPresenterOutput {
         } else {
             eventScrollerView.isHidden = true
         }
-        
-        router.hideLoadingView() {
+
+        router.hideLoadingView {
             self.programView.updateViews(viewModel: viewModel)
         }
     }
-    
-    func scrollToCurrentEvent(){
+
+    func scrollToCurrentEvent() {
         programView.scrollToCurrentEvent()
     }
 }

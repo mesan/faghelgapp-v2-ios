@@ -10,11 +10,11 @@ import Foundation
 import UIKit
 
 class MesanViewController: UIViewController {
-    
+
     override func viewDidLoad() {
         setLogoAsTitle()
     }
-    
+
     private func setLogoAsTitle() {
         let logo = UIImage(named: "ncheader")
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 20, height: 20))

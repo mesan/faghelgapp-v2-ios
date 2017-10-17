@@ -9,18 +9,17 @@
 import UIKit
 
 protocol PersonDetailsInteractorOutput {
-    
+
 }
 
 class PersonDetailsInteractor {
-    
+
     var output: PersonDetailsInteractorOutput!
-    
+
     // MARK: Business logic
-    
 
 }
 
 extension PersonDetailsInteractor: PersonDetailsViewControllerOutput {
-    
+
 }

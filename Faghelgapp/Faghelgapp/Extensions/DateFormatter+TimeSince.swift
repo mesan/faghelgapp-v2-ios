@@ -10,10 +10,10 @@ import Foundation
 extension DateFormatter {
     /**
      Formats a date as the time since that date (e.g., “Last week, yesterday, etc.”).
-     
+
      - Parameter from: The date to process.
      - Parameter numericDates: Determines if we should return a numeric variant, e.g. "1 month ago" vs. "Last month".
-     
+
      - Returns: A string with formatted `date`.
      */
     func timeSince(from: NSDate, numericDates: Bool = false) -> String {
@@ -22,10 +22,10 @@ extension DateFormatter {
         let earliest = now.earlierDate(from as Date)
         let latest = earliest == now as Date ? from : now
         let components = calendar.dateComponents([.year, .weekOfYear, .month, .day, .hour, .minute, .second], from: earliest, to: latest as Date)
-        
+
         var result = ""
-        
-        if components.year! >= 1 || components.month! >= 1 || components.weekOfYear! >= 1 || components.day! >= 2{
+
+        if components.year! >= 1 || components.month! >= 1 || components.weekOfYear! >= 1 || components.day! >= 2 {
             let date: Date = from as Date
             result += date.🕗🕗()
         } else if components.day! >= 1 {
@@ -55,7 +55,7 @@ extension DateFormatter {
         } else {
             result = "Akkurat nå"
         }
-        
+
         return result
     }
 }

@@ -10,25 +10,25 @@ import Foundation
 
 class ProgramService {
     private let logTag = String(describing: ProgramService.self)
-    
+
     let client = HTTPClient()
-    
+
     func getProgram(completion: @escaping (Program?) -> Void) {
         client.get(url: Constants.Api.Endpoints.program) { (data, error) in
             if data != nil {
                 var program: Program?
-                
+
                 do {
                     let jsonResult = try JSONSerialization.jsonObject(with: data!, options:JSONSerialization.ReadingOptions.mutableContainers) as! [String: Any]
                     program = Program.from(json: jsonResult)
                     completion(program)
-                    
+
                 } catch let error {
                     Logger.printDebug(tag: self.logTag, error.localizedDescription)
                     completion(nil)
                 }
             }
-            
+
             if error != nil {
                 Logger.printDebug(tag: self.logTag, error?.localizedDescription)
                 completion(nil)

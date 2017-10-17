@@ -11,7 +11,7 @@ import Foundation
 typealias DataCompletion = (Data?, URLResponse?, Error?) -> Void
 
 class SeededURLSession: URLSession {
-    
+
     override func dataTask(with url: URL, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Swift.Void) -> URLSessionDataTask {
         return SeededDataTask(url: url, completion: completionHandler)
     }

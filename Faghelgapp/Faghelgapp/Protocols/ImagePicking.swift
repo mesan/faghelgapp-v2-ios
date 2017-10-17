@@ -12,18 +12,18 @@ import UIKit
 protocol ImagePicking {
     associatedtype T
     var viewController: T! { get }
-    
+
     func openImagePicker(sourceType: UIImagePickerControllerSourceType)
 }
 
 extension ImagePicking where T: UIViewController, T: UIImagePickerControllerDelegate & UINavigationControllerDelegate {
-    
+
     func openImagePicker(sourceType: UIImagePickerControllerSourceType) {
         let imagePicker = UIImagePickerController()
         imagePicker.delegate = viewController
         imagePicker.allowsEditing = false
         imagePicker.sourceType = sourceType
-        
+
         viewController.present(imagePicker, animated: false)
     }
 }

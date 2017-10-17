@@ -15,16 +15,15 @@ protocol FeedRouterInput {
 
 class FeedRouter: FeedRouterInput, Loading {
     var viewController: FeedViewController!
-    
+
     func goToNewMessageViewController() {
         let newMessageViewController = viewController.storyboard!.instantiateViewController(withIdentifier: "NewMessageViewController") as! NewMessageViewController
         viewController.show(newMessageViewController, sender: viewController)
     }
-    
+
     func goToFullscreenImageViewController(message: Message) {
         let fullscreenImageViewController = viewController.storyboard!.instantiateViewController(withIdentifier: "FullscreenImageViewController") as! FullscreenImageViewController
         fullscreenImageViewController.message = message
         viewController.present(fullscreenImageViewController, animated: true, completion: nil)
     }
 }
-

@@ -12,23 +12,23 @@ class MessageInput {
     var title: String
     var content: String
     var image: String?
-    
+
     init(title: String, content: String, image: String?) {
         self.title = title
         self.content = content
         self.image = image
     }
-    
+
     func toJson() -> [String: Any] {
         var json = [
             "title": title,
             "content": content
             ] as [String: Any]
-        
+
         if let image = image {
             json["image"] = image
         }
-        
+
         return json
-    }    
+    }
 }

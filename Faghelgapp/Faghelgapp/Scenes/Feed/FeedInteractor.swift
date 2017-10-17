@@ -15,9 +15,9 @@ protocol FeedInteractorOutput {
 
 class FeedInteractor {
     var messageService: MessageService
-    
+
     var presenter: FeedInteractorOutput!
-    
+
     init(messageService: MessageService) {
         self.messageService = messageService
     }
@@ -25,7 +25,7 @@ class FeedInteractor {
 
 extension FeedInteractor: FeedViewControllerOutput {
     func viewDidAppear() {
-        messageService.getMessages() { (messages) in
+        messageService.getMessages { (messages) in
             if messages != nil {
                 self.presenter.presentFeed(messages: messages!)
             } else {
@@ -33,8 +33,8 @@ extension FeedInteractor: FeedViewControllerOutput {
             }
         }
     }
-    
+
     func viewControllerWillLayoutSubviews() {
-        
+
     }
 }

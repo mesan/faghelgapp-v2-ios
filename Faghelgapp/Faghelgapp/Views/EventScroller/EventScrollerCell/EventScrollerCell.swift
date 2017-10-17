@@ -7,8 +7,7 @@
 //
 
 import Foundation
-import NibDesignable
 
 class EventScrollerCell: NibDesignableCollectionViewCell {
-    
+
 }

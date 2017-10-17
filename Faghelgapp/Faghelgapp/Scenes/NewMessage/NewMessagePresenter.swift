@@ -22,9 +22,9 @@ extension NewMessagePresenter: NewMessageInteractorOutput {
         DispatchQueue.main.async {
             self.viewController.messagePostedSuccessfully()
         }
-        
+
     }
-    
+
     func failedToPostMessage() {
         DispatchQueue.main.async {
             self.viewController.failedToPostMessage()

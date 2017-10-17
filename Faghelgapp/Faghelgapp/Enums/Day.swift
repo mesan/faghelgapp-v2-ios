@@ -13,4 +13,3 @@ enum Day: String {
     case friday = "FREDAG"
     case saturday = "LØRDAG"
 }
-

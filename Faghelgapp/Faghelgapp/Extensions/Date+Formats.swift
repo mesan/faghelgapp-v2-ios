@@ -18,7 +18,7 @@ extension Date {
             formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZZ"
             return formatter
         }()
-        
+
         static let timeSentFormat: DateFormatter = {
             let formatter = DateFormatter()
             formatter.calendar = Calendar(identifier: .iso8601)
@@ -28,17 +28,17 @@ extension Date {
             return formatter
         }()
     }
-    
+
     /*
      Formats date like 13:59
      */
     func 🕗() -> String {
         let formatter = DateFormatter()
         formatter.dateFormat = "HH:mm"
-        
+
         return formatter.string(from: self)
     }
-    
+
     /*
      Formats date like Tirsdag 20.10, 13:59
      */
@@ -47,10 +47,10 @@ extension Date {
         formatter.dateFormat = "dd.MM, HH:mm"
         let norwegianWeekday = 🇳🇴🕗()
         let dateTime = formatter.string(from: self)
-        
+
         return "\(norwegianWeekday) \(dateTime)"
     }
-    
+
     /*
      Get Norwegian weekday name
      */
@@ -58,8 +58,8 @@ extension Date {
         let formatter = DateFormatter()
         formatter.dateFormat = "EEEE"
         let day = formatter.string(from: self)
-        
-        switch day{
+
+        switch day {
         case "Monday":
             return "Mandag"
         case "Tuesday":
@@ -78,10 +78,10 @@ extension Date {
             return "Ukjent"
         }
     }
-    
+
     var timeSentFormat: String {
         let dateFormatter = DateFormatter()
-        
+
         return dateFormatter.timeSince(from: self as NSDate, numericDates: false)
     }
 }
@@ -91,5 +91,3 @@ extension String {
         return Date.Formatter.iso8601.date(from: self)
     }
 }
-
-

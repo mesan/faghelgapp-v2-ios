@@ -9,8 +9,8 @@
 import Foundation
 
 class Logger {
-    
-    class func printDebug(tag: String,_ items: Any...) {
+
+    class func printDebug(tag: String, _ items: Any...) {
         #if DEBUG
             print("\(tag): ", items)
         #endif

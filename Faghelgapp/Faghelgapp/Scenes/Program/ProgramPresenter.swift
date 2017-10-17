@@ -7,7 +7,7 @@ protocol ProgramPresenterOutput {
 
 class ProgramPresenter {
     let viewModel = ProgramViewModel()
-    
+
     var viewController: ProgramPresenterOutput!
 }
 
@@ -17,40 +17,39 @@ extension ProgramPresenter: ProgramInteractorOutput {
         if let program = viewModel.program {
             viewModel.eventsForSelectedDay = program.getEventsForDay(day: day)
         }
-        
+
         updateViewsFromMainThread()
     }
-    
+
     func fetchedProgram(_ program: Program) {
         viewModel.program = program
         viewModel.eventsForSelectedDay = program.getEventsForDay(day: viewModel.selectedDay)
         updateViewsFromMainThread()
-        
+
         setSelectedDayToToday()
         scrollToCurrentEvent()
-        
+
     }
-    
+
     func fetchProgramFailed() {
         // TODO
     }
-    
-    private func scrollToCurrentEvent(){
+
+    private func scrollToCurrentEvent() {
         DispatchQueue.main.async {
             self.viewController.scrollToCurrentEvent()
         }
     }
-    
+
     private func setSelectedDayToToday() {
         dayChanged(day: Date().weekday())
     }
-    
-    
+
     func didSelectEvent(with index: Int) {
         viewModel.selectedEventIndex = index
         updateViewsFromMainThread()
     }
-    
+
     private func updateViewsFromMainThread() {
         DispatchQueue.main.async {
             self.viewController.updateViews(viewModel: self.viewModel)

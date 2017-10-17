@@ -14,21 +14,21 @@ protocol PeoplePresenterOutput {
 
 class PeoplePresenter {
     let viewModel = PeopleViewModel()
-    
+
     var viewController: PeoplePresenterOutput!
 }
 
 extension PeoplePresenter: PeopleInteractorOutput {
-    
+
     func fetchedPeople(_ people: [Person]) {
         self.viewModel.people = people
         updateViewsFromMainThread()
     }
-    
+
     func fetchedPeopleFailed() {
         // TODO
     }
-    
+
     private func updateViewsFromMainThread() {
         DispatchQueue.main.async {
             self.viewController.updateViews(viewModel: self.viewModel)

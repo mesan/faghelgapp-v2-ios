@@ -6,12 +6,12 @@ target 'Faghelgapp' do
   use_frameworks!
 
   # Pods for Faghelgapp
-  pod 'NibDesignable'
   pod 'RealmSwift'
-  pod 'Kingfisher', '~> 3.0'
+  pod 'Kingfisher'
   pod 'Fabric'
   pod 'Crashlytics'
   pod 'SwiftLint'
+  pod 'Firebase/Core'
 
   target 'FaghelgappTests' do
     inherit! :search_paths

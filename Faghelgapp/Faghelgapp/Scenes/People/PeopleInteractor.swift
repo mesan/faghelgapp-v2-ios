@@ -15,18 +15,18 @@ protocol PeopleInteractorOutput {
 
 class PeopleInteractor {
     var presenter: PeopleInteractorOutput!
-    
+
     var peopleService: PeopleService
-    
+
     init(peopleService: PeopleService) {
         self.peopleService = peopleService
     }
 }
 
 extension PeopleInteractor: PeopleViewControllerOutput {
-    
+
     func viewControllerWillLayoutSubviews() {
-        peopleService.getPeople() { (people) in
+        peopleService.getPeople { (people) in
             if people != nil {
                 self.presenter.fetchedPeople(people!)
             } else {

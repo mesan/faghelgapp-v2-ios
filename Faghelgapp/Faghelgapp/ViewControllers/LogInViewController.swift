@@ -9,8 +9,9 @@
 import Foundation
 import UIKit
 
-class LogInViewController: UIViewController {
+class LogInViewControllerr: UIViewController {
 
+    @IBOutlet weak var loginView: LoginView!
     override func viewDidAppear(_ animated: Bool) {
         let token = UserDefaults.standard.string(forKey: Constants.UserDefaultsKeys.token)
         if token == nil {
@@ -21,18 +22,19 @@ class LogInViewController: UIViewController {
     }
     
     func promptLogin() {
-/*UserDefaults.standard.set(result?.accessToken, forKey: Constants.UserDefaultsKeys.token)
-UserDefaults.standard.synchronize()
-*/
-if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
-appDelegate.registerForPushNotifications(application: UIApplication.shared)
-}
-                
-self.loggedIn()
-}
-    
+        /*UserDefaults.standard.set(result?.accessToken, forKey: Constants.UserDefaultsKeys.token)
+         UserDefaults.standard.synchronize()
+         */
+        if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
+            appDelegate.registerForPushNotifications(application: UIApplication.shared)
+        }
+
+        self.loggedIn()
+    }
+
     private func loggedIn() {
-        let tabBarController = self.storyboard!.instantiateViewController(withIdentifier: "TabBarController") as! UITabBarController
+        let tabBarController = self.storyboard!
+            .instantiateViewController(withIdentifier: "TabBarController") as! UITabBarController
         self.show(tabBarController, sender: self)
     }
 }

@@ -10,16 +10,16 @@ import Foundation
 import UIKit
 
 enum Constants {
-    
+
     struct Headers {
         static let authorization = "Authorization"
-        
+
         struct ContentType {
             static let name = "Content-Type"
             static let value = "application/json;charset=utf-8"
         }
     }
-    
+
     struct Amazon {
         static func imageUrl(name: String) -> String {
             return "https://s3-eu-west-1.amazonaws.com/faghelg/\(name).png"
@@ -32,7 +32,7 @@ enum Constants {
         struct Local {
             static let baseUrl = "http://10.22.200.57:8080"
         }
-        
+
         struct Endpoints {
             static let baseUrl = Prod.baseUrl
             static let program = URL(string: baseUrl  + "/program")!
@@ -42,7 +42,7 @@ enum Constants {
             static let register = URL(string: baseUrl + "/push/register")!
         }
     }
-    
+
     struct UserDefaultsKeys {
         static let token = "token"
         static let registeredForPush = "registeredForPush"

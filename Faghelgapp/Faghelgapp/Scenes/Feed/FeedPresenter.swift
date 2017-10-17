@@ -15,11 +15,11 @@ protocol FeedPresenterOutput {
 class FeedPresenter {
     var viewModel: FeedViewModel
     var viewController: FeedPresenterOutput!
-    
+
     init(viewModel: FeedViewModel) {
         self.viewModel = viewModel
     }
-    
+
 }
 
 extension FeedPresenter: FeedInteractorOutput {
@@ -29,8 +29,8 @@ extension FeedPresenter: FeedInteractorOutput {
             self.viewController.updateFeed(viewModel: self.viewModel)
         }
     }
-    
+
     func failedToGetMessages() {
-        
+
     }
 }

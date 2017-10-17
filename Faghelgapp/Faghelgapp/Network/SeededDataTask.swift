@@ -11,12 +11,12 @@ import Foundation
 class SeededDataTask: URLSessionDataTask {
     private let url: URL
     private let completion: DataCompletion
-    
+
     init(url: URL, completion: @escaping DataCompletion) {
         self.url = url
         self.completion = completion
     }
-    
+
     override func resume() {
         if let json = ProcessInfo.processInfo.environment["UITesting-URL"] {
             let response = HTTPURLResponse(url: url, statusCode: 200, httpVersion: nil, headerFields: nil)

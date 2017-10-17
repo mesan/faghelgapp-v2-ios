@@ -14,7 +14,7 @@ protocol ProgramRouterInput {
 
 class ProgramRouter: ProgramRouterInput, Loading {
     var viewController: ProgramViewController!
-    
+
     func goToEventsViewController(events: [Event], title: String, index: Int) {
         let eventsViewController = viewController.storyboard!.instantiateViewController(withIdentifier: "EventsViewController") as! EventsViewController
         eventsViewController.events = events

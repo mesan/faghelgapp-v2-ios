@@ -12,7 +12,7 @@ extension Date {
     func weekday() -> Day {
         let calendar = Calendar(identifier: Calendar.Identifier.gregorian)
         let weekday = calendar.component(.weekday, from: self)
-        
+
         // Weekday 1 is Sunday, 7 is Saturday
         switch weekday {
         case 6:

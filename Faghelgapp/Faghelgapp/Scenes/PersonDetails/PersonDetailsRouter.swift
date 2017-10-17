@@ -9,13 +9,13 @@
 import UIKit
 
 protocol PersonDetailsRouterInput {
-    
+
 }
 
 class PersonDetailsRouter: PersonDetailsRouterInput {
-    
+
     weak var viewController: PersonDetailsViewController!
-    
+
     init(viewController: PersonDetailsViewController) {
         self.viewController = viewController
     }

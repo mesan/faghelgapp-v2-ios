@@ -9,17 +9,17 @@
 import UIKit
 
 protocol PeopleRouterInput {
-    
+
 }
 
 class PeopleRouter: PeopleRouterInput {
-    
+
     weak var viewController: PeopleViewController!
-    
+
     init(viewController: PeopleViewController) {
         self.viewController = viewController
     }
-    
+
     func goToPersonDetailsViewController(person: Person) {
         let personDetailsViewController = viewController.storyboard!.instantiateViewController(withIdentifier: "PersonDetailsViewController") as! PersonDetailsViewController
         personDetailsViewController.person = person

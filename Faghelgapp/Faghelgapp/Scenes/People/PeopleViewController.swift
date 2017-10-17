@@ -6,22 +6,22 @@ protocol PeopleViewControllerOutput {
 }
 
 class PeopleViewController: MesanViewController {
-    
+
     @IBOutlet weak var peopleView: PeopleView!
-    
+
     var interactor: PeopleViewControllerOutput!
     var router: PeopleRouter!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         peopleView.viewController = self
         PeopleConfigurator.sharedInstance.configure(viewController: self)
     }
-    
+
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
-        
+
         interactor.viewControllerWillLayoutSubviews()
     }
 }
