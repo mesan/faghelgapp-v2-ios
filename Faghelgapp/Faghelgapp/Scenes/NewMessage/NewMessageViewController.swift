@@ -45,7 +45,7 @@ extension NewMessageViewController: NewMessagePresenterOutput {
     }
 
     func failedToPostMessage() {
-        // TODO
+        newMessageView.enableButtons()
     }
 }
 

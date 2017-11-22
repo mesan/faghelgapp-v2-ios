@@ -37,6 +37,11 @@ class NewMessageView: NibLoadingView {
     @objc func dismissKeyboard() {
         view.endEditing(true)
     }
+    
+    func enableButtons() {
+        publishButton.isEnabled = false
+        publishButton.setTitle("Publiser", for: .normal)
+    }
 
     func set(image: UIImage) {
         imageViewHeightConstraint.constant = 150
@@ -71,6 +76,8 @@ class NewMessageView: NibLoadingView {
 
             let message = MessageInput(title: "", content: messageTextView.text, image: imageString)
             delegate.publishButtonClicked(message: message)
+            publishButton.isEnabled = false
+            publishButton.setTitle("Legger ut...", for: .normal)
         }
     }
 }

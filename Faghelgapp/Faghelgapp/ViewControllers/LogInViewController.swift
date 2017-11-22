@@ -15,6 +15,7 @@ class LogInViewController: UIViewController {
 
     @IBOutlet weak var tfPhoneNumber: UITextField!
     @IBOutlet weak var tfSmsCode: UITextField!
+    @IBOutlet weak var btnLogin: UIButton!
     
     var verificationId: String?
     var authService = AuthService()
@@ -37,15 +38,14 @@ class LogInViewController: UIViewController {
                 self.authService.getToken(phone: self.tfPhoneNumber.text!) { authed in
                     if authed {
                         DispatchQueue.main.async {
+                            if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
+                                appDelegate.registerForPushNotifications(application: UIApplication.shared)
+                            }
                             self.loggedIn()
 
                         }
                     }
                 }
-                // TODO
-                /*if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
-                    appDelegate.registerForPushNotifications(application: UIApplication.shared)
-                }*/
             }
         }
     }
@@ -57,14 +57,20 @@ class LogInViewController: UIViewController {
     }
     
     func promptLogin() {
-        Auth.auth().languageCode = "no";
+        Auth.auth().languageCode = "no"
         let phone =  "+47\(tfPhoneNumber.text!)"
         PhoneAuthProvider.provider().verifyPhoneNumber(phone, uiDelegate: nil) { (verificationID, error) in
             if let error = error {
+                Logger.printDebug(tag: "LoginViewController", "\(error.localizedDescription)")
                 return
             }
             
             self.verificationId = verificationID
+            
+            self.btnLogin.isEnabled = true
+            self.btnLogin.alpha = 1
+            self.tfSmsCode.isEnabled = true
+            self.tfSmsCode.alpha = 1
             
             
         }

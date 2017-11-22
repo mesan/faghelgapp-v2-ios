@@ -27,6 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UITabBar.appearance().tintColor = UIColor.netcompanyBlue
 
         setPageControlAppearance()
+        
 
         return true
     }
@@ -35,19 +36,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //let characterSet = CharacterSet(charactersIn: "<>")
 
         //let deviceTokenString = deviceToken.description.trimmingCharacters(in: characterSet).replacingOccurrences(of: " ", with: "")
+       
+        guard let accessToken = UserDefaults.standard.string(forKey: Constants.UserDefaultsKeys.token) else {
+            //registerForPushNotifications(application: UIApplication.shared)
+            return
+        }
         let deviceTokenString = deviceToken.reduce("", {$0 + String(format: "%02X", $1)})
-        print(deviceTokenString)
+        Logger.printDebug(tag: logTag, "deviceTokenString " + deviceTokenString)
 
         UserDefaults.standard.set(deviceTokenString, forKey: Constants.UserDefaultsKeys.deviceToken)
-        UserDefaults.standard.synchronize()
 
-        let accessToken = UserDefaults.standard.string(forKey: Constants.UserDefaultsKeys.token)
-
-        self.registerForPush(deviceToken: deviceTokenString, accessToken: accessToken!)
+        self.registerForPush(deviceToken: deviceTokenString, accessToken: accessToken)
     }
 
-    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any]) {
-        Logger.printDebug(tag: logTag, "didReceiveRemoteNotification")
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        Logger.printDebug(tag: logTag, "didReceiveRemoteNotification ios10.0")
+        application.applicationIconBadgeNumber = 0
+
     }
 
     func registerForPushNotifications(application: UIApplication) {

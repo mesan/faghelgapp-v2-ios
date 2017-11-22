@@ -123,6 +123,7 @@
 		B192B59A1D9AC9A200C8B9C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B192B5991D9AC9A200C8B9C2 /* AppDelegate.swift */; };
 		B192B5A11D9AC9A200C8B9C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B192B5A01D9AC9A200C8B9C2 /* Assets.xcassets */; };
 		B192B5AF1D9AC9A200C8B9C2 /* FaghelgappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B192B5AE1D9AC9A200C8B9C2 /* FaghelgappTests.swift */; };
+		E1BF59501FAB810B00D32CAB /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = E1BF594F1FAB810B00D32CAB /* .swiftlint.yml */; };
 		E1F5B2A81F96647400A13B56 /* NibDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F5B2A71F96647300A13B56 /* NibDesignable.swift */; };
 		E1F5B2AC1F9670EC00A13B56 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1F5B2AB1F9670EC00A13B56 /* GoogleService-Info.plist */; };
 		E1F5B2AE1F96853100A13B56 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F5B2AD1F96853100A13B56 /* AuthService.swift */; };
@@ -266,6 +267,7 @@
 		B192B5B01D9AC9A200C8B9C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD2D24CA29C7CA7FDB04833B /* Pods-FaghelgappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaghelgappTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FaghelgappTests/Pods-FaghelgappTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D445080685542BFDD16F65C9 /* Pods_Faghelgapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Faghelgapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1BF594F1FAB810B00D32CAB /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
 		E1F5B2A71F96647300A13B56 /* NibDesignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibDesignable.swift; sourceTree = "<group>"; };
 		E1F5B2AB1F9670EC00A13B56 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E1F5B2AD1F96853100A13B56 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
@@ -682,6 +684,7 @@
 		B192B5981D9AC9A200C8B9C2 /* Faghelgapp */ = {
 			isa = PBXGroup;
 			children = (
+				E1BF594F1FAB810B00D32CAB /* .swiftlint.yml */,
 				E1F5B2AB1F9670EC00A13B56 /* GoogleService-Info.plist */,
 				E1F5B2A71F96647300A13B56 /* NibDesignable.swift */,
 				9FA887B01DC9293D006CF37C /* Faghelgapp.entitlements */,
@@ -784,7 +787,7 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 74XXV957HC;
 						LastSwiftMigration = 0900;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -829,6 +832,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1BF59501FAB810B00D32CAB /* .swiftlint.yml in Resources */,
 				8484EE381E4107A900B89B6E /* LaunchScreen.storyboard in Resources */,
 				9FEC6A1D1DAE8D3400EA1D1C /* EventScrollerCell.xib in Resources */,
 				1F1194E31E5630C400838CB3 /* LoadingView.xib in Resources */,
@@ -1242,15 +1246,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Faghelgapp/Faghelgapp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Thomas Pettersen (M8AEARF2WB)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Thomas Pettersen (M8AEARF2WB)";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 74XXV957HC;
 				INFOPLIST_FILE = Faghelgapp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = no.mesan.faghelgapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "4c20a865-7f65-469c-9fc0-ff1140155d2e";
+				PROVISIONING_PROFILE_SPECIFIER = "Faghelgapp Development";
 				SWIFT_OBJC_BRIDGING_HEADER = "Faghelgapp/Faghelgapp-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
@@ -1264,15 +1269,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Faghelgapp/Faghelgapp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: MESAN AS";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: MESAN AS";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 74XXV957HC;
 				INFOPLIST_FILE = Faghelgapp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = no.mesan.faghelgapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "3421eb3e-4764-41eb-ba0f-d05b9a26c8e5";
+				PROVISIONING_PROFILE_SPECIFIER = "Faghelgapp Distribution";
 				SWIFT_OBJC_BRIDGING_HEADER = "Faghelgapp/Faghelgapp-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;

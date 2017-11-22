@@ -1,0 +1,5 @@
+excluded:
+ - Pods
+disabled_rules:
+ - trailing_whitespace
+ - nesting
