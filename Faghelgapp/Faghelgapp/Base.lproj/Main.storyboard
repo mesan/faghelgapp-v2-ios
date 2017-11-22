@@ -341,7 +341,7 @@
                                     <constraint firstAttribute="width" secondItem="UZV-fz-ND4" secondAttribute="height" multiplier="240:59" id="ao1-rn-zGf"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="95829578" borderStyle="roundedRect" placeholder="Ditt telefonnummer..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E1V-LV-q0g">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ditt telefonnummer..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E1V-LV-q0g">
                                 <rect key="frame" x="16" y="124.5" width="288" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="4eZ-oZ-HDg"/>
