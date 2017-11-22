@@ -62,7 +62,7 @@ class HTTPClient {
 
         request.setValue(Constants.Headers.ContentType.value, forHTTPHeaderField: Constants.Headers.ContentType.name)
 
-        if withAuthorization, let token = UserDefaults.standard.object(forKey: "token") as? String {
+        if withAuthorization, let token = UserDefaults.standard.object(forKey: Constants.UserDefaultsKeys.token) as? String {
             request.setValue(token, forHTTPHeaderField: Constants.Headers.authorization)
         }
 

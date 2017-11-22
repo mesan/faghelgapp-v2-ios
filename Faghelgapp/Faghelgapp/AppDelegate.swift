@@ -28,7 +28,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         setPageControlAppearance()
         
-
+        let token = UserDefaults.standard.string(forKey: Constants.UserDefaultsKeys.token)
+        if token != nil {
+            registerForPushNotifications(application: application)
+        }
+        
         return true
     }
 
