@@ -13,6 +13,7 @@ target 'Faghelgapp' do
   pod 'SwiftLint'
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
+  pod 'lottie-ios'
   
   target 'FaghelgappTests' do
     inherit! :search_paths

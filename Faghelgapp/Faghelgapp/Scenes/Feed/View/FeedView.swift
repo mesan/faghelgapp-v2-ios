@@ -1,8 +1,10 @@
 import Foundation
 import UIKit
+import Lottie
 
 protocol FeedViewDelegate: class {
     func didSelectMessage(message: Message)
+    func didLikeMessage(_ message: Message)
 }
 
 class FeedView: NibLoadingView {
@@ -11,6 +13,7 @@ class FeedView: NibLoadingView {
 
     let textMessageCellIdentifier = "TextMessageCell"
     let imageMessageCellIdentifier = "ImageMessageCell"
+    let animationView = LOTAnimationView(name: "like_button")
 
     var delegate: FeedViewDelegate?
 
@@ -46,13 +49,9 @@ extension FeedView: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let message = viewModel.messages[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: imageMessageCellIdentifier, for: indexPath) as! ImageMessageCell
-
-        if message.imageUrl == nil || message.imageUrl == "" {
-            cell.isUserInteractionEnabled = false
-        } else {
-            cell.isUserInteractionEnabled = true
-        }
-
+        
+        cell.isUserInteractionEnabled = true
+        cell.delegate = self
         cell.populate(message: message)
         return cell
     }
@@ -63,5 +62,22 @@ extension FeedView: UITableViewDelegate {
         let message = viewModel.messages[indexPath.row]
         delegate?.didSelectMessage(message: message)
         tableView.deselectRow(at: indexPath, animated: false)
+    }
+}
+
+extension FeedView: FeedCellProtocol {
+    func didHeart(_ message: Message) {
+        animationView.frame = CGRect(x: 0, y: 0,
+                                         width: self.view.frame.width,
+                                         height: self.view.frame.height)
+        animationView.center = self.view.center
+        animationView.contentMode = .scaleAspectFill
+        
+        self.view.addSubview(animationView)
+        animationView.play { _ in
+            self.delegate?.didLikeMessage(message)
+            self.animationView.removeFromSuperview()
+            
+        }
     }
 }

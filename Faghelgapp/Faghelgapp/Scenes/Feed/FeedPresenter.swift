@@ -33,4 +33,8 @@ extension FeedPresenter: FeedInteractorOutput {
     func failedToGetMessages() {
 
     }
+    
+    func updateFeedAfterLike(with message: Message) {
+        
+    }
 }

@@ -28,6 +28,8 @@ enum Constants {
     struct Api {
         struct Prod {
             static let baseUrl = "https://faghelg.herokuapp.com"
+            //static let baseUrl = "http://10.22.200.61:8080"
+
         }
         struct Local {
             static let baseUrl = "http://10.22.200.57:8080"

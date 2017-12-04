@@ -1,9 +1,11 @@
 import Foundation
 import UIKit
+import Lottie
 
 protocol FeedViewControllerOutput {
     func viewDidAppear()
     func viewControllerWillLayoutSubviews()
+    func didLikeMessage(_ message: Message)
 }
 
 class FeedViewController: MesanViewController {
@@ -14,7 +16,6 @@ class FeedViewController: MesanViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         feedView.delegate = self
 
         FeedConfigurator.sharedInstance.configure(viewController: self)
@@ -49,7 +50,13 @@ class FeedViewController: MesanViewController {
 
 extension FeedViewController: FeedViewDelegate {
     func didSelectMessage(message: Message) {
-        router.goToFullscreenImageViewController(message: message)
+        if let imageUrl =  message.imageUrl, !imageUrl.isEmpty {
+            router.goToFullscreenImageViewController(message: message)
+        }
+    }
+    
+    func didLikeMessage(_ message: Message) {
+        interactor.didLikeMessage(message)
     }
 }
 

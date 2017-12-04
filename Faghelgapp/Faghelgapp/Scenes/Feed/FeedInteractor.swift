@@ -11,6 +11,7 @@ import Foundation
 protocol FeedInteractorOutput {
     func presentFeed(messages: [Message])
     func failedToGetMessages()
+    func updateFeedAfterLike(with message: Message)
 }
 
 class FeedInteractor {
@@ -36,5 +37,10 @@ extension FeedInteractor: FeedViewControllerOutput {
 
     func viewControllerWillLayoutSubviews() {
 
+    }
+    
+    func didLikeMessage(_ message: Message) {
+        message.hasLiked = true
+        presenter.updateFeedAfterLike(with: message)
     }
 }

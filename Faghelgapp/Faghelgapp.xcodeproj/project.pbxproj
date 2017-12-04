@@ -124,6 +124,7 @@
 		B192B5A11D9AC9A200C8B9C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B192B5A01D9AC9A200C8B9C2 /* Assets.xcassets */; };
 		B192B5AF1D9AC9A200C8B9C2 /* FaghelgappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B192B5AE1D9AC9A200C8B9C2 /* FaghelgappTests.swift */; };
 		E1BF59501FAB810B00D32CAB /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = E1BF594F1FAB810B00D32CAB /* .swiftlint.yml */; };
+		E1BF59541FD5C03D00D32CAB /* like_button.json in Resources */ = {isa = PBXBuildFile; fileRef = E1BF59531FD5C03C00D32CAB /* like_button.json */; };
 		E1F5B2A81F96647400A13B56 /* NibDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F5B2A71F96647300A13B56 /* NibDesignable.swift */; };
 		E1F5B2AC1F9670EC00A13B56 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1F5B2AB1F9670EC00A13B56 /* GoogleService-Info.plist */; };
 		E1F5B2AE1F96853100A13B56 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F5B2AD1F96853100A13B56 /* AuthService.swift */; };
@@ -268,6 +269,7 @@
 		CD2D24CA29C7CA7FDB04833B /* Pods-FaghelgappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaghelgappTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FaghelgappTests/Pods-FaghelgappTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D445080685542BFDD16F65C9 /* Pods_Faghelgapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Faghelgapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1BF594F1FAB810B00D32CAB /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
+		E1BF59531FD5C03C00D32CAB /* like_button.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = like_button.json; sourceTree = "<group>"; };
 		E1F5B2A71F96647300A13B56 /* NibDesignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibDesignable.swift; sourceTree = "<group>"; };
 		E1F5B2AB1F9670EC00A13B56 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E1F5B2AD1F96853100A13B56 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
@@ -685,6 +687,7 @@
 			isa = PBXGroup;
 			children = (
 				E1BF594F1FAB810B00D32CAB /* .swiftlint.yml */,
+				E1BF59531FD5C03C00D32CAB /* like_button.json */,
 				E1F5B2AB1F9670EC00A13B56 /* GoogleService-Info.plist */,
 				E1F5B2A71F96647300A13B56 /* NibDesignable.swift */,
 				9FA887B01DC9293D006CF37C /* Faghelgapp.entitlements */,
@@ -834,6 +837,7 @@
 			files = (
 				E1BF59501FAB810B00D32CAB /* .swiftlint.yml in Resources */,
 				8484EE381E4107A900B89B6E /* LaunchScreen.storyboard in Resources */,
+				E1BF59541FD5C03D00D32CAB /* like_button.json in Resources */,
 				9FEC6A1D1DAE8D3400EA1D1C /* EventScrollerCell.xib in Resources */,
 				1F1194E31E5630C400838CB3 /* LoadingView.xib in Resources */,
 				9FEC6A0D1DAE8BA000EA1D1C /* Roboto-Black.ttf in Resources */,
@@ -981,6 +985,7 @@
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -990,6 +995,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

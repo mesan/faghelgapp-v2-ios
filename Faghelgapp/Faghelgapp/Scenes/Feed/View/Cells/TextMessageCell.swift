@@ -10,13 +10,34 @@ import Foundation
 import UIKit
 import Kingfisher
 
+protocol FeedCellProtocol: class {
+    func didHeart(_ message: Message)
+}
+
 class TextMessageCell: NibDesignableTableViewCell {
     @IBOutlet weak var senderImageBorder: UIView!
     @IBOutlet weak var senderImageView: UIImageView!
     @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var senderNameLabel: UILabel!
     @IBOutlet weak var timeSentLabel: UILabel!
+    
+    @IBOutlet weak var imgLikesHeart: UIImageView!
+    @IBOutlet weak var lblLikesCount: UILabel!
+    
+    weak var delegate: FeedCellProtocol?
+    var message: Message?
+    var didLongPress: Bool = false
 
+    @IBAction func longPress(_ sender: Any) {
+       guard !didLongPress else {
+            return
+        }
+        if let message = self.message {
+            delegate?.didHeart(message)
+            didLongPress = true
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
 
@@ -44,9 +65,18 @@ class TextMessageCell: NibDesignableTableViewCell {
     }
 
     func populate(message: Message) {
+        self.message = message
+        didLongPress = false
         messageLabel.text = message.content
         senderNameLabel.text = "@\(message.sender)"
         timeSentLabel.text = message.timestamp
+        if let likesCount = message.numberOfLikes, likesCount > 0 {
+            lblLikesCount.text = "\(likesCount)"
+        }
+        
+        if message.hasLiked {
+            imgLikesHeart.image = #imageLiteral(resourceName: "Heart")
+        }
 
         let placeholderImage = UIImage(named: "person_placeholder")
         let senderImageUrl = Constants.Amazon.imageUrl(name: message.sender)
