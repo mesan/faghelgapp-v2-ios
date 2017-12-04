@@ -1,11 +1,3 @@
-//
-//  FeedCell.swift
-//  Faghelgapp
-//
-//  Created by Anders Ullnæss on 18/10/16.
-//  Copyright © 2016 Idar Vassdal. All rights reserved.
-//
-
 import Foundation
 import UIKit
 import Kingfisher
@@ -22,9 +14,13 @@ class ImageMessageCell: TextMessageCell {
         if let imageUrl = message.imageUrl, let url = URL(string: imageUrl) {
             imageContainerView.isHidden = false
             imageContainerViewHeightConstraint.constant = 200
-            messageImageView.kf.setImage(with: ImageResource(downloadURL: url, cacheKey: imageUrl), placeholder: UIImage(named: "background_placeholder"), options: nil)
+            messageImageView.kf.setImage(
+                with: ImageResource(downloadURL: url, cacheKey: imageUrl),
+                placeholder: UIImage(named: "background_placeholder"), options: nil)
 
-            backgroundMessageImageView.kf.setImage(with: ImageResource(downloadURL: url, cacheKey: imageUrl), placeholder: UIImage(named: "background_placeholder"), options: nil)
+            backgroundMessageImageView.kf.setImage(
+                with: ImageResource(downloadURL: url, cacheKey: imageUrl),
+            placeholder: UIImage(named: "background_placeholder"), options: nil)
         } else {
             imageContainerView.isHidden = true
             imageContainerViewHeightConstraint.constant = 0

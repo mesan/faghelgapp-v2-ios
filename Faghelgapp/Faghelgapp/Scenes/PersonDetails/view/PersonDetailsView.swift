@@ -27,7 +27,7 @@ class PersonDetailsView: NibLoadingView {
 
         self.profileImage.layer.cornerRadius = self.profileImage.frame.size.width / 2
         self.profileImage.layer.borderWidth = borderWidth
-        self.profileImage.layer.borderColor = Color.white.cgColor
+        self.profileImage.layer.borderColor = UIColor.white.cgColor
 
         self.dividerView.layer.borderColor = Color.netcompanyBlue.cgColor
         self.dividerView.layer.borderWidth = borderWidth

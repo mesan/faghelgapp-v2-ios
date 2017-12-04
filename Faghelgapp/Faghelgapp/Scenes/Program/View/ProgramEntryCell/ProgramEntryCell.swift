@@ -43,6 +43,8 @@ class ProgramEntryCell: NibDesignableTableViewCell {
         eventStartTimeLabel.text = event.start.🕗()
         if let hostNames = event.hostNames {
             eventAuthorLabel.text = hostNames
+        } else {
+            eventAuthorLabel.text = " "
         }
     }
 }
